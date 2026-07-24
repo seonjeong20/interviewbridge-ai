@@ -4,7 +4,6 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function Dashboard() {
-
   const navigate = useNavigate();
 
   const [selectedJob, setSelectedJob] = useState(null);
@@ -50,10 +49,16 @@ function Dashboard() {
         ))}
       </div>
 
-      <button 
-      className="start-button" 
-      disabled={!selectedJob}
-      onClick={() => navigate("/interview")}
+      <button
+        className="start-button"
+        disabled={!selectedJob}
+        onClick={() =>
+          navigate("/interview", {
+            state: {
+              job: selectedJob,
+            },
+          })
+        }
       >
         Start Interview
       </button>
