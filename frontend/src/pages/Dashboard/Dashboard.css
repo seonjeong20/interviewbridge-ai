@@ -1,0 +1,41 @@
+.dashboard-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.dashboard-container h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.dashboard-container h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+.job-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.start-button {
+    display: block;
+    width: 300px;
+    margin: 40px auto;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.start-button:disabled {
+    background-color: #cfd8dc;
+    cursor: not-allowed;
+}

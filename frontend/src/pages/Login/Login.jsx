@@ -1,6 +1,10 @@
 import "./Login.css"
+import { useNavigate } from "react-router-dom";
 
 function Login() {
+
+        const navigate = useNavigate();
+
   return (
     <div className="login-container">
 
@@ -26,12 +30,15 @@ function Login() {
                 placeholder="Password"
             />
 
-            <button className="login-button">
+            <button 
+                className="login-button"
+                onClick={() => navigate("/dashboard")}
+            >
                 Login
             </button>
 
             <p className="signup-text">
-                Don't have an account? <strong>Sign Up</strong>
+                Don't have an account? <span className="signup-link">Sign Up</span>
             </p>
 
         </div>

@@ -75,6 +75,11 @@
   font-size: 14px;
 }
 
-signup-text strong{
-    cursor: pointer;
+.signup-link{
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.signup-link:hover{
+  color: #2563eb;
 }
