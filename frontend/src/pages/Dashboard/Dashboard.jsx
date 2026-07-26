@@ -10,22 +10,27 @@ function Dashboard() {
 
   const jobs = [
     {
+      id : "Backend",
       title: "💻  Backend Developer",
       description: "REST API / Spring",
     },
     {
+      id: "Frontend",
       title: "🎨  Frontend Developer",
       description: "React / CSS",
     },
     {
+      id: "AI",
       title: "🤖  AI Engineer",
       description: "LLM / Python",
     },
     {
+      id: "Data",
       title: "📊  Data Analyst",
       description: "Python / SQL",
     },
     {
+      id: "Mobile",
       title: "📱  Mobile Developer",
       description: "Android / iOS",
     },
@@ -43,8 +48,8 @@ function Dashboard() {
             key={job.title}
             title={job.title}
             description={job.description}
-            selected={selectedJob === job.title}
-            onClick={() => setSelectedJob(job.title)}
+            selected={selectedJob?.id === job.id}
+            onClick={() => setSelectedJob(job)}
           />
         ))}
       </div>

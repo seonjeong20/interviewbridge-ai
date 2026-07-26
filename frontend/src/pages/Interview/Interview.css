@@ -1,0 +1,51 @@
+.generate-btn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.generate-btn:hover {
+    background-color: #1d4ed8;
+}
+
+.generated-question {
+    margin-top: 20px;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+}
+
+.generated-question h3 {
+    margin-bottom: 10px;
+}
+
+.generated-question p {
+    margin: 0;
+}
+
+.question-input {
+    margin-top: 30px;
+}
+
+.question-input h3 {
+    margin-bottom: 10px;
+}
+
+.question-input textarea {
+    width: 100%;
+    height: 120px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    resize: none;
+    box-sizing: border-box;
+}
