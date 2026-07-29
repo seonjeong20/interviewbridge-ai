@@ -49,3 +49,50 @@
     resize: none;
     box-sizing: border-box;
 }
+
+.answer-input {
+    margin-top: 30px;
+}
+
+.answer-input h3 {
+    margin-bottom: 10px;
+}
+
+.answer-input textarea {
+    width: 100%;
+    height: 180px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+.button-container{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+}
+
+.analyze-btn {
+    margin-top: 24px;
+    padding: 12px 24px;
+    background-color: #10b981;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.analyze-btn:hover {
+    background-color: #059669;
+}
+
+.analyze-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}

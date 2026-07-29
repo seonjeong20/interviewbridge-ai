@@ -1,0 +1,31 @@
+.result-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+}
+
+.result-container h1 {
+    margin-bottom: 30px;
+}
+
+.result-container section {
+    margin-bottom: 28px;
+}
+
+.score {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.result-container ul {
+    padding-left: 20px;
+}
+
+.result-container li {
+    margin-bottom: 8px;
+}
+
+.result-container p {
+    line-height: 1.7;
+}
