@@ -1,41 +1,161 @@
+@import "../../App.css";
+
+body {
+    background: var(--color-background);
+}
+
 .dashboard-container {
     max-width: 1000px;
-    margin: 50px auto;
-    padding: 20px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: calc(var(--space-xl) * 1.5) var(--space-lg) calc(var(--space-xl) * 2);
+    color: var(--color-title);
+    box-sizing: border-box;
 }
 
 .dashboard-container h1 {
+    margin: calc(var(--space-xl) + var(--space-sm)) 0 var(--space-sm);
+    color: var(--color-title);
     text-align: center;
-    margin-bottom: 10px;
+    font-size: clamp(28px, 4vw, 36px);
+    font-weight: 750;
+    line-height: 1.25;
+    letter-spacing: -0.035em;
 }
 
 .dashboard-container h2 {
+    margin: 0 0 calc(var(--space-xl) + var(--space-sm));
+    color: var(--color-text-muted);
     text-align: center;
-    margin-bottom: 40px;
-    color: #666;
+    font-size: var(--font-size-md);
+    font-weight: 500;
+    line-height: 1.65;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.notebook-button {
+    min-height: 42px;
+    padding: 0 var(--space-md);
+    color: var(--color-primary);
+    font-size: var(--font-size-sm);
+    font-weight: 650;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-card);
+    box-shadow: var(--shadow-sm);
+    cursor: pointer;
+    transition: transform var(--transition-base), color var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.notebook-button:hover {
+    color: var(--color-primary-hover);
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
 }
 
 .job-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-lg);
+}
+
+/* JobCard component styles are scoped to the Dashboard's main content area. */
+.dashboard-container .job-card {
+    padding: var(--space-lg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    background: var(--color-card);
+    box-shadow: var(--shadow-md);
+    cursor: pointer;
+    transition: transform var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base), background-color var(--transition-base);
+}
+
+.dashboard-container .job-card:hover {
+    border-color: var(--color-primary);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+}
+
+.dashboard-container .job-card h3 {
+    margin-bottom: var(--space-sm);
+    color: var(--color-title);
+    font-size: var(--font-size-lg);
+    line-height: 1.4;
+}
+
+.dashboard-container .job-card p {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+    line-height: 1.6;
+}
+
+.dashboard-container .job-card.selected {
+    border-color: var(--color-primary);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-md), inset 0 0 0 1px var(--color-primary);
+}
+
+.dashboard-container .job-card.selected h3 {
+    color: var(--color-primary);
 }
 
 .start-button {
     display: block;
-    width: 300px;
-    margin: 40px auto;
-    padding: 15px;
-    border: none;
-    border-radius: 10px;
-    font-size: 18px;
-    background-color: #2563eb;
-    color: white;
+    width: min(300px, 100%);
+    min-height: 48px;
+    margin: calc(var(--space-xl) + var(--space-sm)) auto 0;
+    padding: 0 var(--space-lg);
+    color: var(--color-card);
+    font-size: var(--font-size-md);
+    font-weight: 650;
+    border: 0;
+    border-radius: var(--radius-md);
+    background: var(--color-primary);
+    box-shadow: var(--shadow-md);
     cursor: pointer;
-    transition: .2s;
+    transition: transform var(--transition-base), background-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.start-button:hover:not(:disabled) {
+    background: var(--color-primary-hover);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
 }
 
 .start-button:disabled {
-    background-color: #cfd8dc;
+    color: var(--color-text-muted);
+    background: var(--color-border);
+    box-shadow: none;
     cursor: not-allowed;
+}
+
+@media (max-width: 640px) {
+    .dashboard-container {
+        padding: var(--space-lg) var(--space-md) calc(var(--space-xl) + var(--space-lg));
+    }
+
+    .dashboard-container h1 {
+        margin-top: var(--space-xl);
+        font-size: 29px;
+    }
+
+    .dashboard-container h2 {
+        margin-bottom: var(--space-xl);
+    }
+
+    .job-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+
+    .dashboard-container .job-card {
+        padding: calc(var(--space-lg) - var(--space-xs));
+    }
 }

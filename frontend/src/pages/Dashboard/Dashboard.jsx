@@ -10,7 +10,7 @@ function Dashboard() {
 
   const jobs = [
     {
-      id : "Backend",
+      id: "Backend",
       title: "💻  Backend Developer",
       description: "REST API / Spring",
     },
@@ -38,6 +38,16 @@ function Dashboard() {
 
   return (
     <div className="dashboard-container">
+
+      <div className="dashboard-header">
+        <button
+          className="notebook-button"
+          onClick={() => navigate("/notebook")}
+        >
+          📒 Interview Notebook
+        </button>
+      </div>
+
       <h1>InterviewBridge AI</h1>
 
       <h2>오늘은 어떤 직무를 연습하시겠어요?</h2>

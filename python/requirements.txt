@@ -1,7 +1,7 @@
 # Hugging Face Transformer (필요시 사용)
-transformers>=4.54     # Transformer 모델 및 토크나이저
-torch>=2.7             # PyTorch 딥러닝 프레임워크
-numpy>=1.26            # 수치 연산 라이브러리
+# transformers>=4.54     # Transformer 모델 및 토크나이저
+# torch>=2.7             # PyTorch 딥러닝 프레임워크
+# numpy>=1.26            # 수치 연산 라이브러리
 
 # CrewAI Agent System
 crewai[openai]>=1.15,<2.0    # CrewAI + OpenAI LLM 연동
