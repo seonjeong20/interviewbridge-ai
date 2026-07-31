@@ -1,1 +1,7 @@
+spring:
+  application:
+    name: interviewbridge-backend
 
+python:
+  api:
+    url: http://localhost:8000

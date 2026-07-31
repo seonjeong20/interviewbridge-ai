@@ -136,48 +136,79 @@ Rules
 - Never generate another interview question.
 - Consider the interview expectations of {country}.
 - Always calculate Overall Score.
+- Calculate overallScore as the average of:
+  logicalThinking,
+  specificity,
+  communication,
+  jobFit,
+  and starStructure.
 
 Output Format
 
-Overall Score: XX
+Return ONLY valid JSON.
 
-Evaluation Scores
+{
+  "overallScore": 0,
 
-Logical Thinking: X/10
+  "summary": "",
 
-Specificity: X/10
+  "evaluationScores": {
+    "logicalThinking": {
+      "score": 0,
+      "feedback": ""
+    },
+    "specificity": {
+      "score": 0,
+      "feedback": ""
+    },
+    "communication": {
+      "score": 0,
+      "feedback": ""
+    },
+    "jobFit": {
+      "score": 0,
+      "feedback": ""
+    },
+    "starStructure": {
+      "score": 0,
+      "feedback": ""
+    }
+  },
 
-Communication: X/10
+  "strengths": [
+    ""
+  ],
 
-Job Fit: X/10
+  "weaknesses": [
+    ""
+  ]
+}
 
-STAR Structure: X/10
+Rules
 
-Strengths:
-- ...
-
-Weaknesses:
-- ...
+- Return JSON only.
+- Do not use markdown.
+- Do not wrap with ```json.
+- No explanations outside JSON.
 """,
 
     expected_output="""
-Overall Score
+A valid JSON object containing:
 
-Evaluation Scores
+overallScore
 
-Logical Thinking
+summary
 
-Specificity
+evaluationScores
+- logicalThinking
+- specificity
+- communication
+- jobFit
+- starStructure
 
-Communication
+strengths
 
-Job Fit
-
-STAR Structure
-
-Strengths
-
-Weaknesses
+weaknesses
 """,
 
     agent=answer_evaluator,
@@ -204,7 +235,6 @@ Return everything in {native_language}.
 Rules
 
 - Review only the evaluation result.
-- Review only the evaluation result.
 - Do NOT evaluate the interview answer again.
 - Check whether the scores are internally consistent.
 - Verify that strengths are supported by the evaluation.
@@ -218,33 +248,15 @@ Rules
 - Do not generate another interview question.
 - Correct any logical inconsistencies.
 - Keep the same output format.
-- Do not provide coaching.
-- Do not generate a model answer.
-- Do not generate another interview question.
 """,
 
     expected_output="""
-Reviewed Evaluation
+Return the reviewed evaluation in exactly the same JSON format received from the Answer Evaluation task.
 
-Overall Score
+Do not remove fields.
 
-Evaluation Scores
-
-Logical Thinking
-
-Specificity
-
-Communication
-
-Job Fit
-
-STAR Structure
-
-Strengths
-
-Weaknesses
+Only improve consistency, objectivity, and clarity.
 """,
-
     agent=reflection_agent,
 
     context=[
@@ -283,6 +295,7 @@ Rules
 - Use ONLY the reviewed evaluation.
 - Reflect the interview culture and communication style of {country}.
 - Do NOT contradict the reviewed evaluation.
+- Do NOT repeat strengths, weaknesses, scores, or detailed evaluation feedback.
 
 Improvement Tips Rules
 
@@ -290,6 +303,7 @@ Improvement Tips Rules
 - Provide at most FOUR improvement tips.
 - Keep each tip concise (maximum 2 sentences).
 - Prioritize the most important improvements first.
+- Base every improvement tip on the reviewed evaluation.
 - Avoid repeating similar advice.
 - Explain why each improvement is important for interviews in {country}.
 
@@ -298,6 +312,7 @@ Model Answer Rules
 - Generate an improved version of the candidate's original answer.
 - Preserve the candidate's original experience whenever possible.
 - Do NOT invent new experiences, projects, achievements, or technologies that were not mentioned.
+- Never invent numbers, percentages, metrics, dates, project names, technologies, awards, or achievements that were not explicitly mentioned by the candidate.
 - Improve clarity, structure, and professionalism.
 - Follow the STAR method naturally when appropriate.
 - Keep the answer realistic and interview-ready.
@@ -316,58 +331,53 @@ Follow the output format exactly.
 
 Output Format
 
-==============================
-Overall Summary
-==============================
-- Summarize the candidate's overall performance in ONE sentence.
+Return ONLY valid JSON.
 
-==============================
-Improvement Tips
-==============================
-1.
-2.
-3.
-4.
+{
+  "overallSummary": "",
 
-==============================
-Model Answer ({native_language})
-==============================
-...
+  "improvementTips": [
+    ""
+  ],
 
-==============================
-Model Answer ({target_language})
-==============================
-...
+  "modelAnswer": {
+    "nativeLanguage": "",
+    "targetLanguage": ""
+  },
 
-==============================
-Next Practice Question ({target_language})
-==============================
-...
+  "nextPracticeQuestion": {
+    "targetLanguage": "",
+    "nativeLanguage": ""
+  }
+}
 
-==============================
-Question Translation ({native_language})
-==============================
-...
+Rules
+
+- Return JSON only.
+- Do not use markdown.
+- Do not wrap with ```json.
+- No explanations outside JSON.
 """,
 
     expected_output="""
-Overall Summary
+A valid JSON object containing:
 
-Improvement Tips
+overallSummary
 
-Model Answer (Native Language)
+improvementTips
 
-Model Answer (Target Language)
+modelAnswer
+- nativeLanguage
+- targetLanguage
 
-Next Practice Question
-
-Question Translation
+nextPracticeQuestion
+- targetLanguage
+- nativeLanguage
 """,
 
     agent=interview_coach,
 
     context=[
-        question_generation_task,
         question_analysis_task,
         reflection_task
     ]
