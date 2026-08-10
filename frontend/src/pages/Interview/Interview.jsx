@@ -2,27 +2,78 @@ import "./Interview.css";
 import { useLocation, useNavigate } from "react-router-dom";
 import interviewQuestions from "../../data/interviewQuestions";
 import { useState } from "react";
-import { analyzeInterview } from "../../api/interviewApi";
+import { analyzeInterview, generateQuestion } from "../../api/interviewApi";
 
 function Interview() {
   const location = useLocation();
-  const job = location.state.job;
+  const job = location.state?.job;
 
-  const questions = interviewQuestions[job.id];
+  const questions = interviewQuestions[job?.id] ?? [];
+  const initialQuestion = location.state?.question ?? "";
 
   const [generatedQuestion, setGenerateQuestion] = useState("");
 
-  const [question, setQuestion] = useState("");
+  const [question, setQuestion] = useState(initialQuestion);
   const [answer, setAnswer] = useState("");
 
   const [loading, setLoading] = useState(false);
+  const [generating, setGenerating] = useState(false);
+  const [error, setError] = useState("");
 
   const [showQuestions, setShowQuestions] = useState(false);
 
-  const [country, setCountry] = useState("Japan");
-  const [nativeLanguage, setNativeLanguage] = useState("한국어");
+  const [country, setCountry] = useState(location.state?.country ?? "Japan");
+  const [nativeLanguage, setNativeLanguage] = useState(
+    location.state?.nativeLanguage ?? "Korean"
+  );
 
   const navigate = useNavigate();
+
+  const jobName = job?.title
+    ? job.title.replace(/^[^\p{L}\p{N}]+/u, "").trim()
+    : "";
+
+  const handleGenerateQuestion = async () => {
+    setGenerating(true);
+    setError("");
+
+    try {
+      const response = await generateQuestion({
+        job: jobName,
+        country,
+        nativeLanguage,
+      });
+      setGenerateQuestion(response.question);
+      setQuestion(response.question);
+    } catch {
+      setError("질문을 생성하지 못했습니다. 잠시 후 다시 시도해 주세요.");
+    } finally {
+      setGenerating(false);
+    }
+  };
+
+  const handleAnalyze = async () => {
+    setLoading(true);
+    setError("");
+
+    try {
+      const result = await analyzeInterview({
+        job: jobName,
+        country,
+        nativeLanguage,
+        question,
+        answer,
+      });
+
+      navigate("/result", {
+        state: { job, country, nativeLanguage, result },
+      });
+    } catch {
+      setError("답변을 분석하지 못했습니다. 서버 상태를 확인하고 다시 시도해 주세요.");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div className="interview-page">
@@ -30,7 +81,7 @@ function Interview() {
         <header className="interview-header">
           <span className="header-eyebrow">INTERVIEWBRIDGE AI</span>
           <h1>AI Interview Practice</h1>
-          <p>{job.title}</p>
+          <p>{job?.title}</p>
         </header>
 
       <section className="example-section">
@@ -45,7 +96,17 @@ function Interview() {
         {showQuestions && (
           <ul className="question-list">
             {questions.map((question, index) => (
-              <li key={index}>
+              <li
+                key={index}
+                role="button"
+                tabIndex={0}
+                onClick={() => setQuestion(question)}
+                onKeyDown={(event) => {
+                  if (event.key === "Enter" || event.key === " ") {
+                    setQuestion(question);
+                  }
+                }}
+              >
                 <span>{index + 1}</span>
                 {question}
               </li>
@@ -83,29 +144,37 @@ function Interview() {
               value={nativeLanguage}
               onChange={(e) => setNativeLanguage(e.target.value)}
             >
-              <option value="한국어">한국어</option>
+              <option value="Korean">한국어</option>
               <option value="English">English</option>
-              <option value="日本語">日本語</option>
+              <option value="Japanese">日本語</option>
             </select>
           </div>
         </div>
 
         <button
           className="generate-btn"
-          onClick={() =>
-            setGenerateQuestion(
-              "Explain a challenging AI project you have worked on."
-            )
-          }
+          disabled={generating}
+          onClick={handleGenerateQuestion}
         >
-          Generate Question
+          {generating ? "Generating..." : "Generate Question"}
         </button>
       </section>
 
       {generatedQuestion && (
         <section className="generated-question">
           <h3>Generated Question</h3>
-          <p>{generatedQuestion}</p>
+          <p
+            role="button"
+            tabIndex={0}
+            onClick={() => setQuestion(generatedQuestion)}
+            onKeyDown={(event) => {
+              if (event.key === "Enter" || event.key === " ") {
+                setQuestion(generatedQuestion);
+              }
+            }}
+          >
+            {generatedQuestion}
+          </p>
         </section>
       )}
 
@@ -130,27 +199,11 @@ function Interview() {
       </section>
 
       <div className="button-container">
+        {error && <p role="alert">{error}</p>}
         <button
           className="analyze-btn"
-          disabled={loading}
-          onClick={async () => {
-            setLoading(true);
-
-            const analysisResult = await analyzeInterview(
-              job,
-              question,
-              answer
-            );
-
-            navigate("/result", {
-              state: {
-                job,
-                question,
-                answer,
-                analysisResult,
-              },
-            });
-          }}
+          disabled={loading || !question.trim() || !answer.trim()}
+          onClick={handleAnalyze}
         >
           {loading ? "Analyzing..." : "Analyze"}
         </button>

@@ -1,27 +1,25 @@
-export async function analyzeInterview(job, question, answer) {
+const BASE_URL = "http://localhost:8080/api/interview";
 
-    console.log("AI 요청 데이터");
+async function post(path, body) {
+  const response = await fetch(`${BASE_URL}${path}`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(body),
+  });
 
-    console.log({
-        job,
-        question,
-        answer,
-    });
+  if (!response.ok) {
+    throw new Error(`API request failed with status ${response.status}`);
+  }
 
-    await new Promise((resolve) => setTimeout(resolve, 2000))
+  return response.json();
+}
 
-    return {
-        score: 85,
-        strengths: [
-            "답변의 구조가 명확합니다.",
-            "프로젝트 경험을 이해하기 쉽게 설명했습니다.",
-        ],
-        weaknesses: [
-            "구체적인 성과나 수치가 부족합니다.",
-        ],
-        improvement:
-            "프로젝트에서 맡은 역할과 결과를 조금 더 구체적으로 설명해 보세요.",
-        modelAnswer:
-            "저는 소프트웨어 개발을 전공하며 AI와 웹 개발 프로젝트를 수행했습니다...",
-    };
+export function generateQuestion(request) {
+  return post("/generate-question", request);
+}
+
+export function analyzeInterview(request) {
+  return post("/analyze", request);
 }
