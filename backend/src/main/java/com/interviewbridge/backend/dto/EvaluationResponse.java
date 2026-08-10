@@ -12,26 +12,56 @@ import java.util.List;
 public class EvaluationResponse {
 
     private int overallScore;
-
-    private String summary;
-
     private String question;
-
     private String answer;
 
-    private List<String> strengths;
+    private Evaluation evaluation;
+    private Coaching coaching;
 
-    private List<String> weaknesses;
+    @Getter
+    @Setter
+    @NoArgsConstructor
+    public static class Evaluation {
+        private String summary;
+        private EvaluationScores evaluationScores;
+        private List<String> strengths;
+        private List<String> weaknesses;
+    }
 
-    private List<String> improvementTips;
+    @Getter
+    @Setter
+    @NoArgsConstructor
+    public static class EvaluationScores {
+        private ScoreFeedback logicalThinking;
+        private ScoreFeedback specificity;
+        private ScoreFeedback communication;
+        private ScoreFeedback jobFit;
+        private ScoreFeedback starStructure;
+    }
 
-    private String modelAnswerNative;
+    @Getter
+    @Setter
+    @NoArgsConstructor
+    public static class ScoreFeedback {
+        private int score;
+        private String feedback;
+    }
 
-    private String modelAnswerTarget;
+    @Getter
+    @Setter
+    @NoArgsConstructor
+    public static class Coaching {
+        private String overallSummary;
+        private List<String> improvementTips;
+        private BilingualText modelAnswer;
+        private BilingualText nextPracticeQuestion;
+    }
 
-    // 다음 버전에서 사용
-    private String nextQuestion;
-
-    private String nextQuestionTranslation;
-
+    @Getter
+    @Setter
+    @NoArgsConstructor
+    public static class BilingualText {
+        private String nativeLanguage;
+        private String targetLanguage;
+    }
 }
