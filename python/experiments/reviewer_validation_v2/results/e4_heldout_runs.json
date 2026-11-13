@@ -1,0 +1,4100 @@
+[
+  {
+    "case_id": "HO-01",
+    "type": "A",
+    "expect": "preserve",
+    "arm": "production_reviewer",
+    "rep": 1,
+    "latency_s": 3.41,
+    "llm_calls": 1,
+    "est_cost_usd": 0.0008956000000000001,
+    "final_raw": "{\n  \"overallScore\": 62,\n  \"summary\": \"테스트 케이스를 정리하고 실행해 오류를 찾아낸 과정이 드러나지만, 테스트 규모와 오류의 영향이 설명되지 않아 꼼꼼함의 수준을 가늠하기 어렵습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 70,\n      \"feedback\": \"역할, 수행 방법, 발견한 문제가 순서대로 잘 이어집니다.\"\n    },\n    \"specificity\": {\n      \"score\": 55,\n      \"feedback\": \"엑셀로 테스트 케이스를 정리하고 로그인 오류를 발견한 점은 구체적이지만, 테스트 케이스 수와 오류의 심각도에 대한 설명이 부족합니다.\"\n    },\n    \"communication\": {\n      \"score\": 70,\n      \"feedback\": \"문장이 짧고 명확하여 이해하기 쉽습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 65,\n      \"feedback\": \"테스트 케이스 작성과 결함 보고가 QA 직무와 직접적으로 연관되어 있습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 50,\n      \"feedback\": \"행동은 분명히 제시되었으나, 과제의 목표와 오류 수정 후 결과에 대한 설명이 부족합니다.\"\n    }\n  },\n  \"strengths\": [\n    \"테스트 케이스를 문서로 체계적으로 정리함\",\n    \"발견한 오류를 담당자에게 명확히 전달하여 협업함\"\n  ],\n  \"weaknesses\": [\n    \"테스트 규모와 오류의 영향에 대한 설명이 부족함\",\n    \"오류 전달 이후의 결과나 후속 조치에 대한 언급이 없음\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.795,
+      "text_identical": false,
+      "markers_remaining": [],
+      "n_strengths": [
+        2,
+        2
+      ],
+      "n_weaknesses": [
+        2,
+        2
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "preserved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "n/a",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본 평가에 결함이 없었고, 리뷰어는 점수 변경 없이 피드백 문장과 표현을 다듬어 \"역할, 수행 방법, 발견한 문제가 순서대로 잘 이어집니다.\" 등으로 자연스럽게 개선하였으나 의미는 유지했습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "n/a",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래 평가에서 '발견한 문제가 순서대로 이어집니다.'라는 피드백이 '잘 이어집니다.'로 변경되었지만, 의미는 동일합니다. 또한, 구체성에 대한 피드백이 약간 수정되었으나, 본질적인 의미는 변하지 않았습니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-01",
+    "type": "A",
+    "expect": "preserve",
+    "arm": "improved",
+    "rep": 1,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.816,
+      "est_cost_usd": 0.0006672000000000001,
+      "prompt_tokens": 1648,
+      "completion_tokens": 5,
+      "validator_ms": 0.612,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.046,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 62,\n  \"summary\": \"테스트 케이스를 정리하고 실행해 오류를 찾아낸 과정이 드러나지만, 테스트 규모와 오류의 영향이 설명되지 않아 꼼꼼함의 수준을 가늠하기 어렵습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 70,\n      \"feedback\": \"역할, 수행 방법, 발견한 문제가 순서대로 이어집니다.\"\n    },\n    \"specificity\": {\n      \"score\": 55,\n      \"feedback\": \"엑셀 정리와 로그인 오류는 구체적이지만 테스트 케이스 수나 오류의 심각도는 알 수 없습니다.\"\n    },\n    \"communication\": {\n      \"score\": 70,\n      \"feedback\": \"문장이 짧고 이해하기 쉽습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 65,\n      \"feedback\": \"테스트 케이스 작성과 결함 보고는 QA 직무와 직접 관련됩니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 50,\n      \"feedback\": \"행동은 분명하지만 과제의 목표와 오류 수정 이후의 결과가 없습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"테스트 케이스를 문서로 정리한 체계성\",\n    \"발견한 오류를 담당자에게 전달한 협업\"\n  ],\n  \"weaknesses\": [\n    \"테스트 규모와 오류의 영향이 제시되지 않음\",\n    \"오류 전달 이후의 결과가 없음\"\n  ]\n}",
+      "total_latency_s": 0.838
+    },
+    "detected": null,
+    "latency_s": 0.838,
+    "llm_calls": 1,
+    "est_cost_usd": 0.0006672000000000001,
+    "final_raw": "{\n  \"overallScore\": 62,\n  \"summary\": \"테스트 케이스를 정리하고 실행해 오류를 찾아낸 과정이 드러나지만, 테스트 규모와 오류의 영향이 설명되지 않아 꼼꼼함의 수준을 가늠하기 어렵습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 70,\n      \"feedback\": \"역할, 수행 방법, 발견한 문제가 순서대로 이어집니다.\"\n    },\n    \"specificity\": {\n      \"score\": 55,\n      \"feedback\": \"엑셀 정리와 로그인 오류는 구체적이지만 테스트 케이스 수나 오류의 심각도는 알 수 없습니다.\"\n    },\n    \"communication\": {\n      \"score\": 70,\n      \"feedback\": \"문장이 짧고 이해하기 쉽습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 65,\n      \"feedback\": \"테스트 케이스 작성과 결함 보고는 QA 직무와 직접 관련됩니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 50,\n      \"feedback\": \"행동은 분명하지만 과제의 목표와 오류 수정 이후의 결과가 없습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"테스트 케이스를 문서로 정리한 체계성\",\n    \"발견한 오류를 담당자에게 전달한 협업\"\n  ],\n  \"weaknesses\": [\n    \"테스트 규모와 오류의 영향이 제시되지 않음\",\n    \"오류 전달 이후의 결과가 없음\"\n  ]\n}",
+    "byte_identical_to_input": true,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 1.0,
+      "text_identical": true,
+      "markers_remaining": [],
+      "n_strengths": [
+        2,
+        2
+      ],
+      "n_weaknesses": [
+        2,
+        2
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "preserved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "n/a",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본 평가와 검토된 평가가 완전히 일치하며, 'defect-free' 상태임을 확인할 수 있습니다. 따라서 수정이나 의미 변경, 새로운 문제 도입이 없습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "n/a",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래 평가에 결함이 없으므로 수정이 필요하지 않았습니다. '테스트 규모와 오류의 영향이 설명되지 않아 꼼꼼함의 수준을 가늠하기 어렵습니다.'라는 문구는 평가의 핵심을 잘 전달하고 있습니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-01",
+    "type": "A",
+    "expect": "preserve",
+    "arm": "production_reviewer",
+    "rep": 2,
+    "latency_s": 2.879,
+    "llm_calls": 1,
+    "est_cost_usd": 0.0008476000000000001,
+    "final_raw": "{\n  \"overallScore\": 62,\n  \"summary\": \"테스트 케이스를 정리하고 실행해 오류를 찾아낸 과정이 드러나지만, 테스트 규모와 오류의 영향이 설명되지 않아 꼼꼼함의 수준을 가늠하기 어렵습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 70,\n      \"feedback\": \"역할, 수행 방법, 발견한 문제가 순서대로 잘 이어집니다.\"\n    },\n    \"specificity\": {\n      \"score\": 55,\n      \"feedback\": \"엑셀 정리와 로그인 오류는 구체적이지만, 테스트 케이스 수나 오류의 심각도는 알 수 없습니다.\"\n    },\n    \"communication\": {\n      \"score\": 70,\n      \"feedback\": \"문장이 짧고 명확하여 이해하기 쉽습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 65,\n      \"feedback\": \"테스트 케이스 작성과 결함 보고는 QA 직무와 직접 관련됩니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 50,\n      \"feedback\": \"행동은 분명하지만 과제의 목표와 오류 수정 이후 결과가 제시되지 않았습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"테스트 케이스를 문서로 체계적으로 정리함\",\n    \"발견한 오류를 담당자에게 전달하여 협업함\"\n  ],\n  \"weaknesses\": [\n    \"테스트 규모와 오류의 영향에 대한 설명이 부족함\",\n    \"오류 전달 이후의 결과가 제시되지 않음\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.89,
+      "text_identical": false,
+      "markers_remaining": [],
+      "n_strengths": [
+        2,
+        2
+      ],
+      "n_weaknesses": [
+        2,
+        2
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "preserved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "n/a",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본 평가에 결함이 없었고, 리뷰어는 '역할, 수행 방법, 발견한 문제가 순서대로 잘 이어집니다.' 등 문장 표현을 다듬었으나 의미는 유지했습니다. 예를 들어, '문장이 짧고 이해하기 쉽습니다.'를 '문장이 짧고 명확하여 이해하기 쉽습니다.'로 바꾸어 의미 변화 없이 표현을 개선했습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "n/a",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래 평가와 수정된 평가 모두 '테스트 규모와 오류의 영향이 설명되지 않아 꼼꼼함의 수준을 가늠하기 어렵습니다.'라는 동일한 요지를 유지하고 있습니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-01",
+    "type": "A",
+    "expect": "preserve",
+    "arm": "improved",
+    "rep": 2,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.518,
+      "est_cost_usd": 0.0002448,
+      "prompt_tokens": 1648,
+      "completion_tokens": 5,
+      "validator_ms": 0.352,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.097,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 62,\n  \"summary\": \"테스트 케이스를 정리하고 실행해 오류를 찾아낸 과정이 드러나지만, 테스트 규모와 오류의 영향이 설명되지 않아 꼼꼼함의 수준을 가늠하기 어렵습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 70,\n      \"feedback\": \"역할, 수행 방법, 발견한 문제가 순서대로 이어집니다.\"\n    },\n    \"specificity\": {\n      \"score\": 55,\n      \"feedback\": \"엑셀 정리와 로그인 오류는 구체적이지만 테스트 케이스 수나 오류의 심각도는 알 수 없습니다.\"\n    },\n    \"communication\": {\n      \"score\": 70,\n      \"feedback\": \"문장이 짧고 이해하기 쉽습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 65,\n      \"feedback\": \"테스트 케이스 작성과 결함 보고는 QA 직무와 직접 관련됩니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 50,\n      \"feedback\": \"행동은 분명하지만 과제의 목표와 오류 수정 이후의 결과가 없습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"테스트 케이스를 문서로 정리한 체계성\",\n    \"발견한 오류를 담당자에게 전달한 협업\"\n  ],\n  \"weaknesses\": [\n    \"테스트 규모와 오류의 영향이 제시되지 않음\",\n    \"오류 전달 이후의 결과가 없음\"\n  ]\n}",
+      "total_latency_s": 0.519
+    },
+    "detected": null,
+    "latency_s": 0.519,
+    "llm_calls": 1,
+    "est_cost_usd": 0.0002448,
+    "final_raw": "{\n  \"overallScore\": 62,\n  \"summary\": \"테스트 케이스를 정리하고 실행해 오류를 찾아낸 과정이 드러나지만, 테스트 규모와 오류의 영향이 설명되지 않아 꼼꼼함의 수준을 가늠하기 어렵습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 70,\n      \"feedback\": \"역할, 수행 방법, 발견한 문제가 순서대로 이어집니다.\"\n    },\n    \"specificity\": {\n      \"score\": 55,\n      \"feedback\": \"엑셀 정리와 로그인 오류는 구체적이지만 테스트 케이스 수나 오류의 심각도는 알 수 없습니다.\"\n    },\n    \"communication\": {\n      \"score\": 70,\n      \"feedback\": \"문장이 짧고 이해하기 쉽습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 65,\n      \"feedback\": \"테스트 케이스 작성과 결함 보고는 QA 직무와 직접 관련됩니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 50,\n      \"feedback\": \"행동은 분명하지만 과제의 목표와 오류 수정 이후의 결과가 없습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"테스트 케이스를 문서로 정리한 체계성\",\n    \"발견한 오류를 담당자에게 전달한 협업\"\n  ],\n  \"weaknesses\": [\n    \"테스트 규모와 오류의 영향이 제시되지 않음\",\n    \"오류 전달 이후의 결과가 없음\"\n  ]\n}",
+    "byte_identical_to_input": true,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 1.0,
+      "text_identical": true,
+      "markers_remaining": [],
+      "n_strengths": [
+        2,
+        2
+      ],
+      "n_weaknesses": [
+        2,
+        2
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "preserved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "n/a",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본 평가와 검토된 평가가 완전히 일치하며, 'defect-free' 상태임을 확인할 수 있습니다. 따라서 의미 변경이나 새로운 문제도 없습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "n/a",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래 평가에서 '테스트 규모와 오류의 영향이 설명되지 않아 꼼꼼함의 수준을 가늠하기 어렵습니다.'라는 문구는 그대로 유지되었습니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-01",
+    "type": "A",
+    "expect": "preserve",
+    "arm": "production_reviewer",
+    "rep": 3,
+    "latency_s": 2.808,
+    "llm_calls": 1,
+    "est_cost_usd": 0.0008316000000000002,
+    "final_raw": "{\n  \"overallScore\": 62,\n  \"summary\": \"테스트 케이스를 정리하고 실행해 오류를 찾아낸 과정이 드러나지만, 테스트 규모와 오류의 영향이 설명되지 않아 꼼꼼함의 수준을 가늠하기 어렵습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 70,\n      \"feedback\": \"역할, 수행 방법, 발견한 문제가 순서대로 이어집니다.\"\n    },\n    \"specificity\": {\n      \"score\": 55,\n      \"feedback\": \"엑셀 정리와 로그인 오류는 구체적이지만 테스트 케이스 수나 오류의 심각도는 알 수 없습니다.\"\n    },\n    \"communication\": {\n      \"score\": 70,\n      \"feedback\": \"문장이 짧고 이해하기 쉽습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 65,\n      \"feedback\": \"테스트 케이스 작성과 결함 보고는 QA 직무와 직접 관련됩니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 50,\n      \"feedback\": \"행동은 분명하지만 과제의 목표와 오류 수정 이후 결과가 제시되지 않았습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"테스트 케이스를 문서로 정리한 체계성\",\n    \"발견한 오류를 담당자에게 전달한 협업\"\n  ],\n  \"weaknesses\": [\n    \"테스트 규모와 오류의 영향이 제시되지 않음\",\n    \"오류 전달 이후 결과가 부족함\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.978,
+      "text_identical": false,
+      "markers_remaining": [],
+      "n_strengths": [
+        2,
+        2
+      ],
+      "n_weaknesses": [
+        2,
+        2
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "preserved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "n/a",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본 평가에 결함이 없었고, 리뷰어는 '오류 수정 이후의 결과가 없음'을 '오류 수정 이후 결과가 제시되지 않았습니다'로, '오류 전달 이후의 결과가 없음'을 '오류 전달 이후 결과가 부족함'으로 표현을 다소 다듬었으나 의미 변화는 없으며 점수도 변경하지 않았습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "n/a",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래 평가에서 '오류 수정 이후의 결과가 없습니다'라는 문구가 '오류 수정 이후 결과가 제시되지 않았습니다'로 변경되었지만, 의미는 동일합니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-01",
+    "type": "A",
+    "expect": "preserve",
+    "arm": "improved",
+    "rep": 3,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.691,
+      "est_cost_usd": 0.0002448,
+      "prompt_tokens": 1648,
+      "completion_tokens": 5,
+      "validator_ms": 0.225,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.066,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 62,\n  \"summary\": \"테스트 케이스를 정리하고 실행해 오류를 찾아낸 과정이 드러나지만, 테스트 규모와 오류의 영향이 설명되지 않아 꼼꼼함의 수준을 가늠하기 어렵습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 70,\n      \"feedback\": \"역할, 수행 방법, 발견한 문제가 순서대로 이어집니다.\"\n    },\n    \"specificity\": {\n      \"score\": 55,\n      \"feedback\": \"엑셀 정리와 로그인 오류는 구체적이지만 테스트 케이스 수나 오류의 심각도는 알 수 없습니다.\"\n    },\n    \"communication\": {\n      \"score\": 70,\n      \"feedback\": \"문장이 짧고 이해하기 쉽습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 65,\n      \"feedback\": \"테스트 케이스 작성과 결함 보고는 QA 직무와 직접 관련됩니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 50,\n      \"feedback\": \"행동은 분명하지만 과제의 목표와 오류 수정 이후의 결과가 없습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"테스트 케이스를 문서로 정리한 체계성\",\n    \"발견한 오류를 담당자에게 전달한 협업\"\n  ],\n  \"weaknesses\": [\n    \"테스트 규모와 오류의 영향이 제시되지 않음\",\n    \"오류 전달 이후의 결과가 없음\"\n  ]\n}",
+      "total_latency_s": 0.692
+    },
+    "detected": null,
+    "latency_s": 0.692,
+    "llm_calls": 1,
+    "est_cost_usd": 0.0002448,
+    "final_raw": "{\n  \"overallScore\": 62,\n  \"summary\": \"테스트 케이스를 정리하고 실행해 오류를 찾아낸 과정이 드러나지만, 테스트 규모와 오류의 영향이 설명되지 않아 꼼꼼함의 수준을 가늠하기 어렵습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 70,\n      \"feedback\": \"역할, 수행 방법, 발견한 문제가 순서대로 이어집니다.\"\n    },\n    \"specificity\": {\n      \"score\": 55,\n      \"feedback\": \"엑셀 정리와 로그인 오류는 구체적이지만 테스트 케이스 수나 오류의 심각도는 알 수 없습니다.\"\n    },\n    \"communication\": {\n      \"score\": 70,\n      \"feedback\": \"문장이 짧고 이해하기 쉽습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 65,\n      \"feedback\": \"테스트 케이스 작성과 결함 보고는 QA 직무와 직접 관련됩니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 50,\n      \"feedback\": \"행동은 분명하지만 과제의 목표와 오류 수정 이후의 결과가 없습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"테스트 케이스를 문서로 정리한 체계성\",\n    \"발견한 오류를 담당자에게 전달한 협업\"\n  ],\n  \"weaknesses\": [\n    \"테스트 규모와 오류의 영향이 제시되지 않음\",\n    \"오류 전달 이후의 결과가 없음\"\n  ]\n}",
+    "byte_identical_to_input": true,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 1.0,
+      "text_identical": true,
+      "markers_remaining": [],
+      "n_strengths": [
+        2,
+        2
+      ],
+      "n_weaknesses": [
+        2,
+        2
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "preserved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "n/a",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본 평가와 검토된 평가가 완전히 일치하며, 'none (the original evaluation is defect-free)'로 결함이 없다고 명시되어 있습니다. 따라서 의미 변경이나 새로운 문제도 없습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "n/a",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본 평가에서 '테스트 규모와 오류의 영향이 설명되지 않아 꼼꼼함의 수준을 가늠하기 어렵습니다.'라는 문구가 그대로 유지되어 있습니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-02",
+    "type": "A",
+    "expect": "preserve",
+    "arm": "production_reviewer",
+    "rep": 1,
+    "latency_s": 7.371,
+    "llm_calls": 1,
+    "est_cost_usd": 0.0009276000000000001,
+    "final_raw": "{\n  \"overallScore\": 81,\n  \"summary\": \"장애의 원인 파악, 긴급 복구, 재발 방지까지 단계별로 설명한 완성도 높은 답변입니다. 다만 장애가 서비스에 미친 영향과 본인에게 주어진 과제가 언급되지 않았습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 90,\n      \"feedback\": \"증상, 원인, 임시 조치, 재발 방지가 인과 관계에 따라 논리적으로 전개됩니다.\"\n    },\n    \"specificity\": {\n      \"score\": 85,\n      \"feedback\": \"디스크 사용량 100%, logrotate 설정, 7일 로그 보관 등 구체적인 수치와 조치가 제시됩니다.\"\n    },\n    \"communication\": {\n      \"score\": 85,\n      \"feedback\": \"간결하며 순서가 명확한 설명으로 이해하기 쉽습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 90,\n      \"feedback\": \"장애 대응과 재발 방지 자동화는 DevOps 직무와 밀접하게 연관되어 있습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 55,\n      \"feedback\": \"행동과 결과는 명확하나, 장애가 서비스에 미친 영향과 본인에게 주어진 과제가 구체적으로 설명되지 않았습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"원인을 확인하고 조치한 체계적인 접근\",\n    \"logrotate 설정으로 재발 방지 조치를 취한 점\",\n    \"간결하고 명확한 설명\"\n  ],\n  \"weaknesses\": [\n    \"장애가 서비스와 사용자에게 미친 영향이 구체적으로 설명되지 않음\",\n    \"본인에게 주어진 과제와 역할이 명확하지 않음\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.804,
+      "text_identical": false,
+      "markers_remaining": [],
+      "n_strengths": [
+        3,
+        3
+      ],
+      "n_weaknesses": [
+        1,
+        2
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "preserved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "n/a",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본 평가에 결함이 없었고, 리뷰어는 \"장애가 서비스에 미친 영향과 본인에게 주어진 과제가 언급되지 않았다\"는 점을 추가하여 평가를 보완했습니다. 이는 의미 변경이 아닌 보완이며, 점수도 동일하게 유지되어 \"overallScore\": 81, \"starStructure\" 점수 55 등 주요 평가는 변하지 않았습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "no",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": true,
+        "new_problem_detail": "본인에게 주어진 과제와 역할이 명확하지 않음이라는 새로운 약점이 추가됨.",
+        "rationale": "리뷰어는 '장애가 서비스에 미친 영향과 본인에게 주어진 과제가 언급되지 않았습니다.'라는 문구를 '본인에게 주어진 과제와 역할이 명확하지 않음'으로 변경하여 새로운 약점을 추가했습니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-02",
+    "type": "A",
+    "expect": "preserve",
+    "arm": "improved",
+    "rep": 1,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.468,
+      "est_cost_usd": 0.000682,
+      "prompt_tokens": 1685,
+      "completion_tokens": 5,
+      "validator_ms": 0.132,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.06,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 81,\n  \"summary\": \"장애의 원인 파악, 긴급 복구, 재발 방지까지 단계별로 설명한 완성도 높은 답변입니다. 장애가 서비스에 미친 영향은 언급되지 않았습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 90,\n      \"feedback\": \"증상, 원인, 임시 조치, 재발 방지가 인과 관계에 따라 전개됩니다.\"\n    },\n    \"specificity\": {\n      \"score\": 85,\n      \"feedback\": \"디스크 사용량 100%, logrotate, 7일 보관 등 구체적인 내용이 제시됩니다.\"\n    },\n    \"communication\": {\n      \"score\": 85,\n      \"feedback\": \"간결하고 순서가 분명합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 90,\n      \"feedback\": \"장애 대응과 재발 방지 자동화는 DevOps 직무와 직접 연결됩니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 55,\n      \"feedback\": \"행동과 결과는 분명하지만 장애의 영향 범위와 본인에게 주어진 과제가 설명되지 않았습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"원인을 확인한 뒤 조치한 접근\",\n    \"logrotate 설정으로 재발을 방지한 점\",\n    \"간결한 설명\"\n  ],\n  \"weaknesses\": [\n    \"장애가 서비스와 사용자에게 미친 영향이 설명되지 않음\"\n  ]\n}",
+      "total_latency_s": 0.469
+    },
+    "detected": null,
+    "latency_s": 0.469,
+    "llm_calls": 1,
+    "est_cost_usd": 0.000682,
+    "final_raw": "{\n  \"overallScore\": 81,\n  \"summary\": \"장애의 원인 파악, 긴급 복구, 재발 방지까지 단계별로 설명한 완성도 높은 답변입니다. 장애가 서비스에 미친 영향은 언급되지 않았습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 90,\n      \"feedback\": \"증상, 원인, 임시 조치, 재발 방지가 인과 관계에 따라 전개됩니다.\"\n    },\n    \"specificity\": {\n      \"score\": 85,\n      \"feedback\": \"디스크 사용량 100%, logrotate, 7일 보관 등 구체적인 내용이 제시됩니다.\"\n    },\n    \"communication\": {\n      \"score\": 85,\n      \"feedback\": \"간결하고 순서가 분명합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 90,\n      \"feedback\": \"장애 대응과 재발 방지 자동화는 DevOps 직무와 직접 연결됩니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 55,\n      \"feedback\": \"행동과 결과는 분명하지만 장애의 영향 범위와 본인에게 주어진 과제가 설명되지 않았습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"원인을 확인한 뒤 조치한 접근\",\n    \"logrotate 설정으로 재발을 방지한 점\",\n    \"간결한 설명\"\n  ],\n  \"weaknesses\": [\n    \"장애가 서비스와 사용자에게 미친 영향이 설명되지 않음\"\n  ]\n}",
+    "byte_identical_to_input": true,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 1.0,
+      "text_identical": true,
+      "markers_remaining": [],
+      "n_strengths": [
+        3,
+        3
+      ],
+      "n_weaknesses": [
+        1,
+        1
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "preserved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "n/a",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본 평가와 검토된 평가가 완전히 일치하며, \"장애가 서비스에 미친 영향은 언급되지 않았습니다.\"라는 요점이 동일하게 유지되었습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "n/a",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래 평가가 결함이 없으므로 수정이 필요하지 않았습니다. '장애가 서비스에 미친 영향은 언급되지 않았습니다.'라는 점이 명확하게 유지되었습니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-02",
+    "type": "A",
+    "expect": "preserve",
+    "arm": "production_reviewer",
+    "rep": 2,
+    "latency_s": 2.746,
+    "llm_calls": 1,
+    "est_cost_usd": 0.0008988,
+    "final_raw": "{\n  \"overallScore\": 81,\n  \"summary\": \"장애의 원인 파악, 긴급 복구, 재발 방지까지 단계별로 설명한 완성도 높은 답변입니다. 다만 장애가 서비스에 미친 영향과 본인에게 주어진 과제는 언급되지 않았습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 90,\n      \"feedback\": \"증상, 원인, 임시 조치, 재발 방지가 인과 관계에 따라 논리적으로 전개됩니다.\"\n    },\n    \"specificity\": {\n      \"score\": 85,\n      \"feedback\": \"디스크 사용량 100%, logrotate 설정, 7일 로그 보관 등 구체적인 내용이 포함되어 있습니다.\"\n    },\n    \"communication\": {\n      \"score\": 85,\n      \"feedback\": \"간결하며 순서가 명확하게 전달됩니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 90,\n      \"feedback\": \"장애 대응과 재발 방지 자동화가 DevOps 직무와 직접적으로 연관되어 있습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 55,\n      \"feedback\": \"행동과 결과는 명확하지만 장애 영향 범위와 본인에게 주어진 과제가 구체적으로 설명되지 않았습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"원인을 확인하고 조치한 체계적인 접근\",\n    \"logrotate 설정을 통한 재발 방지 노력\",\n    \"간결하고 명확한 설명\"\n  ],\n  \"weaknesses\": [\n    \"장애가 서비스와 사용자에게 미친 영향에 대한 설명 부족\",\n    \"본인에게 주어진 과제 및 역할에 대한 구체적 언급 부족\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.803,
+      "text_identical": false,
+      "markers_remaining": [],
+      "n_strengths": [
+        3,
+        3
+      ],
+      "n_weaknesses": [
+        1,
+        2
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "preserved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "n/a",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본 평가에 결함이 없으므로 결함 해결 여부는 'n/a'입니다. 리뷰어는 'summary'와 'feedback' 문장을 다듬고, 'strengths'와 'weaknesses' 표현을 조금 더 구체적이고 명확하게 바꾸었으나 의미 변화 없이 내용을 보완했습니다. 예를 들어, '논리적으로 전개됩니다'와 '명확하게 전달됩니다' 등으로 표현을 다듬었고, '본인에게 주어진 과제' 언급을 추가하여 원본 평가의 지적을 더 명확히 했습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "no",
+        "resolution_method": "both",
+        "meaning_changed": true,
+        "meaning_change_detail": "장애의 영향과 본인에게 주어진 과제에 대한 언급이 추가됨.",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래 평가에서는 '장애가 서비스에 미친 영향은 언급되지 않았습니다.'라고 했으나, 수정된 평가에서는 '장애가 서비스에 미친 영향과 본인에게 주어진 과제는 언급되지 않았습니다.'로 변경되어 의미가 확장되었습니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-02",
+    "type": "A",
+    "expect": "preserve",
+    "arm": "improved",
+    "rep": 2,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.473,
+      "est_cost_usd": 0.0002212,
+      "prompt_tokens": 1685,
+      "completion_tokens": 5,
+      "validator_ms": 0.32,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.047,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 81,\n  \"summary\": \"장애의 원인 파악, 긴급 복구, 재발 방지까지 단계별로 설명한 완성도 높은 답변입니다. 장애가 서비스에 미친 영향은 언급되지 않았습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 90,\n      \"feedback\": \"증상, 원인, 임시 조치, 재발 방지가 인과 관계에 따라 전개됩니다.\"\n    },\n    \"specificity\": {\n      \"score\": 85,\n      \"feedback\": \"디스크 사용량 100%, logrotate, 7일 보관 등 구체적인 내용이 제시됩니다.\"\n    },\n    \"communication\": {\n      \"score\": 85,\n      \"feedback\": \"간결하고 순서가 분명합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 90,\n      \"feedback\": \"장애 대응과 재발 방지 자동화는 DevOps 직무와 직접 연결됩니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 55,\n      \"feedback\": \"행동과 결과는 분명하지만 장애의 영향 범위와 본인에게 주어진 과제가 설명되지 않았습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"원인을 확인한 뒤 조치한 접근\",\n    \"logrotate 설정으로 재발을 방지한 점\",\n    \"간결한 설명\"\n  ],\n  \"weaknesses\": [\n    \"장애가 서비스와 사용자에게 미친 영향이 설명되지 않음\"\n  ]\n}",
+      "total_latency_s": 0.474
+    },
+    "detected": null,
+    "latency_s": 0.474,
+    "llm_calls": 1,
+    "est_cost_usd": 0.0002212,
+    "final_raw": "{\n  \"overallScore\": 81,\n  \"summary\": \"장애의 원인 파악, 긴급 복구, 재발 방지까지 단계별로 설명한 완성도 높은 답변입니다. 장애가 서비스에 미친 영향은 언급되지 않았습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 90,\n      \"feedback\": \"증상, 원인, 임시 조치, 재발 방지가 인과 관계에 따라 전개됩니다.\"\n    },\n    \"specificity\": {\n      \"score\": 85,\n      \"feedback\": \"디스크 사용량 100%, logrotate, 7일 보관 등 구체적인 내용이 제시됩니다.\"\n    },\n    \"communication\": {\n      \"score\": 85,\n      \"feedback\": \"간결하고 순서가 분명합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 90,\n      \"feedback\": \"장애 대응과 재발 방지 자동화는 DevOps 직무와 직접 연결됩니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 55,\n      \"feedback\": \"행동과 결과는 분명하지만 장애의 영향 범위와 본인에게 주어진 과제가 설명되지 않았습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"원인을 확인한 뒤 조치한 접근\",\n    \"logrotate 설정으로 재발을 방지한 점\",\n    \"간결한 설명\"\n  ],\n  \"weaknesses\": [\n    \"장애가 서비스와 사용자에게 미친 영향이 설명되지 않음\"\n  ]\n}",
+    "byte_identical_to_input": true,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 1.0,
+      "text_identical": true,
+      "markers_remaining": [],
+      "n_strengths": [
+        3,
+        3
+      ],
+      "n_weaknesses": [
+        1,
+        1
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "preserved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "n/a",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본 평가와 검토된 평가가 완전히 일치하며, \"planted_defect\"가 'none'으로 명시되어 있습니다. 따라서 수정이나 의미 변경이 없고, 새로운 문제도 없습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "n/a",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래 평가에 결함이 없으므로 수정이 필요하지 않았습니다. '장애가 서비스에 미친 영향은 언급되지 않았습니다.'라는 피드백은 원래 평가와 동일합니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-02",
+    "type": "A",
+    "expect": "preserve",
+    "arm": "production_reviewer",
+    "rep": 3,
+    "latency_s": 3.177,
+    "llm_calls": 1,
+    "est_cost_usd": 0.0009356000000000002,
+    "final_raw": "{\n  \"overallScore\": 81,\n  \"summary\": \"장애의 원인 파악, 긴급 복구, 재발 방지까지 단계별로 설명한 완성도 높은 답변입니다. 다만 장애가 서비스에 미친 영향과 본인에게 주어진 과제가 명확히 언급되지 않았습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 90,\n      \"feedback\": \"증상, 원인, 임시 조치, 재발 방지가 인과 관계에 따라 논리적으로 전개됩니다.\"\n    },\n    \"specificity\": {\n      \"score\": 85,\n      \"feedback\": \"디스크 사용량 100%, logrotate 설정, 7일 로그 보관 등 구체적인 수치와 방법이 제시됩니다.\"\n    },\n    \"communication\": {\n      \"score\": 85,\n      \"feedback\": \"간결하며 순서가 명확하게 전달됩니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 90,\n      \"feedback\": \"장애 대응과 재발 방지 자동화는 DevOps 직무와 밀접하게 연관되어 있습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 55,\n      \"feedback\": \"행동과 결과는 분명하나, 장애가 서비스에 미친 영향과 본인에게 주어진 과제가 구체적으로 설명되지 않았습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"장애 원인을 확인한 후 체계적으로 조치한 점\",\n    \"logrotate 설정을 통해 재발 방지를 시도한 점\",\n    \"간결하고 명확한 설명\"\n  ],\n  \"weaknesses\": [\n    \"장애가 서비스와 사용자에게 미친 영향이 구체적으로 설명되지 않음\",\n    \"본인에게 주어진 과제나 역할이 명확히 드러나지 않음\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.798,
+      "text_identical": false,
+      "markers_remaining": [],
+      "n_strengths": [
+        3,
+        3
+      ],
+      "n_weaknesses": [
+        1,
+        2
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "preserved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "n/a",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본 평가가 결함이 없었고, 리뷰어는 \"다만 장애가 서비스에 미친 영향과 본인에게 주어진 과제가 명확히 언급되지 않았습니다.\"라고 약간 내용을 보완했으나, 의미 변화 없이 표현만 다듬었습니다. 예를 들어, \"증상, 원인, 임시 조치, 재발 방지가 인과 관계에 따라 전개됩니다.\"를 \"논리적으로 전개됩니다.\"로 바꾸었고, \"간결하고 순서가 분명합니다.\"를 \"간결하며 순서가 명확하게 전달됩니다.\"로 수정한 점에서 의미 변화는 없습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "no",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": true,
+        "new_problem_detail": "본인에게 주어진 과제나 역할이 명확히 드러나지 않음이라는 새로운 약점이 추가됨.",
+        "rationale": "리뷰어는 '본인에게 주어진 과제가 명확히 언급되지 않았습니다.'라는 문구를 '본인에게 주어진 과제나 역할이 명확히 드러나지 않음'으로 변경하여 새로운 약점을 추가했습니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-02",
+    "type": "A",
+    "expect": "preserve",
+    "arm": "improved",
+    "rep": 3,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.647,
+      "est_cost_usd": 0.0002212,
+      "prompt_tokens": 1685,
+      "completion_tokens": 5,
+      "validator_ms": 0.363,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.094,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 81,\n  \"summary\": \"장애의 원인 파악, 긴급 복구, 재발 방지까지 단계별로 설명한 완성도 높은 답변입니다. 장애가 서비스에 미친 영향은 언급되지 않았습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 90,\n      \"feedback\": \"증상, 원인, 임시 조치, 재발 방지가 인과 관계에 따라 전개됩니다.\"\n    },\n    \"specificity\": {\n      \"score\": 85,\n      \"feedback\": \"디스크 사용량 100%, logrotate, 7일 보관 등 구체적인 내용이 제시됩니다.\"\n    },\n    \"communication\": {\n      \"score\": 85,\n      \"feedback\": \"간결하고 순서가 분명합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 90,\n      \"feedback\": \"장애 대응과 재발 방지 자동화는 DevOps 직무와 직접 연결됩니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 55,\n      \"feedback\": \"행동과 결과는 분명하지만 장애의 영향 범위와 본인에게 주어진 과제가 설명되지 않았습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"원인을 확인한 뒤 조치한 접근\",\n    \"logrotate 설정으로 재발을 방지한 점\",\n    \"간결한 설명\"\n  ],\n  \"weaknesses\": [\n    \"장애가 서비스와 사용자에게 미친 영향이 설명되지 않음\"\n  ]\n}",
+      "total_latency_s": 0.649
+    },
+    "detected": null,
+    "latency_s": 0.649,
+    "llm_calls": 1,
+    "est_cost_usd": 0.0002212,
+    "final_raw": "{\n  \"overallScore\": 81,\n  \"summary\": \"장애의 원인 파악, 긴급 복구, 재발 방지까지 단계별로 설명한 완성도 높은 답변입니다. 장애가 서비스에 미친 영향은 언급되지 않았습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 90,\n      \"feedback\": \"증상, 원인, 임시 조치, 재발 방지가 인과 관계에 따라 전개됩니다.\"\n    },\n    \"specificity\": {\n      \"score\": 85,\n      \"feedback\": \"디스크 사용량 100%, logrotate, 7일 보관 등 구체적인 내용이 제시됩니다.\"\n    },\n    \"communication\": {\n      \"score\": 85,\n      \"feedback\": \"간결하고 순서가 분명합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 90,\n      \"feedback\": \"장애 대응과 재발 방지 자동화는 DevOps 직무와 직접 연결됩니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 55,\n      \"feedback\": \"행동과 결과는 분명하지만 장애의 영향 범위와 본인에게 주어진 과제가 설명되지 않았습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"원인을 확인한 뒤 조치한 접근\",\n    \"logrotate 설정으로 재발을 방지한 점\",\n    \"간결한 설명\"\n  ],\n  \"weaknesses\": [\n    \"장애가 서비스와 사용자에게 미친 영향이 설명되지 않음\"\n  ]\n}",
+    "byte_identical_to_input": true,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 1.0,
+      "text_identical": true,
+      "markers_remaining": [],
+      "n_strengths": [
+        3,
+        3
+      ],
+      "n_weaknesses": [
+        1,
+        1
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "preserved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "n/a",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본 평가와 리뷰된 평가가 완전히 일치하며, \"planted_defect\"가 'none'으로 명시되어 있습니다. 따라서 수정이나 의미 변경이 없고, 새로운 문제도 없습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "n/a",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래 평가에 결함이 없으므로 수정이 필요하지 않았습니다. '장애가 서비스에 미친 영향은 언급되지 않았습니다.'라는 피드백이 그대로 유지되었습니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-03",
+    "type": "B",
+    "expect": "resolve",
+    "arm": "production_reviewer",
+    "rep": 1,
+    "latency_s": 3.156,
+    "llm_calls": 1,
+    "est_cost_usd": 0.0008304,
+    "final_raw": "{\n  \"overallScore\": 46,\n  \"summary\": \"상황, 과제, 행동, 결과가 모두 갖춰진 STAR 구조의 모범적인 답변입니다. 다만 문서를 어떻게 개선했는지에 대한 설명은 부족합니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 55,\n      \"feedback\": \"역할과 반응은 연결되지만 그 사이의 구체적인 과정 설명이 부족합니다.\"\n    },\n    \"specificity\": {\n      \"score\": 35,\n      \"feedback\": \"'신경 썼다'는 표현이 구체적으로 어떤 행동을 의미하는지 명확하지 않습니다.\"\n    },\n    \"communication\": {\n      \"score\": 60,\n      \"feedback\": \"문장이 짧고 이해하기 쉬워 의사 전달이 명확합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 50,\n      \"feedback\": \"API 문서화 경험은 직무와 관련 있으나 기술적 세부 내용이 부족합니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 30,\n      \"feedback\": \"상황과 과제가 명확하지 않고 행동도 한 문장에 그쳐 STAR 구조가 미흡합니다.\"\n    }\n  },\n  \"strengths\": [\n    \"다른 팀원의 편의를 고려하는 태도가 드러납니다.\"\n  ],\n  \"weaknesses\": [\n    \"문서를 어떻게 작성하고 개선했는지 구체적인 행동이 부족합니다.\",\n    \"결과가 단순히 '고맙다고 했다'는 반응에 그쳐 구체성이 떨어집니다.\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.787,
+      "text_identical": false,
+      "markers_remaining": [
+        "모두 갖춰진",
+        "모범적인 답변"
+      ],
+      "n_strengths": [
+        1,
+        1
+      ],
+      "n_weaknesses": [
+        2,
+        2
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "not_resolved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "no",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "리뷰어는 summary에서 '상황, 과제, 행동, 결과가 모두 갖춰진 STAR 구조의 모범적인 답변입니다.'라는 문구를 그대로 유지하여 'STAR 구조 점수는 30점이고 피드백은 구조를 갖추지 못했다'는 모순을 해결하지 못했습니다. 다만 피드백 문장들을 약간 다듬었으나 의미 변화는 없고, 새로운 문제도 발생하지 않았습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "no",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래 평가에서 '구조를 갖추지 못했다'고 했으나, 수정된 평가에서도 같은 점을 지적하고 있습니다. 따라서 STAR 구조에 대한 평가가 일관되게 유지되고 있습니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-03",
+    "type": "B",
+    "expect": "resolve",
+    "arm": "improved",
+    "rep": 1,
+    "pipeline": {
+      "llm_calls": 2,
+      "llm_latency_s": 2.774,
+      "est_cost_usd": 0.001702,
+      "prompt_tokens": 3211,
+      "completion_tokens": 261,
+      "validator_ms": 0.261,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.103,
+      "findings": [
+        {
+          "issue_type": "summary_item_contradiction",
+          "target_field": "summary",
+          "problematic_text": "상황, 과제, 행동, 결과가 모두 갖춰진 STAR 구조의 모범적인 답변입니다. 다만 문서를 어떻게 개선했는지에 대한 설명은 부족합니다.",
+          "evidence_in_evaluation": [
+            "starStructure.score=30",
+            "starStructure.feedback=상황과 과제가 없고 행동도 한 문장에 그쳐 구조를 갖추지 못했습니다."
+          ],
+          "evidence_in_answer": [
+            "팀 프로젝트에서 API 문서를 맡았습니다. 프론트엔드 팀원이 편하게 쓸 수 있도록 신경 썼습니다. 다들 고맙다고 했습니다."
+          ],
+          "reason": "SUMMARY는 STAR 구조가 모두 갖춰졌다고 긍정적으로 평가했으나, starStructure 점수와 피드백은 구조가 부족하다고 명확히 반대 평가를 하고 있어 모순입니다. ANSWER도 STAR 구조가 명확하지 않습니다.",
+          "action": "replace_text",
+          "proposed_text": "STAR 구조를 갖추려는 시도가 있으나, 상황과 과제 설명이 부족하고 행동과 결과도 간략하여 완전한 STAR 구조라고 보기 어렵습니다.",
+          "confidence": "high",
+          "applied": true,
+          "gate_result": "all gates passed"
+        }
+      ],
+      "post_check": {
+        "ran": true,
+        "validator_report": {
+          "valid": true,
+          "errors": [],
+          "fixes": [],
+          "hints": []
+        },
+        "residual_findings": []
+      },
+      "changed": true,
+      "needs_review": false,
+      "status": "corrected",
+      "change_log": [
+        {
+          "source": "context_reviewer",
+          "field": "summary",
+          "issue_type": "summary_item_contradiction",
+          "before": "상황, 과제, 행동, 결과가 모두 갖춰진 STAR 구조의 모범적인 답변입니다. 다만 문서를 어떻게 개선했는지에 대한 설명은 부족합니다.",
+          "after": "STAR 구조를 갖추려는 시도가 있으나, 상황과 과제 설명이 부족하고 행동과 결과도 간략하여 완전한 STAR 구조라고 보기 어렵습니다.",
+          "reason": "SUMMARY는 STAR 구조가 모두 갖춰졌다고 긍정적으로 평가했으나, starStructure 점수와 피드백은 구조가 부족하다고 명확히 반대 평가를 하고 있어 모순입니다. ANSWER도 STAR 구조가 명확하지 않습니다."
+        }
+      ],
+      "final_raw": "{\n  \"overallScore\": 46,\n  \"summary\": \"STAR 구조를 갖추려는 시도가 있으나, 상황과 과제 설명이 부족하고 행동과 결과도 간략하여 완전한 STAR 구조라고 보기 어렵습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 55,\n      \"feedback\": \"역할과 반응은 이어지지만 그 사이의 과정이 없습니다.\"\n    },\n    \"specificity\": {\n      \"score\": 35,\n      \"feedback\": \"'신경 썼다'가 구체적으로 무엇인지 드러나지 않습니다.\"\n    },\n    \"communication\": {\n      \"score\": 60,\n      \"feedback\": \"문장은 짧고 이해하기 쉽습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 50,\n      \"feedback\": \"API 문서화는 직무와 관련 있으나 기술적 내용이 없습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 30,\n      \"feedback\": \"상황과 과제가 없고 행동도 한 문장에 그쳐 구조를 갖추지 못했습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"다른 팀원의 편의를 고려하는 태도\"\n  ],\n  \"weaknesses\": [\n    \"문서를 어떻게 작성하고 개선했는지 구체적인 행동이 없음\",\n    \"결과가 '고맙다고 했다'는 반응에 그침\"\n  ]\n}",
+      "total_latency_s": 2.777
+    },
+    "detected": true,
+    "latency_s": 2.777,
+    "llm_calls": 2,
+    "est_cost_usd": 0.001702,
+    "final_raw": "{\n  \"overallScore\": 46,\n  \"summary\": \"STAR 구조를 갖추려는 시도가 있으나, 상황과 과제 설명이 부족하고 행동과 결과도 간략하여 완전한 STAR 구조라고 보기 어렵습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 55,\n      \"feedback\": \"역할과 반응은 이어지지만 그 사이의 과정이 없습니다.\"\n    },\n    \"specificity\": {\n      \"score\": 35,\n      \"feedback\": \"'신경 썼다'가 구체적으로 무엇인지 드러나지 않습니다.\"\n    },\n    \"communication\": {\n      \"score\": 60,\n      \"feedback\": \"문장은 짧고 이해하기 쉽습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 50,\n      \"feedback\": \"API 문서화는 직무와 관련 있으나 기술적 내용이 없습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 30,\n      \"feedback\": \"상황과 과제가 없고 행동도 한 문장에 그쳐 구조를 갖추지 못했습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"다른 팀원의 편의를 고려하는 태도\"\n  ],\n  \"weaknesses\": [\n    \"문서를 어떻게 작성하고 개선했는지 구체적인 행동이 없음\",\n    \"결과가 '고맙다고 했다'는 반응에 그침\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.803,
+      "text_identical": false,
+      "markers_remaining": [],
+      "n_strengths": [
+        1,
+        1
+      ],
+      "n_weaknesses": [
+        2,
+        2
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "resolved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본 평가의 summary는 '상황, 과제, 행동, 결과가 모두 갖춰진 STAR 구조의 모범적인 답변입니다'라고 하여 STAR 구조 점수 30점과 피드백 '구조를 갖추지 못했다'와 모순되었으나, 리뷰어는 이를 'STAR 구조를 갖추려는 시도가 있으나, 상황과 과제 설명이 부족하고 행동과 결과도 간략하여 완전한 STAR 구조라고 보기 어렵습니다'로 수정하여 모순을 해소했습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "리뷰어는 '상황과 과제 설명이 부족하고 행동과 결과도 간략하여 완전한 STAR 구조라고 보기 어렵습니다.'라고 수정하여 STAR 구조에 대한 평가를 명확히 하였습니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-03",
+    "type": "B",
+    "expect": "resolve",
+    "arm": "production_reviewer",
+    "rep": 2,
+    "latency_s": 2.757,
+    "llm_calls": 1,
+    "est_cost_usd": 0.0008256,
+    "final_raw": "{\n  \"overallScore\": 46,\n  \"summary\": \"상황, 과제, 행동, 결과가 모두 갖춰진 STAR 구조의 모범적인 답변입니다. 다만 문서를 어떻게 개선했는지에 대한 설명은 부족합니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 55,\n      \"feedback\": \"역할과 반응은 이어지지만 그 사이의 구체적인 과정이 부족합니다.\"\n    },\n    \"specificity\": {\n      \"score\": 35,\n      \"feedback\": \"'신경 썼다'는 표현이 구체적으로 어떤 행동을 의미하는지 명확하지 않습니다.\"\n    },\n    \"communication\": {\n      \"score\": 60,\n      \"feedback\": \"문장은 짧고 이해하기 쉬워 의사 전달이 명확합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 50,\n      \"feedback\": \"API 문서화 경험은 직무와 관련 있으나 기술적인 세부 내용이 부족합니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 30,\n      \"feedback\": \"상황과 과제가 명확하지 않고 행동도 한 문장에 그쳐 STAR 구조가 미흡합니다.\"\n    }\n  },\n  \"strengths\": [\n    \"다른 팀원의 편의를 고려하는 태도가 드러납니다.\"\n  ],\n  \"weaknesses\": [\n    \"문서를 작성하고 개선한 구체적인 행동이 부족합니다.\",\n    \"결과가 단순히 '고맙다고 했다'는 반응으로만 표현되어 구체성이 떨어집니다.\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.78,
+      "text_identical": false,
+      "markers_remaining": [
+        "모두 갖춰진",
+        "모범적인 답변"
+      ],
+      "n_strengths": [
+        1,
+        1
+      ],
+      "n_weaknesses": [
+        2,
+        2
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "not_resolved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "no",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "리뷰어가 summary에서 '상황, 과제, 행동, 결과가 모두 갖춰진 STAR 구조의 모범적인 답변입니다.'라는 문구를 그대로 유지하여 'STAR 구조 점수는 30점이고 피드백은 \"구조를 갖추지 못했다\"'라는 모순을 해결하지 못했습니다. 따라서 결함이 해결되지 않았고, 의미 변경도 없으며 새로운 문제도 없습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "no",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래 평가에서 STAR 구조 점수는 30점으로, '구조를 갖추지 못했다'고 명시되어 있습니다. 그러나 수정된 평가에서도 같은 점수를 유지하며, '모범적인 답변'이라는 표현이 여전히 포함되어 있어 모순이 발생합니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-03",
+    "type": "B",
+    "expect": "resolve",
+    "arm": "improved",
+    "rep": 2,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 1.826,
+      "est_cost_usd": 0.0010252,
+      "prompt_tokens": 1607,
+      "completion_tokens": 239,
+      "validator_ms": 0.243,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.196,
+      "findings": [
+        {
+          "issue_type": "summary_item_contradiction",
+          "target_field": "summary",
+          "problematic_text": "상황, 과제, 행동, 결과가 모두 갖춰진 STAR 구조의 모범적인 답변입니다. 다만 문서를 어떻게 개선했는지에 대한 설명은 부족합니다.",
+          "evidence_in_evaluation": [
+            "starStructure.score=30",
+            "starStructure.feedback=\"상황과 과제가 없고 행동도 한 문장에 그쳐 구조를 갖추지 못했습니다.\""
+          ],
+          "evidence_in_answer": [
+            "팀 프로젝트에서 API 문서를 맡았습니다. 프론트엔드 팀원이 편하게 쓸 수 있도록 신경 썼습니다. 다들 고맙다고 했습니다."
+          ],
+          "reason": "SUMMARY claims the answer is a model STAR structure with all components, but the starStructure score and feedback contradict this, stating the structure is not complete and the answer lacks situation and task details.",
+          "action": "replace_text",
+          "proposed_text": "STAR 구조를 시도했으나 상황, 과제, 행동, 결과 중 일부가 부족합니다. 다만 문서를 어떻게 개선했는지에 대한 설명은 부족합니다.",
+          "confidence": "high",
+          "applied": false,
+          "gate_result": "G3 evidence_in_evaluation not found in the evaluation"
+        }
+      ],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": true,
+      "status": "needs_review",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 46,\n  \"summary\": \"상황, 과제, 행동, 결과가 모두 갖춰진 STAR 구조의 모범적인 답변입니다. 다만 문서를 어떻게 개선했는지에 대한 설명은 부족합니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 55,\n      \"feedback\": \"역할과 반응은 이어지지만 그 사이의 과정이 없습니다.\"\n    },\n    \"specificity\": {\n      \"score\": 35,\n      \"feedback\": \"'신경 썼다'가 구체적으로 무엇인지 드러나지 않습니다.\"\n    },\n    \"communication\": {\n      \"score\": 60,\n      \"feedback\": \"문장은 짧고 이해하기 쉽습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 50,\n      \"feedback\": \"API 문서화는 직무와 관련 있으나 기술적 내용이 없습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 30,\n      \"feedback\": \"상황과 과제가 없고 행동도 한 문장에 그쳐 구조를 갖추지 못했습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"다른 팀원의 편의를 고려하는 태도\"\n  ],\n  \"weaknesses\": [\n    \"문서를 어떻게 작성하고 개선했는지 구체적인 행동이 없음\",\n    \"결과가 '고맙다고 했다'는 반응에 그침\"\n  ]\n}",
+      "total_latency_s": 1.828
+    },
+    "detected": true,
+    "latency_s": 1.828,
+    "llm_calls": 1,
+    "est_cost_usd": 0.0010252,
+    "final_raw": "{\n  \"overallScore\": 46,\n  \"summary\": \"상황, 과제, 행동, 결과가 모두 갖춰진 STAR 구조의 모범적인 답변입니다. 다만 문서를 어떻게 개선했는지에 대한 설명은 부족합니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 55,\n      \"feedback\": \"역할과 반응은 이어지지만 그 사이의 과정이 없습니다.\"\n    },\n    \"specificity\": {\n      \"score\": 35,\n      \"feedback\": \"'신경 썼다'가 구체적으로 무엇인지 드러나지 않습니다.\"\n    },\n    \"communication\": {\n      \"score\": 60,\n      \"feedback\": \"문장은 짧고 이해하기 쉽습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 50,\n      \"feedback\": \"API 문서화는 직무와 관련 있으나 기술적 내용이 없습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 30,\n      \"feedback\": \"상황과 과제가 없고 행동도 한 문장에 그쳐 구조를 갖추지 못했습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"다른 팀원의 편의를 고려하는 태도\"\n  ],\n  \"weaknesses\": [\n    \"문서를 어떻게 작성하고 개선했는지 구체적인 행동이 없음\",\n    \"결과가 '고맙다고 했다'는 반응에 그침\"\n  ]\n}",
+    "byte_identical_to_input": true,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 1.0,
+      "text_identical": true,
+      "markers_remaining": [
+        "모두 갖춰진",
+        "모범적인 답변"
+      ],
+      "n_strengths": [
+        1,
+        1
+      ],
+      "n_weaknesses": [
+        2,
+        2
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "not_resolved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "no",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "리뷰어는 원본 평가의 summary에서 '상황, 과제, 행동, 결과가 모두 갖춰진 STAR 구조의 모범적인 답변입니다.'라는 문구를 그대로 유지하며, STAR 구조 점수 30점과 '구조를 갖추지 못했다'는 피드백과 모순된 내용을 수정하지 않았습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "no",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래 평가에서 STAR 구조 점수는 30점이며, '구조를 갖추지 못했다'고 명시되어 있습니다. 그러나 요약에서는 '모범적인 답변'이라고 서술되어 있어 모순이 발생합니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-03",
+    "type": "B",
+    "expect": "resolve",
+    "arm": "production_reviewer",
+    "rep": 3,
+    "latency_s": 2.864,
+    "llm_calls": 1,
+    "est_cost_usd": 0.0008192000000000001,
+    "final_raw": "{\n  \"overallScore\": 46,\n  \"summary\": \"상황, 과제, 행동, 결과가 모두 갖춰진 STAR 구조의 모범적인 답변입니다. 다만 문서를 어떻게 개선했는지에 대한 설명은 부족합니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 55,\n      \"feedback\": \"역할과 반응은 이어지지만 그 사이의 구체적인 과정이 부족합니다.\"\n    },\n    \"specificity\": {\n      \"score\": 35,\n      \"feedback\": \"'신경 썼다'는 표현이 구체적으로 어떤 행동을 의미하는지 명확하지 않습니다.\"\n    },\n    \"communication\": {\n      \"score\": 60,\n      \"feedback\": \"문장은 짧고 이해하기 쉽습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 50,\n      \"feedback\": \"API 문서화 경험은 직무와 관련 있으나 기술적 세부 내용이 부족합니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 30,\n      \"feedback\": \"상황과 과제가 명확하지 않고, 행동도 한 문장에 그쳐 STAR 구조가 미흡합니다.\"\n    }\n  },\n  \"strengths\": [\n    \"다른 팀원의 편의를 고려하는 태도가 드러납니다.\"\n  ],\n  \"weaknesses\": [\n    \"문서를 어떻게 작성하고 개선했는지 구체적인 행동이 부족합니다.\",\n    \"결과가 단순히 '고맙다고 했다'는 반응에 그쳐 구체성이 떨어집니다.\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.824,
+      "text_identical": false,
+      "markers_remaining": [
+        "모두 갖춰진",
+        "모범적인 답변"
+      ],
+      "n_strengths": [
+        1,
+        1
+      ],
+      "n_weaknesses": [
+        2,
+        2
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "not_resolved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "no",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "리뷰어는 summary에서 '상황, 과제, 행동, 결과가 모두 갖춰진 STAR 구조의 모범적인 답변입니다.'라는 문구를 그대로 유지하여 'STAR 구조 점수는 30점이고 피드백은 '구조를 갖추지 못했다'인데, summary는 '상황, 과제, 행동, 결과가 모두 갖춰진 STAR 구조의 모범적인 답변'이라고 서술한다.'라는 결함을 해결하지 못했습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "no",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래 평가에서 '구조를 갖추지 못했다'고 했으나, 수정된 평가에서도 같은 내용을 유지하고 있습니다. 따라서 STAR 구조에 대한 평가가 일관되게 유지되고 있습니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-03",
+    "type": "B",
+    "expect": "resolve",
+    "arm": "improved",
+    "rep": 3,
+    "pipeline": {
+      "llm_calls": 2,
+      "llm_latency_s": 3.925,
+      "est_cost_usd": 0.0016224000000000002,
+      "prompt_tokens": 3224,
+      "completion_tokens": 472,
+      "validator_ms": 0.209,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.257,
+      "findings": [
+        {
+          "issue_type": "summary_item_contradiction",
+          "target_field": "summary",
+          "problematic_text": "상황, 과제, 행동, 결과가 모두 갖춰진 STAR 구조의 모범적인 답변입니다. 다만 문서를 어떻게 개선했는지에 대한 설명은 부족합니다.",
+          "evidence_in_evaluation": [
+            "starStructure.score=30",
+            "starStructure.feedback=상황과 과제가 없고 행동도 한 문장에 그쳐 구조를 갖추지 못했습니다."
+          ],
+          "evidence_in_answer": [
+            "팀 프로젝트에서 API 문서를 맡았습니다. 프론트엔드 팀원이 편하게 쓸 수 있도록 신경 썼습니다. 다들 고맙다고 했습니다."
+          ],
+          "reason": "SUMMARY는 STAR 구조가 모두 갖춰졌다고 긍정적으로 평가하고 있으나, starStructure 점수와 피드백, 그리고 ANSWER 내용은 STAR 구조가 부족함을 명확히 보여줌. SUMMARY가 ANSWER를 잘 반영하지 못함.",
+          "action": "replace_text",
+          "proposed_text": "STAR 구조의 답변을 시도했으나, 상황과 과제, 행동, 결과가 명확하게 드러나지 않아 개선이 필요합니다. 다만 문서를 어떻게 개선했는지에 대한 설명은 부족합니다.",
+          "confidence": "high",
+          "applied": true,
+          "gate_result": "all gates passed"
+        },
+        {
+          "issue_type": "score_feedback_contradiction",
+          "target_field": "starStructure",
+          "problematic_text": "상황과 과제가 없고 행동도 한 문장에 그쳐 구조를 갖추지 못했습니다.",
+          "evidence_in_evaluation": [
+            "summary=상황, 과제, 행동, 결과가 모두 갖춰진 STAR 구조의 모범적인 답변입니다. 다만 문서를 어떻게 개선했는지에 대한 설명은 부족합니다.",
+            "starStructure.score=30"
+          ],
+          "evidence_in_answer": [
+            "팀 프로젝트에서 API 문서를 맡았습니다. 프론트엔드 팀원이 편하게 쓸 수 있도록 신경 썼습니다. 다들 고맙다고 했습니다."
+          ],
+          "reason": "starStructure 점수가 낮고 피드백도 부정적인데 SUMMARY는 STAR 구조가 완전하다고 평가함. SUMMARY가 ANSWER와 점수에 반하지 않도록 수정 필요.",
+          "action": "flag_score",
+          "proposed_text": "",
+          "confidence": "high",
+          "applied": false,
+          "gate_result": "G1 action flag_score is never auto-applied"
+        }
+      ],
+      "post_check": {
+        "ran": true,
+        "validator_report": {
+          "valid": true,
+          "errors": [],
+          "fixes": [],
+          "hints": []
+        },
+        "residual_findings": []
+      },
+      "changed": true,
+      "needs_review": true,
+      "status": "needs_review",
+      "change_log": [
+        {
+          "source": "context_reviewer",
+          "field": "summary",
+          "issue_type": "summary_item_contradiction",
+          "before": "상황, 과제, 행동, 결과가 모두 갖춰진 STAR 구조의 모범적인 답변입니다. 다만 문서를 어떻게 개선했는지에 대한 설명은 부족합니다.",
+          "after": "STAR 구조의 답변을 시도했으나, 상황과 과제, 행동, 결과가 명확하게 드러나지 않아 개선이 필요합니다. 다만 문서를 어떻게 개선했는지에 대한 설명은 부족합니다.",
+          "reason": "SUMMARY는 STAR 구조가 모두 갖춰졌다고 긍정적으로 평가하고 있으나, starStructure 점수와 피드백, 그리고 ANSWER 내용은 STAR 구조가 부족함을 명확히 보여줌. SUMMARY가 ANSWER를 잘 반영하지 못함."
+        }
+      ],
+      "final_raw": "{\n  \"overallScore\": 46,\n  \"summary\": \"STAR 구조의 답변을 시도했으나, 상황과 과제, 행동, 결과가 명확하게 드러나지 않아 개선이 필요합니다. 다만 문서를 어떻게 개선했는지에 대한 설명은 부족합니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 55,\n      \"feedback\": \"역할과 반응은 이어지지만 그 사이의 과정이 없습니다.\"\n    },\n    \"specificity\": {\n      \"score\": 35,\n      \"feedback\": \"'신경 썼다'가 구체적으로 무엇인지 드러나지 않습니다.\"\n    },\n    \"communication\": {\n      \"score\": 60,\n      \"feedback\": \"문장은 짧고 이해하기 쉽습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 50,\n      \"feedback\": \"API 문서화는 직무와 관련 있으나 기술적 내용이 없습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 30,\n      \"feedback\": \"상황과 과제가 없고 행동도 한 문장에 그쳐 구조를 갖추지 못했습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"다른 팀원의 편의를 고려하는 태도\"\n  ],\n  \"weaknesses\": [\n    \"문서를 어떻게 작성하고 개선했는지 구체적인 행동이 없음\",\n    \"결과가 '고맙다고 했다'는 반응에 그침\"\n  ]\n}",
+      "total_latency_s": 3.928
+    },
+    "detected": true,
+    "latency_s": 3.928,
+    "llm_calls": 2,
+    "est_cost_usd": 0.0016224000000000002,
+    "final_raw": "{\n  \"overallScore\": 46,\n  \"summary\": \"STAR 구조의 답변을 시도했으나, 상황과 과제, 행동, 결과가 명확하게 드러나지 않아 개선이 필요합니다. 다만 문서를 어떻게 개선했는지에 대한 설명은 부족합니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 55,\n      \"feedback\": \"역할과 반응은 이어지지만 그 사이의 과정이 없습니다.\"\n    },\n    \"specificity\": {\n      \"score\": 35,\n      \"feedback\": \"'신경 썼다'가 구체적으로 무엇인지 드러나지 않습니다.\"\n    },\n    \"communication\": {\n      \"score\": 60,\n      \"feedback\": \"문장은 짧고 이해하기 쉽습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 50,\n      \"feedback\": \"API 문서화는 직무와 관련 있으나 기술적 내용이 없습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 30,\n      \"feedback\": \"상황과 과제가 없고 행동도 한 문장에 그쳐 구조를 갖추지 못했습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"다른 팀원의 편의를 고려하는 태도\"\n  ],\n  \"weaknesses\": [\n    \"문서를 어떻게 작성하고 개선했는지 구체적인 행동이 없음\",\n    \"결과가 '고맙다고 했다'는 반응에 그침\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.879,
+      "text_identical": false,
+      "markers_remaining": [],
+      "n_strengths": [
+        1,
+        1
+      ],
+      "n_weaknesses": [
+        2,
+        2
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "resolved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본 평가의 summary는 '상황, 과제, 행동, 결과가 모두 갖춰진 STAR 구조의 모범적인 답변입니다'라고 하여 STAR 구조 점수 30점과 모순되었으나, 리뷰어는 이를 'STAR 구조의 답변을 시도했으나, 상황과 과제, 행동, 결과가 명확하게 드러나지 않아 개선이 필요합니다'로 수정하여 모순을 해소했습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "리뷰어는 '상황과 과제, 행동, 결과가 명확하게 드러나지 않아 개선이 필요합니다.'라고 수정하여 STAR 구조에 대한 평가를 명확히 하였습니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-04",
+    "type": "C",
+    "expect": "resolve",
+    "arm": "production_reviewer",
+    "rep": 1,
+    "latency_s": 2.962,
+    "llm_calls": 1,
+    "est_cost_usd": 0.0009068000000000001,
+    "final_raw": "{\n  \"overallScore\": 73,\n  \"summary\": \"설문 데이터를 근거로 결정을 내리고 그 결과까지 설명한 답변입니다. 다만 참석 인원이 얼마나 늘었는지는 구체적으로 제시되지 않았습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 80,\n      \"feedback\": \"결론을 먼저 제시한 뒤 근거와 결과를 차례로 설명해 논리적 흐름이 명확합니다.\"\n    },\n    \"specificity\": {\n      \"score\": 70,\n      \"feedback\": \"설문 대상 40명은 구체적으로 제시했으나, 응답 비율과 참석 인원 변화에 대한 구체적인 수치는 부족합니다.\"\n    },\n    \"communication\": {\n      \"score\": 65,\n      \"feedback\": \"결론이 답변 끝까지 명확히 제시되지 않아 듣는 사람이 요지를 파악하기 어려울 수 있습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 75,\n      \"feedback\": \"데이터 수집과 이를 바탕으로 한 의사결정 경험이 직무와 잘 부합합니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 75,\n      \"feedback\": \"행동과 결과가 명확하며 과제도 추론 가능해 STAR 구조가 잘 드러납니다.\"\n    }\n  },\n  \"strengths\": [\n    \"두괄식 전개로 논리적 흐름이 명확함\",\n    \"설문 데이터를 근거로 한 의사결정 경험\"\n  ],\n  \"weaknesses\": [\n    \"응답 비율과 참석 인원 변화에 대한 구체적인 수치 미제시\",\n    \"결론이 명확히 제시되지 않아 의사 전달이 다소 불명확함\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.761,
+      "text_identical": false,
+      "markers_remaining": [],
+      "n_strengths": [
+        2,
+        2
+      ],
+      "n_weaknesses": [
+        1,
+        2
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "resolved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본에서는 'communication' 항목에서 '결론이 답변 끝까지 제시되지 않았다'고 하면서 strengths에는 '두괄식 전개'라고 모순된 평가가 있었으나, 리뷰어는 '결론이 끝까지 명확히 제시되지 않아 듣는 사람이 요지를 파악하기 어려울 수 있다'고 완화하여 표현하고, strengths에도 '두괄식 전개로 논리적 흐름이 명확함'으로 일관되게 수정함으로써 모순을 해소했다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "both",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래 평가에서 '결론이 답변 끝까지 제시되지 않았다'고 하여 논리성과 전달력 항목 간의 모순이 있었습니다. 수정된 평가에서는 '결론이 명확히 제시되지 않아 의사 전달이 다소 불명확함'으로 변경하여 이 문제를 해결했습니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-04",
+    "type": "C",
+    "expect": "resolve",
+    "arm": "improved",
+    "rep": 1,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 1.615,
+      "est_cost_usd": 0.0009467999999999999,
+      "prompt_tokens": 1659,
+      "completion_tokens": 177,
+      "validator_ms": 0.19,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.105,
+      "findings": [
+        {
+          "issue_type": "score_feedback_contradiction",
+          "target_field": "communication",
+          "problematic_text": "결론이 답변 끝까지 제시되지 않아 듣는 사람이 요지를 파악하기 어렵습니다.",
+          "evidence_in_evaluation": [
+            "logicalThinking.score=80",
+            "logicalThinking.feedback=결론을 먼저 제시한 뒤 근거와 결과를 차례로 설명해 흐름이 명확합니다."
+          ],
+          "evidence_in_answer": [
+            "결론부터 말씀드리면, 설문 데이터를 근거로 동아리 모임 요일을 금요일에서 수요일로 바꿨습니다."
+          ],
+          "reason": "ANSWER clearly presents the conclusion at the beginning, which contradicts the communication feedback stating the conclusion is not presented until the end, making it hard to grasp the main point.",
+          "action": "flag_score",
+          "proposed_text": "",
+          "confidence": "high",
+          "applied": false,
+          "gate_result": "G1 action flag_score is never auto-applied"
+        }
+      ],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": true,
+      "status": "needs_review",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 73,\n  \"summary\": \"설문 데이터를 근거로 결정을 내리고 그 결과까지 설명한 답변입니다. 참석 인원이 얼마나 늘었는지는 제시되지 않았습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 80,\n      \"feedback\": \"결론을 먼저 제시한 뒤 근거와 결과를 차례로 설명해 흐름이 명확합니다.\"\n    },\n    \"specificity\": {\n      \"score\": 70,\n      \"feedback\": \"설문 대상 40명은 구체적이지만 응답 비율과 참석 인원 변화는 수치가 없습니다.\"\n    },\n    \"communication\": {\n      \"score\": 65,\n      \"feedback\": \"결론이 답변 끝까지 제시되지 않아 듣는 사람이 요지를 파악하기 어렵습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 75,\n      \"feedback\": \"데이터를 수집해 결정에 반영한 경험은 직무와 잘 맞습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 75,\n      \"feedback\": \"행동과 결과가 분명하고 과제도 추론할 수 있습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"두괄식 전개\",\n    \"설문 데이터를 근거로 한 결정\"\n  ],\n  \"weaknesses\": [\n    \"응답 비율과 참석 인원 변화가 수치로 제시되지 않음\"\n  ]\n}",
+      "total_latency_s": 1.617
+    },
+    "detected": true,
+    "latency_s": 1.617,
+    "llm_calls": 1,
+    "est_cost_usd": 0.0009467999999999999,
+    "final_raw": "{\n  \"overallScore\": 73,\n  \"summary\": \"설문 데이터를 근거로 결정을 내리고 그 결과까지 설명한 답변입니다. 참석 인원이 얼마나 늘었는지는 제시되지 않았습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 80,\n      \"feedback\": \"결론을 먼저 제시한 뒤 근거와 결과를 차례로 설명해 흐름이 명확합니다.\"\n    },\n    \"specificity\": {\n      \"score\": 70,\n      \"feedback\": \"설문 대상 40명은 구체적이지만 응답 비율과 참석 인원 변화는 수치가 없습니다.\"\n    },\n    \"communication\": {\n      \"score\": 65,\n      \"feedback\": \"결론이 답변 끝까지 제시되지 않아 듣는 사람이 요지를 파악하기 어렵습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 75,\n      \"feedback\": \"데이터를 수집해 결정에 반영한 경험은 직무와 잘 맞습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 75,\n      \"feedback\": \"행동과 결과가 분명하고 과제도 추론할 수 있습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"두괄식 전개\",\n    \"설문 데이터를 근거로 한 결정\"\n  ],\n  \"weaknesses\": [\n    \"응답 비율과 참석 인원 변화가 수치로 제시되지 않음\"\n  ]\n}",
+    "byte_identical_to_input": true,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 1.0,
+      "text_identical": true,
+      "markers_remaining": [
+        "끝까지 제시되지 않"
+      ],
+      "n_strengths": [
+        2,
+        2
+      ],
+      "n_weaknesses": [
+        1,
+        1
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "not_resolved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "no",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본과 리뷰된 평가 모두 'communication' 항목에서 '결론이 답변 끝까지 제시되지 않아 듣는 사람이 요지를 파악하기 어렵다'고 평가하고, 'strengths'에는 '두괄식 전개'를 유지하고 있어 논리성 항목과 전달력 항목 간 모순이 해결되지 않았습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "no",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "전달력 항목에서 '결론이 답변 끝까지 제시되지 않았다'고 서술하고 있어, 논리성과의 모순이 발생합니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-04",
+    "type": "C",
+    "expect": "resolve",
+    "arm": "production_reviewer",
+    "rep": 2,
+    "latency_s": 3.103,
+    "llm_calls": 1,
+    "est_cost_usd": 0.0008732000000000001,
+    "final_raw": "{\n  \"overallScore\": 73,\n  \"summary\": \"설문 데이터를 근거로 결정을 내리고 그 결과까지 설명한 답변입니다. 다만 참석 인원이 얼마나 늘었는지는 구체적으로 제시되지 않았습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 80,\n      \"feedback\": \"결론을 먼저 제시한 후 근거와 결과를 차례로 설명하여 논리적 흐름이 명확합니다.\"\n    },\n    \"specificity\": {\n      \"score\": 70,\n      \"feedback\": \"설문 대상 40명은 구체적으로 제시되었으나, 응답 비율과 참석 인원 변화에 대한 구체적인 수치가 부족합니다.\"\n    },\n    \"communication\": {\n      \"score\": 65,\n      \"feedback\": \"결론이 답변 끝까지 명확히 제시되지 않아 청자가 요지를 파악하기 어려운 부분이 있습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 75,\n      \"feedback\": \"데이터 수집과 이를 바탕으로 한 의사결정 경험이 직무와 잘 부합합니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 75,\n      \"feedback\": \"행동과 결과가 명확하며 과제도 추론할 수 있어 STAR 구조가 잘 갖춰져 있습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"두괄식 전개로 논리적 흐름이 명확함\",\n    \"설문 데이터를 근거로 한 의사결정\"\n  ],\n  \"weaknesses\": [\n    \"응답 비율과 참석 인원 변화에 대한 구체적 수치 미제시\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.773,
+      "text_identical": false,
+      "markers_remaining": [],
+      "n_strengths": [
+        2,
+        2
+      ],
+      "n_weaknesses": [
+        1,
+        1
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "resolved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본 평가에서 'communication' 항목은 '결론이 답변 끝까지 제시되지 않아 듣는 사람이 요지를 파악하기 어렵다'고 하였으나, 'logicalThinking'과 strengths에서는 '결론을 먼저 제시'했다고 평가하여 모순이 있었습니다. 리뷰어는 이 부분을 '결론이 답변 끝까지 명확히 제시되지 않아 청자가 요지를 파악하기 어려운 부분이 있다'고 표현하여 완화하고, strengths도 '두괄식 전개로 논리적 흐름이 명확함'으로 조정하여 논리적 모순을 해소했습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래 평가에서 '결론이 답변 끝까지 제시되지 않았다'는 부분이 '결론이 답변 끝까지 명확히 제시되지 않아'로 수정되어, 결론의 전달력에 대한 모순이 해결되었습니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-04",
+    "type": "C",
+    "expect": "resolve",
+    "arm": "improved",
+    "rep": 2,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 1.581,
+      "est_cost_usd": 0.00047,
+      "prompt_tokens": 1659,
+      "completion_tokens": 167,
+      "validator_ms": 0.124,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.063,
+      "findings": [
+        {
+          "issue_type": "score_feedback_contradiction",
+          "target_field": "communication",
+          "problematic_text": "결론이 답변 끝까지 제시되지 않아 듣는 사람이 요지를 파악하기 어렵습니다.",
+          "evidence_in_evaluation": [
+            "logicalThinking.score=80",
+            "logicalThinking.feedback=결론을 먼저 제시한 뒤 근거와 결과를 차례로 설명해 흐름이 명확합니다."
+          ],
+          "evidence_in_answer": [
+            "결론부터 말씀드리면, 설문 데이터를 근거로 동아리 모임 요일을 금요일에서 수요일로 바꿨습니다."
+          ],
+          "reason": "ANSWER clearly states the conclusion at the beginning, contradicting the communication feedback that the conclusion is not presented until the end.",
+          "action": "flag_score",
+          "proposed_text": "",
+          "confidence": "high",
+          "applied": false,
+          "gate_result": "G1 action flag_score is never auto-applied"
+        }
+      ],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": true,
+      "status": "needs_review",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 73,\n  \"summary\": \"설문 데이터를 근거로 결정을 내리고 그 결과까지 설명한 답변입니다. 참석 인원이 얼마나 늘었는지는 제시되지 않았습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 80,\n      \"feedback\": \"결론을 먼저 제시한 뒤 근거와 결과를 차례로 설명해 흐름이 명확합니다.\"\n    },\n    \"specificity\": {\n      \"score\": 70,\n      \"feedback\": \"설문 대상 40명은 구체적이지만 응답 비율과 참석 인원 변화는 수치가 없습니다.\"\n    },\n    \"communication\": {\n      \"score\": 65,\n      \"feedback\": \"결론이 답변 끝까지 제시되지 않아 듣는 사람이 요지를 파악하기 어렵습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 75,\n      \"feedback\": \"데이터를 수집해 결정에 반영한 경험은 직무와 잘 맞습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 75,\n      \"feedback\": \"행동과 결과가 분명하고 과제도 추론할 수 있습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"두괄식 전개\",\n    \"설문 데이터를 근거로 한 결정\"\n  ],\n  \"weaknesses\": [\n    \"응답 비율과 참석 인원 변화가 수치로 제시되지 않음\"\n  ]\n}",
+      "total_latency_s": 1.582
+    },
+    "detected": true,
+    "latency_s": 1.582,
+    "llm_calls": 1,
+    "est_cost_usd": 0.00047,
+    "final_raw": "{\n  \"overallScore\": 73,\n  \"summary\": \"설문 데이터를 근거로 결정을 내리고 그 결과까지 설명한 답변입니다. 참석 인원이 얼마나 늘었는지는 제시되지 않았습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 80,\n      \"feedback\": \"결론을 먼저 제시한 뒤 근거와 결과를 차례로 설명해 흐름이 명확합니다.\"\n    },\n    \"specificity\": {\n      \"score\": 70,\n      \"feedback\": \"설문 대상 40명은 구체적이지만 응답 비율과 참석 인원 변화는 수치가 없습니다.\"\n    },\n    \"communication\": {\n      \"score\": 65,\n      \"feedback\": \"결론이 답변 끝까지 제시되지 않아 듣는 사람이 요지를 파악하기 어렵습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 75,\n      \"feedback\": \"데이터를 수집해 결정에 반영한 경험은 직무와 잘 맞습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 75,\n      \"feedback\": \"행동과 결과가 분명하고 과제도 추론할 수 있습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"두괄식 전개\",\n    \"설문 데이터를 근거로 한 결정\"\n  ],\n  \"weaknesses\": [\n    \"응답 비율과 참석 인원 변화가 수치로 제시되지 않음\"\n  ]\n}",
+    "byte_identical_to_input": true,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 1.0,
+      "text_identical": true,
+      "markers_remaining": [
+        "끝까지 제시되지 않"
+      ],
+      "n_strengths": [
+        2,
+        2
+      ],
+      "n_weaknesses": [
+        1,
+        1
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "not_resolved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "no",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본 평가에서 'communication' 항목은 \"결론이 답변 끝까지 제시되지 않아 듣는 사람이 요지를 파악하기 어렵습니다.\"라고 하여 결론 제시 여부에 대해 부정적으로 평가했으나, 'logicalThinking'과 strengths에서는 \"결론을 먼저 제시\"했다고 평가하여 모순이 존재합니다. 리뷰어는 이를 수정하지 않고 그대로 두어 '논리성 항목과 strengths는 '결론을 먼저 제시'했다고 하는데, 전달력 항목은 '결론이 답변 끝까지 제시되지 않았다'고 서술한다'는 결함이 해결되지 않았습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "no",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "전달력 항목에서 '결론이 답변 끝까지 제시되지 않았다'고 서술하고 있어 논리성과 모순됩니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-04",
+    "type": "C",
+    "expect": "resolve",
+    "arm": "production_reviewer",
+    "rep": 3,
+    "latency_s": 2.713,
+    "llm_calls": 1,
+    "est_cost_usd": 0.0008172,
+    "final_raw": "{\n  \"overallScore\": 73,\n  \"summary\": \"설문 데이터를 근거로 결정을 내리고 그 결과까지 설명한 답변입니다. 참석 인원이 얼마나 늘었는지는 제시되지 않았습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 80,\n      \"feedback\": \"결론을 먼저 제시한 뒤 근거와 결과를 차례로 설명해 흐름이 명확합니다.\"\n    },\n    \"specificity\": {\n      \"score\": 70,\n      \"feedback\": \"설문 대상 40명은 구체적이지만 응답 비율과 참석 인원 변화에 대한 수치가 제시되지 않았습니다.\"\n    },\n    \"communication\": {\n      \"score\": 65,\n      \"feedback\": \"결론이 답변 끝까지 명확히 제시되지 않아 듣는 이가 요지를 파악하기 어렵습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 75,\n      \"feedback\": \"데이터 수집과 이를 바탕으로 한 의사결정 경험이 직무와 잘 부합합니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 75,\n      \"feedback\": \"행동과 결과가 분명하며 과제도 추론할 수 있습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"두괄식 전개\",\n    \"설문 데이터를 근거로 한 결정\"\n  ],\n  \"weaknesses\": [\n    \"응답 비율과 참석 인원 변화에 대한 구체적인 수치 미제시\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.881,
+      "text_identical": false,
+      "markers_remaining": [],
+      "n_strengths": [
+        2,
+        2
+      ],
+      "n_weaknesses": [
+        1,
+        1
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "resolved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본 평가에서 'communication' 항목은 \"결론이 답변 끝까지 제시되지 않아 듣는 사람이 요지를 파악하기 어렵습니다.\"라고 하였으나, 답변은 \"결론부터 말씀드리면\"으로 시작해 결론을 먼저 제시한 점과 모순됩니다. 리뷰어는 이 부분을 \"결론이 답변 끝까지 명확히 제시되지 않아 듣는 이가 요지를 파악하기 어렵습니다.\"로 표현을 다소 완화했으나, 본질적으로 결론 제시 여부에 대한 모순을 해소하지는 못했습니다. 다만, 리뷰어는 원문과 큰 의미 변화 없이 표현만 다듬었고, 점수 변경도 없으므로 의미 변화는 없으며, 새로운 문제도 발생하지 않았습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "전달력 항목의 피드백이 '결론이 답변 끝까지 명확히 제시되지 않아 듣는 이가 요지를 파악하기 어렵습니다.'로 수정되어, 결론이 명확히 제시되지 않았다는 점이 일관되게 반영되었습니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-04",
+    "type": "C",
+    "expect": "resolve",
+    "arm": "improved",
+    "rep": 3,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 1.886,
+      "est_cost_usd": 0.0009308,
+      "prompt_tokens": 1659,
+      "completion_tokens": 167,
+      "validator_ms": 0.134,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.046,
+      "findings": [
+        {
+          "issue_type": "score_feedback_contradiction",
+          "target_field": "communication",
+          "problematic_text": "결론이 답변 끝까지 제시되지 않아 듣는 사람이 요지를 파악하기 어렵습니다.",
+          "evidence_in_evaluation": [
+            "logicalThinking.score=80",
+            "logicalThinking.feedback=결론을 먼저 제시한 뒤 근거와 결과를 차례로 설명해 흐름이 명확합니다."
+          ],
+          "evidence_in_answer": [
+            "결론부터 말씀드리면, 설문 데이터를 근거로 동아리 모임 요일을 금요일에서 수요일로 바꿨습니다."
+          ],
+          "reason": "ANSWER clearly states the conclusion at the beginning, contradicting the communication feedback that the conclusion is not presented until the end.",
+          "action": "flag_score",
+          "proposed_text": "",
+          "confidence": "high",
+          "applied": false,
+          "gate_result": "G1 action flag_score is never auto-applied"
+        }
+      ],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": true,
+      "status": "needs_review",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 73,\n  \"summary\": \"설문 데이터를 근거로 결정을 내리고 그 결과까지 설명한 답변입니다. 참석 인원이 얼마나 늘었는지는 제시되지 않았습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 80,\n      \"feedback\": \"결론을 먼저 제시한 뒤 근거와 결과를 차례로 설명해 흐름이 명확합니다.\"\n    },\n    \"specificity\": {\n      \"score\": 70,\n      \"feedback\": \"설문 대상 40명은 구체적이지만 응답 비율과 참석 인원 변화는 수치가 없습니다.\"\n    },\n    \"communication\": {\n      \"score\": 65,\n      \"feedback\": \"결론이 답변 끝까지 제시되지 않아 듣는 사람이 요지를 파악하기 어렵습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 75,\n      \"feedback\": \"데이터를 수집해 결정에 반영한 경험은 직무와 잘 맞습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 75,\n      \"feedback\": \"행동과 결과가 분명하고 과제도 추론할 수 있습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"두괄식 전개\",\n    \"설문 데이터를 근거로 한 결정\"\n  ],\n  \"weaknesses\": [\n    \"응답 비율과 참석 인원 변화가 수치로 제시되지 않음\"\n  ]\n}",
+      "total_latency_s": 1.887
+    },
+    "detected": true,
+    "latency_s": 1.887,
+    "llm_calls": 1,
+    "est_cost_usd": 0.0009308,
+    "final_raw": "{\n  \"overallScore\": 73,\n  \"summary\": \"설문 데이터를 근거로 결정을 내리고 그 결과까지 설명한 답변입니다. 참석 인원이 얼마나 늘었는지는 제시되지 않았습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 80,\n      \"feedback\": \"결론을 먼저 제시한 뒤 근거와 결과를 차례로 설명해 흐름이 명확합니다.\"\n    },\n    \"specificity\": {\n      \"score\": 70,\n      \"feedback\": \"설문 대상 40명은 구체적이지만 응답 비율과 참석 인원 변화는 수치가 없습니다.\"\n    },\n    \"communication\": {\n      \"score\": 65,\n      \"feedback\": \"결론이 답변 끝까지 제시되지 않아 듣는 사람이 요지를 파악하기 어렵습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 75,\n      \"feedback\": \"데이터를 수집해 결정에 반영한 경험은 직무와 잘 맞습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 75,\n      \"feedback\": \"행동과 결과가 분명하고 과제도 추론할 수 있습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"두괄식 전개\",\n    \"설문 데이터를 근거로 한 결정\"\n  ],\n  \"weaknesses\": [\n    \"응답 비율과 참석 인원 변화가 수치로 제시되지 않음\"\n  ]\n}",
+    "byte_identical_to_input": true,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 1.0,
+      "text_identical": true,
+      "markers_remaining": [
+        "끝까지 제시되지 않"
+      ],
+      "n_strengths": [
+        2,
+        2
+      ],
+      "n_weaknesses": [
+        1,
+        1
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "not_resolved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "no",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본과 리뷰된 평가 모두 'communication' 항목에서 '결론이 답변 끝까지 제시되지 않아 듣는 사람이 요지를 파악하기 어렵다'고 평가하고 있으며, 'logicalThinking'과 'strengths'에서는 '두괄식 전개'를 강점으로 언급해 모순이 해결되지 않았습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "no",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "전달력 항목에서 '결론이 답변 끝까지 제시되지 않았다'고 서술하고 있어, 논리성과의 모순이 발생합니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-05",
+    "type": "D",
+    "expect": "undetectable_by_design",
+    "arm": "production_reviewer",
+    "rep": 1,
+    "latency_s": 2.597,
+    "llm_calls": 1,
+    "est_cost_usd": 0.0007256000000000001,
+    "final_raw": "{\n  \"overallScore\": 76,\n  \"summary\": \"클라우드 환경에 직접 배포한 경험을 자격과 실무 경력으로 뒷받침한 답변입니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 70,\n      \"feedback\": \"경험과 어려움, 해결 방식을 순서대로 설명합니다.\"\n    },\n    \"specificity\": {\n      \"score\": 80,\n      \"feedback\": \"AWS Solutions Architect 자격증과 3년의 운영 경력을 구체적으로 제시했습니다.\"\n    },\n    \"communication\": {\n      \"score\": 70,\n      \"feedback\": \"이해하기 쉬운 문장으로 전달합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 90,\n      \"feedback\": \"3년간의 AWS 운영 경력은 클라우드 엔지니어 직무에 바로 투입 가능한 수준입니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 70,\n      \"feedback\": \"상황과 행동은 있으나 결과에 대한 설명이 간략합니다.\"\n    }\n  },\n  \"strengths\": [\n    \"AWS 자격증 보유\",\n    \"가상 서버에 직접 배포한 경험\"\n  ],\n  \"weaknesses\": [\n    \"결과에 대한 설명이 간략함\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.948,
+      "text_identical": false,
+      "markers_remaining": [
+        "AWS",
+        "3년",
+        "자격"
+      ],
+      "n_strengths": [
+        2,
+        2
+      ],
+      "n_weaknesses": [
+        1,
+        1
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "not_detected"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "no",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": true,
+        "new_problem_detail": "The reviewer retained claims about AWS certification and 3 years of experience that are not supported by the candidate's answer.",
+        "rationale": "원본 평가에서 'AWS Solutions Architect 자격증과 3년의 운영 경력'을 구체적으로 제시했다고 했으나, 답변에는 해당 내용이 전혀 없고, 리뷰어도 이를 수정하지 않아 'AWS 자격증 보유'와 '3년간의 AWS 운영 경력'을 강점으로 언급한 점에서 문제 발생."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "no",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래 평가에서 'AWS 자격증과 3년의 운영 경력'이 언급되었으나, 답변에는 이러한 내용이 없었습니다. 따라서 평가가 이를 근거로 높은 점수를 주었다는 점에서 결함이 해결되지 않았습니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-05",
+    "type": "D",
+    "expect": "undetectable_by_design",
+    "arm": "improved",
+    "rep": 1,
+    "pipeline": {
+      "llm_calls": 2,
+      "llm_latency_s": 6.374,
+      "est_cost_usd": 0.0027728,
+      "prompt_tokens": 3148,
+      "completion_tokens": 946,
+      "validator_ms": 0.164,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 2.094,
+      "findings": [
+        {
+          "issue_type": "unsupported_by_answer",
+          "target_field": "summary",
+          "problematic_text": "클라우드 환경에 직접 배포한 경험을 자격과 실무 경력으로 뒷받침한 답변입니다.",
+          "evidence_in_evaluation": [
+            "AWS Solutions Architect 자격증과 3년의 운영 경력을 구체적으로 제시했습니다.",
+            "3년간의 AWS 운영 경력은 클라우드 엔지니어 직무에 바로 투입 가능한 수준입니다.",
+            "AWS 자격증 보유"
+          ],
+          "evidence_in_answer": [
+            "수업 과제로 웹 서버를 클라우드에 올려 본 적이 있습니다. 가상 서버를 하나 만들고 거기에 프로젝트를 배포했습니다. 설정이 어려웠지만 검색하면서 해결했습니다."
+          ],
+          "reason": "ANSWER에는 AWS 자격증이나 3년 운영 경력에 관한 언급이 전혀 없으므로, summary와 strengths, evaluationScores의 관련 피드백이 사실과 다릅니다.",
+          "action": "replace_text",
+          "proposed_text": "클라우드 환경에 직접 배포한 경험을 간단히 설명한 답변입니다.",
+          "confidence": "high",
+          "applied": true,
+          "gate_result": "all gates passed"
+        },
+        {
+          "issue_type": "score_feedback_contradiction",
+          "target_field": "specificity",
+          "problematic_text": "AWS Solutions Architect 자격증과 3년의 운영 경력을 구체적으로 제시했습니다.",
+          "evidence_in_evaluation": [
+            "specificity.score=80",
+            "AWS 자격증 보유"
+          ],
+          "evidence_in_answer": [
+            "수업 과제로 웹 서버를 클라우드에 올려 본 적이 있습니다. 가상 서버를 하나 만들고 거기에 프로젝트를 배포했습니다. 설정이 어려웠지만 검색하면서 해결했습니다."
+          ],
+          "reason": "ANSWER에는 자격증이나 경력에 관한 구체적 내용이 없으므로, specificity 점수 80과 긍정적 피드백이 부적절합니다.",
+          "action": "flag_score",
+          "proposed_text": "",
+          "confidence": "high",
+          "applied": false,
+          "gate_result": "G1 action flag_score is never auto-applied"
+        },
+        {
+          "issue_type": "score_feedback_contradiction",
+          "target_field": "jobFit",
+          "problematic_text": "3년간의 AWS 운영 경력은 클라우드 엔지니어 직무에 바로 투입 가능한 수준입니다.",
+          "evidence_in_evaluation": [
+            "jobFit.score=90",
+            "AWS 자격증 보유"
+          ],
+          "evidence_in_answer": [
+            "수업 과제로 웹 서버를 클라우드에 올려 본 적이 있습니다. 가상 서버를 하나 만들고 거기에 프로젝트를 배포했습니다. 설정이 어려웠지만 검색하면서 해결했습니다."
+          ],
+          "reason": "ANSWER에는 3년간의 AWS 운영 경력이나 자격증 언급이 없으므로, jobFit 점수 90과 해당 피드백은 부적절합니다.",
+          "action": "flag_score",
+          "proposed_text": "",
+          "confidence": "high",
+          "applied": false,
+          "gate_result": "G1 action flag_score is never auto-applied"
+        },
+        {
+          "issue_type": "score_feedback_contradiction",
+          "target_field": "strengths",
+          "problematic_text": "AWS 자격증 보유",
+          "evidence_in_evaluation": [
+            "specificity.score=80",
+            "jobFit.score=90",
+            "3년간의 AWS 운영 경력은 클라우드 엔지니어 직무에 바로 투입 가능한 수준입니다."
+          ],
+          "evidence_in_answer": [
+            "수업 과제로 웹 서버를 클라우드에 올려 본 적이 있습니다. 가상 서버를 하나 만들고 거기에 프로젝트를 배포했습니다. 설정이 어려웠지만 검색하면서 해결했습니다."
+          ],
+          "reason": "ANSWER에는 AWS 자격증 보유에 관한 언급이 없으므로, strengths 항목의 이 내용은 부적절합니다.",
+          "action": "remove_item",
+          "proposed_text": "",
+          "confidence": "high",
+          "applied": true,
+          "gate_result": "all gates passed"
+        }
+      ],
+      "post_check": {
+        "ran": true,
+        "validator_report": {
+          "valid": true,
+          "errors": [],
+          "fixes": [],
+          "hints": []
+        },
+        "residual_findings": [
+          {
+            "issue_type": "unsupported_by_answer",
+            "target_field": "specificity",
+            "problematic_text": "AWS Solutions Architect 자격증과 3년의 운영 경력을 구체적으로 제시했습니다.",
+            "evidence_in_evaluation": [
+              "3년의 AWS 운영 경력은 클라우드 엔지니어 직무에 바로 투입 가능한 수준입니다."
+            ],
+            "evidence_in_answer": [
+              "수업 과제로 웹 서버를 클라우드에 올려 본 적이 있습니다. 가상 서버를 하나 만들고 거기에 프로젝트를 배포했습니다. 설정이 어려웠지만 검색하면서 해결했습니다."
+            ],
+            "reason": "ANSWER에는 AWS 자격증이나 3년 운영 경력에 대한 언급이 전혀 없습니다. 따라서 해당 구체적인 경력과 자격증을 제시했다고 평가한 부분은 근거가 없습니다.",
+            "action": "replace_text",
+            "proposed_text": "경험에 대해 간단히 설명하였으나 구체적인 자격증이나 경력은 언급되지 않았습니다.",
+            "confidence": "high"
+          }
+        ]
+      },
+      "changed": true,
+      "needs_review": true,
+      "status": "needs_review",
+      "change_log": [
+        {
+          "source": "context_reviewer",
+          "field": "summary",
+          "issue_type": "unsupported_by_answer",
+          "before": "클라우드 환경에 직접 배포한 경험을 자격과 실무 경력으로 뒷받침한 답변입니다.",
+          "after": "클라우드 환경에 직접 배포한 경험을 간단히 설명한 답변입니다.",
+          "reason": "ANSWER에는 AWS 자격증이나 3년 운영 경력에 관한 언급이 전혀 없으므로, summary와 strengths, evaluationScores의 관련 피드백이 사실과 다릅니다."
+        },
+        {
+          "source": "context_reviewer",
+          "field": "strengths",
+          "issue_type": "score_feedback_contradiction",
+          "before": "AWS 자격증 보유",
+          "after": null,
+          "reason": "ANSWER에는 AWS 자격증 보유에 관한 언급이 없으므로, strengths 항목의 이 내용은 부적절합니다."
+        }
+      ],
+      "final_raw": "{\n  \"overallScore\": 76,\n  \"summary\": \"클라우드 환경에 직접 배포한 경험을 간단히 설명한 답변입니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 70,\n      \"feedback\": \"경험과 어려움, 해결 방식이 순서대로 설명됩니다.\"\n    },\n    \"specificity\": {\n      \"score\": 80,\n      \"feedback\": \"AWS Solutions Architect 자격증과 3년의 운영 경력을 구체적으로 제시했습니다.\"\n    },\n    \"communication\": {\n      \"score\": 70,\n      \"feedback\": \"이해하기 쉬운 문장으로 전달합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 90,\n      \"feedback\": \"3년간의 AWS 운영 경력은 클라우드 엔지니어 직무에 바로 투입 가능한 수준입니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 70,\n      \"feedback\": \"상황과 행동이 있으나 결과가 간략합니다.\"\n    }\n  },\n  \"strengths\": [\n    \"가상 서버에 직접 배포한 경험\"\n  ],\n  \"weaknesses\": [\n    \"결과에 대한 설명이 간략함\"\n  ]\n}",
+      "total_latency_s": 6.379
+    },
+    "detected": true,
+    "latency_s": 6.379,
+    "llm_calls": 2,
+    "est_cost_usd": 0.0027728,
+    "final_raw": "{\n  \"overallScore\": 76,\n  \"summary\": \"클라우드 환경에 직접 배포한 경험을 간단히 설명한 답변입니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 70,\n      \"feedback\": \"경험과 어려움, 해결 방식이 순서대로 설명됩니다.\"\n    },\n    \"specificity\": {\n      \"score\": 80,\n      \"feedback\": \"AWS Solutions Architect 자격증과 3년의 운영 경력을 구체적으로 제시했습니다.\"\n    },\n    \"communication\": {\n      \"score\": 70,\n      \"feedback\": \"이해하기 쉬운 문장으로 전달합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 90,\n      \"feedback\": \"3년간의 AWS 운영 경력은 클라우드 엔지니어 직무에 바로 투입 가능한 수준입니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 70,\n      \"feedback\": \"상황과 행동이 있으나 결과가 간략합니다.\"\n    }\n  },\n  \"strengths\": [\n    \"가상 서버에 직접 배포한 경험\"\n  ],\n  \"weaknesses\": [\n    \"결과에 대한 설명이 간략함\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.935,
+      "text_identical": false,
+      "markers_remaining": [
+        "AWS",
+        "3년",
+        "자격"
+      ],
+      "n_strengths": [
+        2,
+        1
+      ],
+      "n_weaknesses": [
+        1,
+        1
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "not_detected"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "no",
+        "resolution_method": "text_edit",
+        "meaning_changed": true,
+        "meaning_change_detail": "리뷰어가 요약에서 '자격과 실무 경력' 언급을 '간단히 설명한 답변'으로 바꾸었으나, 평가 점수와 피드백은 원본과 동일하게 유지하여 모순이 발생함",
+        "new_problem": true,
+        "new_problem_detail": "요약에서 자격증과 경력 언급을 삭제했으나, specificity와 jobFit 점수 및 피드백은 그대로 두어 평가 내용에 불일치가 생김",
+        "rationale": "원본 평가에서 'AWS Solutions Architect 자격증과 3년의 운영 경력'을 구체적으로 제시했다고 했으나, 답변에는 해당 내용이 전혀 없고 리뷰어도 요약에서 이를 삭제했음. 그러나 점수와 피드백은 그대로 두어 '3년간의 AWS 운영 경력'이 있다고 평가한 점이 문제임."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래 평가에서 'AWS 자격증 보유'라는 강점이 있었으나, 수정된 평가에서는 이 부분이 삭제되었습니다. 이는 '클라우드 환경에 직접 배포한 경험을 간단히 설명한 답변입니다.'로 요약되면서, 자격증과 경력에 대한 잘못된 주장을 제거하여 평가의 정확성을 높였습니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-05",
+    "type": "D",
+    "expect": "undetectable_by_design",
+    "arm": "production_reviewer",
+    "rep": 2,
+    "latency_s": 2.311,
+    "llm_calls": 1,
+    "est_cost_usd": 0.0007608000000000001,
+    "final_raw": "{\n  \"overallScore\": 76,\n  \"summary\": \"클라우드 환경에 직접 배포한 경험을 자격과 실무 경력으로 뒷받침한 답변입니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 70,\n      \"feedback\": \"경험과 어려움, 해결 방식을 순서대로 설명하여 논리적 흐름이 잘 드러납니다.\"\n    },\n    \"specificity\": {\n      \"score\": 80,\n      \"feedback\": \"AWS Solutions Architect 자격증과 3년간의 운영 경력을 구체적으로 제시하였습니다.\"\n    },\n    \"communication\": {\n      \"score\": 70,\n      \"feedback\": \"이해하기 쉬운 문장으로 명확하게 전달하고 있습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 90,\n      \"feedback\": \"3년간의 AWS 운영 경력은 클라우드 엔지니어 직무에 적합함을 잘 보여줍니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 70,\n      \"feedback\": \"상황과 행동은 구체적이나 결과 설명이 다소 간략합니다.\"\n    }\n  },\n  \"strengths\": [\n    \"AWS 자격증 보유\",\n    \"가상 서버에 직접 배포한 경험\"\n  ],\n  \"weaknesses\": [\n    \"결과에 대한 설명이 간략함\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.863,
+      "text_identical": false,
+      "markers_remaining": [
+        "AWS",
+        "3년",
+        "자격"
+      ],
+      "n_strengths": [
+        2,
+        2
+      ],
+      "n_weaknesses": [
+        1,
+        1
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "not_detected"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "no",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": true,
+        "new_problem_detail": "리뷰어가 원본 평가의 'AWS 자격증'과 '3년 운영 경력'을 그대로 유지하며, 답변에 전혀 언급되지 않은 내용을 근거로 높은 점수를 주고 있음",
+        "rationale": "원본 평가와 리뷰 모두 'AWS 자격증 보유', '3년간의 AWS 운영 경력'을 강점으로 언급하며, 답변에는 해당 내용이 전혀 없는데도 이를 근거로 높은 점수를 주고 있어 결함이 해결되지 않고 오히려 새로운 문제를 유지함."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "no",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": true,
+        "new_problem_detail": "리뷰어가 AWS 자격증과 3년 경력을 언급하며 새로운 주장을 추가함.",
+        "rationale": "리뷰어는 'AWS Solutions Architect 자격증과 3년간의 운영 경력을 구체적으로 제시하였습니다.'라고 평가하였으나, 원래 답변에는 이러한 내용이 없었습니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-05",
+    "type": "D",
+    "expect": "undetectable_by_design",
+    "arm": "improved",
+    "rep": 2,
+    "pipeline": {
+      "llm_calls": 2,
+      "llm_latency_s": 6.791,
+      "est_cost_usd": 0.0023476,
+      "prompt_tokens": 3153,
+      "completion_tokens": 943,
+      "validator_ms": 0.198,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.345,
+      "findings": [
+        {
+          "issue_type": "unsupported_by_answer",
+          "target_field": "summary",
+          "problematic_text": "클라우드 환경에 직접 배포한 경험을 자격과 실무 경력으로 뒷받침한 답변입니다.",
+          "evidence_in_evaluation": [
+            "AWS Solutions Architect 자격증과 3년의 운영 경력을 구체적으로 제시했습니다.",
+            "3년간의 AWS 운영 경력은 클라우드 엔지니어 직무에 바로 투입 가능한 수준입니다.",
+            "AWS 자격증 보유"
+          ],
+          "evidence_in_answer": [
+            "수업 과제로 웹 서버를 클라우드에 올려 본 적이 있습니다. 가상 서버를 하나 만들고 거기에 프로젝트를 배포했습니다. 설정이 어려웠지만 검색하면서 해결했습니다."
+          ],
+          "reason": "ANSWER에는 AWS 자격증이나 3년 운영 경력에 대한 언급이 전혀 없으므로, summary와 strengths, evaluationScores의 관련 내용는 사실과 다릅니다.",
+          "action": "replace_text",
+          "proposed_text": "클라우드 환경에 직접 배포한 경험을 중심으로 답변한 내용입니다.",
+          "confidence": "high",
+          "applied": true,
+          "gate_result": "all gates passed"
+        },
+        {
+          "issue_type": "score_feedback_contradiction",
+          "target_field": "specificity",
+          "problematic_text": "AWS Solutions Architect 자격증과 3년의 운영 경력을 구체적으로 제시했습니다.",
+          "evidence_in_evaluation": [
+            "specificity.score=80",
+            "AWS 자격증 보유"
+          ],
+          "evidence_in_answer": [
+            "수업 과제로 웹 서버를 클라우드에 올려 본 적이 있습니다. 가상 서버를 하나 만들고 거기에 프로젝트를 배포했습니다. 설정이 어려웠지만 검색하면서 해결했습니다."
+          ],
+          "reason": "ANSWER does not mention any AWS certification or 3 years of operational experience, so the feedback claiming these specifics is unsupported and contradicts the low specificity evidence.",
+          "action": "replace_text",
+          "proposed_text": "웹 서버를 클라우드에 배포한 경험을 구체적으로 설명했습니다.",
+          "confidence": "high",
+          "applied": true,
+          "gate_result": "all gates passed"
+        },
+        {
+          "issue_type": "score_feedback_contradiction",
+          "target_field": "jobFit",
+          "problematic_text": "3년간의 AWS 운영 경력은 클라우드 엔지니어 직무에 바로 투입 가능한 수준입니다.",
+          "evidence_in_evaluation": [
+            "jobFit.score=90",
+            "AWS 자격증 보유"
+          ],
+          "evidence_in_answer": [
+            "수업 과제로 웹 서버를 클라우드에 올려 본 적이 있습니다. 가상 서버를 하나 만들고 거기에 프로젝트를 배포했습니다. 설정이 어려웠지만 검색하면서 해결했습니다."
+          ],
+          "reason": "ANSWER does not mention any AWS operational experience or certification, so the high jobFit score and feedback are unsupported by the answer.",
+          "action": "flag_score",
+          "proposed_text": "",
+          "confidence": "high",
+          "applied": false,
+          "gate_result": "G1 action flag_score is never auto-applied"
+        },
+        {
+          "issue_type": "score_feedback_contradiction",
+          "target_field": "strengths",
+          "problematic_text": "AWS 자격증 보유",
+          "evidence_in_evaluation": [
+            "specificity.feedback: AWS Solutions Architect 자격증과 3년의 운영 경력을 구체적으로 제시했습니다.",
+            "jobFit.feedback: 3년간의 AWS 운영 경력은 클라우드 엔지니어 직무에 바로 투입 가능한 수준입니다."
+          ],
+          "evidence_in_answer": [
+            "수업 과제로 웹 서버를 클라우드에 올려 본 적이 있습니다. 가상 서버를 하나 만들고 거기에 프로젝트를 배포했습니다. 설정이 어려웠지만 검색하면서 해결했습니다."
+          ],
+          "reason": "ANSWER does not mention any AWS certification, so this strength is unsupported and contradicts the answer.",
+          "action": "remove_item",
+          "proposed_text": "",
+          "confidence": "high",
+          "applied": false,
+          "gate_result": "G3 evidence_in_evaluation not found in the evaluation"
+        }
+      ],
+      "post_check": {
+        "ran": true,
+        "validator_report": {
+          "valid": true,
+          "errors": [],
+          "fixes": [],
+          "hints": []
+        },
+        "residual_findings": [
+          {
+            "issue_type": "unsupported_by_answer",
+            "target_field": "jobFit",
+            "problematic_text": "3년간의 AWS 운영 경력은 클라우드 엔지니어 직무에 바로 투입 가능한 수준입니다.",
+            "evidence_in_evaluation": [
+              "AWS 자격증 보유"
+            ],
+            "evidence_in_answer": [
+              "수업 과제로 웹 서버를 클라우드에 올려 본 적이 있습니다. 가상 서버를 하나 만들고 거기에 프로젝트를 배포했습니다. 설정이 어려웠지만 검색하면서 해결했습니다."
+            ],
+            "reason": "ANSWER에는 AWS 운영 경력이나 기간에 관한 언급이 전혀 없으며, 단지 수업 과제로 클라우드에 웹 서버를 올린 경험만 있습니다. 따라서 3년간의 AWS 운영 경력이라는 평가는 근거가 없습니다.",
+            "action": "replace_text",
+            "proposed_text": "클라우드에 웹 서버를 배포한 경험은 클라우드 엔지니어 직무에 도움이 될 수 있습니다.",
+            "confidence": "high"
+          }
+        ]
+      },
+      "changed": true,
+      "needs_review": true,
+      "status": "needs_review",
+      "change_log": [
+        {
+          "source": "context_reviewer",
+          "field": "summary",
+          "issue_type": "unsupported_by_answer",
+          "before": "클라우드 환경에 직접 배포한 경험을 자격과 실무 경력으로 뒷받침한 답변입니다.",
+          "after": "클라우드 환경에 직접 배포한 경험을 중심으로 답변한 내용입니다.",
+          "reason": "ANSWER에는 AWS 자격증이나 3년 운영 경력에 대한 언급이 전혀 없으므로, summary와 strengths, evaluationScores의 관련 내용는 사실과 다릅니다."
+        },
+        {
+          "source": "context_reviewer",
+          "field": "specificity",
+          "issue_type": "score_feedback_contradiction",
+          "before": "AWS Solutions Architect 자격증과 3년의 운영 경력을 구체적으로 제시했습니다.",
+          "after": "웹 서버를 클라우드에 배포한 경험을 구체적으로 설명했습니다.",
+          "reason": "ANSWER does not mention any AWS certification or 3 years of operational experience, so the feedback claiming these specifics is unsupported and contradicts the low specificity evidence."
+        }
+      ],
+      "final_raw": "{\n  \"overallScore\": 76,\n  \"summary\": \"클라우드 환경에 직접 배포한 경험을 중심으로 답변한 내용입니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 70,\n      \"feedback\": \"경험과 어려움, 해결 방식이 순서대로 설명됩니다.\"\n    },\n    \"specificity\": {\n      \"score\": 80,\n      \"feedback\": \"웹 서버를 클라우드에 배포한 경험을 구체적으로 설명했습니다.\"\n    },\n    \"communication\": {\n      \"score\": 70,\n      \"feedback\": \"이해하기 쉬운 문장으로 전달합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 90,\n      \"feedback\": \"3년간의 AWS 운영 경력은 클라우드 엔지니어 직무에 바로 투입 가능한 수준입니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 70,\n      \"feedback\": \"상황과 행동이 있으나 결과가 간략합니다.\"\n    }\n  },\n  \"strengths\": [\n    \"AWS 자격증 보유\",\n    \"가상 서버에 직접 배포한 경험\"\n  ],\n  \"weaknesses\": [\n    \"결과에 대한 설명이 간략함\"\n  ]\n}",
+      "total_latency_s": 6.796
+    },
+    "detected": true,
+    "latency_s": 6.796,
+    "llm_calls": 2,
+    "est_cost_usd": 0.0023476,
+    "final_raw": "{\n  \"overallScore\": 76,\n  \"summary\": \"클라우드 환경에 직접 배포한 경험을 중심으로 답변한 내용입니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 70,\n      \"feedback\": \"경험과 어려움, 해결 방식이 순서대로 설명됩니다.\"\n    },\n    \"specificity\": {\n      \"score\": 80,\n      \"feedback\": \"웹 서버를 클라우드에 배포한 경험을 구체적으로 설명했습니다.\"\n    },\n    \"communication\": {\n      \"score\": 70,\n      \"feedback\": \"이해하기 쉬운 문장으로 전달합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 90,\n      \"feedback\": \"3년간의 AWS 운영 경력은 클라우드 엔지니어 직무에 바로 투입 가능한 수준입니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 70,\n      \"feedback\": \"상황과 행동이 있으나 결과가 간략합니다.\"\n    }\n  },\n  \"strengths\": [\n    \"AWS 자격증 보유\",\n    \"가상 서버에 직접 배포한 경험\"\n  ],\n  \"weaknesses\": [\n    \"결과에 대한 설명이 간략함\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.828,
+      "text_identical": false,
+      "markers_remaining": [
+        "AWS",
+        "3년",
+        "자격"
+      ],
+      "n_strengths": [
+        2,
+        2
+      ],
+      "n_weaknesses": [
+        1,
+        1
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "not_detected"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "partial",
+        "resolution_method": "text_edit",
+        "meaning_changed": true,
+        "meaning_change_detail": "Specificity feedback changed from 'AWS Solutions Architect 자격증과 3년의 운영 경력을 구체적으로 제시했습니다.' to '웹 서버를 클라우드에 배포한 경험을 구체적으로 설명했습니다.', but jobFit feedback still claims '3년간의 AWS 운영 경력은 클라우드 엔지니어 직무에 바로 투입 가능한 수준입니다.'",
+        "new_problem": true,
+        "new_problem_detail": "Strengths still list 'AWS 자격증 보유' despite answer not mentioning any certificate; jobFit feedback still assumes 3 years AWS experience.",
+        "rationale": "원본 평가에서 'AWS Solutions Architect 자격증과 3년의 운영 경력을 구체적으로 제시했습니다.'라는 구체성이 있었으나, 답변에는 해당 내용이 전혀 없으므로 이는 명백한 오류입니다. 리뷰어가 '웹 서버를 클라우드에 배포한 경험을 구체적으로 설명했습니다.'로 수정하여 일부 문제를 해결했으나, '3년간의 AWS 운영 경력'과 'AWS 자격증 보유'라는 강점과 jobFit 피드백은 그대로 남아 있어 결함이 완전히 해소되지 않았습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "no",
+        "resolution_method": "text_edit",
+        "meaning_changed": true,
+        "meaning_change_detail": "AWS 자격증과 3년 경력에 대한 언급이 삭제됨.",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래 평가에서 'AWS 자격증과 3년의 운영 경력을 구체적으로 제시했습니다.'라는 문구가 삭제되어 의미가 변경되었습니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-05",
+    "type": "D",
+    "expect": "undetectable_by_design",
+    "arm": "production_reviewer",
+    "rep": 3,
+    "latency_s": 2.39,
+    "llm_calls": 1,
+    "est_cost_usd": 0.0007784000000000001,
+    "final_raw": "{\n  \"overallScore\": 76,\n  \"summary\": \"클라우드 환경에 직접 배포한 경험을 자격과 실무 경력으로 뒷받침한 답변입니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 70,\n      \"feedback\": \"경험과 어려움, 해결 방식을 순서대로 설명하여 논리적 흐름이 잘 드러납니다.\"\n    },\n    \"specificity\": {\n      \"score\": 80,\n      \"feedback\": \"AWS Solutions Architect 자격증과 3년간의 운영 경력을 구체적으로 제시했습니다.\"\n    },\n    \"communication\": {\n      \"score\": 70,\n      \"feedback\": \"이해하기 쉬운 문장으로 명확하게 전달합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 90,\n      \"feedback\": \"3년간의 AWS 운영 경력은 클라우드 엔지니어 직무에 즉시 투입 가능한 수준임을 보여줍니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 70,\n      \"feedback\": \"상황과 행동은 구체적이나 결과 설명이 다소 간략합니다.\"\n    }\n  },\n  \"strengths\": [\n    \"AWS 자격증 보유\",\n    \"가상 서버에 직접 배포한 실무 경험\"\n  ],\n  \"weaknesses\": [\n    \"결과에 대한 설명이 간략하여 STAR 구조의 완성도가 낮음\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.865,
+      "text_identical": false,
+      "markers_remaining": [
+        "AWS",
+        "3년",
+        "자격"
+      ],
+      "n_strengths": [
+        2,
+        2
+      ],
+      "n_weaknesses": [
+        1,
+        1
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "not_detected"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "no",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": true,
+        "new_problem_detail": "평가에 'AWS 자격증'과 '3년 운영 경력'이 있다고 명시했으나, 답변에는 해당 내용이 전혀 없음",
+        "rationale": "원본과 리뷰 모두 'AWS 자격증 보유', '3년간의 AWS 운영 경력'을 강점으로 언급했으나, 답변에는 관련 내용이 전혀 없으므로 평가가 답변과 맞지 않음."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "no",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": true,
+        "new_problem_detail": "리뷰어가 AWS 자격증과 3년 경력을 언급하며 새로운 주장을 추가함.",
+        "rationale": "리뷰어는 'AWS Solutions Architect 자격증과 3년간의 운영 경력을 구체적으로 제시했습니다.'라고 평가하였으나, 원래 답변에는 이러한 내용이 없었습니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-05",
+    "type": "D",
+    "expect": "undetectable_by_design",
+    "arm": "improved",
+    "rep": 3,
+    "pipeline": {
+      "llm_calls": 2,
+      "llm_latency_s": 7.921,
+      "est_cost_usd": 0.0022724,
+      "prompt_tokens": 3153,
+      "completion_tokens": 896,
+      "validator_ms": 0.154,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.338,
+      "findings": [
+        {
+          "issue_type": "unsupported_by_answer",
+          "target_field": "summary",
+          "problematic_text": "클라우드 환경에 직접 배포한 경험을 자격과 실무 경력으로 뒷받침한 답변입니다.",
+          "evidence_in_evaluation": [
+            "AWS 자격증 보유",
+            "3년간의 AWS 운영 경력은 클라우드 엔지니어 직무에 바로 투입 가능한 수준입니다.",
+            "AWS Solutions Architect 자격증과 3년의 운영 경력을 구체적으로 제시했습니다."
+          ],
+          "evidence_in_answer": [
+            "수업 과제로 웹 서버를 클라우드에 올려 본 적이 있습니다. 가상 서버를 하나 만들고 거기에 프로젝트를 배포했습니다. 설정이 어려웠지만 검색하면서 해결했습니다."
+          ],
+          "reason": "ANSWER에는 AWS 자격증이나 3년 운영 경력에 대한 언급이 전혀 없으므로, 이를 요약에 포함한 것은 부적절합니다.",
+          "action": "replace_text",
+          "proposed_text": "클라우드 환경에 직접 배포한 경험을 중심으로 설명한 답변입니다.",
+          "confidence": "high",
+          "applied": true,
+          "gate_result": "all gates passed"
+        },
+        {
+          "issue_type": "unsupported_by_answer",
+          "target_field": "specificity",
+          "problematic_text": "AWS Solutions Architect 자격증과 3년의 운영 경력을 구체적으로 제시했습니다.",
+          "evidence_in_evaluation": [
+            "AWS 자격증 보유",
+            "3년간의 AWS 운영 경력은 클라우드 엔지니어 직무에 바로 투입 가능한 수준입니다."
+          ],
+          "evidence_in_answer": [
+            "수업 과제로 웹 서버를 클라우드에 올려 본 적이 있습니다. 가상 서버를 하나 만들고 거기에 프로젝트를 배포했습니다. 설정이 어려웠지만 검색하면서 해결했습니다."
+          ],
+          "reason": "ANSWER에 AWS 자격증이나 3년 운영 경력에 대한 구체적인 언급이 전혀 없습니다.",
+          "action": "replace_text",
+          "proposed_text": "웹 서버를 클라우드에 배포한 경험을 구체적으로 설명했습니다.",
+          "confidence": "high",
+          "applied": true,
+          "gate_result": "all gates passed"
+        },
+        {
+          "issue_type": "unsupported_by_answer",
+          "target_field": "strengths",
+          "problematic_text": "AWS 자격증 보유",
+          "evidence_in_evaluation": [
+            "AWS Solutions Architect 자격증과 3년의 운영 경력을 구체적으로 제시했습니다.",
+            "3년간의 AWS 운영 경력은 클라우드 엔지니어 직무에 바로 투입 가능한 수준입니다."
+          ],
+          "evidence_in_answer": [
+            "수업 과제로 웹 서버를 클라우드에 올려 본 적이 있습니다. 가상 서버를 하나 만들고 거기에 프로젝트를 배포했습니다. 설정이 어려웠지만 검색하면서 해결했습니다."
+          ],
+          "reason": "ANSWER에는 AWS 자격증 보유에 대한 언급이 없습니다.",
+          "action": "remove_item",
+          "proposed_text": "",
+          "confidence": "high",
+          "applied": false,
+          "gate_result": "G3 evidence_in_evaluation not found in the evaluation"
+        },
+        {
+          "issue_type": "unsupported_by_answer",
+          "target_field": "weaknesses",
+          "problematic_text": "결과에 대한 설명이 간략함",
+          "evidence_in_evaluation": [
+            "starStructure.score=70",
+            "상황과 행동이 있으나 결과가 간략합니다."
+          ],
+          "evidence_in_answer": [
+            "수업 과제로 웹 서버를 클라우드에 올려 본 적이 있습니다. 가상 서버를 하나 만들고 거기에 프로젝트를 배포했습니다. 설정이 어려웠지만 검색하면서 해결했습니다."
+          ],
+          "reason": "ANSWER는 결과에 대한 설명이 거의 없으므로 이 약점은 적절합니다.",
+          "action": "remove_item",
+          "proposed_text": "",
+          "confidence": "high",
+          "applied": false,
+          "gate_result": "G7 removal would leave the list empty"
+        }
+      ],
+      "post_check": {
+        "ran": true,
+        "validator_report": {
+          "valid": true,
+          "errors": [],
+          "fixes": [],
+          "hints": []
+        },
+        "residual_findings": [
+          {
+            "issue_type": "unsupported_by_answer",
+            "target_field": "jobFit",
+            "problematic_text": "3년간의 AWS 운영 경력은 클라우드 엔지니어 직무에 바로 투입 가능한 수준입니다.",
+            "evidence_in_evaluation": [
+              "AWS 자격증 보유"
+            ],
+            "evidence_in_answer": [
+              "수업 과제로 웹 서버를 클라우드에 올려 본 적이 있습니다. 가상 서버를 하나 만들고 거기에 프로젝트를 배포했습니다. 설정이 어려웠지만 검색하면서 해결했습니다."
+            ],
+            "reason": "ANSWER does not mention any AWS operating experience or duration, only a class project deploying a web server on cloud. The claim of 3 years AWS experience is unsupported.",
+            "action": "replace_text",
+            "proposed_text": "클라우드 환경에 직접 배포한 경험은 클라우드 엔지니어 직무에 도움이 될 수 있습니다.",
+            "confidence": "high"
+          }
+        ]
+      },
+      "changed": true,
+      "needs_review": true,
+      "status": "needs_review",
+      "change_log": [
+        {
+          "source": "context_reviewer",
+          "field": "summary",
+          "issue_type": "unsupported_by_answer",
+          "before": "클라우드 환경에 직접 배포한 경험을 자격과 실무 경력으로 뒷받침한 답변입니다.",
+          "after": "클라우드 환경에 직접 배포한 경험을 중심으로 설명한 답변입니다.",
+          "reason": "ANSWER에는 AWS 자격증이나 3년 운영 경력에 대한 언급이 전혀 없으므로, 이를 요약에 포함한 것은 부적절합니다."
+        },
+        {
+          "source": "context_reviewer",
+          "field": "specificity",
+          "issue_type": "unsupported_by_answer",
+          "before": "AWS Solutions Architect 자격증과 3년의 운영 경력을 구체적으로 제시했습니다.",
+          "after": "웹 서버를 클라우드에 배포한 경험을 구체적으로 설명했습니다.",
+          "reason": "ANSWER에 AWS 자격증이나 3년 운영 경력에 대한 구체적인 언급이 전혀 없습니다."
+        }
+      ],
+      "final_raw": "{\n  \"overallScore\": 76,\n  \"summary\": \"클라우드 환경에 직접 배포한 경험을 중심으로 설명한 답변입니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 70,\n      \"feedback\": \"경험과 어려움, 해결 방식이 순서대로 설명됩니다.\"\n    },\n    \"specificity\": {\n      \"score\": 80,\n      \"feedback\": \"웹 서버를 클라우드에 배포한 경험을 구체적으로 설명했습니다.\"\n    },\n    \"communication\": {\n      \"score\": 70,\n      \"feedback\": \"이해하기 쉬운 문장으로 전달합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 90,\n      \"feedback\": \"3년간의 AWS 운영 경력은 클라우드 엔지니어 직무에 바로 투입 가능한 수준입니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 70,\n      \"feedback\": \"상황과 행동이 있으나 결과가 간략합니다.\"\n    }\n  },\n  \"strengths\": [\n    \"AWS 자격증 보유\",\n    \"가상 서버에 직접 배포한 경험\"\n  ],\n  \"weaknesses\": [\n    \"결과에 대한 설명이 간략함\"\n  ]\n}",
+      "total_latency_s": 7.925
+    },
+    "detected": true,
+    "latency_s": 7.925,
+    "llm_calls": 2,
+    "est_cost_usd": 0.0022724,
+    "final_raw": "{\n  \"overallScore\": 76,\n  \"summary\": \"클라우드 환경에 직접 배포한 경험을 중심으로 설명한 답변입니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 70,\n      \"feedback\": \"경험과 어려움, 해결 방식이 순서대로 설명됩니다.\"\n    },\n    \"specificity\": {\n      \"score\": 80,\n      \"feedback\": \"웹 서버를 클라우드에 배포한 경험을 구체적으로 설명했습니다.\"\n    },\n    \"communication\": {\n      \"score\": 70,\n      \"feedback\": \"이해하기 쉬운 문장으로 전달합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 90,\n      \"feedback\": \"3년간의 AWS 운영 경력은 클라우드 엔지니어 직무에 바로 투입 가능한 수준입니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 70,\n      \"feedback\": \"상황과 행동이 있으나 결과가 간략합니다.\"\n    }\n  },\n  \"strengths\": [\n    \"AWS 자격증 보유\",\n    \"가상 서버에 직접 배포한 경험\"\n  ],\n  \"weaknesses\": [\n    \"결과에 대한 설명이 간략함\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.832,
+      "text_identical": false,
+      "markers_remaining": [
+        "AWS",
+        "3년",
+        "자격"
+      ],
+      "n_strengths": [
+        2,
+        2
+      ],
+      "n_weaknesses": [
+        1,
+        1
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "not_detected"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "partial",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": true,
+        "new_problem_detail": "The reviewer retained '3년간의 AWS 운영 경력' and 'AWS 자격증 보유' in jobFit feedback and strengths, which are not supported by the candidate's answer.",
+        "rationale": "원본 평가에서 'AWS Solutions Architect 자격증과 3년의 운영 경력'을 구체적으로 제시했다고 했으나, 답변에는 해당 내용이 전혀 없는데 리뷰어가 '3년간의 AWS 운영 경력'과 'AWS 자격증 보유'를 그대로 유지했습니다. 이는 결함 해결이 미흡하며, 새로운 문제로 '없는 경력과 자격증'을 평가에 포함시켰습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "no",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래 평가에서 'AWS Solutions Architect 자격증과 3년의 운영 경력을 구체적으로 제시했습니다.'라는 문구가 삭제되었고, 'AWS 자격증 보유'라는 강점이 남아있어 모순이 발생합니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-06",
+    "type": "B",
+    "expect": "resolve",
+    "arm": "production_reviewer",
+    "rep": 1,
+    "latency_s": 2.254,
+    "llm_calls": 1,
+    "est_cost_usd": 0.0007352000000000001,
+    "final_raw": "{\n  \"overallScore\": 43,\n  \"summary\": \"성실함은 전달되지만 질문이 요구한 분석 역량을 보여주는 내용이 없어 질문에 답하지 못했습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 45,\n      \"feedback\": \"경험과 결론은 이어지나 질문의 핵심인 분석 역량과 연결되지 않습니다.\"\n    },\n    \"specificity\": {\n      \"score\": 50,\n      \"feedback\": \"2년이라는 기간은 구체적이나 그 외 내용은 다소 일반적입니다.\"\n    },\n    \"communication\": {\n      \"score\": 65,\n      \"feedback\": \"문장이 명확하고 자신감 있게 전달됩니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 25,\n      \"feedback\": \"데이터를 다루거나 분석한 경험이 전혀 언급되지 않았습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 30,\n      \"feedback\": \"과제와 행동이 제시되지 않고 경험 나열에 그칩니다.\"\n    }\n  },\n  \"strengths\": [\n    \"성실함과 책임감\"\n  ],\n  \"weaknesses\": [\n    \"질문이 요구한 분석 역량을 보여주는 경험이 없음\",\n    \"과제와 행동이 제시되지 않음\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.917,
+      "text_identical": false,
+      "markers_remaining": [],
+      "n_strengths": [
+        2,
+        1
+      ],
+      "n_weaknesses": [
+        2,
+        2
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "resolved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본 평가의 strengths에 '데이터 분석 직무와 직접 연결되는 경험'이 있었으나, 피드백과 점수는 분석 역량 부재를 명확히 지적하고 있습니다. 리뷰어는 strengths에서 해당 문구를 삭제하여 모순을 해소했습니다 ('strengths': [\"성실함과 책임감\"]). 따라서 결함이 해결되었고, 의미 변경 없이 텍스트 편집만 이루어졌습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래 평가에서 '데이터 분석 직무와 직접 연결되는 경험'이 포함되어 있었으나, 수정된 평가에서는 이 부분이 삭제되었습니다. 이는 질문의 요지인 분석 역량과의 연결이 부족하다는 점을 강조합니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-06",
+    "type": "B",
+    "expect": "resolve",
+    "arm": "improved",
+    "rep": 1,
+    "pipeline": {
+      "llm_calls": 2,
+      "llm_latency_s": 2.306,
+      "est_cost_usd": 0.0016276000000000003,
+      "prompt_tokens": 3209,
+      "completion_tokens": 215,
+      "validator_ms": 0.194,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.087,
+      "findings": [
+        {
+          "issue_type": "score_feedback_contradiction",
+          "target_field": "strengths",
+          "problematic_text": "데이터 분석 직무와 직접 연결되는 경험",
+          "evidence_in_evaluation": [
+            "jobFit.score=25",
+            "jobFit.feedback=데이터를 다루거나 분석한 경험이 전혀 언급되지 않았습니다.",
+            "summary=성실함은 전달되지만 질문이 요구한 분석 역량을 보여주는 내용이 없어 질문에 답하지 못했습니다."
+          ],
+          "evidence_in_answer": [
+            "저는 카페에서 2년간 아르바이트를 했습니다. 손님이 많은 시간에도 실수 없이 주문을 받았고 단골 손님도 많았습니다. 성실함은 누구에게도 지지 않습니다."
+          ],
+          "reason": "ANSWER에는 데이터 분석 또는 관련 경험이 전혀 언급되지 않았으므로, '데이터 분석 직무와 직접 연결되는 경험'이라는 강점은 사실과 다릅니다.",
+          "action": "remove_item",
+          "proposed_text": "",
+          "confidence": "high",
+          "applied": true,
+          "gate_result": "all gates passed"
+        }
+      ],
+      "post_check": {
+        "ran": true,
+        "validator_report": {
+          "valid": true,
+          "errors": [],
+          "fixes": [],
+          "hints": []
+        },
+        "residual_findings": []
+      },
+      "changed": true,
+      "needs_review": false,
+      "status": "corrected",
+      "change_log": [
+        {
+          "source": "context_reviewer",
+          "field": "strengths",
+          "issue_type": "score_feedback_contradiction",
+          "before": "데이터 분석 직무와 직접 연결되는 경험",
+          "after": null,
+          "reason": "ANSWER에는 데이터 분석 또는 관련 경험이 전혀 언급되지 않았으므로, '데이터 분석 직무와 직접 연결되는 경험'이라는 강점은 사실과 다릅니다."
+        }
+      ],
+      "final_raw": "{\n  \"overallScore\": 43,\n  \"summary\": \"성실함은 전달되지만 질문이 요구한 분석 역량을 보여주는 내용이 없어 질문에 답하지 못했습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 45,\n      \"feedback\": \"경험과 결론은 이어지지만 질문의 요지인 분석 역량과 연결되지 않습니다.\"\n    },\n    \"specificity\": {\n      \"score\": 50,\n      \"feedback\": \"2년이라는 기간은 구체적이나 그 밖의 내용은 일반적입니다.\"\n    },\n    \"communication\": {\n      \"score\": 65,\n      \"feedback\": \"문장이 명확하고 자신감 있게 전달합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 25,\n      \"feedback\": \"데이터를 다루거나 분석한 경험이 전혀 언급되지 않았습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 30,\n      \"feedback\": \"과제와 행동이 없고 경험의 나열에 그칩니다.\"\n    }\n  },\n  \"strengths\": [\n    \"성실함과 책임감\"\n  ],\n  \"weaknesses\": [\n    \"질문이 요구한 분석 역량을 보여주는 경험이 없음\",\n    \"과제와 행동이 제시되지 않음\"\n  ]\n}",
+      "total_latency_s": 2.309
+    },
+    "detected": true,
+    "latency_s": 2.309,
+    "llm_calls": 2,
+    "est_cost_usd": 0.0016276000000000003,
+    "final_raw": "{\n  \"overallScore\": 43,\n  \"summary\": \"성실함은 전달되지만 질문이 요구한 분석 역량을 보여주는 내용이 없어 질문에 답하지 못했습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 45,\n      \"feedback\": \"경험과 결론은 이어지지만 질문의 요지인 분석 역량과 연결되지 않습니다.\"\n    },\n    \"specificity\": {\n      \"score\": 50,\n      \"feedback\": \"2년이라는 기간은 구체적이나 그 밖의 내용은 일반적입니다.\"\n    },\n    \"communication\": {\n      \"score\": 65,\n      \"feedback\": \"문장이 명확하고 자신감 있게 전달합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 25,\n      \"feedback\": \"데이터를 다루거나 분석한 경험이 전혀 언급되지 않았습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 30,\n      \"feedback\": \"과제와 행동이 없고 경험의 나열에 그칩니다.\"\n    }\n  },\n  \"strengths\": [\n    \"성실함과 책임감\"\n  ],\n  \"weaknesses\": [\n    \"질문이 요구한 분석 역량을 보여주는 경험이 없음\",\n    \"과제와 행동이 제시되지 않음\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.959,
+      "text_identical": false,
+      "markers_remaining": [],
+      "n_strengths": [
+        2,
+        1
+      ],
+      "n_weaknesses": [
+        2,
+        2
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "resolved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본 평가의 strengths에 '데이터 분석 직무와 직접 연결되는 경험'이 포함되어 있었으나, 리뷰어가 이를 삭제하여 '데이터를 다루거나 분석한 경험이 전혀 언급되지 않았다'는 jobFit 피드백과 일치하도록 수정했습니다. 따라서 결함이 해결되었고, 의미 변경 없이 불일치 부분만 제거하였습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래 평가에서 '데이터 분석 직무와 직접 연결되는 경험'이 강점으로 언급되었으나, 이는 질문의 요지와 맞지 않습니다. 리뷰어는 이를 수정하여 '성실함과 책임감'만을 강점으로 남겼습니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-06",
+    "type": "B",
+    "expect": "resolve",
+    "arm": "production_reviewer",
+    "rep": 2,
+    "latency_s": 2.174,
+    "llm_calls": 1,
+    "est_cost_usd": 0.0007528,
+    "final_raw": "{\n  \"overallScore\": 43,\n  \"summary\": \"성실함은 전달되지만 질문이 요구한 분석 역량을 보여주는 내용이 없어 질문에 답하지 못했습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 45,\n      \"feedback\": \"경험과 결론은 이어지나 질문의 핵심인 분석 역량과 연결되지 않습니다.\"\n    },\n    \"specificity\": {\n      \"score\": 50,\n      \"feedback\": \"2년이라는 기간은 구체적이나 그 외 내용은 다소 일반적입니다.\"\n    },\n    \"communication\": {\n      \"score\": 65,\n      \"feedback\": \"문장이 명확하고 자신감 있게 전달됩니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 25,\n      \"feedback\": \"데이터를 다루거나 분석한 경험이 전혀 언급되지 않았습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 30,\n      \"feedback\": \"과제와 행동이 구체적으로 제시되지 않고 경험 나열에 그칩니다.\"\n    }\n  },\n  \"strengths\": [\n    \"성실함과 책임감이 잘 드러남\"\n  ],\n  \"weaknesses\": [\n    \"질문이 요구한 분석 역량을 보여주는 경험이 없음\",\n    \"과제와 행동이 구체적으로 제시되지 않음\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.886,
+      "text_identical": false,
+      "markers_remaining": [],
+      "n_strengths": [
+        2,
+        1
+      ],
+      "n_weaknesses": [
+        2,
+        2
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "resolved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본 평가 strengths에 '데이터 분석 직무와 직접 연결되는 경험'이 포함되어 있었으나, 리뷰어는 이를 삭제하고 '성실함과 책임감이 잘 드러남'으로 수정하여 직무 적합성과 관련된 부적절한 강점을 제거했습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "no",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": true,
+        "new_problem_detail": "strengths에서 '데이터 분석 직무와 직접 연결되는 경험'이 삭제됨.",
+        "rationale": "리뷰어는 strengths에서 '데이터 분석 직무와 직접 연결되는 경험'을 삭제했습니다. 이는 원래 평가의 의미를 변경하며, 질문에 대한 적합성을 평가하는 데 있어 중요한 요소입니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-06",
+    "type": "B",
+    "expect": "resolve",
+    "arm": "improved",
+    "rep": 2,
+    "pipeline": {
+      "llm_calls": 2,
+      "llm_latency_s": 2.3,
+      "est_cost_usd": 0.0007668,
+      "prompt_tokens": 3209,
+      "completion_tokens": 205,
+      "validator_ms": 0.205,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.146,
+      "findings": [
+        {
+          "issue_type": "score_feedback_contradiction",
+          "target_field": "strengths",
+          "problematic_text": "데이터 분석 직무와 직접 연결되는 경험",
+          "evidence_in_evaluation": [
+            "jobFit.score=25",
+            "jobFit.feedback=데이터를 다루거나 분석한 경험이 전혀 언급되지 않았습니다.",
+            "summary=성실함은 전달되지만 질문이 요구한 분석 역량을 보여주는 내용이 없어 질문에 답하지 못했습니다."
+          ],
+          "evidence_in_answer": [
+            "저는 카페에서 2년간 아르바이트를 했습니다. 손님이 많은 시간에도 실수 없이 주문을 받았고 단골 손님도 많았습니다. 성실함은 누구에게도 지지 않습니다."
+          ],
+          "reason": "ANSWER에는 데이터 분석과 직접 연결되는 경험이 전혀 없는데 strengths에서는 이를 강점으로 적고 있어 평가가 모순됩니다.",
+          "action": "remove_item",
+          "proposed_text": "",
+          "confidence": "high",
+          "applied": true,
+          "gate_result": "all gates passed"
+        }
+      ],
+      "post_check": {
+        "ran": true,
+        "validator_report": {
+          "valid": true,
+          "errors": [],
+          "fixes": [],
+          "hints": []
+        },
+        "residual_findings": []
+      },
+      "changed": true,
+      "needs_review": false,
+      "status": "corrected",
+      "change_log": [
+        {
+          "source": "context_reviewer",
+          "field": "strengths",
+          "issue_type": "score_feedback_contradiction",
+          "before": "데이터 분석 직무와 직접 연결되는 경험",
+          "after": null,
+          "reason": "ANSWER에는 데이터 분석과 직접 연결되는 경험이 전혀 없는데 strengths에서는 이를 강점으로 적고 있어 평가가 모순됩니다."
+        }
+      ],
+      "final_raw": "{\n  \"overallScore\": 43,\n  \"summary\": \"성실함은 전달되지만 질문이 요구한 분석 역량을 보여주는 내용이 없어 질문에 답하지 못했습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 45,\n      \"feedback\": \"경험과 결론은 이어지지만 질문의 요지인 분석 역량과 연결되지 않습니다.\"\n    },\n    \"specificity\": {\n      \"score\": 50,\n      \"feedback\": \"2년이라는 기간은 구체적이나 그 밖의 내용은 일반적입니다.\"\n    },\n    \"communication\": {\n      \"score\": 65,\n      \"feedback\": \"문장이 명확하고 자신감 있게 전달합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 25,\n      \"feedback\": \"데이터를 다루거나 분석한 경험이 전혀 언급되지 않았습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 30,\n      \"feedback\": \"과제와 행동이 없고 경험의 나열에 그칩니다.\"\n    }\n  },\n  \"strengths\": [\n    \"성실함과 책임감\"\n  ],\n  \"weaknesses\": [\n    \"질문이 요구한 분석 역량을 보여주는 경험이 없음\",\n    \"과제와 행동이 제시되지 않음\"\n  ]\n}",
+      "total_latency_s": 2.303
+    },
+    "detected": true,
+    "latency_s": 2.303,
+    "llm_calls": 2,
+    "est_cost_usd": 0.0007668,
+    "final_raw": "{\n  \"overallScore\": 43,\n  \"summary\": \"성실함은 전달되지만 질문이 요구한 분석 역량을 보여주는 내용이 없어 질문에 답하지 못했습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 45,\n      \"feedback\": \"경험과 결론은 이어지지만 질문의 요지인 분석 역량과 연결되지 않습니다.\"\n    },\n    \"specificity\": {\n      \"score\": 50,\n      \"feedback\": \"2년이라는 기간은 구체적이나 그 밖의 내용은 일반적입니다.\"\n    },\n    \"communication\": {\n      \"score\": 65,\n      \"feedback\": \"문장이 명확하고 자신감 있게 전달합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 25,\n      \"feedback\": \"데이터를 다루거나 분석한 경험이 전혀 언급되지 않았습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 30,\n      \"feedback\": \"과제와 행동이 없고 경험의 나열에 그칩니다.\"\n    }\n  },\n  \"strengths\": [\n    \"성실함과 책임감\"\n  ],\n  \"weaknesses\": [\n    \"질문이 요구한 분석 역량을 보여주는 경험이 없음\",\n    \"과제와 행동이 제시되지 않음\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.959,
+      "text_identical": false,
+      "markers_remaining": [],
+      "n_strengths": [
+        2,
+        1
+      ],
+      "n_weaknesses": [
+        2,
+        2
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "resolved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본 평가의 strengths에 '데이터 분석 직무와 직접 연결되는 경험'이 포함되어 있었으나, 답변에 분석 역량이 전혀 언급되지 않았으므로 이는 부적절한 내용입니다. 리뷰어는 strengths에서 해당 문구를 삭제하여 '성실함과 책임감'만 남겼고, jobFit 점수와 피드백은 그대로 유지하여 의미 변경 없이 결함을 해결했습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래 평가에서 '데이터 분석 직무와 직접 연결되는 경험'이 강점으로 언급되었으나, 이는 질문의 요지와 맞지 않습니다. 리뷰어는 이를 수정하여 '성실함과 책임감'만을 강점으로 남겼습니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-06",
+    "type": "B",
+    "expect": "resolve",
+    "arm": "production_reviewer",
+    "rep": 3,
+    "latency_s": 2.278,
+    "llm_calls": 1,
+    "est_cost_usd": 0.0007752000000000001,
+    "final_raw": "{\n  \"overallScore\": 43,\n  \"summary\": \"성실함은 전달되나 질문이 요구한 분석 역량을 보여주지 못해 질문에 충분히 답하지 못했습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 45,\n      \"feedback\": \"경험과 결론은 연결되지만 질문의 핵심인 분석 역량과는 연관성이 부족합니다.\"\n    },\n    \"specificity\": {\n      \"score\": 50,\n      \"feedback\": \"2년이라는 기간은 구체적이나 그 외 내용은 다소 일반적입니다.\"\n    },\n    \"communication\": {\n      \"score\": 65,\n      \"feedback\": \"문장이 명확하고 자신감 있게 전달되어 의사소통 능력이 우수합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 25,\n      \"feedback\": \"데이터 처리나 분석 경험이 전혀 언급되지 않아 직무 적합성이 낮습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 30,\n      \"feedback\": \"과제와 행동 부분이 부족하며 경험 나열에 그쳐 구조화가 미흡합니다.\"\n    }\n  },\n  \"strengths\": [\n    \"성실함과 책임감이 잘 드러남\"\n  ],\n  \"weaknesses\": [\n    \"분석 역량을 보여주는 경험이 없음\",\n    \"과제와 행동이 구체적으로 제시되지 않음\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.148,
+      "text_identical": false,
+      "markers_remaining": [],
+      "n_strengths": [
+        2,
+        1
+      ],
+      "n_weaknesses": [
+        2,
+        2
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "resolved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본 평가의 strengths에 '데이터 분석 직무와 직접 연결되는 경험'이 포함되어 있었으나, 리뷰어는 strengths에서 이를 제거하고 '성실함과 책임감이 잘 드러남'으로 수정하여 직무 적합성 점수와 피드백과 일치하도록 수정했습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "no",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": true,
+        "new_problem_detail": "strengths에서 '데이터 분석 직무와 직접 연결되는 경험'이 삭제됨.",
+        "rationale": "리뷰어는 '성실함과 책임감이 잘 드러남'으로 수정했지만, 원래의 강점인 '데이터 분석 직무와 직접 연결되는 경험'이 삭제되어 새로운 문제를 발생시켰습니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-06",
+    "type": "B",
+    "expect": "resolve",
+    "arm": "improved",
+    "rep": 3,
+    "pipeline": {
+      "llm_calls": 2,
+      "llm_latency_s": 2.242,
+      "est_cost_usd": 0.0007332,
+      "prompt_tokens": 3209,
+      "completion_tokens": 184,
+      "validator_ms": 0.187,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.156,
+      "findings": [
+        {
+          "issue_type": "score_feedback_contradiction",
+          "target_field": "strengths",
+          "problematic_text": "데이터 분석 직무와 직접 연결되는 경험",
+          "evidence_in_evaluation": [
+            "jobFit.score=25",
+            "jobFit.feedback=데이터를 다루거나 분석한 경험이 전혀 언급되지 않았습니다."
+          ],
+          "evidence_in_answer": [
+            "저는 카페에서 2년간 아르바이트를 했습니다. 손님이 많은 시간에도 실수 없이 주문을 받았고 단골 손님도 많았습니다. 성실함은 누구에게도 지지 않습니다."
+          ],
+          "reason": "ANSWER에는 데이터 분석과 관련된 경험이 전혀 없으므로, '데이터 분석 직무와 직접 연결되는 경험'이라는 강점은 사실과 다릅니다.",
+          "action": "remove_item",
+          "proposed_text": "",
+          "confidence": "high",
+          "applied": true,
+          "gate_result": "all gates passed"
+        }
+      ],
+      "post_check": {
+        "ran": true,
+        "validator_report": {
+          "valid": true,
+          "errors": [],
+          "fixes": [],
+          "hints": []
+        },
+        "residual_findings": []
+      },
+      "changed": true,
+      "needs_review": false,
+      "status": "corrected",
+      "change_log": [
+        {
+          "source": "context_reviewer",
+          "field": "strengths",
+          "issue_type": "score_feedback_contradiction",
+          "before": "데이터 분석 직무와 직접 연결되는 경험",
+          "after": null,
+          "reason": "ANSWER에는 데이터 분석과 관련된 경험이 전혀 없으므로, '데이터 분석 직무와 직접 연결되는 경험'이라는 강점은 사실과 다릅니다."
+        }
+      ],
+      "final_raw": "{\n  \"overallScore\": 43,\n  \"summary\": \"성실함은 전달되지만 질문이 요구한 분석 역량을 보여주는 내용이 없어 질문에 답하지 못했습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 45,\n      \"feedback\": \"경험과 결론은 이어지지만 질문의 요지인 분석 역량과 연결되지 않습니다.\"\n    },\n    \"specificity\": {\n      \"score\": 50,\n      \"feedback\": \"2년이라는 기간은 구체적이나 그 밖의 내용은 일반적입니다.\"\n    },\n    \"communication\": {\n      \"score\": 65,\n      \"feedback\": \"문장이 명확하고 자신감 있게 전달합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 25,\n      \"feedback\": \"데이터를 다루거나 분석한 경험이 전혀 언급되지 않았습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 30,\n      \"feedback\": \"과제와 행동이 없고 경험의 나열에 그칩니다.\"\n    }\n  },\n  \"strengths\": [\n    \"성실함과 책임감\"\n  ],\n  \"weaknesses\": [\n    \"질문이 요구한 분석 역량을 보여주는 경험이 없음\",\n    \"과제와 행동이 제시되지 않음\"\n  ]\n}",
+      "total_latency_s": 2.246
+    },
+    "detected": true,
+    "latency_s": 2.246,
+    "llm_calls": 2,
+    "est_cost_usd": 0.0007332,
+    "final_raw": "{\n  \"overallScore\": 43,\n  \"summary\": \"성실함은 전달되지만 질문이 요구한 분석 역량을 보여주는 내용이 없어 질문에 답하지 못했습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 45,\n      \"feedback\": \"경험과 결론은 이어지지만 질문의 요지인 분석 역량과 연결되지 않습니다.\"\n    },\n    \"specificity\": {\n      \"score\": 50,\n      \"feedback\": \"2년이라는 기간은 구체적이나 그 밖의 내용은 일반적입니다.\"\n    },\n    \"communication\": {\n      \"score\": 65,\n      \"feedback\": \"문장이 명확하고 자신감 있게 전달합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 25,\n      \"feedback\": \"데이터를 다루거나 분석한 경험이 전혀 언급되지 않았습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 30,\n      \"feedback\": \"과제와 행동이 없고 경험의 나열에 그칩니다.\"\n    }\n  },\n  \"strengths\": [\n    \"성실함과 책임감\"\n  ],\n  \"weaknesses\": [\n    \"질문이 요구한 분석 역량을 보여주는 경험이 없음\",\n    \"과제와 행동이 제시되지 않음\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.959,
+      "text_identical": false,
+      "markers_remaining": [],
+      "n_strengths": [
+        2,
+        1
+      ],
+      "n_weaknesses": [
+        2,
+        2
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "resolved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본 평가 strengths에 '데이터 분석 직무와 직접 연결되는 경험'이 포함되어 있었으나, 리뷰어는 이를 삭제하여 '데이터를 다루거나 분석한 경험이 전혀 언급되지 않았다'는 jobFit 피드백과 일치시켰습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래 평가에서 '데이터 분석 직무와 직접 연결되는 경험'이 강점으로 언급되었으나, 이는 질문의 요지와 맞지 않습니다. 리뷰어는 이를 수정하여 '성실함과 책임감'만을 강점으로 남겼습니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-07",
+    "type": "F",
+    "expect": "fix_overall",
+    "arm": "production_reviewer",
+    "rep": 1,
+    "latency_s": 2.764,
+    "llm_calls": 1,
+    "est_cost_usd": 0.0007912,
+    "final_raw": "{\n  \"overallScore\": 45,\n  \"summary\": \"접속 기록을 근거로 기능을 제안하고 직접 구현한 과정이 잘 드러나지만, 적용 이후의 반응이나 효과는 제시되지 않았습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 75,\n      \"feedback\": \"근거, 제안, 구현이 인과 관계에 따라 논리적으로 연결되어 있습니다.\"\n    },\n    \"specificity\": {\n      \"score\": 65,\n      \"feedback\": \"CSS 변수와 2주라는 기간은 구체적이지만, 밤 접속 비율에 대한 구체적인 수치가 부족합니다.\"\n    },\n    \"communication\": {\n      \"score\": 70,\n      \"feedback\": \"간결하고 명확하게 전달하고 있습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 70,\n      \"feedback\": \"CSS 변수를 활용한 테마 분리 구현은 프론트엔드 직무와 관련성이 높습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 50,\n      \"feedback\": \"상황과 행동은 명확하나, 결과 부분이 제시되지 않아 완전한 STAR 구조를 이루지 못했습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"데이터를 근거로 한 제안\",\n    \"직접 구현까지 완료한 실행력\"\n  ],\n  \"weaknesses\": [\n    \"적용 이후의 반응이나 효과가 제시되지 않음\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.834,
+      "text_identical": false,
+      "markers_remaining": [],
+      "n_strengths": [
+        2,
+        2
+      ],
+      "n_weaknesses": [
+        1,
+        1
+      ],
+      "overall_minus_mean": [
+        -21.0,
+        -21.0
+      ],
+      "rule_verdict": "not_resolved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "no",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "리뷰어는 overallScore를 45로 유지하여 '다섯 항목 점수의 평균은 66인데 overallScore가 45로 기록되어 있다'는 결함을 해결하지 않았습니다. 다만, 피드백 문장을 더 구체적이고 명확하게 다듬은 점(\"논리적으로 연결되어 있습니다\", \"명확하게 전달하고 있습니다\")은 의미 변경 없이 표현 개선에 해당합니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "no",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래 평가에서 'overallScore'가 45로 기록되어 있었고, 다섯 항목 점수의 평균은 66입니다. 따라서 점수의 불일치가 해결되지 않았습니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-07",
+    "type": "F",
+    "expect": "fix_overall",
+    "arm": "improved",
+    "rep": 1,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.574,
+      "est_cost_usd": 0.0006728000000000001,
+      "prompt_tokens": 1662,
+      "completion_tokens": 5,
+      "validator_ms": 0.194,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [
+          {
+            "check": "overall_score_arithmetic",
+            "field": "overallScore",
+            "before": 45,
+            "after": 66,
+            "reason": "overallScore must equal the mean of the five item scores (rounded half up)"
+          }
+        ],
+        "hints": []
+      },
+      "correction_ms": 0.042,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": true,
+      "needs_review": false,
+      "status": "corrected",
+      "change_log": [
+        {
+          "source": "validator",
+          "field": "overallScore",
+          "issue_type": "overall_score_arithmetic",
+          "before": 45,
+          "after": 66,
+          "reason": "overallScore must equal the mean of the five item scores (rounded half up)"
+        }
+      ],
+      "final_raw": "{\n  \"overallScore\": 66,\n  \"summary\": \"접속 기록을 근거로 기능을 제안하고 직접 구현한 과정이 잘 드러나지만, 적용 이후의 반응이나 효과는 제시되지 않았습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 75,\n      \"feedback\": \"근거, 제안, 구현이 인과 관계에 따라 이어집니다.\"\n    },\n    \"specificity\": {\n      \"score\": 65,\n      \"feedback\": \"CSS 변수와 2주라는 기간은 구체적이지만 밤 접속 비율은 수치가 없습니다.\"\n    },\n    \"communication\": {\n      \"score\": 70,\n      \"feedback\": \"간결하게 전달합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 70,\n      \"feedback\": \"CSS 변수를 활용한 테마 분리는 프론트엔드 직무와 관련됩니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 50,\n      \"feedback\": \"상황과 행동은 있으나 결과가 없습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"데이터를 근거로 한 제안\",\n    \"직접 구현까지 마친 실행력\"\n  ],\n  \"weaknesses\": [\n    \"적용 이후의 반응이나 효과가 제시되지 않음\"\n  ]\n}",
+      "total_latency_s": 0.576
+    },
+    "detected": true,
+    "latency_s": 0.576,
+    "llm_calls": 1,
+    "est_cost_usd": 0.0006728000000000001,
+    "final_raw": "{\n  \"overallScore\": 66,\n  \"summary\": \"접속 기록을 근거로 기능을 제안하고 직접 구현한 과정이 잘 드러나지만, 적용 이후의 반응이나 효과는 제시되지 않았습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 75,\n      \"feedback\": \"근거, 제안, 구현이 인과 관계에 따라 이어집니다.\"\n    },\n    \"specificity\": {\n      \"score\": 65,\n      \"feedback\": \"CSS 변수와 2주라는 기간은 구체적이지만 밤 접속 비율은 수치가 없습니다.\"\n    },\n    \"communication\": {\n      \"score\": 70,\n      \"feedback\": \"간결하게 전달합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 70,\n      \"feedback\": \"CSS 변수를 활용한 테마 분리는 프론트엔드 직무와 관련됩니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 50,\n      \"feedback\": \"상황과 행동은 있으나 결과가 없습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"데이터를 근거로 한 제안\",\n    \"직접 구현까지 마친 실행력\"\n  ],\n  \"weaknesses\": [\n    \"적용 이후의 반응이나 효과가 제시되지 않음\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {
+        "overallScore": [
+          45,
+          66
+        ]
+      },
+      "text_similarity": 1.0,
+      "text_identical": true,
+      "markers_remaining": [],
+      "n_strengths": [
+        2,
+        2
+      ],
+      "n_weaknesses": [
+        1,
+        1
+      ],
+      "overall_minus_mean": [
+        -21.0,
+        0.0
+      ],
+      "rule_verdict": "resolved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "score_change",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본 평가에서 'overallScore'가 45로, 다섯 항목 점수 평균 66과 불일치했으나, 리뷰어가 이를 66으로 수정하여 문제를 해결했습니다. 요약, 세부 점수, 강점과 약점 모두 원본과 동일하여 의미 변경이나 새로운 문제는 없습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "score_change",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "다섯 항목 점수의 평균은 66으로, overallScore가 66으로 수정되었습니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-07",
+    "type": "F",
+    "expect": "fix_overall",
+    "arm": "production_reviewer",
+    "rep": 2,
+    "latency_s": 2.49,
+    "llm_calls": 1,
+    "est_cost_usd": 0.0007976000000000001,
+    "final_raw": "{\n  \"overallScore\": 45,\n  \"summary\": \"접속 기록을 근거로 기능을 제안하고 직접 구현한 과정이 잘 드러나지만, 적용 이후의 반응이나 효과는 제시되지 않았습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 75,\n      \"feedback\": \"근거, 제안, 구현이 인과 관계에 따라 논리적으로 연결되어 있습니다.\"\n    },\n    \"specificity\": {\n      \"score\": 65,\n      \"feedback\": \"CSS 변수와 2주라는 기간은 구체적이지만, 밤 접속 비율에 대한 구체적인 수치가 부족합니다.\"\n    },\n    \"communication\": {\n      \"score\": 70,\n      \"feedback\": \"간결하고 명확하게 전달하고 있습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 70,\n      \"feedback\": \"CSS 변수를 활용한 테마 분리 구현은 프론트엔드 직무와 관련성이 높습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 50,\n      \"feedback\": \"상황과 행동은 구체적으로 설명되었으나, 결과에 대한 언급이 없어 완전한 STAR 구조를 이루지 못했습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"데이터를 근거로 한 제안\",\n    \"직접 구현까지 완료한 실행력\"\n  ],\n  \"weaknesses\": [\n    \"적용 이후의 반응이나 효과가 제시되지 않음\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.835,
+      "text_identical": false,
+      "markers_remaining": [],
+      "n_strengths": [
+        2,
+        2
+      ],
+      "n_weaknesses": [
+        1,
+        1
+      ],
+      "overall_minus_mean": [
+        -21.0,
+        -21.0
+      ],
+      "rule_verdict": "not_resolved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "no",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래 평가에서 'overallScore'가 45로, 다섯 항목 점수 평균 66과 불일치하는 문제가 있었으나, 리뷰어는 이를 수정하지 않고 그대로 두었습니다. 리뷰어는 피드백 문장을 다소 다듬었으나 의미 변화는 없으며, 새로운 문제도 발생하지 않았습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "no",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래 평가의 overallScore가 45로 기록되어 있었고, 다섯 항목 점수의 평균은 66입니다. 이 점수는 수정되지 않았습니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-07",
+    "type": "F",
+    "expect": "fix_overall",
+    "arm": "improved",
+    "rep": 2,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.694,
+      "est_cost_usd": 0.00021200000000000003,
+      "prompt_tokens": 1662,
+      "completion_tokens": 5,
+      "validator_ms": 0.151,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [
+          {
+            "check": "overall_score_arithmetic",
+            "field": "overallScore",
+            "before": 45,
+            "after": 66,
+            "reason": "overallScore must equal the mean of the five item scores (rounded half up)"
+          }
+        ],
+        "hints": []
+      },
+      "correction_ms": 0.089,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": true,
+      "needs_review": false,
+      "status": "corrected",
+      "change_log": [
+        {
+          "source": "validator",
+          "field": "overallScore",
+          "issue_type": "overall_score_arithmetic",
+          "before": 45,
+          "after": 66,
+          "reason": "overallScore must equal the mean of the five item scores (rounded half up)"
+        }
+      ],
+      "final_raw": "{\n  \"overallScore\": 66,\n  \"summary\": \"접속 기록을 근거로 기능을 제안하고 직접 구현한 과정이 잘 드러나지만, 적용 이후의 반응이나 효과는 제시되지 않았습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 75,\n      \"feedback\": \"근거, 제안, 구현이 인과 관계에 따라 이어집니다.\"\n    },\n    \"specificity\": {\n      \"score\": 65,\n      \"feedback\": \"CSS 변수와 2주라는 기간은 구체적이지만 밤 접속 비율은 수치가 없습니다.\"\n    },\n    \"communication\": {\n      \"score\": 70,\n      \"feedback\": \"간결하게 전달합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 70,\n      \"feedback\": \"CSS 변수를 활용한 테마 분리는 프론트엔드 직무와 관련됩니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 50,\n      \"feedback\": \"상황과 행동은 있으나 결과가 없습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"데이터를 근거로 한 제안\",\n    \"직접 구현까지 마친 실행력\"\n  ],\n  \"weaknesses\": [\n    \"적용 이후의 반응이나 효과가 제시되지 않음\"\n  ]\n}",
+      "total_latency_s": 0.696
+    },
+    "detected": true,
+    "latency_s": 0.696,
+    "llm_calls": 1,
+    "est_cost_usd": 0.00021200000000000003,
+    "final_raw": "{\n  \"overallScore\": 66,\n  \"summary\": \"접속 기록을 근거로 기능을 제안하고 직접 구현한 과정이 잘 드러나지만, 적용 이후의 반응이나 효과는 제시되지 않았습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 75,\n      \"feedback\": \"근거, 제안, 구현이 인과 관계에 따라 이어집니다.\"\n    },\n    \"specificity\": {\n      \"score\": 65,\n      \"feedback\": \"CSS 변수와 2주라는 기간은 구체적이지만 밤 접속 비율은 수치가 없습니다.\"\n    },\n    \"communication\": {\n      \"score\": 70,\n      \"feedback\": \"간결하게 전달합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 70,\n      \"feedback\": \"CSS 변수를 활용한 테마 분리는 프론트엔드 직무와 관련됩니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 50,\n      \"feedback\": \"상황과 행동은 있으나 결과가 없습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"데이터를 근거로 한 제안\",\n    \"직접 구현까지 마친 실행력\"\n  ],\n  \"weaknesses\": [\n    \"적용 이후의 반응이나 효과가 제시되지 않음\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {
+        "overallScore": [
+          45,
+          66
+        ]
+      },
+      "text_similarity": 1.0,
+      "text_identical": true,
+      "markers_remaining": [],
+      "n_strengths": [
+        2,
+        2
+      ],
+      "n_weaknesses": [
+        1,
+        1
+      ],
+      "overall_minus_mean": [
+        -21.0,
+        0.0
+      ],
+      "rule_verdict": "resolved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "score_change",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본 평가에서 'overallScore'가 45로, 다섯 항목 점수 평균 66과 불일치했으나, 리뷰어가 이를 66으로 수정하여 일관성을 맞춤. 요약, 세부 점수, 강점과 약점은 변경하지 않아 의미 변화나 새로운 문제는 없음."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "score_change",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "다섯 항목 점수의 평균은 66으로, overallScore가 66으로 수정되었습니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-07",
+    "type": "F",
+    "expect": "fix_overall",
+    "arm": "production_reviewer",
+    "rep": 3,
+    "latency_s": 2.356,
+    "llm_calls": 1,
+    "est_cost_usd": 0.0007832000000000001,
+    "final_raw": "{\n  \"overallScore\": 45,\n  \"summary\": \"접속 기록을 근거로 기능을 제안하고 직접 구현한 과정이 잘 드러나지만, 적용 이후의 반응이나 효과는 제시되지 않았습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 75,\n      \"feedback\": \"근거, 제안, 구현이 인과 관계에 따라 논리적으로 연결되어 있습니다.\"\n    },\n    \"specificity\": {\n      \"score\": 65,\n      \"feedback\": \"CSS 변수와 2주라는 기간은 구체적이지만, 밤 접속 비율에 대한 구체적인 수치가 부족합니다.\"\n    },\n    \"communication\": {\n      \"score\": 70,\n      \"feedback\": \"내용을 간결하고 명확하게 전달하고 있습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 70,\n      \"feedback\": \"CSS 변수를 활용한 테마 분리 구현은 프론트엔드 직무와 관련성이 높습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 50,\n      \"feedback\": \"상황과 행동은 명확히 제시되었으나, 결과에 대한 설명이 부족합니다.\"\n    }\n  },\n  \"strengths\": [\n    \"데이터를 근거로 한 제안\",\n    \"직접 구현까지 완료한 실행력\"\n  ],\n  \"weaknesses\": [\n    \"적용 이후의 반응이나 효과에 대한 설명 부족\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.804,
+      "text_identical": false,
+      "markers_remaining": [],
+      "n_strengths": [
+        2,
+        2
+      ],
+      "n_weaknesses": [
+        1,
+        1
+      ],
+      "overall_minus_mean": [
+        -21.0,
+        -21.0
+      ],
+      "rule_verdict": "not_resolved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "no",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "리뷰어는 overallScore를 45로 유지하며 '다섯 항목 점수의 평균은 66인데 overallScore가 45로 기록되어 있다'는 결함을 해결하지 않았습니다. 다만 피드백 문장을 조금 더 구체적이고 명확하게 다듬었으나 의미 변화는 없습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "none",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래 평가에서 'overallScore가 45'로 기록되어 있었고, 다섯 항목 점수의 평균은 66입니다. 리뷰어는 점수를 변경하지 않고, 평가의 의미를 유지했습니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-07",
+    "type": "F",
+    "expect": "fix_overall",
+    "arm": "improved",
+    "rep": 3,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.664,
+      "est_cost_usd": 0.00021200000000000003,
+      "prompt_tokens": 1662,
+      "completion_tokens": 5,
+      "validator_ms": 0.148,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [
+          {
+            "check": "overall_score_arithmetic",
+            "field": "overallScore",
+            "before": 45,
+            "after": 66,
+            "reason": "overallScore must equal the mean of the five item scores (rounded half up)"
+          }
+        ],
+        "hints": []
+      },
+      "correction_ms": 0.081,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": true,
+      "needs_review": false,
+      "status": "corrected",
+      "change_log": [
+        {
+          "source": "validator",
+          "field": "overallScore",
+          "issue_type": "overall_score_arithmetic",
+          "before": 45,
+          "after": 66,
+          "reason": "overallScore must equal the mean of the five item scores (rounded half up)"
+        }
+      ],
+      "final_raw": "{\n  \"overallScore\": 66,\n  \"summary\": \"접속 기록을 근거로 기능을 제안하고 직접 구현한 과정이 잘 드러나지만, 적용 이후의 반응이나 효과는 제시되지 않았습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 75,\n      \"feedback\": \"근거, 제안, 구현이 인과 관계에 따라 이어집니다.\"\n    },\n    \"specificity\": {\n      \"score\": 65,\n      \"feedback\": \"CSS 변수와 2주라는 기간은 구체적이지만 밤 접속 비율은 수치가 없습니다.\"\n    },\n    \"communication\": {\n      \"score\": 70,\n      \"feedback\": \"간결하게 전달합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 70,\n      \"feedback\": \"CSS 변수를 활용한 테마 분리는 프론트엔드 직무와 관련됩니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 50,\n      \"feedback\": \"상황과 행동은 있으나 결과가 없습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"데이터를 근거로 한 제안\",\n    \"직접 구현까지 마친 실행력\"\n  ],\n  \"weaknesses\": [\n    \"적용 이후의 반응이나 효과가 제시되지 않음\"\n  ]\n}",
+      "total_latency_s": 0.666
+    },
+    "detected": true,
+    "latency_s": 0.666,
+    "llm_calls": 1,
+    "est_cost_usd": 0.00021200000000000003,
+    "final_raw": "{\n  \"overallScore\": 66,\n  \"summary\": \"접속 기록을 근거로 기능을 제안하고 직접 구현한 과정이 잘 드러나지만, 적용 이후의 반응이나 효과는 제시되지 않았습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 75,\n      \"feedback\": \"근거, 제안, 구현이 인과 관계에 따라 이어집니다.\"\n    },\n    \"specificity\": {\n      \"score\": 65,\n      \"feedback\": \"CSS 변수와 2주라는 기간은 구체적이지만 밤 접속 비율은 수치가 없습니다.\"\n    },\n    \"communication\": {\n      \"score\": 70,\n      \"feedback\": \"간결하게 전달합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 70,\n      \"feedback\": \"CSS 변수를 활용한 테마 분리는 프론트엔드 직무와 관련됩니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 50,\n      \"feedback\": \"상황과 행동은 있으나 결과가 없습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"데이터를 근거로 한 제안\",\n    \"직접 구현까지 마친 실행력\"\n  ],\n  \"weaknesses\": [\n    \"적용 이후의 반응이나 효과가 제시되지 않음\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {
+        "overallScore": [
+          45,
+          66
+        ]
+      },
+      "text_similarity": 1.0,
+      "text_identical": true,
+      "markers_remaining": [],
+      "n_strengths": [
+        2,
+        2
+      ],
+      "n_weaknesses": [
+        1,
+        1
+      ],
+      "overall_minus_mean": [
+        -21.0,
+        0.0
+      ],
+      "rule_verdict": "resolved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "score_change",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본 평가에서 'overallScore'가 45로 되어 있었으나, 다섯 항목 점수 평균은 66임을 근거로 리뷰어가 'overallScore'를 66으로 수정하여 결함을 해결했습니다. 요약, 세부 점수, 강점과 약점은 모두 동일하게 유지되어 의미 변경이나 새로운 문제는 없습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "score_change",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래의 overallScore가 45였으나, 리뷰어는 이를 66으로 수정하여 다섯 항목 점수의 평균과 일치시켰습니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-08",
+    "type": "F",
+    "expect": "resolve",
+    "arm": "production_reviewer",
+    "rep": 1,
+    "latency_s": 2.625,
+    "llm_calls": 1,
+    "est_cost_usd": 0.0007876000000000001,
+    "final_raw": "{\n  \"overallScore\": 77,\n  \"summary\": \"문제를 발견하고 점검표를 개선해 시간을 줄인 과정이 간결하게 전달된 답변입니다. 점검표를 어떻게 바꿨는지에 대한 설명이 조금 더 있으면 좋겠습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 80,\n      \"feedback\": \"문제, 조치, 결과가 순서대로 이어집니다.\"\n    },\n    \"specificity\": {\n      \"score\": 80,\n      \"feedback\": \"40분에서 25분으로 줄었다는 수치와 다른 근무자에게 확산된 결과가 제시됩니다.\"\n    },\n    \"communication\": {\n      \"score\": 80,\n      \"feedback\": \"간결하고 명확합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 70,\n      \"feedback\": \"반복 업무를 개선한 경험은 운영 직무와 관련됩니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 75,\n      \"feedback\": \"상황, 행동, 결과가 분명합니다.\"\n    }\n  },\n  \"strengths\": [\n    \"재고 확인 시간을 40분에서 25분으로 줄인 성과\",\n    \"개선안이 다른 근무자에게 확산된 점\"\n  ],\n  \"weaknesses\": [\n    \"점검표를 구체적으로 어떻게 바꿨는지에 대한 설명이 부족함\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.963,
+      "text_identical": false,
+      "markers_remaining": [],
+      "n_strengths": [
+        2,
+        2
+      ],
+      "n_weaknesses": [
+        2,
+        1
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "resolved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본 평가의 약점에 '개선 결과가 전혀 제시되지 않음'이 포함되어 있었으나, 검토된 평가에서는 이 부분이 삭제되어 '점검표를 구체적으로 어떻게 바꿨는지에 대한 설명이 부족함'만 남아 있습니다. 이는 답변에서 개선 결과가 명확히 제시된 점을 반영한 적절한 수정으로 의미 변경 없이 결함을 해결했습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래의 약점 항목 중 '개선 결과가 전혀 제시되지 않음'이 제거되었습니다. 이는 개선 결과가 명확히 제시되었음을 반영합니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-08",
+    "type": "F",
+    "expect": "resolve",
+    "arm": "improved",
+    "rep": 1,
+    "pipeline": {
+      "llm_calls": 2,
+      "llm_latency_s": 3.62,
+      "est_cost_usd": 0.0019588,
+      "prompt_tokens": 3297,
+      "completion_tokens": 400,
+      "validator_ms": 0.203,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.321,
+      "findings": [
+        {
+          "issue_type": "summary_item_contradiction",
+          "target_field": "summary",
+          "problematic_text": "점검표를 어떻게 바꿨는지에 대한 설명이 조금 더 있으면 좋겠습니다.",
+          "evidence_in_evaluation": [
+            "specificity.feedback=40분에서 25분으로 줄었다는 수치와 다른 근무자에게 확산된 결과가 제시됩니다.",
+            "weaknesses=점검표를 구체적으로 어떻게 바꿨는지 설명이 부족함"
+          ],
+          "evidence_in_answer": [
+            "진열대 순서대로 점검표를 다시 만들었고"
+          ],
+          "reason": "The summary states that more explanation about how the checklist was changed would be good, but the answer clearly states that the checklist was remade in the order of the display shelves, which is a concrete explanation. Thus, the summary contradicts the answer by implying insufficient explanation.",
+          "action": "replace_text",
+          "proposed_text": "점검표를 진열대 순서대로 다시 만들어 시간을 줄인 점이 잘 드러나 있습니다.",
+          "confidence": "high",
+          "applied": true,
+          "gate_result": "all gates passed"
+        },
+        {
+          "issue_type": "score_feedback_contradiction",
+          "target_field": "weaknesses",
+          "problematic_text": "개선 결과가 전혀 제시되지 않음",
+          "evidence_in_evaluation": [
+            "specificity.feedback=40분에서 25분으로 줄었다는 수치와 다른 근무자에게 확산된 결과가 제시됩니다."
+          ],
+          "evidence_in_answer": [
+            "그 뒤로는 25분이면 끝났습니다.",
+            "점장님이 다른 근무자에게도 그 점검표를 쓰게 했습니다."
+          ],
+          "reason": "The weakness claims that no improvement result is presented, but the answer clearly states the time was reduced from 40 to 25 minutes and that the checklist was adopted by other workers, which are concrete results. The weakness contradicts the answer and the specificity feedback.",
+          "action": "remove_item",
+          "proposed_text": "",
+          "confidence": "high",
+          "applied": true,
+          "gate_result": "all gates passed"
+        }
+      ],
+      "post_check": {
+        "ran": true,
+        "validator_report": {
+          "valid": true,
+          "errors": [],
+          "fixes": [],
+          "hints": []
+        },
+        "residual_findings": []
+      },
+      "changed": true,
+      "needs_review": false,
+      "status": "corrected",
+      "change_log": [
+        {
+          "source": "context_reviewer",
+          "field": "summary",
+          "issue_type": "summary_item_contradiction",
+          "before": "문제를 발견하고 점검표를 개선해 시간을 줄인 과정이 간결하게 전달된 답변입니다. 점검표를 어떻게 바꿨는지에 대한 설명이 조금 더 있으면 좋겠습니다.",
+          "after": "문제를 발견하고 점검표를 개선해 시간을 줄인 과정이 간결하게 전달된 답변입니다. 점검표를 진열대 순서대로 다시 만들어 시간을 줄인 점이 잘 드러나 있습니다.",
+          "reason": "The summary states that more explanation about how the checklist was changed would be good, but the answer clearly states that the checklist was remade in the order of the display shelves, which is a concrete explanation. Thus, the summary contradicts the answer by implying insufficient explanation."
+        },
+        {
+          "source": "context_reviewer",
+          "field": "weaknesses",
+          "issue_type": "score_feedback_contradiction",
+          "before": "개선 결과가 전혀 제시되지 않음",
+          "after": null,
+          "reason": "The weakness claims that no improvement result is presented, but the answer clearly states the time was reduced from 40 to 25 minutes and that the checklist was adopted by other workers, which are concrete results. The weakness contradicts the answer and the specificity feedback."
+        }
+      ],
+      "final_raw": "{\n  \"overallScore\": 77,\n  \"summary\": \"문제를 발견하고 점검표를 개선해 시간을 줄인 과정이 간결하게 전달된 답변입니다. 점검표를 진열대 순서대로 다시 만들어 시간을 줄인 점이 잘 드러나 있습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 80,\n      \"feedback\": \"문제, 조치, 결과가 순서대로 이어집니다.\"\n    },\n    \"specificity\": {\n      \"score\": 80,\n      \"feedback\": \"40분에서 25분으로 줄었다는 수치와 다른 근무자에게 확산된 결과가 제시됩니다.\"\n    },\n    \"communication\": {\n      \"score\": 80,\n      \"feedback\": \"간결하고 명확합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 70,\n      \"feedback\": \"반복 업무를 개선한 경험은 운영 직무와 관련됩니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 75,\n      \"feedback\": \"상황, 행동, 결과가 분명합니다.\"\n    }\n  },\n  \"strengths\": [\n    \"재고 확인 시간을 40분에서 25분으로 줄인 성과\",\n    \"개선안이 다른 근무자에게 확산된 점\"\n  ],\n  \"weaknesses\": [\n    \"점검표를 구체적으로 어떻게 바꿨는지 설명이 부족함\"\n  ]\n}",
+      "total_latency_s": 3.625
+    },
+    "detected": true,
+    "latency_s": 3.625,
+    "llm_calls": 2,
+    "est_cost_usd": 0.0019588,
+    "final_raw": "{\n  \"overallScore\": 77,\n  \"summary\": \"문제를 발견하고 점검표를 개선해 시간을 줄인 과정이 간결하게 전달된 답변입니다. 점검표를 진열대 순서대로 다시 만들어 시간을 줄인 점이 잘 드러나 있습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 80,\n      \"feedback\": \"문제, 조치, 결과가 순서대로 이어집니다.\"\n    },\n    \"specificity\": {\n      \"score\": 80,\n      \"feedback\": \"40분에서 25분으로 줄었다는 수치와 다른 근무자에게 확산된 결과가 제시됩니다.\"\n    },\n    \"communication\": {\n      \"score\": 80,\n      \"feedback\": \"간결하고 명확합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 70,\n      \"feedback\": \"반복 업무를 개선한 경험은 운영 직무와 관련됩니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 75,\n      \"feedback\": \"상황, 행동, 결과가 분명합니다.\"\n    }\n  },\n  \"strengths\": [\n    \"재고 확인 시간을 40분에서 25분으로 줄인 성과\",\n    \"개선안이 다른 근무자에게 확산된 점\"\n  ],\n  \"weaknesses\": [\n    \"점검표를 구체적으로 어떻게 바꿨는지 설명이 부족함\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.221,
+      "text_identical": false,
+      "markers_remaining": [],
+      "n_strengths": [
+        2,
+        2
+      ],
+      "n_weaknesses": [
+        2,
+        1
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "resolved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본 평가의 약점에 '개선 결과가 전혀 제시되지 않음'이 포함되어 있었으나, 리뷰어는 이를 삭제하고 '점검표를 구체적으로 어떻게 바꿨는지 설명이 부족함'만 남겼습니다. 이는 '40분에서 25분으로 줄었다는 수치와 다른 근무자에게 확산된 결과가 제시됩니다.'라는 구체성 피드백과 strengths에서 이미 개선 결과가 언급된 점과 일치하여 모순을 해소했습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래의 약점 항목 중 '개선 결과가 전혀 제시되지 않음'이 삭제되었고, '점검표를 구체적으로 어떻게 바꿨는지 설명이 부족함'만 남았습니다. 이는 개선 결과가 명확히 제시되었음을 반영합니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-08",
+    "type": "F",
+    "expect": "resolve",
+    "arm": "production_reviewer",
+    "rep": 2,
+    "latency_s": 2.742,
+    "llm_calls": 1,
+    "est_cost_usd": 0.0008372000000000001,
+    "final_raw": "{\n  \"overallScore\": 77,\n  \"summary\": \"문제를 발견하고 점검표를 개선해 시간을 줄인 과정이 간결하게 전달된 답변입니다. 점검표를 구체적으로 어떻게 바꾸었는지에 대한 설명이 조금 더 보완되면 좋겠습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 80,\n      \"feedback\": \"문제, 조치, 결과가 순서대로 잘 이어집니다.\"\n    },\n    \"specificity\": {\n      \"score\": 80,\n      \"feedback\": \"40분에서 25분으로 줄었다는 구체적인 수치와 개선안이 다른 근무자에게 확산된 결과가 제시됩니다.\"\n    },\n    \"communication\": {\n      \"score\": 80,\n      \"feedback\": \"간결하고 명확하게 전달되었습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 70,\n      \"feedback\": \"반복 업무를 개선한 경험이 운영 직무와 관련성이 있습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 75,\n      \"feedback\": \"상황, 행동, 결과가 명확하게 구분되어 있습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"재고 확인 시간을 40분에서 25분으로 줄인 구체적인 성과\",\n    \"개선안이 다른 근무자에게 확산된 점\"\n  ],\n  \"weaknesses\": [\n    \"개선 결과에 대한 설명이 부족함\",\n    \"점검표를 구체적으로 어떻게 변경했는지에 대한 설명이 부족함\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.855,
+      "text_identical": false,
+      "markers_remaining": [],
+      "n_strengths": [
+        2,
+        2
+      ],
+      "n_weaknesses": [
+        2,
+        2
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "resolved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본 평가의 약점에 '개선 결과가 전혀 제시되지 않음'이 있었으나, 리뷰어는 이를 '개선 결과에 대한 설명이 부족함'으로 수정하여 답변 내 40분에서 25분으로 줄어든 결과를 언급한 점과 일치시켰습니다. 또한, strengths와 specificity 피드백에서 '구체적인 수치'와 '개선안 확산'을 명확히 언급하여 모순을 해소했습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "both",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래의 약점 중 '개선 결과가 전혀 제시되지 않음'이 '개선 결과에 대한 설명이 부족함'으로 수정되어, 개선 결과가 언급되었음을 명확히 하였습니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-08",
+    "type": "F",
+    "expect": "resolve",
+    "arm": "improved",
+    "rep": 2,
+    "pipeline": {
+      "llm_calls": 2,
+      "llm_latency_s": 5.445,
+      "est_cost_usd": 0.0015476,
+      "prompt_tokens": 3297,
+      "completion_tokens": 407,
+      "validator_ms": 0.197,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.334,
+      "findings": [
+        {
+          "issue_type": "summary_item_contradiction",
+          "target_field": "summary",
+          "problematic_text": "점검표를 어떻게 바꿨는지에 대한 설명이 조금 더 있으면 좋겠습니다.",
+          "evidence_in_evaluation": [
+            "specificity.feedback=40분에서 25분으로 줄었다는 수치와 다른 근무자에게 확산된 결과가 제시됩니다."
+          ],
+          "evidence_in_answer": [
+            "진열대 순서대로 점검표를 다시 만들었고, 그 뒤로는 25분이면 끝났습니다."
+          ],
+          "reason": "SUMMARY states that the explanation of how the checklist was changed is insufficient, but the ANSWER clearly states it was reordered according to the display shelves, which is a specific explanation.",
+          "action": "replace_text",
+          "proposed_text": "점검표를 진열대 순서대로 다시 만들어 시간을 줄인 점이 잘 드러나 있습니다.",
+          "confidence": "high",
+          "applied": true,
+          "gate_result": "all gates passed"
+        },
+        {
+          "issue_type": "score_feedback_contradiction",
+          "target_field": "weaknesses",
+          "problematic_text": "개선 결과가 전혀 제시되지 않음",
+          "evidence_in_evaluation": [
+            "specificity.feedback=40분에서 25분으로 줄었다는 수치와 다른 근무자에게 확산된 결과가 제시됩니다.",
+            "strengths=재고 확인 시간을 40분에서 25분으로 줄인 성과",
+            "strengths=개선안이 다른 근무자에게 확산된 점"
+          ],
+          "evidence_in_answer": [
+            "진열대 순서대로 점검표를 다시 만들었고, 그 뒤로는 25분이면 끝났습니다.",
+            "점장님이 다른 근무자에게도 그 점검표를 쓰게 했습니다."
+          ],
+          "reason": "The weakness claims no improvement results are presented, but both the ANSWER and strengths clearly state the time was reduced from 40 to 25 minutes and the checklist was adopted by others.",
+          "action": "remove_item",
+          "proposed_text": "",
+          "confidence": "high",
+          "applied": true,
+          "gate_result": "all gates passed"
+        }
+      ],
+      "post_check": {
+        "ran": true,
+        "validator_report": {
+          "valid": true,
+          "errors": [],
+          "fixes": [],
+          "hints": []
+        },
+        "residual_findings": []
+      },
+      "changed": true,
+      "needs_review": false,
+      "status": "corrected",
+      "change_log": [
+        {
+          "source": "context_reviewer",
+          "field": "summary",
+          "issue_type": "summary_item_contradiction",
+          "before": "문제를 발견하고 점검표를 개선해 시간을 줄인 과정이 간결하게 전달된 답변입니다. 점검표를 어떻게 바꿨는지에 대한 설명이 조금 더 있으면 좋겠습니다.",
+          "after": "문제를 발견하고 점검표를 개선해 시간을 줄인 과정이 간결하게 전달된 답변입니다. 점검표를 진열대 순서대로 다시 만들어 시간을 줄인 점이 잘 드러나 있습니다.",
+          "reason": "SUMMARY states that the explanation of how the checklist was changed is insufficient, but the ANSWER clearly states it was reordered according to the display shelves, which is a specific explanation."
+        },
+        {
+          "source": "context_reviewer",
+          "field": "weaknesses",
+          "issue_type": "score_feedback_contradiction",
+          "before": "개선 결과가 전혀 제시되지 않음",
+          "after": null,
+          "reason": "The weakness claims no improvement results are presented, but both the ANSWER and strengths clearly state the time was reduced from 40 to 25 minutes and the checklist was adopted by others."
+        }
+      ],
+      "final_raw": "{\n  \"overallScore\": 77,\n  \"summary\": \"문제를 발견하고 점검표를 개선해 시간을 줄인 과정이 간결하게 전달된 답변입니다. 점검표를 진열대 순서대로 다시 만들어 시간을 줄인 점이 잘 드러나 있습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 80,\n      \"feedback\": \"문제, 조치, 결과가 순서대로 이어집니다.\"\n    },\n    \"specificity\": {\n      \"score\": 80,\n      \"feedback\": \"40분에서 25분으로 줄었다는 수치와 다른 근무자에게 확산된 결과가 제시됩니다.\"\n    },\n    \"communication\": {\n      \"score\": 80,\n      \"feedback\": \"간결하고 명확합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 70,\n      \"feedback\": \"반복 업무를 개선한 경험은 운영 직무와 관련됩니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 75,\n      \"feedback\": \"상황, 행동, 결과가 분명합니다.\"\n    }\n  },\n  \"strengths\": [\n    \"재고 확인 시간을 40분에서 25분으로 줄인 성과\",\n    \"개선안이 다른 근무자에게 확산된 점\"\n  ],\n  \"weaknesses\": [\n    \"점검표를 구체적으로 어떻게 바꿨는지 설명이 부족함\"\n  ]\n}",
+      "total_latency_s": 5.45
+    },
+    "detected": true,
+    "latency_s": 5.45,
+    "llm_calls": 2,
+    "est_cost_usd": 0.0015476,
+    "final_raw": "{\n  \"overallScore\": 77,\n  \"summary\": \"문제를 발견하고 점검표를 개선해 시간을 줄인 과정이 간결하게 전달된 답변입니다. 점검표를 진열대 순서대로 다시 만들어 시간을 줄인 점이 잘 드러나 있습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 80,\n      \"feedback\": \"문제, 조치, 결과가 순서대로 이어집니다.\"\n    },\n    \"specificity\": {\n      \"score\": 80,\n      \"feedback\": \"40분에서 25분으로 줄었다는 수치와 다른 근무자에게 확산된 결과가 제시됩니다.\"\n    },\n    \"communication\": {\n      \"score\": 80,\n      \"feedback\": \"간결하고 명확합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 70,\n      \"feedback\": \"반복 업무를 개선한 경험은 운영 직무와 관련됩니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 75,\n      \"feedback\": \"상황, 행동, 결과가 분명합니다.\"\n    }\n  },\n  \"strengths\": [\n    \"재고 확인 시간을 40분에서 25분으로 줄인 성과\",\n    \"개선안이 다른 근무자에게 확산된 점\"\n  ],\n  \"weaknesses\": [\n    \"점검표를 구체적으로 어떻게 바꿨는지 설명이 부족함\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.221,
+      "text_identical": false,
+      "markers_remaining": [],
+      "n_strengths": [
+        2,
+        2
+      ],
+      "n_weaknesses": [
+        2,
+        1
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "resolved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본 평가의 약점에 '개선 결과가 전혀 제시되지 않음'이 포함되어 있었으나, 리뷰어는 이를 삭제하고 '점검표를 구체적으로 어떻게 바꿨는지 설명이 부족함'만 남겼습니다. 또한 요약에서 '점검표를 진열대 순서대로 다시 만들어 시간을 줄인 점이 잘 드러나 있다'고 명확히 하여 개선 결과가 제시되었음을 반영했습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래의 약점 항목 중 '개선 결과가 전혀 제시되지 않음'이 삭제되었고, '점검표를 구체적으로 어떻게 바꿨는지 설명이 부족함'만 남았습니다. 이는 개선 결과가 명확히 제시되었음을 반영합니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-08",
+    "type": "F",
+    "expect": "resolve",
+    "arm": "production_reviewer",
+    "rep": 3,
+    "latency_s": 2.55,
+    "llm_calls": 1,
+    "est_cost_usd": 0.0007844000000000001,
+    "final_raw": "{\n  \"overallScore\": 77,\n  \"summary\": \"문제를 발견하고 점검표를 개선해 시간을 줄인 과정이 간결하게 전달된 답변입니다. 점검표를 어떻게 바꿨는지에 대한 설명이 조금 더 있으면 좋겠습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 80,\n      \"feedback\": \"문제, 조치, 결과가 순서대로 이어집니다.\"\n    },\n    \"specificity\": {\n      \"score\": 80,\n      \"feedback\": \"40분에서 25분으로 줄었다는 수치와 다른 근무자에게 확산된 결과가 제시됩니다.\"\n    },\n    \"communication\": {\n      \"score\": 80,\n      \"feedback\": \"간결하고 명확합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 70,\n      \"feedback\": \"반복 업무를 개선한 경험은 운영 직무와 관련됩니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 75,\n      \"feedback\": \"상황, 행동, 결과가 분명합니다.\"\n    }\n  },\n  \"strengths\": [\n    \"재고 확인 시간을 40분에서 25분으로 줄인 성과\",\n    \"개선안이 다른 근무자에게 확산된 점\"\n  ],\n  \"weaknesses\": [\n    \"점검표를 구체적으로 어떻게 바꿨는지 설명이 부족함\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.97,
+      "text_identical": false,
+      "markers_remaining": [],
+      "n_strengths": [
+        2,
+        2
+      ],
+      "n_weaknesses": [
+        2,
+        1
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "resolved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본 평가의 약점에 '개선 결과가 전혀 제시되지 않음'이 포함되어 있었으나, 검토된 평가에서는 이 부분이 삭제되어 '점검표를 구체적으로 어떻게 바꿨는지 설명이 부족함'만 남아 있습니다. 이는 답변에서 개선 결과가 명확히 제시된 점을 반영한 적절한 수정으로, 의미 변경 없이 결함을 해결했습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래의 약점 항목 중 '개선 결과가 전혀 제시되지 않음'이 제거되었습니다. 이는 개선 결과가 명확히 제시되었음을 반영합니다."
+      }
+    }
+  },
+  {
+    "case_id": "HO-08",
+    "type": "F",
+    "expect": "resolve",
+    "arm": "improved",
+    "rep": 3,
+    "pipeline": {
+      "llm_calls": 2,
+      "llm_latency_s": 3.69,
+      "est_cost_usd": 0.0011356,
+      "prompt_tokens": 3311,
+      "completion_tokens": 410,
+      "validator_ms": 0.201,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.178,
+      "findings": [
+        {
+          "issue_type": "summary_item_contradiction",
+          "target_field": "weaknesses",
+          "problematic_text": "개선 결과가 전혀 제시되지 않음",
+          "evidence_in_evaluation": [
+            "40분에서 25분으로 줄었다는 수치와 다른 근무자에게 확산된 결과가 제시됩니다."
+          ],
+          "evidence_in_answer": [
+            "편의점 아르바이트에서 재고 확인에 매일 40분이 걸렸습니다. 진열대 순서대로 점검표를 다시 만들었고, 그 뒤로는 25분이면 끝났습니다. 점장님이 다른 근무자에게도 그 점검표를 쓰게 했습니다."
+          ],
+          "reason": "약 40분 걸리던 재고 확인 시간을 25분으로 줄였다는 구체적인 개선 결과가 ANSWER에 명확히 제시되어 있으므로, '개선 결과가 전혀 제시되지 않음'이라는 약점은 요지에 맞지 않습니다.",
+          "action": "replace_text",
+          "proposed_text": "개선 결과에 대한 추가적인 정량적 설명이 부족함",
+          "confidence": "high",
+          "applied": true,
+          "gate_result": "all gates passed"
+        },
+        {
+          "issue_type": "summary_item_contradiction",
+          "target_field": "weaknesses",
+          "problematic_text": "점검표를 구체적으로 어떻게 바꿨는지 설명이 부족함",
+          "evidence_in_evaluation": [
+            "점검표를 어떻게 바꿨는지에 대한 설명이 조금 더 있으면 좋겠습니다."
+          ],
+          "evidence_in_answer": [
+            "진열대 순서대로 점검표를 다시 만들었고"
+          ],
+          "reason": "ANSWER에 '진열대 순서대로 점검표를 다시 만들었다'는 구체적인 변경 내용이 포함되어 있으므로, '설명이 부족함'이라는 약점은 다소 과장된 표현입니다.",
+          "action": "replace_text",
+          "proposed_text": "점검표 변경에 대한 좀 더 상세한 설명이 있으면 좋겠습니다.",
+          "confidence": "high",
+          "applied": true,
+          "gate_result": "all gates passed"
+        }
+      ],
+      "post_check": {
+        "ran": true,
+        "validator_report": {
+          "valid": true,
+          "errors": [],
+          "fixes": [],
+          "hints": []
+        },
+        "residual_findings": []
+      },
+      "changed": true,
+      "needs_review": false,
+      "status": "corrected",
+      "change_log": [
+        {
+          "source": "context_reviewer",
+          "field": "weaknesses",
+          "issue_type": "summary_item_contradiction",
+          "before": "개선 결과가 전혀 제시되지 않음",
+          "after": "개선 결과에 대한 추가적인 정량적 설명이 부족함",
+          "reason": "약 40분 걸리던 재고 확인 시간을 25분으로 줄였다는 구체적인 개선 결과가 ANSWER에 명확히 제시되어 있으므로, '개선 결과가 전혀 제시되지 않음'이라는 약점은 요지에 맞지 않습니다."
+        },
+        {
+          "source": "context_reviewer",
+          "field": "weaknesses",
+          "issue_type": "summary_item_contradiction",
+          "before": "점검표를 구체적으로 어떻게 바꿨는지 설명이 부족함",
+          "after": "점검표 변경에 대한 좀 더 상세한 설명이 있으면 좋겠습니다.",
+          "reason": "ANSWER에 '진열대 순서대로 점검표를 다시 만들었다'는 구체적인 변경 내용이 포함되어 있으므로, '설명이 부족함'이라는 약점은 다소 과장된 표현입니다."
+        }
+      ],
+      "final_raw": "{\n  \"overallScore\": 77,\n  \"summary\": \"문제를 발견하고 점검표를 개선해 시간을 줄인 과정이 간결하게 전달된 답변입니다. 점검표를 어떻게 바꿨는지에 대한 설명이 조금 더 있으면 좋겠습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 80,\n      \"feedback\": \"문제, 조치, 결과가 순서대로 이어집니다.\"\n    },\n    \"specificity\": {\n      \"score\": 80,\n      \"feedback\": \"40분에서 25분으로 줄었다는 수치와 다른 근무자에게 확산된 결과가 제시됩니다.\"\n    },\n    \"communication\": {\n      \"score\": 80,\n      \"feedback\": \"간결하고 명확합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 70,\n      \"feedback\": \"반복 업무를 개선한 경험은 운영 직무와 관련됩니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 75,\n      \"feedback\": \"상황, 행동, 결과가 분명합니다.\"\n    }\n  },\n  \"strengths\": [\n    \"재고 확인 시간을 40분에서 25분으로 줄인 성과\",\n    \"개선안이 다른 근무자에게 확산된 점\"\n  ],\n  \"weaknesses\": [\n    \"개선 결과에 대한 추가적인 정량적 설명이 부족함\",\n    \"점검표 변경에 대한 좀 더 상세한 설명이 있으면 좋겠습니다.\"\n  ]\n}",
+      "total_latency_s": 3.694
+    },
+    "detected": true,
+    "latency_s": 3.694,
+    "llm_calls": 2,
+    "est_cost_usd": 0.0011356,
+    "final_raw": "{\n  \"overallScore\": 77,\n  \"summary\": \"문제를 발견하고 점검표를 개선해 시간을 줄인 과정이 간결하게 전달된 답변입니다. 점검표를 어떻게 바꿨는지에 대한 설명이 조금 더 있으면 좋겠습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 80,\n      \"feedback\": \"문제, 조치, 결과가 순서대로 이어집니다.\"\n    },\n    \"specificity\": {\n      \"score\": 80,\n      \"feedback\": \"40분에서 25분으로 줄었다는 수치와 다른 근무자에게 확산된 결과가 제시됩니다.\"\n    },\n    \"communication\": {\n      \"score\": 80,\n      \"feedback\": \"간결하고 명확합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 70,\n      \"feedback\": \"반복 업무를 개선한 경험은 운영 직무와 관련됩니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 75,\n      \"feedback\": \"상황, 행동, 결과가 분명합니다.\"\n    }\n  },\n  \"strengths\": [\n    \"재고 확인 시간을 40분에서 25분으로 줄인 성과\",\n    \"개선안이 다른 근무자에게 확산된 점\"\n  ],\n  \"weaknesses\": [\n    \"개선 결과에 대한 추가적인 정량적 설명이 부족함\",\n    \"점검표 변경에 대한 좀 더 상세한 설명이 있으면 좋겠습니다.\"\n  ]\n}",
+    "byte_identical_to_input": false,
+    "rule": {
+      "format_ok": true,
+      "format_error": null,
+      "score_changes": {},
+      "text_similarity": 0.867,
+      "text_identical": false,
+      "markers_remaining": [],
+      "n_strengths": [
+        2,
+        2
+      ],
+      "n_weaknesses": [
+        2,
+        2
+      ],
+      "overall_minus_mean": [
+        0.0,
+        0.0
+      ],
+      "rule_verdict": "resolved"
+    },
+    "judge": {
+      "gpt-4.1-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "text_edit",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원본 평가의 약점에 '개선 결과가 전혀 제시되지 않음'이 있었으나, 리뷰어는 이를 '개선 결과에 대한 추가적인 정량적 설명이 부족함'으로 수정하여 답변 내용과 부합하도록 개선했습니다. 또한, strengths와 weaknesses 모두 개선 결과를 언급하는 점에서 모순이 해소되었습니다."
+      },
+      "gpt-4o-mini": {
+        "defect_resolved": "yes",
+        "resolution_method": "both",
+        "meaning_changed": false,
+        "meaning_change_detail": "",
+        "new_problem": false,
+        "new_problem_detail": "",
+        "rationale": "원래의 약점 중 '개선 결과가 전혀 제시되지 않음'이 '개선 결과에 대한 추가적인 정량적 설명이 부족함'으로 수정되어, 개선 결과가 언급되었음을 명확히 하였습니다."
+      }
+    }
+  }
+]

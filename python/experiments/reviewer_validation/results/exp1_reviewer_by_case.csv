@@ -1,0 +1,18 @@
+﻿case_id,type,type_label,expect,runs,format_ok,runs_with_score_change,manual_verdicts,rule_verdicts,gpt-4.1-mini_resolved_yes,gpt-4o-mini_resolved_yes,mean_text_similarity
+TC-01,A,정상 평가 (중하위 점수),preserve,5,5/5,0/5,preservedx5,preservedx5,0/5,0/5,0.871
+TC-02,A,정상 평가 (고득점),preserve,5,5/5,0/5,preservedx5,preservedx5,0/5,0/5,0.914
+TC-03,A,정상 평가 (저득점),preserve,5,5/5,0/5,preservedx5,preservedx5,0/5,0/5,0.78
+TC-04,A,"정상 평가 (영어 면접, 중상위 점수)",preserve,5,5/5,0/5,preservedx5,preservedx5,0/5,0/5,0.928
+TC-05,A,정상 평가 (일본어 면접),preserve,5,5/5,0/5,preservedx5,preservedx5,0/5,0/5,0.905
+TC-06,A,"정상 평가 (항목 간 점수 편차가 크지만 모순은 없음, 과잉 수정 유도 케이스)",preserve,5,5/5,0/5,preservedx5,preservedx5,0/5,0/5,0.872
+TC-07,B,점수와 종합 의견의 모순,resolve,5,5/5,0/5,not_resolvedx5,not_resolvedx5,5/5,4/5,0.805
+TC-08,B,높은 점수와 부정적 피드백의 모순,resolve,5,5/5,5/5,resolvedx5,resolvedx5,5/5,1/5,0.793
+TC-09,B,낮은 점수와 strengths의 모순,resolve,5,5/5,0/5,resolvedx5,resolvedx5,5/5,0/5,0.886
+TC-10,C,평가 항목 간 사실 서술의 모순 (수치 있음 vs 수치 없음),resolve,5,5/5,0/5,"not_resolvedx1, partialx3, resolvedx1",resolvedx5,5/5,3/5,0.938
+TC-11,C,평가 항목 간 사실 서술의 모순 (장황함 vs 너무 짧음),resolve,5,5/5,0/5,not_resolvedx5,resolvedx5,5/5,0/5,0.532
+TC-12,D,근거가 부족한 평가 (답변 내용과 연결되지 않은 일반론),undetectable_by_design,5,5/5,0/5,no_grounding_addedx5,not_detectedx5,5/5,3/5,0.83
+TC-13,D,근거가 부족한 평가 (답변에 없는 사실을 근거로 인용),undetectable_by_design,5,5/5,0/5,not_detectedx5,not_detectedx5,3/5,0/5,0.903
+TC-14,E,중복된 평가 (같은 지적이 모든 항목과 weaknesses에 반복),dedupe,5,5/5,0/5,"partialx1, resolvedx4","not_resolvedx1, resolvedx4",5/5,1/5,0.718
+TC-15,E,중복된 평가 (strengths와 weaknesses 내부 반복),dedupe,5,5/5,0/5,"partialx1, resolvedx4","not_resolvedx1, resolvedx4",5/5,4/5,0.728
+TC-16,F,미묘한 모순 (정상처럼 보이지만 summary의 한 구절이 weaknesses와 상충),resolve,5,5/5,0/5,not_resolvedx5,not_resolvedx5,3/5,4/5,0.846
+TC-17,F,미묘한 모순 (서술은 정상이나 overallScore가 다섯 항목 평균과 불일치),fix_overall,5,5/5,0/5,not_resolvedx5,not_resolvedx5,0/5,5/5,0.823

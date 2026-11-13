@@ -1,0 +1,8 @@
+﻿stage,model,invocations,prompt_tokens_mean,completion_tokens_mean,latency_mean_s,latency_median_s,est_cost_usd_total,est_cost_usd_per_invocation
+coach,gpt-4.1-mini,204,1134,657,4.438,4.407,0.2807,0.00138
+context_reviewer,gpt-4.1-mini,329,1856,258,2.149,2.143,0.3017,0.00092
+judge,gpt-4.1-mini,446,1166,196,1.762,1.734,0.3236,0.00073
+judge,gpt-4o-mini,446,1166,157,2.016,1.893,0.1108,0.00025
+post_check,gpt-4.1-mini,31,1609,112,1.243,0.663,0.0217,0.0007
+reviewer,gpt-4.1-mini,24,684,343,2.895,2.744,0.0197,0.00082
+second_pass,gpt-4.1-mini,79,1961,318,2.454,2.144,0.0814,0.00103

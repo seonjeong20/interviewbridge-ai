@@ -1,0 +1,52 @@
+﻿case_id,sample,evaluator_format_ok,overall_minus_mean,reviewer_format_ok,reviewer_score_changes,reviewer_text_identical,reviewer_text_similarity,gpt-4.1-mini_original_has_contradiction,gpt-4o-mini_original_has_contradiction,gpt-4.1-mini_original_unsupported,gpt-4o-mini_original_unsupported,gpt-4.1-mini_reviewer_changed_meaning,gpt-4o-mini_reviewer_changed_meaning,gpt-4.1-mini_detail,gpt-4o-mini_detail,evaluator_latency_s,reviewer_latency_s,evaluator_prompt_tokens,evaluator_completion_tokens
+TC-01,1,True,0.0,True,{},False,0.992,False,False,False,False,False,False,"평가 내용은 답변에서 드러난 정보에 기반하여 구체성 부족과 논리 전개 미흡 등을 지적하고 있어, 답변 내용과 일치함. / 리뷰어는 원본 평가를 재확인하고 문장 일부를 다듬었으나, 의미나 평가 내용에는 변화가 없음.",,3.438,3.854,727,537
+TC-01,2,True,0.0,True,{},False,0.969,False,False,False,False,False,False,"리뷰어는 원본 평가의 문장 일부를 약간 다듬고 표현을 명확히 했으나, 의미나 평가 내용에는 변화가 없다.",,3.45,3.657,727,531
+TC-01,3,True,0.0,True,{},True,1.0,False,False,False,False,False,False,"평가 내용은 답변에서 언급된 내용(의견 충돌, 중재 노력, 소통 중요성 인지, 구체성 부족 등)과 일치함. / 리뷰어는 원본 평가를 그대로 유지하며 의미 변경 없이 재확인함.",,3.179,3.611,727,478
+TC-02,1,True,0.0,True,{},False,0.993,False,False,False,False,False,False,"리뷰어는 원본 평가의 문장들을 약간 다듬고 약간의 표현 차이를 주었으나, 의미나 점수에는 변화가 없음",,3.275,4.212,794,528
+TC-02,2,True,0.0,True,{},False,0.978,False,False,False,False,False,False,"리뷰어는 원본 평가의 내용을 재구성하거나 문장 일부를 다듬었으나, 의미나 평가 점수에는 변화를 주지 않았습니다.",,4.652,4.335,794,553
+TC-02,3,True,0.0,True,{},False,0.978,False,False,False,False,False,False,"리뷰어는 원본 평가의 내용을 거의 그대로 유지하며, 일부 표현만 약간 다듬고 약간의 문장 구조를 변경하였으나 의미의 변화는 없음.",,3.542,7.251,794,548
+TC-03,1,True,0.0,True,{},False,0.957,False,False,False,False,False,False,리뷰어는 원본 평가의 의미를 유지하면서 표현을 약간 다듬고 문장 구조를 개선함.,,2.721,3.205,705,421
+TC-03,2,True,0.0,True,{},False,0.997,False,False,False,False,False,False,평가 내용은 지원자의 답변에 기반한 일반적이고 타당한 평가임. / 리뷰어는 표현을 약간 다듬었으나 의미나 평가 점수에는 변화가 없음.,,2.8,3.251,705,439
+TC-03,3,True,0.0,True,{},False,0.996,False,False,False,False,False,False,"리뷰어는 원본 평가의 문장을 약간 다듬고 띄어쓰기 및 문장 부호를 조정했으나, 의미나 평가 내용에는 변화가 없음.",,2.683,3.408,705,453
+TC-04,1,True,0.0,True,{},True,1.0,False,False,False,False,False,False,"평가 내용은 답변에 기반한 적절한 해석과 평가로, 답변 내 정보와 일치함. / 리뷰어는 원본 평가를 그대로 유지하며 의미 변경 없이 재확인함.",,2.999,3.301,730,448
+TC-04,2,True,0.0,True,{},True,1.0,False,False,False,False,False,False,리뷰어는 원본 평가를 그대로 유지하며 의미 변경 없이 재검토만 수행함,,3.151,3.547,730,492
+TC-04,3,True,0.0,True,{},False,0.988,False,False,False,False,False,False,"평가 내용은 답변에 명시된 학습 과정, 협업, 마감일 준수 등 사실에 기반함. / 리뷰어는 원본 평가를 문장 표현과 일부 단어만 다듬었으며, 의미나 평가 점수, 내용은 동일함.",,3.295,4.356,730,527
+TC-09,1,True,0.0,True,{},False,0.945,False,False,False,False,False,False,"리뷰어는 원본 평가의 의미를 유지하면서 일부 표현을 약간 다듬고 문장 구조를 조정했으나, 평가 내용이나 점수에는 변화가 없습니다.",,2.773,3.569,786,440
+TC-09,2,True,0.0,True,{},False,0.909,False,False,False,False,False,False,"리뷰어는 원본 평가의 내용을 재구성하고 일부 표현을 다듬었으나, 의미나 평가 점수에는 변화가 없습니다.",,2.681,3.213,786,431
+TC-09,3,True,0.0,True,{},False,0.986,False,False,False,False,False,False,"평가 내용은 답변에서 제시된 경험과 일치하며, 추가적인 사실을 요구하지 않음. / 리뷰어는 원본 평가의 문장 일부를 다듬고 표현을 약간 변경했으나, 의미나 평가 점수에는 변화가 없음.",,2.792,3.294,786,436
+TC-10,1,True,0.0,True,{},False,0.988,False,False,False,False,False,False,"리뷰어는 원본 평가의 내용을 재구성하고 일부 문장 표현을 다듬었으나, 의미나 평가 점수에는 변화를 주지 않았습니다.",,3.081,3.934,722,509
+TC-10,2,True,0.0,True,{},False,0.997,False,False,False,False,False,False,"리뷰어는 원본 평가의 문장 일부를 다듬고 문장 부호를 조정했으나, 의미나 평가 내용에는 변화가 없다.",,3.271,3.513,722,518
+TC-10,3,True,0.0,True,{},False,0.989,False,False,False,False,False,False,"리뷰어는 원본 평가의 내용을 재구성하고 문장 일부를 다듬었으나, 의미나 평가 점수에는 변화를 주지 않았다.",,3.354,3.898,722,546
+TC-05,1,True,0.0,True,{},True,1.0,False,False,False,False,False,False,"평가 내용은 답변에서 언급된 보고·연락·상담과 프로젝트 경험에 기반하여 작성되었으며, 추가로 구체적 사례나 결과 부족을 지적하는 내용이므로 답변과 일치함. / 리뷰어는 원본 평가를 그대로 유지하며 의미 변경 없이 재확인 및 재표현만 하였음.",,3.662,4.304,744,612
+TC-05,2,True,0.0,True,{},False,0.987,False,False,False,False,False,False,"평가 내용은 답변에서 언급된 보고・연락・상담과 팀 분위기 개선에 관한 내용에 기반하고 있으며, 추가로 구체적 사례 부족을 지적하고 있어 답변과 일치함. / 리뷰어는 원본 평가의 문장 일부를 약간 다듬고 표현을 통일했으나, 의미나 평가 점수에는 변화를 주지 않음.",,3.309,3.966,744,527
+TC-05,3,True,0.0,True,{},False,0.998,False,False,False,False,False,False,"리뷰어는 원본 평가의 내용을 재구성하거나 문장 표현을 다듬었으나, 의미나 평가 점수, 피드백 내용에 변화가 없음.",,3.047,3.527,744,488
+TC-06,1,True,4.0,True,{},False,0.982,False,False,False,False,False,False,"평가 내용은 답변에 기반한 논리적 사고, 구체성 부족, 의사소통, 직무 적합성, STAR 구조 미흡 등을 적절히 반영하고 있습니다. / 리뷰어는 원본 평가를 문장 일부를 다듬고 표현을 약간 수정했으나, 의미나 평가 점수에는 변화를 주지 않았습니다.",,3.249,3.557,719,514
+TC-06,2,True,2.0,True,{},False,0.997,False,False,False,False,False,False,평가 내용은 답변에서 언급된 문제 구조화 능력과 구체적 사례 부족에 근거함 / 리뷰어는 원본 평가를 그대로 유지하며 의미 변경 없이 재확인함,,3.055,3.538,719,450
+TC-06,3,True,2.0,True,{},False,0.98,False,False,False,False,False,False,"리뷰어는 원본 평가의 내용을 문장 표현만 약간 다듬고, 약간의 단어 변경(예: '없어' → '부족해')을 하였으나 의미의 변화는 없음.",,2.894,3.595,719,433
+TC-07,1,True,0.0,True,{},False,0.987,False,False,True,False,False,False,"원인 분석과 구체적 해결 과정에 대한 설명이 답변에 없으나 평가에서 부족하다고 지적함. / 리뷰어는 원본 평가를 재구성하고 일부 문장만 다듬었으며, 의미나 평가 점수는 변경하지 않음.",,3.612,3.788,747,535
+TC-07,2,True,0.0,True,{},False,0.945,False,False,True,False,False,False,"The evaluation mentions lack of problem cause analysis, detailed solution process, and personal role explanation, which are not present in the brief answer. / The reviewer made minor wording adjustments without changing the meaning or evaluation scores.",,3.34,3.771,747,509
+TC-07,3,True,0.0,True,{},False,0.996,False,False,False,False,False,False,"평가 내용은 답변에 기반한 적절한 지적과 피드백으로, 답변 내 정보와 일치함. / 리뷰어는 원본 평가를 재확인하고 문장 일부를 다듬었으나, 의미나 평가 내용에 변화는 없음.",,3.477,3.828,747,531
+TC-08,1,True,0.0,True,{},False,0.954,False,False,False,False,False,False,"평가 내용은 답변에 기반한 일반적 평가로, 답변 내 정보와 일치함. / 리뷰어는 문장 일부를 다듬고 표현을 약간 수정했으나, 의미나 평가 내용에는 변화가 없음.",,2.954,3.757,734,481
+TC-08,2,True,0.0,True,{},False,0.981,False,False,False,False,False,False,"평가 내용은 답변에서 언급된 내용의 부족함을 지적하고 있어, 답변 내용과 일치함. / 리뷰어는 원본 평가의 내용을 재진술하며 의미 변경 없이 표현만 일부 다듬음.",,3.102,3.483,734,458
+TC-08,3,True,0.0,True,{},True,1.0,False,False,False,False,False,False,"평가 내용은 답변에서 언급된 내용의 구체성 부족과 논리적 흐름에 대한 평가로, 답변 내 정보와 일치함. / 리뷰어는 원본 평가를 그대로 유지하며 의미 변경 없이 재확인함.",,2.888,3.391,734,461
+TC-11,1,True,0.0,True,{},False,0.958,False,False,False,False,False,False,"리뷰어는 원본 평가의 문장들을 약간 다듬고 표현을 명확히 했으나, 의미나 평가 내용에는 변화가 없다.",,3.599,3.415,695,448
+TC-11,2,True,2.0,True,{},False,0.99,False,False,False,False,False,False,"리뷰어는 원본 평가의 문장을 약간 다듬고 일부 표현을 명확히 했으나, 의미나 평가 내용에는 변화가 없습니다.",,2.906,3.409,695,468
+TC-11,3,True,0.0,True,{},False,0.966,False,False,False,False,False,False,리뷰어는 원본 평가의 의미를 유지하며 문장 일부를 다듬고 표현을 약간 수정함.,,3.413,3.226,695,453
+TC-12,1,True,0.0,True,{},False,0.982,False,False,False,False,False,False,"리뷰어는 피드백 문구를 약간 다듬고 표현을 명확하게 했으나, 의미나 평가 점수에는 변화를 주지 않았습니다.",,3.297,3.749,738,505
+TC-12,2,True,0.0,True,{},False,0.958,False,False,False,False,True,False,커뮤니케이션 피드백에 '구체적인 설명이 더 보완되면 좋겠다'는 문구가 추가되어 의미가 약간 확장됨.,,2.987,3.622,738,504
+TC-12,3,True,0.0,True,{},True,1.0,False,False,False,False,False,False,리뷰어는 원본 평가를 그대로 유지하며 의미 변경 없이 재검토만 하였음.,,2.779,3.347,738,484
+TC-13,1,True,1.0,True,{},False,0.969,False,False,False,False,False,False,모든 평가 내용은 답변에 기반하여 적절히 평가됨. / 리뷰어는 원본 평가를 재구성하고 일부 표현을 다듬었으나 의미나 평가 점수에는 변화가 없음.,,3.291,3.425,744,509
+TC-13,2,True,1.0,True,{},False,0.995,False,False,False,False,False,False,평가 내용은 답변에 기반한 적절한 피드백과 점수로 구성되어 있습니다. / 커뮤니케이션 피드백에서 '체계적인 설명과 연결'을 '체계적이고 논리적인 설명과 연결'로 약간 다듬었으나 의미 변화는 없습니다.,,2.961,3.446,744,470
+TC-13,3,True,2.0,True,{},False,0.99,False,False,False,False,False,False,"리뷰어는 원본 평가의 내용을 재구성하고 일부 문장 표현을 다듬었으나, 의미나 평가 점수에는 변화를 주지 않았다.",,4.112,4.306,744,608
+TC-14,1,True,0.0,True,{},False,0.992,False,False,False,False,False,False,"리뷰어는 원본 평가의 문장을 약간 다듬고 일부 표현을 명확히 했으나, 의미나 평가 내용에는 변화가 없음.",,2.888,3.623,721,444
+TC-14,2,True,0.0,True,{},False,0.984,False,False,False,False,False,False,"리뷰어는 원본 평가의 내용을 재구성하고 일부 표현을 다듬었으나, 의미나 평가 점수에는 변화를 주지 않음.",,2.75,3.331,721,455
+TC-14,3,True,0.0,True,{},False,0.995,False,False,False,False,False,False,평가 내용은 답변에 기반한 적절한 지적과 점수 부여로 보임. / 리뷰어는 원본 평가를 재확인하고 문장 일부를 다듬었으나 의미나 점수에는 변화가 없음.,,3.264,4.056,721,536
+TC-15,1,True,0.0,True,{},False,0.998,False,False,False,False,False,False,"리뷰어는 원본 평가의 내용을 거의 그대로 유지하며, 문장 일부를 다듬고 '과제'와 '행동' 부분 표현을 약간 수정했으나 의미 변화는 없음.",,2.834,3.201,713,433
+TC-15,2,True,0.0,True,{},False,0.986,False,False,False,False,False,False,"평가 내용은 답변에 기반한 일반적 평가로, 답변 내 정보와 일치함. / 리뷰어는 원본 평가를 재구성하고 일부 표현을 다듬었으나, 의미나 평가 점수에는 변화를 주지 않음.",,3.439,4.171,713,566
+TC-15,3,True,0.0,True,{},False,0.962,False,False,False,False,False,False,"평가 내용은 답변에 기반한 일반적 평가로, 답변 내 정보와 일치함. / 리뷰어는 문장 표현과 일부 단어를 다듬었으나, 의미나 평가 점수에는 변화가 없음.",,3.27,4.083,713,509
+TC-16,1,True,0.0,True,{},False,0.997,False,False,False,False,False,False,"리뷰어는 원본 평가의 내용을 거의 그대로 유지하며, 문장 일부를 다듬고 약간의 표현 차이를 보였으나 의미 변화는 없음.",,3.255,4.751,776,557
+TC-16,2,True,0.0,True,{},False,0.975,False,False,False,False,False,False,"리뷰어는 원본 평가의 의미를 유지하면서 일부 표현을 다소 다듬고 문장 구조를 약간 변경했으나, 평가 내용이나 점수에는 변화가 없습니다.",,2.972,3.698,776,494
+TC-16,3,True,0.0,True,{},False,0.986,False,False,False,False,False,False,"리뷰어는 원본 평가의 내용을 문장 표현과 일부 단어를 다듬고 병합했으나, 의미나 평가 점수, 피드백 내용에는 변화가 없습니다.",,3.472,3.828,776,530
+TC-17,1,True,0.0,True,{},False,0.997,False,False,False,False,False,False,"평가 내용은 답변에서 언급된 내용(로딩 문제, 이미지 용량 축소, 지연 로딩 적용, 개선된 반응)과 일치하며, 추가로 구체성 부족과 역할 미기재를 지적하고 있어 답변과 부합함. / 리뷰어는 원본 평가의 문장 일부를 다듬고 '협업 과정과 고객 중심 사고' 부분의 표현만 약간 수정했으나, 의미 변화 없이 평가 내용과 점수는 동일함.",,2.987,3.883,701,470
+TC-17,2,True,0.0,True,{},False,0.991,False,False,False,False,False,False,"평가 내용은 답변에 기반한 일반적 평가로, 답변 내 정보와 일치함. / 리뷰어는 원본 평가를 재구성하고 일부 표현을 다듬었으나, 의미나 평가 내용에 변화는 없음.",,2.964,3.857,701,486
+TC-17,3,True,0.0,True,{},False,0.982,False,False,False,False,False,False,"평가 내용은 답변에 기반한 일반적 평가로, 답변 내 정보와 일치함. / 리뷰어는 문장 일부를 다듬고 표현을 약간 변경했으나, 의미나 평가 점수에는 변화가 없음.",,3.159,3.783,701,520

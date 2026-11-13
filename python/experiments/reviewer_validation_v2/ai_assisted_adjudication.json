@@ -1,0 +1,1556 @@
+{
+  "_label": "AI-assisted adjudication",
+  "_note": "Verdicts assigned by the AI coding agent that ran the experiment, by reading the outputs. Not reviewed by a person. Each verdict carries the decisive text.",
+  "main": {
+    "v20|TC-01#1": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|TC-01#2": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|TC-01#3": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|TC-01#4": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|TC-01#5": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|TC-02#1": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|TC-02#2": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|TC-02#3": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|TC-02#4": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|TC-02#5": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|TC-03#1": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|TC-03#2": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|TC-03#3": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|TC-03#4": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|TC-03#5": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|TC-04#1": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|TC-04#2": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|TC-04#3": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|TC-04#4": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|TC-04#5": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|TC-05#1": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|TC-05#2": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|TC-05#3": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|TC-05#4": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|TC-05#5": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|TC-06#1": {
+      "verdict": "modified",
+      "note": "",
+      "evidence": "변경 내역: [\"강점을 설명하는 논리 전개와 전달력은 우수하지만, 그 강점을 실제로 발휘한 경험이 전혀 제시되지 않아 주장에 대한 증거가 없습니다.\"]"
+    },
+    "v20|TC-06#2": {
+      "verdict": "modified",
+      "note": "",
+      "evidence": "변경 내역: [\"강점을 설명하는 논리 전개와 전달력은 우수하지만, 그 강점을 실제로 발휘한 경험이 전혀 제시되지 않아 주장에 대한 증거가 없습니다.\"]"
+    },
+    "v20|TC-06#3": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|TC-06#4": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|TC-06#5": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|TC-07#1": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "summary: 논리적 구성이 부족하며 문제 해결 과정의 설득력이 떨어지는 답변입니다. 다만 일부 세부 내용은 보완이 필요합니다."
+    },
+    "v20|TC-07#2": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "summary: 논리적 구성이 매우 뛰어나며 문제 해결 과정을 설득력 있게 전달한 답변입니다. 다만 일부 세부 내용은 보완이 필요합니다."
+    },
+    "v20|TC-07#3": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "summary: 논리적 구성이 매우 뛰어나며 문제 해결 과정을 설득력 있게 전달한 답변입니다. 다만 일부 세부 내용은 보완이 필요합니다."
+    },
+    "v20|TC-07#4": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "summary: 논리적 구성이 매우 뛰어나며 문제 해결 과정을 설득력 있게 전달한 답변입니다. 다만 일부 세부 내용은 보완이 필요합니다."
+    },
+    "v20|TC-07#5": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "summary: 논리적 구성이 매우 뛰어나며 문제 해결 과정을 설득력 있게 전달한 답변입니다. 다만 일부 세부 내용은 보완이 필요합니다."
+    },
+    "v20|TC-08#1": {
+      "verdict": "not_resolved",
+      "note": "점수 불일치를 지적했으나 점수는 바꾸지 않도록 설계되어 보류",
+      "evidence": "specificity.score=90 / feedback: 어떤 콘텐츠를 만들었는지, 반응이 어느 정도였는지에 대한 수치나 사례가 전혀 제시되지 않아 내용이 추상적입니다."
+    },
+    "v20|TC-08#2": {
+      "verdict": "not_resolved",
+      "note": "점수 불일치를 지적했으나 점수는 바꾸지 않도록 설계되어 보류",
+      "evidence": "specificity.score=90 / feedback: 어떤 콘텐츠를 만들었는지, 반응이 어느 정도였는지에 대한 수치나 사례가 전혀 제시되지 않아 내용이 추상적입니다."
+    },
+    "v20|TC-08#3": {
+      "verdict": "not_resolved",
+      "note": "점수 불일치를 지적했으나 점수는 바꾸지 않도록 설계되어 보류",
+      "evidence": "specificity.score=90 / feedback: 어떤 콘텐츠를 만들었는지, 반응이 어느 정도였는지에 대한 수치나 사례가 전혀 제시되지 않아 내용이 추상적입니다."
+    },
+    "v20|TC-08#4": {
+      "verdict": "not_resolved",
+      "note": "점수 불일치를 지적했으나 점수는 바꾸지 않도록 설계되어 보류",
+      "evidence": "specificity.score=90 / feedback: 어떤 콘텐츠를 만들었는지, 반응이 어느 정도였는지에 대한 수치나 사례가 전혀 제시되지 않아 내용이 추상적입니다."
+    },
+    "v20|TC-08#5": {
+      "verdict": "not_resolved",
+      "note": "점수 불일치를 지적했으나 점수는 바꾸지 않도록 설계되어 보류",
+      "evidence": "specificity.score=90 / feedback: 어떤 콘텐츠를 만들었는지, 반응이 어느 정도였는지에 대한 수치나 사례가 전혀 제시되지 않아 내용이 추상적입니다."
+    },
+    "v20|TC-09#1": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "strengths: [\"고객에게 먼저 사과하는 책임감 있는 태도\"]"
+    },
+    "v20|TC-09#2": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "strengths: [\"간결하고 명확한 전달력\", \"고객에게 먼저 사과하는 책임감 있는 태도\"]"
+    },
+    "v20|TC-09#3": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "strengths: [\"간결하고 명확한 전달력\", \"고객에게 먼저 사과하는 책임감 있는 태도\"]"
+    },
+    "v20|TC-09#4": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "strengths: [\"간결하고 명확한 전달력\", \"고객에게 먼저 사과하는 책임감 있는 태도\"]"
+    },
+    "v20|TC-09#5": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "strengths: [\"간결하고 명확한 전달력\", \"고객에게 먼저 사과하는 책임감 있는 태도\"]"
+    },
+    "v20|TC-10#1": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "jobFit feedback: 성과를 뒷받침하는 수치가 전혀 없어 직무 역량을 판단하기 어렵습니다."
+    },
+    "v20|TC-10#2": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "jobFit feedback: 성과를 뒷받침하는 수치가 전혀 없어 직무 역량을 판단하기 어렵습니다."
+    },
+    "v20|TC-10#3": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "jobFit feedback: 성과를 뒷받침하는 수치가 전혀 없어 직무 역량을 판단하기 어렵습니다."
+    },
+    "v20|TC-10#4": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "jobFit feedback: 성과를 뒷받침하는 수치가 전혀 없어 직무 역량을 판단하기 어렵습니다."
+    },
+    "v20|TC-10#5": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "jobFit feedback: 성과를 뒷받침하는 수치가 전혀 없어 직무 역량을 판단하기 어렵습니다."
+    },
+    "v20|TC-11#1": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "communication: 답변이 지나치게 길고 장황하여 핵심을 파악하기 어렵습니다. / starStructure: 답변이 세 문장으로 매우 짧아 상황, 과제, 행동, 결과를 담지 못했습니다."
+    },
+    "v20|TC-11#2": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "communication: 답변이 지나치게 길고 장황하여 핵심을 파악하기 어렵습니다. / starStructure: 답변이 세 문장으로 매우 짧아 상황, 과제, 행동, 결과를 담지 못했습니다."
+    },
+    "v20|TC-11#3": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "communication: 답변이 매우 짧아 핵심 내용을 충분히 전달하지 못했습니다. / starStructure: 답변이 세 문장으로 매우 짧아 상황, 과제, 행동, 결과를 담지 못했습니다."
+    },
+    "v20|TC-11#4": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "communication: 답변이 지나치게 길고 장황하여 핵심을 파악하기 어렵습니다. / starStructure: 답변이 세 문장으로 매우 짧아 상황, 과제, 행동, 결과를 담지 못했습니다."
+    },
+    "v20|TC-11#5": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "communication: 답변이 지나치게 길고 장황하여 핵심을 파악하기 어렵습니다. / starStructure: 답변이 세 문장으로 매우 짧아 상황, 과제, 행동, 결과를 담지 못했습니다."
+    },
+    "v20|TC-12#1": {
+      "verdict": "no_grounding_added",
+      "note": "",
+      "evidence": "summary: 전반적으로 무난한 답변입니다. 조금 더 노력하면 좋은 답변이 될 것입니다."
+    },
+    "v20|TC-12#2": {
+      "verdict": "no_grounding_added",
+      "note": "",
+      "evidence": "summary: 전반적으로 무난한 답변입니다. 조금 더 노력하면 좋은 답변이 될 것입니다."
+    },
+    "v20|TC-12#3": {
+      "verdict": "no_grounding_added",
+      "note": "",
+      "evidence": "summary: 전반적으로 무난한 답변입니다. 조금 더 노력하면 좋은 답변이 될 것입니다."
+    },
+    "v20|TC-12#4": {
+      "verdict": "no_grounding_added",
+      "note": "",
+      "evidence": "summary: 전반적으로 무난한 답변입니다. 조금 더 노력하면 좋은 답변이 될 것입니다."
+    },
+    "v20|TC-12#5": {
+      "verdict": "no_grounding_added",
+      "note": "",
+      "evidence": "summary: 전반적으로 무난한 답변입니다. 조금 더 노력하면 좋은 답변이 될 것입니다."
+    },
+    "v20|TC-13#1": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "specificity: Kafka 기반 스트리밍 도입과 인프라 비용 30% 절감이라는 정량적 성과를 제시해 구체성이 높습니다. / jobFit: Kafka와 Airflow 운영 경험이 데이터 엔지니어 직무와 직접적으로 연결됩니다. / strengths: [\"Kafka 도입으로 비용 30%를 절감한 정량적 성과\", \"파이프라인을 직접 구축한 경험\"]"
+    },
+    "v20|TC-13#2": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "specificity: 파이프라인 구축과 중복 데이터 문제 해결 경험을 구체적으로 설명해 구체성이 높습니다. / jobFit: Python과 MySQL을 활용한 데이터 파이프라인 구축 경험이 데이터 엔지니어 직무와 관련이 있습니다. / strengths: [\"파이프라인을 직접 구축한 경험\"]"
+    },
+    "v20|TC-13#3": {
+      "verdict": "partial",
+      "note": "",
+      "evidence": "specificity: 파이프라인 구축 과정과 문제 해결 단계를 구체적으로 설명해 구체성이 높습니다. / jobFit: 파이프라인 구축 경험이 데이터 엔지니어 직무와 관련이 있습니다. / strengths: [\"Kafka 도입으로 비용 30%를 절감한 정량적 성과\", \"파이프라인을 직접 구축한 경험\"]"
+    },
+    "v20|TC-13#4": {
+      "verdict": "partial",
+      "note": "",
+      "evidence": "specificity: 파이프라인 구축과 중복 제거 문제 해결 과정을 구체적으로 설명해 구체성이 높습니다. / jobFit: Python과 MySQL을 활용한 데이터 파이프라인 구축 경험이 데이터 엔지니어 직무와 관련이 있습니다. / strengths: [\"Kafka 도입으로 비용 30%를 절감한 정량적 성과\", \"파이프라인을 직접 구축한 경험\"]"
+    },
+    "v20|TC-13#5": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "specificity: Kafka 기반 스트리밍 도입과 인프라 비용 30% 절감이라는 정량적 성과를 제시해 구체성이 높습니다. / jobFit: Kafka와 Airflow 운영 경험이 데이터 엔지니어 직무와 직접적으로 연결됩니다. / strengths: [\"Kafka 도입으로 비용 30%를 절감한 정량적 성과\", \"파이프라인을 직접 구축한 경험\"]"
+    },
+    "v20|TC-14#1": {
+      "verdict": "partial",
+      "note": "",
+      "evidence": "weaknesses: [\"성과를 보여주는 구체적인 수치가 없음\", \"결과에 대한 구체적인 수치가 부족함\"]"
+    },
+    "v20|TC-14#2": {
+      "verdict": "partial",
+      "note": "",
+      "evidence": "weaknesses: [\"성과를 보여주는 구체적인 수치가 없음\", \"정량적인 수치가 제시되지 않음\", \"결과에 대한 구체적인 수치가 부족함\"]"
+    },
+    "v20|TC-14#3": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "weaknesses: [\"성과를 보여주는 구체적인 수치가 없음\"]"
+    },
+    "v20|TC-14#4": {
+      "verdict": "partial",
+      "note": "",
+      "evidence": "weaknesses: [\"성과를 보여주는 구체적인 수치가 없음\", \"결과에 대한 구체적인 수치가 부족함\"]"
+    },
+    "v20|TC-14#5": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "weaknesses: [\"성과를 보여주는 구체적인 수치가 없음\"]"
+    },
+    "v20|TC-15#1": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "strengths: [\"팀원들과의 팀워크를 중요하게 생각함\"] / weaknesses: [\"상황, 과제, 행동, 결과의 STAR 구조가 드러나지 않음\", \"리더로서 본인이 한 구체적인 행동이 없음\"]"
+    },
+    "v20|TC-15#2": {
+      "verdict": "partial",
+      "note": "",
+      "evidence": "strengths: [\"팀원들과의 팀워크를 중요하게 생각함\"] / weaknesses: [\"STAR 구조가 부족함\", \"STAR 구조에 맞춘 구성이 미흡함\", \"상황, 과제, 행동, 결과의 STAR 구조가 드러나지 않음\", \"리더로서 본인이 한 구체적인 행동이 없음\"]"
+    },
+    "v20|TC-15#3": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "strengths: [\"팀원들과의 팀워크를 중요하게 생각함\"] / weaknesses: [\"상황, 과제, 행동, 결과의 STAR 구조가 드러나지 않음\", \"리더로서 본인이 한 구체적인 행동이 없음\"]"
+    },
+    "v20|TC-15#4": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "strengths: [\"팀원들과의 팀워크를 중요하게 생각함\"] / weaknesses: [\"상황, 과제, 행동, 결과의 STAR 구조가 드러나지 않음\", \"리더로서 본인이 한 구체적인 행동이 없음\"]"
+    },
+    "v20|TC-15#5": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "strengths: [\"팀원들과의 팀워크를 중요하게 생각함\"] / weaknesses: [\"상황, 과제, 행동, 결과의 STAR 구조가 드러나지 않음\", \"리더로서 본인이 한 구체적인 행동이 없음\"]"
+    },
+    "v20|TC-16#1": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "summary: 목표 달성을 위해 주도적으로 행동한 과정을 자연스럽게 전달했으며, 결과를 수치로 제시한 점이 설득력을 높였습니다. 과제와 행동을 조금 더 구분해 설명하면 좋겠습니다. / weaknesses: [\"판매 목표와 달성 결과가 정량적으로 제시되지 않음\", \"과제와 행동의 구분이 불분명함\"]"
+    },
+    "v20|TC-16#2": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "summary: 목표 달성을 위해 주도적으로 행동한 과정을 자연스럽게 전달했으며, 결과를 수치로 제시한 점이 설득력을 높였습니다. 과제와 행동을 조금 더 구분해 설명하면 좋겠습니다. / weaknesses: [\"판매 목표와 달성 결과가 정량적으로 제시되지 않음\", \"과제와 행동의 구분이 불분명함\"]"
+    },
+    "v20|TC-16#3": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "summary: 목표 달성을 위해 주도적으로 행동한 과정을 자연스럽게 전달했으며, 결과를 수치로 제시한 점이 설득력을 높였습니다. 과제와 행동을 조금 더 구분해 설명하면 좋겠습니다. / weaknesses: [\"판매 목표와 달성 결과가 정량적으로 제시되지 않음\", \"과제와 행동의 구분이 불분명함\"]"
+    },
+    "v20|TC-16#4": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "summary: 목표 달성을 위해 주도적으로 행동한 과정을 자연스럽게 전달했으며, 결과를 수치로 제시한 점이 설득력을 높였습니다. 과제와 행동을 조금 더 구분해 설명하면 좋겠습니다. / weaknesses: [\"판매 목표와 달성 결과가 정량적으로 제시되지 않음\", \"과제와 행동의 구분이 불분명함\"]"
+    },
+    "v20|TC-16#5": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "summary: 목표 달성을 위해 주도적으로 행동한 과정을 자연스럽게 전달했으며, 결과를 수치로 제시한 점이 설득력을 높였습니다. 과제와 행동을 조금 더 구분해 설명하면 좋겠습니다. / weaknesses: [\"판매 목표와 달성 결과가 정량적으로 제시되지 않음\", \"과제와 행동의 구분이 불분명함\"]"
+    },
+    "v20|TC-17#1": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "overallScore=58 (five-item mean 58)"
+    },
+    "v20|TC-17#2": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "overallScore=58 (five-item mean 58)"
+    },
+    "v20|TC-17#3": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "overallScore=58 (five-item mean 58)"
+    },
+    "v20|TC-17#4": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "overallScore=58 (five-item mean 58)"
+    },
+    "v20|TC-17#5": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "overallScore=58 (five-item mean 58)"
+    },
+    "v21|TC-01#1": {
+      "verdict": "modified",
+      "note": "",
+      "evidence": "변경 내역: [\"결과가 '잘 마무리되었다' 수준으로만 제시됨\"]"
+    },
+    "v21|TC-01#2": {
+      "verdict": "modified",
+      "note": "",
+      "evidence": "변경 내역: [\"결과가 '잘 마무리되었다' 수준으로만 제시됨\"]"
+    },
+    "v21|TC-01#3": {
+      "verdict": "modified",
+      "note": "",
+      "evidence": "변경 내역: [\"결과가 '잘 마무리되었다' 수준으로만 제시됨\"]"
+    },
+    "v21|TC-01#4": {
+      "verdict": "modified",
+      "note": "",
+      "evidence": "변경 내역: [\"결과가 '잘 마무리되었다' 수준으로만 제시됨\"]"
+    },
+    "v21|TC-01#5": {
+      "verdict": "modified",
+      "note": "",
+      "evidence": "변경 내역: [\"결과가 '잘 마무리되었다' 수준으로만 제시됨\"]"
+    },
+    "v21|TC-02#1": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v21|TC-02#2": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v21|TC-02#3": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v21|TC-02#4": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v21|TC-02#5": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v21|TC-03#1": {
+      "verdict": "modified",
+      "note": "",
+      "evidence": "변경 내역: [\"데이터 분석 직무와의 연결성이 없음\", \"본인의 경험이나 역량이 제시되지 않음\"]"
+    },
+    "v21|TC-03#2": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v21|TC-03#3": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v21|TC-03#4": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v21|TC-03#5": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v21|TC-04#1": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v21|TC-04#2": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v21|TC-04#3": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v21|TC-04#4": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v21|TC-04#5": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v21|TC-05#1": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v21|TC-05#2": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v21|TC-05#3": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v21|TC-05#4": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v21|TC-05#5": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v21|TC-06#1": {
+      "verdict": "modified",
+      "note": "",
+      "evidence": "변경 내역: [\"결과나 성과에 대한 증거가 없음\"]"
+    },
+    "v21|TC-06#2": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v21|TC-06#3": {
+      "verdict": "modified",
+      "note": "",
+      "evidence": "변경 내역: [\"결과나 성과에 대한 증거가 없음\"]"
+    },
+    "v21|TC-06#4": {
+      "verdict": "modified",
+      "note": "",
+      "evidence": "변경 내역: [\"결과나 성과에 대한 증거가 없음\"]"
+    },
+    "v21|TC-06#5": {
+      "verdict": "modified",
+      "note": "",
+      "evidence": "변경 내역: [\"결과나 성과에 대한 증거가 없음\"]"
+    },
+    "v21|TC-07#1": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "summary: 답변은 간결하지만 문제 해결 과정에 대한 설명이 부족하여 논리적 구성이 미흡합니다. 다만 일부 세부 내용은 보완이 필요합니다."
+    },
+    "v21|TC-07#2": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "summary: 논리적 구성이 부족하며 문제 해결 과정의 연결성이 약한 답변입니다. 다만 일부 세부 내용은 보완이 필요합니다."
+    },
+    "v21|TC-07#3": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "summary: 논리적 구성이 부족하며 문제 해결 과정에서 주장과 근거의 연결이 명확하지 않습니다. 다만 일부 세부 내용은 보완이 필요합니다."
+    },
+    "v21|TC-07#4": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "summary: 논리적 구성이 매우 뛰어나며 문제 해결 과정을 설득력 있게 전달한 답변입니다. 다만 일부 세부 내용은 보완이 필요합니다."
+    },
+    "v21|TC-07#5": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "summary: 논리적 구성에 다소 부족함이 있으며 문제 해결 과정에서 주장과 근거의 연결이 명확하지 않습니다. 다만 일부 세부 내용은 보완이 필요합니다."
+    },
+    "v21|TC-08#1": {
+      "verdict": "not_resolved",
+      "note": "점수 불일치를 지적했으나 점수는 바꾸지 않도록 설계되어 보류",
+      "evidence": "specificity.score=90 / feedback: 어떤 콘텐츠를 만들었는지, 반응이 어느 정도였는지에 대한 수치나 사례가 전혀 제시되지 않아 내용이 추상적입니다."
+    },
+    "v21|TC-08#2": {
+      "verdict": "not_resolved",
+      "note": "점수 불일치를 지적했으나 점수는 바꾸지 않도록 설계되어 보류",
+      "evidence": "specificity.score=90 / feedback: 어떤 콘텐츠를 만들었는지, 반응이 어느 정도였는지에 대한 수치나 사례가 전혀 제시되지 않아 내용이 추상적입니다."
+    },
+    "v21|TC-08#3": {
+      "verdict": "not_resolved",
+      "note": "점수 불일치를 지적했으나 점수는 바꾸지 않도록 설계되어 보류",
+      "evidence": "specificity.score=90 / feedback: 어떤 콘텐츠를 만들었는지, 반응에 대한 구체적인 설명이 부족하여 내용이 다소 추상적입니다."
+    },
+    "v21|TC-08#4": {
+      "verdict": "not_resolved",
+      "note": "점수 불일치를 지적했으나 점수는 바꾸지 않도록 설계되어 보류",
+      "evidence": "specificity.score=90 / feedback: 어떤 콘텐츠를 만들었는지, 반응이 어느 정도였는지에 대한 수치나 사례가 전혀 제시되지 않아 내용이 추상적입니다."
+    },
+    "v21|TC-08#5": {
+      "verdict": "not_resolved",
+      "note": "점수 불일치를 지적했으나 점수는 바꾸지 않도록 설계되어 보류",
+      "evidence": "specificity.score=90 / feedback: 어떤 콘텐츠를 만들었는지, 반응이 어느 정도였는지에 대한 수치나 사례가 전혀 제시되지 않아 내용이 추상적입니다."
+    },
+    "v21|TC-09#1": {
+      "verdict": "partial",
+      "note": "모순된 강점은 사라졌지만, 삭제 대신 치환되어 비판 문장이 strengths 목록에 들어감",
+      "evidence": "strengths: [\"전달은 명확하지 않고 문장이 길어 핵심 파악이 어렵습니다.\", \"고객에게 먼저 사과하는 책임감 있는 태도\"]"
+    },
+    "v21|TC-09#2": {
+      "verdict": "partial",
+      "note": "모순된 강점은 사라졌지만, 삭제 대신 치환되어 비판 문장이 strengths 목록에 들어감",
+      "evidence": "strengths: [\"전달 내용이 명확하지 않고 문장이 길어 핵심 파악이 어렵습니다.\", \"고객에게 먼저 사과하는 책임감 있는 태도\"]"
+    },
+    "v21|TC-09#3": {
+      "verdict": "partial",
+      "note": "모순된 강점은 사라졌지만, 삭제 대신 치환되어 비판 문장이 strengths 목록에 들어감",
+      "evidence": "strengths: [\"전달하려는 내용이 있으나 문장이 길고 부연 설명이 많아 명확성이 떨어집니다.\", \"고객에게 먼저 사과하는 책임감 있는 태도\"]"
+    },
+    "v21|TC-09#4": {
+      "verdict": "partial",
+      "note": "모순된 강점은 사라졌지만, 삭제 대신 치환되어 비판 문장이 strengths 목록에 들어감",
+      "evidence": "strengths: [\"전달력은 일부 명확한 부분이 있으나, 문장이 너무 길고 부연 설명이 많아 핵심 전달이 어렵습니다.\", \"고객에게 먼저 사과하는 책임감 있는 태도\"]"
+    },
+    "v21|TC-09#5": {
+      "verdict": "partial",
+      "note": "모순된 강점은 사라졌지만, 삭제 대신 치환되어 비판 문장이 strengths 목록에 들어감",
+      "evidence": "strengths: [\"전달력은 일부 명확한 부분이 있으나, 문장이 지나치게 길고 부연 설명이 많아 핵심 전달이 어렵습니다.\", \"고객에게 먼저 사과하는 책임감 있는 태도\"]"
+    },
+    "v21|TC-10#1": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "jobFit feedback: 성과를 뒷받침하는 수치가 전혀 없어 직무 역량을 판단하기 어렵습니다."
+    },
+    "v21|TC-10#2": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "jobFit feedback: 성과를 뒷받침하는 수치가 전혀 없어 직무 역량을 판단하기 어렵습니다."
+    },
+    "v21|TC-10#3": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "jobFit feedback: 성과를 뒷받침하는 구체적인 수치가 포함되어 있어 직무 역량 판단에 도움이 됩니다."
+    },
+    "v21|TC-10#4": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "jobFit feedback: 성과를 뒷받침하는 구체적인 수치가 있어 직무 역량 판단에 도움이 됩니다."
+    },
+    "v21|TC-10#5": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "jobFit feedback: 성과를 뒷받침하는 수치가 전혀 없어 직무 역량을 판단하기 어렵습니다."
+    },
+    "v21|TC-11#1": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "communication: 답변이 매우 짧아 핵심 내용을 파악하기 어렵습니다. / starStructure: 답변이 세 문장으로 매우 짧아 상황, 과제, 행동, 결과를 담지 못했습니다."
+    },
+    "v21|TC-11#2": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "communication: 답변이 매우 짧아 핵심을 파악하기 어렵습니다. / starStructure: 답변이 세 문장으로 매우 짧아 상황, 과제, 행동, 결과를 담지 못했습니다."
+    },
+    "v21|TC-11#3": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "communication: 답변이 매우 짧아 핵심 내용을 파악하기 어렵습니다. / starStructure: 답변이 세 문장으로 매우 짧아 상황, 과제, 행동, 결과를 담지 못했습니다."
+    },
+    "v21|TC-11#4": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "communication: 답변이 매우 짧아 핵심 내용을 파악하기 어렵습니다. / starStructure: 답변이 세 문장으로 매우 짧아 상황, 과제, 행동, 결과를 담지 못했습니다."
+    },
+    "v21|TC-11#5": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "communication: 답변이 매우 짧아 핵심 내용을 파악하기 어렵습니다. / starStructure: 답변이 세 문장으로 매우 짧아 상황, 과제, 행동, 결과를 담지 못했습니다."
+    },
+    "v21|TC-12#1": {
+      "verdict": "no_grounding_added",
+      "note": "",
+      "evidence": "summary: 전반적으로 무난한 답변입니다. 조금 더 노력하면 좋은 답변이 될 것입니다."
+    },
+    "v21|TC-12#2": {
+      "verdict": "no_grounding_added",
+      "note": "",
+      "evidence": "summary: 전반적으로 무난한 답변입니다. 조금 더 노력하면 좋은 답변이 될 것입니다."
+    },
+    "v21|TC-12#3": {
+      "verdict": "no_grounding_added",
+      "note": "",
+      "evidence": "summary: 전반적으로 무난한 답변입니다. 조금 더 노력하면 좋은 답변이 될 것입니다."
+    },
+    "v21|TC-12#4": {
+      "verdict": "no_grounding_added",
+      "note": "",
+      "evidence": "summary: 전반적으로 무난한 답변입니다. 조금 더 노력하면 좋은 답변이 될 것입니다."
+    },
+    "v21|TC-12#5": {
+      "verdict": "no_grounding_added",
+      "note": "",
+      "evidence": "summary: 전반적으로 무난한 답변입니다. 조금 더 노력하면 좋은 답변이 될 것입니다."
+    },
+    "v21|TC-13#1": {
+      "verdict": "resolved",
+      "note": "답변에 없는 Kafka, Airflow, 30%는 모두 제거됨. 구체성 85점, 직무 적합성 85점은 그대로",
+      "evidence": "specificity: 파이프라인 구축과 중복 데이터 문제 해결 경험을 구체적으로 설명해 구체성이 높습니다. / jobFit: 파이프라인 구축 경험이 데이터 엔지니어 직무와 관련이 있습니다. / strengths: [\"파이프라인을 직접 구축한 경험\"]"
+    },
+    "v21|TC-13#2": {
+      "verdict": "resolved",
+      "note": "답변에 없는 Kafka, Airflow, 30%는 모두 제거됨. 구체성 85점, 직무 적합성 85점은 그대로",
+      "evidence": "specificity: 파이프라인 구축과 개선 과정에서 구체적인 기술과 문제 해결 경험을 설명해 구체성이 높습니다. / jobFit: 파이프라인 구축 경험이 데이터 엔지니어 직무와 관련이 있습니다. / strengths: [\"파이프라인을 직접 구축한 경험\"]"
+    },
+    "v21|TC-13#3": {
+      "verdict": "resolved",
+      "note": "답변에 없는 Kafka, Airflow, 30%는 모두 제거됨. 구체성 85점, 직무 적합성 85점은 그대로",
+      "evidence": "specificity: 파이프라인 구축과 개선 과정에서 구체적인 기술과 문제 해결 경험을 설명해 구체성이 높습니다. / jobFit: 파이프라인 구축 경험이 데이터 엔지니어 직무와 관련이 있습니다. / strengths: [\"파이프라인을 직접 구축한 경험\"]"
+    },
+    "v21|TC-13#4": {
+      "verdict": "resolved",
+      "note": "답변에 없는 Kafka, Airflow, 30%는 모두 제거됨. 구체성 85점, 직무 적합성 85점은 그대로",
+      "evidence": "specificity: Python 스크립트를 사용해 데이터를 수집하고 중복 제거 문제를 해결한 구체적인 경험을 설명합니다. / jobFit: Python과 MySQL을 활용한 데이터 파이프라인 경험이 데이터 엔지니어 직무와 관련됩니다. / strengths: [\"파이프라인 구축 및 중복 제거 개선 경험이 있습니다.\", \"파이프라인을 직접 구축한 경험\"]"
+    },
+    "v21|TC-13#5": {
+      "verdict": "resolved",
+      "note": "답변에 없는 Kafka, Airflow, 30%는 모두 제거됨. 구체성 85점, 직무 적합성 85점은 그대로",
+      "evidence": "specificity: 파이프라인 구축과 중복 데이터 문제 해결 과정을 구체적으로 설명해 구체성이 높습니다. / jobFit: 파이프라인 구축 경험이 데이터 엔지니어 직무와 관련성이 있습니다. / strengths: [\"파이프라인을 직접 구축한 경험\"]"
+    },
+    "v21|TC-14#1": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "weaknesses: [\"구체적인 수치가 부족함\"]"
+    },
+    "v21|TC-14#2": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "weaknesses: [\"구체적인 수치가 부족함\"]"
+    },
+    "v21|TC-14#3": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "weaknesses: [\"구체적인 수치가 부족함\"]"
+    },
+    "v21|TC-14#4": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "weaknesses: [\"구체적인 수치가 부족함\"]"
+    },
+    "v21|TC-14#5": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "weaknesses: [\"구체적인 수치가 부족함\"]"
+    },
+    "v21|TC-15#1": {
+      "verdict": "partial",
+      "note": "",
+      "evidence": "strengths: [\"팀워크를 강조한 점\", \"팀원들과의 팀워크를 중요하게 생각함\"] / weaknesses: [\"STAR 구조가 부족함\", \"리더로서 본인이 한 구체적인 행동이 없음\"]"
+    },
+    "v21|TC-15#2": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "strengths: [\"팀워크를 중시하는 태도\"] / weaknesses: [\"STAR 구조가 부족함\", \"리더로서 본인이 한 구체적인 행동이 없음\"]"
+    },
+    "v21|TC-15#3": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "strengths: [\"팀워크를 중시하는 태도\"] / weaknesses: [\"STAR 구조가 부족함\", \"리더로서 본인이 한 구체적인 행동이 없음\"]"
+    },
+    "v21|TC-15#4": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "strengths: [\"팀워크를 중시하는 태도\"] / weaknesses: [\"상황, 과제, 행동, 결과의 STAR 구조가 드러나지 않음\", \"리더로서 본인이 한 구체적인 행동이 없음\"]"
+    },
+    "v21|TC-15#5": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "strengths: [\"팀워크를 중시하는 태도\"] / weaknesses: [\"상황, 과제, 행동, 결과의 STAR 구조가 드러나지 않음\", \"리더로서 본인이 한 구체적인 행동이 없음\"]"
+    },
+    "v21|TC-16#1": {
+      "verdict": "resolved",
+      "note": "'수치로 제시'는 사라짐. partial은 '구체적으로 제시/설명'으로만 완화된 경우. 일부 실행은 별개의 약점 1개가 중복으로 삭제됨",
+      "evidence": "summary: 목표 달성을 위해 주도적으로 행동한 과정을 자연스럽게 전달했으며, 결과를 명확히 언급한 점이 설득력을 높였습니다. 과제와 행동을 조금 더 구분해 설명하면 좋겠습니다. / weaknesses: [\"판매 목표와 달성 결과가 정량적으로 제시되지 않음\"]"
+    },
+    "v21|TC-16#2": {
+      "verdict": "partial",
+      "note": "'수치로 제시'는 사라짐. partial은 '구체적으로 제시/설명'으로만 완화된 경우. 일부 실행은 별개의 약점 1개가 중복으로 삭제됨",
+      "evidence": "summary: 목표 달성을 위해 주도적으로 행동한 과정을 자연스럽게 전달했으며, 결과를 구체적으로 설명한 점이 좋았습니다. 과제와 행동을 조금 더 구분해 설명하면 좋겠습니다. / weaknesses: [\"판매 목표와 달성 결과가 정량적으로 제시되지 않음\"]"
+    },
+    "v21|TC-16#3": {
+      "verdict": "resolved",
+      "note": "'수치로 제시'는 사라짐. partial은 '구체적으로 제시/설명'으로만 완화된 경우. 일부 실행은 별개의 약점 1개가 중복으로 삭제됨",
+      "evidence": "summary: 목표 달성을 위해 주도적으로 행동한 과정을 전달했으며, 결과를 언급한 점이 설득력을 높였습니다. 과제와 행동을 조금 더 구분해 설명하면 좋겠습니다. / weaknesses: [\"판매 목표와 달성 결과가 정량적으로 제시되지 않음\", \"과제와 행동의 구분이 불분명함\"]"
+    },
+    "v21|TC-16#4": {
+      "verdict": "partial",
+      "note": "'수치로 제시'는 사라짐. partial은 '구체적으로 제시/설명'으로만 완화된 경우. 일부 실행은 별개의 약점 1개가 중복으로 삭제됨",
+      "evidence": "summary: 목표 달성을 위해 주도적으로 행동한 과정을 자연스럽게 전달했으며, 결과를 구체적으로 제시한 점이 설득력을 높였습니다. 과제와 행동을 조금 더 구분해 설명하면 좋겠습니다. / weaknesses: [\"판매 목표와 달성 결과가 정량적으로 제시되지 않음\"]"
+    },
+    "v21|TC-16#5": {
+      "verdict": "partial",
+      "note": "'수치로 제시'는 사라짐. partial은 '구체적으로 제시/설명'으로만 완화된 경우. 일부 실행은 별개의 약점 1개가 중복으로 삭제됨",
+      "evidence": "summary: 목표 달성을 위해 주도적으로 행동한 과정을 자연스럽게 전달했으며, 결과를 구체적으로 제시한 점이 설득력을 높였습니다. 과제와 행동을 조금 더 구분해 설명하면 좋겠습니다. / weaknesses: [\"판매 목표와 달성 결과가 정량적으로 제시되지 않음\", \"과제와 행동의 구분이 불분명함\"]"
+    },
+    "v21|TC-17#1": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "overallScore=58 (five-item mean 58)"
+    },
+    "v21|TC-17#2": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "overallScore=58 (five-item mean 58)"
+    },
+    "v21|TC-17#3": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "overallScore=58 (five-item mean 58)"
+    },
+    "v21|TC-17#4": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "overallScore=58 (five-item mean 58)"
+    },
+    "v21|TC-17#5": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "overallScore=58 (five-item mean 58)"
+    }
+  },
+  "heldout": {
+    "production_reviewer|HO-01#1": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|HO-01#1": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "production_reviewer|HO-01#2": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|HO-01#2": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "production_reviewer|HO-01#3": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|HO-01#3": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "production_reviewer|HO-02#1": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|HO-02#1": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "production_reviewer|HO-02#2": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|HO-02#2": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "production_reviewer|HO-02#3": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v20|HO-02#3": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "production_reviewer|HO-03#1": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "summary: 상황, 과제, 행동, 결과가 모두 갖춰진 STAR 구조의 모범적인 답변입니다. 다만 문서를 어떻게 개선했는지에 대한 설명은 부족합니다."
+    },
+    "v20|HO-03#1": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "summary: STAR 구조를 갖추려는 시도가 있으나, 상황과 과제 설명이 부족하고 행동과 결과도 간략하여 완전한 STAR 구조라고 보기 어렵습니다."
+    },
+    "production_reviewer|HO-03#2": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "summary: 상황, 과제, 행동, 결과가 모두 갖춰진 STAR 구조의 모범적인 답변입니다. 다만 문서를 어떻게 개선했는지에 대한 설명은 부족합니다."
+    },
+    "v20|HO-03#2": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "summary: 상황, 과제, 행동, 결과가 모두 갖춰진 STAR 구조의 모범적인 답변입니다. 다만 문서를 어떻게 개선했는지에 대한 설명은 부족합니다."
+    },
+    "production_reviewer|HO-03#3": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "summary: 상황, 과제, 행동, 결과가 모두 갖춰진 STAR 구조의 모범적인 답변입니다. 다만 문서를 어떻게 개선했는지에 대한 설명은 부족합니다."
+    },
+    "v20|HO-03#3": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "summary: STAR 구조의 답변을 시도했으나, 상황과 과제, 행동, 결과가 명확하게 드러나지 않아 개선이 필요합니다. 다만 문서를 어떻게 개선했는지에 대한 설명은 부족합니다."
+    },
+    "production_reviewer|HO-04#1": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "communication: 결론이 답변 끝까지 명확히 제시되지 않아 듣는 사람이 요지를 파악하기 어려울 수 있습니다."
+    },
+    "v20|HO-04#1": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "communication: 결론이 답변 끝까지 제시되지 않아 듣는 사람이 요지를 파악하기 어렵습니다."
+    },
+    "production_reviewer|HO-04#2": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "communication: 결론이 답변 끝까지 명확히 제시되지 않아 청자가 요지를 파악하기 어려운 부분이 있습니다."
+    },
+    "v20|HO-04#2": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "communication: 결론이 답변 끝까지 제시되지 않아 듣는 사람이 요지를 파악하기 어렵습니다."
+    },
+    "production_reviewer|HO-04#3": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "communication: 결론이 답변 끝까지 명확히 제시되지 않아 듣는 이가 요지를 파악하기 어렵습니다."
+    },
+    "v20|HO-04#3": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "communication: 결론이 답변 끝까지 제시되지 않아 듣는 사람이 요지를 파악하기 어렵습니다."
+    },
+    "production_reviewer|HO-05#1": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "specificity: AWS Solutions Architect 자격증과 3년의 운영 경력을 구체적으로 제시했습니다. / jobFit: 3년간의 AWS 운영 경력은 클라우드 엔지니어 직무에 바로 투입 가능한 수준입니다. / strengths: [\"AWS 자격증 보유\", \"가상 서버에 직접 배포한 경험\"]"
+    },
+    "v20|HO-05#1": {
+      "verdict": "partial",
+      "note": "",
+      "evidence": "specificity: AWS Solutions Architect 자격증과 3년의 운영 경력을 구체적으로 제시했습니다. / jobFit: 3년간의 AWS 운영 경력은 클라우드 엔지니어 직무에 바로 투입 가능한 수준입니다. / strengths: [\"가상 서버에 직접 배포한 경험\"]"
+    },
+    "production_reviewer|HO-05#2": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "specificity: AWS Solutions Architect 자격증과 3년간의 운영 경력을 구체적으로 제시하였습니다. / jobFit: 3년간의 AWS 운영 경력은 클라우드 엔지니어 직무에 적합함을 잘 보여줍니다. / strengths: [\"AWS 자격증 보유\", \"가상 서버에 직접 배포한 경험\"]"
+    },
+    "v20|HO-05#2": {
+      "verdict": "partial",
+      "note": "",
+      "evidence": "specificity: 웹 서버를 클라우드에 배포한 경험을 구체적으로 설명했습니다. / jobFit: 3년간의 AWS 운영 경력은 클라우드 엔지니어 직무에 바로 투입 가능한 수준입니다. / strengths: [\"AWS 자격증 보유\", \"가상 서버에 직접 배포한 경험\"]"
+    },
+    "production_reviewer|HO-05#3": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "specificity: AWS Solutions Architect 자격증과 3년간의 운영 경력을 구체적으로 제시했습니다. / jobFit: 3년간의 AWS 운영 경력은 클라우드 엔지니어 직무에 즉시 투입 가능한 수준임을 보여줍니다. / strengths: [\"AWS 자격증 보유\", \"가상 서버에 직접 배포한 실무 경험\"]"
+    },
+    "v20|HO-05#3": {
+      "verdict": "partial",
+      "note": "",
+      "evidence": "specificity: 웹 서버를 클라우드에 배포한 경험을 구체적으로 설명했습니다. / jobFit: 3년간의 AWS 운영 경력은 클라우드 엔지니어 직무에 바로 투입 가능한 수준입니다. / strengths: [\"AWS 자격증 보유\", \"가상 서버에 직접 배포한 경험\"]"
+    },
+    "production_reviewer|HO-06#1": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "strengths: [\"성실함과 책임감\"]"
+    },
+    "v20|HO-06#1": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "strengths: [\"성실함과 책임감\"]"
+    },
+    "production_reviewer|HO-06#2": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "strengths: [\"성실함과 책임감이 잘 드러남\"]"
+    },
+    "v20|HO-06#2": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "strengths: [\"성실함과 책임감\"]"
+    },
+    "production_reviewer|HO-06#3": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "strengths: [\"성실함과 책임감이 잘 드러남\"]"
+    },
+    "v20|HO-06#3": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "strengths: [\"성실함과 책임감\"]"
+    },
+    "production_reviewer|HO-07#1": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "overallScore=45 (five-item mean 66)"
+    },
+    "v20|HO-07#1": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "overallScore=66 (five-item mean 66)"
+    },
+    "production_reviewer|HO-07#2": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "overallScore=45 (five-item mean 66)"
+    },
+    "v20|HO-07#2": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "overallScore=66 (five-item mean 66)"
+    },
+    "production_reviewer|HO-07#3": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "overallScore=45 (five-item mean 66)"
+    },
+    "v20|HO-07#3": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "overallScore=66 (five-item mean 66)"
+    },
+    "production_reviewer|HO-08#1": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "weaknesses: [\"점검표를 구체적으로 어떻게 바꿨는지에 대한 설명이 부족함\"]"
+    },
+    "v20|HO-08#1": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "weaknesses: [\"점검표를 구체적으로 어떻게 바꿨는지 설명이 부족함\"]"
+    },
+    "production_reviewer|HO-08#2": {
+      "verdict": "partial",
+      "note": "",
+      "evidence": "weaknesses: [\"개선 결과에 대한 설명이 부족함\", \"점검표를 구체적으로 어떻게 변경했는지에 대한 설명이 부족함\"]"
+    },
+    "v20|HO-08#2": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "weaknesses: [\"점검표를 구체적으로 어떻게 바꿨는지 설명이 부족함\"]"
+    },
+    "production_reviewer|HO-08#3": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "weaknesses: [\"점검표를 구체적으로 어떻게 바꿨는지 설명이 부족함\"]"
+    },
+    "v20|HO-08#3": {
+      "verdict": "partial",
+      "note": "",
+      "evidence": "weaknesses: [\"개선 결과에 대한 추가적인 정량적 설명이 부족함\", \"점검표 변경에 대한 좀 더 상세한 설명이 있으면 좋겠습니다.\"]"
+    },
+    "v21|HO-01#1": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v21|HO-01#2": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v21|HO-01#3": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v21|HO-02#1": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v21|HO-02#2": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v21|HO-02#3": {
+      "verdict": "preserved",
+      "note": "",
+      "evidence": "변경 없음 또는 의미 유지"
+    },
+    "v21|HO-03#1": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "summary: 답변은 간결하며 STAR 구조의 일부 요소가 포함되어 있으나, 상황과 과제, 행동, 결과가 충분히 구체적이지 않습니다. 다만 문서를 어떻게 개선했는지에 대한 설명은 부족합니다."
+    },
+    "v21|HO-03#2": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "summary: 답변은 STAR 구조를 시도했으나 상황과 과제, 행동, 결과가 충분히 구체적이지 않습니다. 다만 문서를 어떻게 개선했는지에 대한 설명은 부족합니다."
+    },
+    "v21|HO-03#3": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "summary: 답변이 매우 간결하여 상황, 과제, 행동, 결과가 명확하게 드러나지 않아 STAR 구조를 갖추지 못했습니다. 다만 문서를 어떻게 개선했는지에 대한 설명은 부족합니다."
+    },
+    "v21|HO-04#1": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "communication: 결론이 답변 끝까지 제시되지 않아 듣는 사람이 요지를 파악하기 어렵습니다."
+    },
+    "v21|HO-04#2": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "communication: 결론이 답변 끝까지 제시되지 않아 듣는 사람이 요지를 파악하기 어렵습니다."
+    },
+    "v21|HO-04#3": {
+      "verdict": "not_resolved",
+      "note": "",
+      "evidence": "communication: 결론이 답변 끝까지 제시되지 않아 듣는 사람이 요지를 파악하기 어렵습니다."
+    },
+    "v21|HO-05#1": {
+      "verdict": "resolved",
+      "note": "답변에 없는 AWS 경력과 자격증 주장은 제거됨. partial은 '자격증 여부는 언급되지 않았다'는 문장이 strengths에 들어간 경우. 점수 80, 90은 그대로",
+      "evidence": "specificity: 클라우드 배포 경험에 대해 구체적으로 설명했습니다. / jobFit: 클라우드 엔지니어 직무에 관련된 배포 경험을 수업 과제로 설명했습니다. / strengths: [\"클라우드 관련 수업 과제 경험 보유\", \"가상 서버에 직접 배포한 경험\"]"
+    },
+    "v21|HO-05#2": {
+      "verdict": "resolved",
+      "note": "답변에 없는 AWS 경력과 자격증 주장은 제거됨. partial은 '자격증 여부는 언급되지 않았다'는 문장이 strengths에 들어간 경우. 점수 80, 90은 그대로",
+      "evidence": "specificity: 구체적인 자격증이나 운영 경력은 언급되지 않았지만, 가상 서버를 만들고 프로젝트를 배포한 경험을 설명했습니다. / jobFit: 수업 과제로 클라우드에 웹 서버를 배포한 경험은 클라우드 엔지니어 직무에 일부 관련이 있습니다. / strengths: [\"자격증 언급은 없으나, 클라우드에 웹 서버를 배포한 경험이 있습니다.\", \"가상 서버에 직접 배포한 경험\"]"
+    },
+    "v21|HO-05#3": {
+      "verdict": "partial",
+      "note": "답변에 없는 AWS 경력과 자격증 주장은 제거됨. partial은 '자격증 여부는 언급되지 않았다'는 문장이 strengths에 들어간 경우. 점수 80, 90은 그대로",
+      "evidence": "specificity: 클라우드 관련 경험을 구체적으로 설명하고 있습니다. / jobFit: 수업 과제 경험은 클라우드 엔지니어 직무에 어느 정도 연관성이 있습니다. / strengths: [\"클라우드 관련 자격증 보유 여부는 언급되지 않았습니다.\", \"가상 서버에 직접 배포한 경험\"]"
+    },
+    "v21|HO-06#1": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "strengths: [\"성실함과 책임감\"]"
+    },
+    "v21|HO-06#2": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "strengths: [\"성실함과 책임감\"]"
+    },
+    "v21|HO-06#3": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "strengths: [\"성실함과 책임감\"]"
+    },
+    "v21|HO-07#1": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "overallScore=66 (five-item mean 66)"
+    },
+    "v21|HO-07#2": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "overallScore=66 (five-item mean 66)"
+    },
+    "v21|HO-07#3": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "overallScore=66 (five-item mean 66)"
+    },
+    "v21|HO-08#1": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "weaknesses: [\"점검표를 구체적으로 어떻게 바꿨는지 설명이 부족함\"]"
+    },
+    "v21|HO-08#2": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "weaknesses: [\"점검표를 구체적으로 어떻게 바꿨는지 설명이 부족함\"]"
+    },
+    "v21|HO-08#3": {
+      "verdict": "resolved",
+      "note": "",
+      "evidence": "weaknesses: [\"점검표를 구체적으로 어떻게 바꿨는지 설명이 부족함\"]"
+    }
+  },
+  "coach": {
+    "A_no_reviewer|TC-07#1": {
+      "carries_error": true,
+      "evidence": "overallSummary: 지원자의 답변은 논리적 구성이 뛰어나고 실제 기술 활용 경험이 돋보이나, 문제 원인과 해결책 간 인과관계 설명과 구체적인 결과 제시가 부족하여 면접관이 문제 해결 과정을 명확히 이해하기 어렵습니다."
+    },
+    "B_production_reviewer|TC-07#1": {
+      "carries_error": true,
+      "evidence": "overallSummary: 지원자의 답변은 논리적 구성이 우수하며 실제 기술 활용 경험이 돋보이나, 문제 원인과 해결책 간 인과 관계 설명과 구체적인 행동 및 결과 제시가 부족하여 면접관의 이해를 돕기 위해 보완이 필요합니다."
+    },
+    "C_improved|TC-07#1": {
+      "carries_error": false,
+      "evidence": "overallSummary: 답변은 기술적 문제 해결 경험을 포함하고 있으나, 문제의 원인과 해결책 간의 논리적 연결이 부족하고, 구체적인 행동과 결과에 대한 설명이 미흡하여 설득력이 떨어집니다. 한국의 면접 문화에서는 명확하고 체계적인 설명과 팀워크를 강조하는 태도가 중요하므로, 이를 보완할 필요가 있습니다."
+    },
+    "A_no_reviewer|TC-07#2": {
+      "carries_error": true,
+      "evidence": "overallSummary: 지원자의 답변은 논리적 구성이 뛰어나고 실제 기술을 활용한 문제 해결 경험을 잘 드러내고 있습니다. 그러나 문제의 원인과 해결책 사이의 인과 관계 설명이 부족하고, 행동과 과제에 대한 구체적인 설명이 미흡하여 면접관이 상황을 명확히 이해하기 어렵습니다. 또한 결과를 정량적으로 제시하지 않아 성과의 객관성이 떨어집니다. 한국의 면접 문화에서는 명확하고 구체적인 설명과 결과 제시가 매우 중요하므"
+    },
+    "B_production_reviewer|TC-07#2": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자의 답변은 문제 해결 과정이 명확하게 드러나 있으나, 문제 원인과 해결책 사이의 인과 관계가 부족하고, 행동과 과제에 대한 구체적인 설명이 미흡합니다. 또한 결과를 정량적으로 제시하지 않아 설득력이 다소 떨어집니다. 한국의 면접 문화에서는 논리적이고 체계적인 설명과 함께 구체적인 수치나 결과를 통해 신뢰를 쌓는 것이 중요합니다."
+    },
+    "C_improved|TC-07#2": {
+      "carries_error": false,
+      "evidence": "overallSummary: 답변은 기술적 문제 해결 경험을 포함하고 있으나, 문제 인식과 해결책 사이의 논리적 연결이 부족하고 구체적인 행동과 결과 설명이 미흡합니다. 한국의 면접 문화에 맞게 명확하고 체계적인 설명이 필요합니다."
+    },
+    "A_no_reviewer|TC-07#3": {
+      "carries_error": true,
+      "evidence": "overallSummary: 지원자의 답변은 논리적 구성이 뛰어나고 실제 기술 활용 경험이 돋보이나, 문제 원인과 해결책 간 인과 관계 설명과 구체적인 결과 제시가 부족하여 면접관에게 명확한 이해를 제공하지 못하고 있습니다."
+    },
+    "B_production_reviewer|TC-07#3": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자의 답변은 문제 해결 과정에서 실제 기술을 활용한 점이 돋보이나, 문제 원인과 해결책 간의 인과 관계 설명이 부족하고, 행동과 과제에 대한 구체적인 설명이 미흡하여 답변의 설득력이 약화되었습니다. 또한 문장 간 연결이 자연스럽지 않아 흐름 개선이 필요합니다."
+    },
+    "C_improved|TC-07#3": {
+      "carries_error": false,
+      "evidence": "overallSummary: 답변은 기술적 문제 해결 경험을 포함하고 있으나, 문제 인식과 해결 과정의 논리적 연결과 구체성이 부족해 설득력이 떨어집니다. 또한 STAR 구조 중 과제와 행동 부분이 미흡하여 면접관이 지원자의 문제 해결 능력을 명확히 이해하기 어렵습니다."
+    },
+    "A_no_reviewer|TC-08#1": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자의 답변은 SNS 캠페인 경험을 언급하였으나 구체적인 상황 설명과 본인의 역할, 성과에 대한 명확한 근거가 부족하여 설득력이 떨어집니다. 한국의 면접 문화에서는 체계적이고 논리적인 답변과 함께 본인의 기여도를 명확히 하는 것이 중요합니다."
+    },
+    "B_production_reviewer|TC-08#1": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자의 답변은 SNS 캠페인 경험을 언급하였으나, 구체적인 상황 설명과 본인의 역할, 그리고 성과에 대한 명확한 근거 제시가 부족하여 설득력이 떨어집니다. 한국의 면접 문화에서는 명확하고 구체적인 근거를 통해 자신의 기여도를 논리적으로 설명하는 것이 중요하므로, STAR 구조에 맞춰 답변을 체계적으로 구성할 필요가 있습니다."
+    },
+    "C_improved|TC-08#1": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자의 답변은 SNS 캠페인 경험을 언급하였으나, 구체적인 상황 설명과 본인의 역할, 그리고 성과에 대한 명확한 근거가 부족하여 설득력이 떨어집니다. 한국의 면접 문화에서는 명확하고 구체적인 사례 제시와 본인의 기여도를 분명히 하는 것이 중요하므로, 이를 보완할 필요가 있습니다."
+    },
+    "A_no_reviewer|TC-08#2": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자의 답변은 SNS 캠페인 경험을 포함하고 있으나, 구체적인 상황 설명과 본인의 역할, 그리고 성과에 대한 명확한 근거가 부족하여 설득력이 떨어집니다. 한국의 면접 문화에서는 체계적이고 구체적인 설명과 본인의 기여도를 명확히 하는 것이 중요하므로, 이를 보완할 필요가 있습니다."
+    },
+    "B_production_reviewer|TC-08#2": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자의 답변은 SNS 캠페인 경험을 포함하고 있으나, 구체적인 상황 설명과 본인의 역할, 그리고 성과에 대한 명확한 근거 제시가 부족하여 설득력이 떨어집니다. 한국의 면접 문화에서는 명확하고 구체적인 사례 제시와 본인의 기여도를 분명히 하는 것이 중요합니다."
+    },
+    "C_improved|TC-08#2": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자의 답변은 SNS 캠페인 경험을 언급하였으나, 구체적인 상황 설명과 본인의 역할, 그리고 성과에 대한 명확한 근거가 부족하여 설득력이 떨어집니다. 한국의 면접 문화에서는 체계적이고 논리적인 설명과 함께 본인의 기여도를 명확히 하는 것이 중요합니다."
+    },
+    "A_no_reviewer|TC-08#3": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자의 답변은 SNS 캠페인 경험을 포함하고 있으나, 구체적인 상황 설명과 본인의 역할, 그리고 성과에 대한 명확한 근거 제시가 부족하여 설득력이 떨어집니다. 한국의 면접 문화에서는 체계적이고 논리적인 설명과 함께 팀 내에서의 기여도를 명확히 하는 것이 중요합니다."
+    },
+    "B_production_reviewer|TC-08#3": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자의 답변은 SNS 캠페인 경험을 포함하고 있으나, 구체적인 역할과 성과가 불분명하고 STAR 구조가 미흡하여 설득력이 떨어집니다. 한국의 면접 문화에서는 명확하고 구체적인 근거 제시와 논리적 전개가 중요하므로, 이를 보완할 필요가 있습니다."
+    },
+    "C_improved|TC-08#3": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자의 답변은 SNS 캠페인 경험을 언급했으나, 구체적인 상황 설명과 본인의 역할, 그리고 성과에 대한 명확한 근거가 부족하여 설득력이 떨어집니다. 한국의 면접 문화에서는 논리적이고 구체적인 설명과 본인의 기여도를 명확히 하는 것이 중요합니다."
+    },
+    "A_no_reviewer|TC-09#1": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자의 답변은 고객 불만 상황과 사과 의사를 명확히 전달하였으나, 문제 해결을 위한 구체적인 행동과 그 결과가 명확하지 않아 면접관이 지원자의 문제 해결 능력과 의사소통 능력을 충분히 파악하기 어렵습니다. 한국의 면접 문화에서는 논리적이고 체계적인 답변과 함께 팀워크와 고객 중심 태도를 강조하는 것이 중요하므로, 행동과 결과를 명확히 제시하는 개선이 필요합니다."
+    },
+    "B_production_reviewer|TC-09#1": {
+      "carries_error": false,
+      "evidence": "overallSummary: 고객 불만 상황에서 사과는 잘 전달되었으나, 문제 해결을 위한 구체적 행동과 그 결과가 명확하지 않아 면접관이 지원자의 문제 해결 능력과 의사소통 능력을 충분히 파악하기 어렵습니다. 문장이 길고 부연 설명이 많아 핵심 전달력이 떨어지므로 간결하고 논리적인 답변 구성이 필요합니다."
+    },
+    "C_improved|TC-09#1": {
+      "carries_error": false,
+      "evidence": "overallSummary: 고객 불만 상황에서 사과는 명확히 전달되었으나, 이후 문제를 어떻게 해결했는지 구체적인 행동과 결과가 부족하여 면접관이 지원자의 문제 해결 능력과 소통 역량을 충분히 파악하기 어렵습니다. 문장이 길고 핵심이 분명하지 않아 전달력이 떨어지는 점도 개선이 필요합니다."
+    },
+    "A_no_reviewer|TC-09#2": {
+      "carries_error": false,
+      "evidence": "overallSummary: 고객 불만 상황에서 사과하는 태도는 좋으나, 문제 해결을 위한 구체적인 행동과 그 결과를 명확히 제시하지 않아 면접관이 지원자의 문제 해결 능력과 의사소통 능력을 충분히 파악하기 어렵습니다. 한국의 면접 문화에서는 명확하고 논리적인 문제 해결 과정과 결과를 구체적으로 설명하는 것이 중요합니다."
+    },
+    "B_production_reviewer|TC-09#2": {
+      "carries_error": false,
+      "evidence": "overallSummary: 고객 불만 상황에서 사과는 잘 전달되었으나, 문제 해결을 위한 구체적인 행동과 결과가 명확하지 않아 면접관이 지원자의 문제 해결 능력과 의사소통 능력을 충분히 파악하기 어렵습니다. 문장이 길고 부연 설명이 많아 핵심 전달력이 떨어지므로 간결하고 논리적으로 답변을 재구성하는 것이 필요합니다."
+    },
+    "C_improved|TC-09#2": {
+      "carries_error": false,
+      "evidence": "overallSummary: 고객 불만 상황에서 사과는 했으나, 문제 해결을 위한 구체적 행동과 명확한 결과 제시가 부족하여 면접관이 지원자의 문제 해결 능력과 의사소통 역량을 충분히 파악하기 어렵습니다."
+    },
+    "A_no_reviewer|TC-09#3": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자의 답변은 고객 불만 상황과 사과의 태도를 잘 드러내지만, 문제 해결을 위한 구체적인 행동과 그 결과가 명확하지 않아 면접관이 지원자의 문제 해결 능력과 소통 능력을 충분히 이해하기 어렵습니다. 한국의 면접 문화에서는 논리적이고 체계적인 설명과 함께 팀워크와 고객 중심의 문제 해결 과정을 구체적으로 제시하는 것이 중요합니다."
+    },
+    "B_production_reviewer|TC-09#3": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자의 답변은 고객 불만 상황과 사과 의사를 명확히 전달했으나, 사과 이후 구체적인 문제 해결 행동과 결과가 불분명하여 면접관이 지원자의 문제 해결 능력과 의사소통 능력을 충분히 파악하기 어렵습니다. 문장이 길고 부연 설명이 많아 핵심 전달력이 떨어지므로, 한국의 면접 문화에 맞게 간결하고 논리적으로 답변을 재구성할 필요가 있습니다."
+    },
+    "C_improved|TC-09#3": {
+      "carries_error": false,
+      "evidence": "overallSummary: 고객 불만 상황에서 사과는 잘 전달되었으나, 문제 해결을 위한 구체적인 행동과 결과가 명확하지 않아 면접관이 지원자의 문제 해결 능력과 의사소통 능력을 충분히 파악하기 어렵습니다. 문장 구성도 간결하고 명확하게 개선할 필요가 있습니다."
+    },
+    "A_no_reviewer|TC-10#1": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자가 문제를 인식하고 개선 방안을 주도적으로 실행한 경험을 논리적으로 잘 설명하였으며, 구체적인 성과 수치를 통해 설득력을 높였습니다. 다만, 기술적 어려움과 선택 과정에 대한 설명이 부족하여 직무 적합성을 더 명확히 드러낼 필요가 있습니다."
+    },
+    "B_production_reviewer|TC-10#1": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자가 주도적으로 문제를 발견하고 자동화 솔루션을 도입하여 배포 시간을 크게 단축한 점이 잘 드러났습니다. 다만, 기술적 세부 과정과 직무 관련 역량을 구체적으로 설명하는 부분이 보완되면 더욱 신뢰도 높은 답변이 될 것입니다."
+    },
+    "C_improved|TC-10#1": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자가 배포 자동화를 주도적으로 수행하여 배포 시간을 크게 단축한 경험을 명확하고 논리적으로 설명하였으나, 기술적 어려움과 직무 관련 역량을 구체적으로 드러내는 부분이 부족합니다."
+    },
+    "A_no_reviewer|TC-10#2": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자가 주도적으로 문제를 발견하고 자동화 제안을 통해 배포 시간을 크게 단축한 점이 잘 드러나 있습니다. 다만, 기술적 어려움이나 선택 과정에 대한 구체적 설명이 부족하여 직무 역량을 더 명확히 보여줄 필요가 있습니다."
+    },
+    "B_production_reviewer|TC-10#2": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자가 배포 자동화 프로젝트를 주도하여 배포 시간을 크게 단축한 점이 인상적입니다. 다만, 기술적 어려움과 선택 과정에 대한 구체적인 설명이 부족해 직무 적합성을 더 명확히 할 필요가 있습니다."
+    },
+    "C_improved|TC-10#2": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자가 문제를 인식하고 자동화 방안을 주도적으로 실행하여 배포 시간을 크게 단축한 경험을 명확히 전달하였으나, 기술적 어려움과 직무 관련 역량에 대한 구체적 설명이 부족합니다."
+    },
+    "A_no_reviewer|TC-10#3": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자가 문제를 인식하고 자동화 제안을 통해 배포 시간을 크게 단축한 경험을 명확히 전달하였으나, 기술적 어려움과 직무 관련 역량에 대한 구체적 설명이 부족합니다."
+    },
+    "B_production_reviewer|TC-10#3": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자가 주도적으로 문제를 인식하고 자동화 방안을 실행하여 배포 시간을 크게 단축한 점이 잘 드러났으나, 기술적 세부 과정과 직무 관련 역량을 더 구체적으로 설명할 필요가 있습니다."
+    },
+    "C_improved|TC-10#3": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자의 답변은 문제 인식부터 개선 실행, 그리고 구체적인 성과 제시에 이르기까지 논리적이고 명확하게 구성되어 있습니다. 다만, 직무 역량 판단에 중요한 기술적 세부 과정과 문제 해결 과정에서의 어려움 및 선택 이유에 대한 설명이 부족하여 보완이 필요합니다."
+    },
+    "A_no_reviewer|TC-11#1": {
+      "carries_error": true,
+      "evidence": "overallSummary: 지원자의 답변은 실패 경험을 솔직하게 인정하는 점은 긍정적이나, 실패 원인에 대한 구체적 분석과 그에 따른 행동 변화가 부족하며, UX 디자인 직무와의 연계성이 명확하지 않아 면접관이 지원자의 성장 가능성과 직무 적합성을 판단하기 어렵습니다. 또한 답변 구조가 미흡해 핵심 전달이 어렵고, 장황한 표현으로 인해 집중도가 떨어집니다."
+    },
+    "B_production_reviewer|TC-11#1": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자의 답변은 실패 경험을 솔직하게 인정하는 점은 긍정적이나, 실패 원인에 대한 구체적 분석과 그에 따른 개선 행동이 부족하여 성장 과정이 명확히 드러나지 않습니다. 또한 UX 디자인 직무와의 연관성을 강화하고, STAR 구조에 맞춰 답변을 체계적으로 구성할 필요가 있습니다."
+    },
+    "C_improved|TC-11#1": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자의 답변은 실패 경험을 솔직하게 인정하는 점은 긍정적이나, 실패 원인에 대한 구체적 분석과 그에 따른 개선 행동이 부족하며, UX 디자인 직무와의 연계성도 미흡합니다. 또한 답변 구조가 단순하여 면접관이 지원자의 문제 해결 과정과 성장 의지를 명확히 이해하기 어렵습니다."
+    },
+    "A_no_reviewer|TC-11#2": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자의 답변은 실패 경험을 솔직하게 인정하는 점은 긍정적이나, 실패 원인에 대한 구체적 분석과 이후 개선 행동이 부족하며, UX 디자인 직무와의 연계성이 명확하지 않아 면접관이 지원자의 성장 가능성과 직무 적합성을 파악하기 어렵습니다. 또한 답변 구조가 미흡하여 핵심 메시지가 명확하게 전달되지 않습니다."
+    },
+    "B_production_reviewer|TC-11#2": {
+      "carries_error": false,
+      "evidence": "overallSummary: 실패 경험을 솔직하게 인정한 점은 긍정적이나, 실패 원인에 대한 구체적 분석과 그에 따른 개선 행동이 부족하여 성장 과정이 명확히 드러나지 않습니다. 또한 UX 디자인 직무와의 연관성을 강화하고, STAR 구조에 맞춰 답변을 체계적으로 구성할 필요가 있습니다."
+    },
+    "C_improved|TC-11#2": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자는 실패 경험을 솔직하게 언급했으나, 실패 원인에 대한 구체적 분석과 그에 따른 행동 변화가 부족하여 성장 과정이 명확히 드러나지 않습니다. 또한 UX 디자인 직무와의 연계성이 부족하고, 답변 구조가 미흡해 면접관이 핵심을 파악하기 어렵습니다. 한국의 면접 문화에서는 명확하고 논리적인 답변과 직무 관련성을 강조하므로, 이를 보완하는 것이 필요합니다."
+    },
+    "A_no_reviewer|TC-11#3": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자의 답변은 실패 경험을 솔직하게 인정한 점은 긍정적이나, 실패 원인에 대한 구체적인 분석과 이후 개선 행동이 부족하여 성장 과정이 명확하지 않습니다. 또한 UX 디자인 직무와의 연계성이 부족하고, 답변 구조가 단순하여 면접관이 핵심을 파악하기 어렵습니다. 한국의 면접 문화에서는 논리적이고 체계적인 답변과 직무 관련성을 강조하므로, 이를 보완할 필요가 있습니다."
+    },
+    "B_production_reviewer|TC-11#3": {
+      "carries_error": false,
+      "evidence": "overallSummary: 실패 경험을 솔직하게 공유한 점은 긍정적이나, 실패 원인에 대한 구체적 분석과 개선 과정, 그리고 UX 디자인 직무와의 연관성을 명확히 하는 부분이 보완되어야 합니다. 또한 STAR 구조에 맞춰 답변을 체계적으로 구성하여 면접관이 이해하기 쉽도록 해야 합니다."
+    },
+    "C_improved|TC-11#3": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자가 실패 경험을 솔직하게 인정한 점은 긍정적이나, 실패 원인에 대한 구체적 분석과 그 이후의 개선 행동이 부족하여 성장 과정이 명확히 드러나지 않습니다. 또한 UX 디자인 직무와의 연관성을 강화하고, 답변을 STAR 구조에 맞게 체계적으로 구성할 필요가 있습니다."
+    },
+    "A_no_reviewer|TC-13#1": {
+      "carries_error": true,
+      "evidence": "모범 답안에 포함: Kafka, Airflow, 30%"
+    },
+    "B_production_reviewer|TC-13#1": {
+      "carries_error": true,
+      "evidence": "모범 답안에 포함: Kafka, Airflow, 30%"
+    },
+    "C_improved|TC-13#1": {
+      "carries_error": true,
+      "evidence": "모범 답안에 포함: Kafka, Airflow, 30%"
+    },
+    "A_no_reviewer|TC-13#2": {
+      "carries_error": true,
+      "evidence": "모범 답안에 포함: Kafka, Airflow, 30%"
+    },
+    "B_production_reviewer|TC-13#2": {
+      "carries_error": true,
+      "evidence": "모범 답안에 포함: Kafka, Airflow, 30%"
+    },
+    "C_improved|TC-13#2": {
+      "carries_error": true,
+      "evidence": "모범 답안에 포함: Kafka, Airflow, 30%"
+    },
+    "A_no_reviewer|TC-13#3": {
+      "carries_error": true,
+      "evidence": "모범 답안에 포함: Kafka, Airflow, 30%"
+    },
+    "B_production_reviewer|TC-13#3": {
+      "carries_error": true,
+      "evidence": "모범 답안에 포함: Kafka, Airflow, 30%"
+    },
+    "C_improved|TC-13#3": {
+      "carries_error": true,
+      "evidence": "모범 답안에 포함: Kafka, Airflow, 30%"
+    },
+    "A_no_reviewer|TC-16#1": {
+      "carries_error": true,
+      "evidence": "overallSummary: 지원자가 목표 달성을 위해 주도적으로 행동한 점과 결과를 수치로 제시한 점은 긍정적입니다. 다만, 과제와 행동을 명확히 구분하고, 목표와 결과를 구체적인 수치로 표현하면 더욱 설득력 있는 답변이 될 것입니다."
+    },
+    "B_production_reviewer|TC-16#1": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자는 목표 달성을 위한 주도적 행동과 고객 맞춤 제안의 강점을 보였으나, 과제와 행동의 구분이 명확하지 않고 목표 및 결과 수치 제시가 부족해 면접관에게 구체적 성과를 전달하는 데 아쉬움이 있습니다."
+    },
+    "C_improved|TC-16#1": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자의 답변은 목표 달성을 위한 주도적 행동과 고객 맞춤 제안 방식을 잘 보여주고 있으나, 과제와 행동의 구분이 명확하지 않고 목표 및 결과에 대한 구체적 수치 제시가 부족하여 설득력이 다소 떨어집니다. 한국의 면접 문화에서는 명확한 구조와 구체적인 성과 제시가 중요하므로 이를 보완할 필요가 있습니다."
+    },
+    "A_no_reviewer|TC-16#2": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자는 목표 달성을 위해 적극적으로 행동하였고, 고객 맞춤형 제안으로 영업 직무에 적합한 역량을 보여주었습니다. 다만, 과제와 행동을 명확히 구분하고, 목표 및 성과를 구체적인 수치로 제시하면 더욱 설득력 있는 답변이 될 것입니다."
+    },
+    "B_production_reviewer|TC-16#2": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자는 목표 달성을 위해 주도적으로 행동한 점과 고객 맞춤 제안 방식을 잘 보여주었으나, 과제와 행동의 구분이 명확하지 않고 목표 및 결과 수치가 부족하여 면접관에게 명확한 성과 전달이 어려웠습니다. 한국 기업 문화에서는 명확한 목표 설정과 구체적 성과 제시가 신뢰를 높이므로 이를 보완할 필요가 있습니다."
+    },
+    "C_improved|TC-16#2": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자의 답변은 목표 달성을 위한 주도적인 행동과 결과를 자연스럽게 연결하여 전달하였으나, 과제와 행동의 구분이 명확하지 않고 목표 및 성과의 구체적인 수치 제시가 부족하여 설득력을 높일 필요가 있습니다."
+    },
+    "A_no_reviewer|TC-16#3": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자의 답변은 목표 달성을 위한 주도적인 행동과 고객 맞춤 제안 방식을 잘 보여주고 있으나, 과제와 행동의 구분이 명확하지 않고 목표 및 결과가 구체적인 수치로 제시되지 않아 설득력이 다소 부족합니다. 한국의 면접 문화에서는 명확한 구조와 구체적인 성과 제시가 중요하므로 이를 보완할 필요가 있습니다."
+    },
+    "B_production_reviewer|TC-16#3": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자가 목표 달성을 위한 주도적 행동과 고객 맞춤 제안 방식을 잘 보여주었으나, 과제와 행동의 구분이 명확하지 않고 목표 및 결과의 구체적 수치 제시가 부족해 면접관에게 명확한 이해를 돕기 어려웠습니다. 한국의 면접 문화에서는 명확하고 구체적인 설명이 신뢰감을 주므로 이를 보완할 필요가 있습니다."
+    },
+    "C_improved|TC-16#3": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자의 답변은 목표 달성을 위한 주도적인 행동과 고객 맞춤 제안 방식을 잘 드러내고 있으나, 과제와 행동의 구분이 명확하지 않고, 목표와 결과에 대한 구체적인 수치 제시가 부족하여 설득력이 다소 떨어집니다. 한국의 면접 문화에서는 명확한 구조와 구체적인 성과 제시가 중요하므로 이를 보완할 필요가 있습니다."
+    },
+    "D_improved_v21|TC-07#1": {
+      "carries_error": false,
+      "evidence": "overallSummary: 답변은 문제 상황과 결과를 제시하였으나, 문제 원인 분석과 해결 과정에 대한 구체적 설명이 부족하여 논리적 흐름과 설득력이 떨어집니다. 또한, 행동과 과제 부분이 명확하지 않아 면접관이 지원자의 문제 해결 능력을 충분히 이해하기 어렵습니다."
+    },
+    "D_improved_v21|TC-07#2": {
+      "carries_error": false,
+      "evidence": "overallSummary: 답변은 문제 상황과 결과를 제시하였으나, 문제의 원인 분석과 해결책 선택 과정에 대한 구체적 설명이 부족하여 논리적 흐름과 설득력이 떨어집니다. 또한 행동 과정이 명확하지 않고, 결과의 효과를 수치나 구체적인 지표로 표현하지 않아 면접관이 지원자의 문제 해결 능력과 기술적 전문성을 충분히 이해하기 어렵습니다."
+    },
+    "D_improved_v21|TC-07#3": {
+      "carries_error": false,
+      "evidence": "overallSummary: 답변은 문제 상황과 결과를 제시하였으나, 문제 원인 분석과 해결책 도입 과정에 대한 구체적 설명이 부족하여 논리적 흐름과 설득력이 떨어집니다. 또한 행동과 과제 부분이 미흡해 STAR 구조가 완성되지 않았습니다."
+    },
+    "D_improved_v21|TC-08#1": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자의 답변은 SNS 캠페인 경험을 언급하였으나, 구체적인 상황 설명과 본인의 역할, 그리고 성과에 대한 명확한 근거가 부족하여 설득력이 떨어집니다. 한국의 면접 문화에서는 명확하고 구체적인 근거를 통해 자신의 기여도를 논리적으로 설명하는 것이 중요합니다."
+    },
+    "D_improved_v21|TC-08#2": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자의 답변은 SNS 캠페인 경험을 언급하였으나, 구체적인 상황 설명과 본인의 역할, 행동, 그리고 성과에 대한 명확한 근거가 부족하여 설득력이 떨어집니다. 한국의 면접 문화에서는 논리적이고 구체적인 근거 제시가 중요하므로, STAR 구조에 맞추어 답변을 명확히 구성할 필요가 있습니다."
+    },
+    "D_improved_v21|TC-08#3": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자의 답변은 SNS 캠페인 경험을 언급하였으나, 구체적인 상황 설명과 본인의 역할, 행동, 그리고 성과에 대한 명확한 근거가 부족하여 설득력이 떨어집니다. 한국의 면접 문화에서는 지원자의 기여도와 문제 해결 과정을 구체적으로 설명하는 것이 중요하므로, 이를 보완할 필요가 있습니다."
+    },
+    "D_improved_v21|TC-09#1": {
+      "carries_error": false,
+      "evidence": "overallSummary: 고객 불만 상황에서 사과하는 태도는 긍정적이나, 문제 해결을 위한 구체적인 행동과 결과가 명확히 드러나지 않아 면접관이 지원자의 문제 해결 능력과 의사소통 능력을 충분히 파악하기 어렵습니다. 한국의 면접 문화에서는 명확하고 간결한 답변과 함께 본인의 역할과 행동, 그리고 그 결과를 논리적으로 설명하는 것이 중요합니다."
+    },
+    "D_improved_v21|TC-09#2": {
+      "carries_error": false,
+      "evidence": "overallSummary: 고객 불만 상황에서 사과는 명확히 표현되었으나, 문제 해결을 위한 구체적인 행동과 그 결과가 부족하여 지원자의 문제 해결 능력과 의사소통 능력이 충분히 드러나지 않았습니다. 문장이 길고 핵심이 분명하지 않아 면접관이 이해하기 어렵습니다. 한국의 면접 문화에서는 명확하고 간결한 표현과 함께 팀워크와 고객 중심 태도를 구체적으로 보여주는 것이 중요합니다."
+    },
+    "D_improved_v21|TC-09#3": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자의 답변은 고객 불만 상황과 사과의 태도를 잘 전달했으나, 문제 해결을 위한 구체적인 행동과 명확한 결과가 부족하여 면접관이 지원자의 역량을 충분히 파악하기 어렵습니다. 문장이 길고 핵심이 흐려져 의사소통 측면에서도 개선이 필요합니다."
+    },
+    "D_improved_v21|TC-10#1": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자의 답변은 문제 인식부터 개선 실행, 그리고 구체적인 성과 제시에 이르기까지 논리적이고 명확하게 구성되어 있습니다. 다만, 직무 관련 기술적 역량을 더 구체적으로 드러내고, 파이프라인 구축 과정에서의 도전과 해결 과정을 추가하면 더욱 완성도 높은 답변이 될 것입니다."
+    },
+    "D_improved_v21|TC-10#2": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자의 답변은 문제 인식부터 개선 실행, 그리고 정량적 성과 제시에 이르기까지 논리적이고 명확하게 구성되어 있습니다. 다만, 기술적 난관과 선택 과정에 대한 구체적 설명이 부족하여 직무 적합성을 더 명확히 드러낼 필요가 있습니다."
+    },
+    "D_improved_v21|TC-10#3": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자가 배포 자동화 프로젝트를 주도적으로 수행하여 구체적인 성과를 제시한 점이 돋보이나, 기술적 어려움과 선택 과정에 대한 설명이 부족하여 직무 역량을 더 명확히 보여줄 필요가 있습니다."
+    },
+    "D_improved_v21|TC-11#1": {
+      "carries_error": false,
+      "evidence": "overallSummary: 실패 경험을 솔직하게 말한 점은 긍정적이나, 구체적인 상황 설명과 원인 분석, 그리고 UX 디자인 직무와의 연계가 부족하여 면접관이 지원자의 문제 해결 능력과 직무 적합성을 명확히 이해하기 어렵습니다."
+    },
+    "D_improved_v21|TC-11#2": {
+      "carries_error": false,
+      "evidence": "overallSummary: 실패 경험을 솔직하게 인정한 점은 긍정적이나, 실패 원인에 대한 구체적인 분석과 UX 디자인 직무와의 연계가 부족하여 답변의 깊이와 설득력이 떨어집니다. 또한, STAR 구조를 충실히 반영하여 상황, 과제, 행동, 결과를 명확히 제시하는 것이 필요합니다."
+    },
+    "D_improved_v21|TC-11#3": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자가 실패 경험을 솔직하게 언급한 점은 긍정적이나, 실패 원인에 대한 구체적인 분석과 이를 바탕으로 한 개선 노력, 그리고 UX 디자인 직무와의 연계가 부족하여 답변의 깊이와 설득력이 떨어집니다. 또한 답변이 매우 짧아 STAR 구조를 충분히 활용하지 못했습니다."
+    },
+    "D_improved_v21|TC-13#1": {
+      "carries_error": false,
+      "evidence": "모범 답안에 포함: 없음"
+    },
+    "D_improved_v21|TC-13#2": {
+      "carries_error": false,
+      "evidence": "모범 답안에 포함: 없음"
+    },
+    "D_improved_v21|TC-13#3": {
+      "carries_error": false,
+      "evidence": "모범 답안에 포함: 없음"
+    },
+    "D_improved_v21|TC-16#1": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자는 목표 달성을 위해 주도적으로 행동한 점을 잘 전달했으나, 과제의 구체적 범위와 목표, 그리고 결과의 정량적 수치를 명확히 제시하지 않아 설득력이 다소 부족합니다. 한국의 면접 문화에서는 명확한 목표 설정과 구체적인 성과 수치 제시가 신뢰도를 높이므로 이를 보완할 필요가 있습니다."
+    },
+    "D_improved_v21|TC-16#2": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자가 목표 달성을 위해 주도적으로 행동한 점은 긍정적이나, 과제의 범위와 목표, 결과를 구체적이고 정량적으로 명확히 제시하는 것이 필요합니다. 이는 한국 기업 문화에서 명확한 목표 설정과 성과 측정을 중시하기 때문입니다."
+    },
+    "D_improved_v21|TC-16#3": {
+      "carries_error": false,
+      "evidence": "overallSummary: 지원자는 목표 달성을 위한 주도적 행동과 결과를 명확히 전달했으나, 과제의 범위와 목표, 그리고 성과를 구체적인 수치로 제시하지 않아 설득력이 다소 부족한 점이 아쉽습니다. 한국 기업 문화에서는 명확한 목표 설정과 구체적인 성과 제시가 중요하므로 이를 보완할 필요가 있습니다."
+    }
+  }
+}

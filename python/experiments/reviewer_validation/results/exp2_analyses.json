@@ -1,0 +1,87 @@
+{
+  "TC-01": {
+    "raw": "Question Intent:\n지원자가 팀 내에서 발생하는 의견 충돌 상황을 어떻게 인지하고 대응하는지 평가하려는 의도입니다. 이를 통해 지원자의 갈등 해결 능력, 협업 태도, 의사소통 능력 및 문제 해결 방식을 파악하고자 합니다. 또한, 한국의 조직 문화에서 중시하는 조화와 팀워크 유지 능력을 확인하려는 목적도 포함되어 있습니다.\n\nCore Competencies:\n- 갈등 관리 및 해결 능력\n- 협업 및 팀워크\n- 의사소통 능력\n- 문제 해결 능력\n- 감정 조절 및 존중하는 태도\n\nQuestion Type:\nBehavioral\n\nSTAR Recommended:\nYes",
+    "latency_s": 2.728,
+    "requests": 1
+  },
+  "TC-02": {
+    "raw": "Question Intent:\n지원자가 서비스 성능 문제를 인지하고 이를 효과적으로 해결한 경험이 있는지 평가하여, 문제 해결 능력과 기술적 역량을 확인하려는 의도입니다. 또한, 문제 발생 시 어떻게 접근하고 대응하는지, 그리고 결과를 도출하는 과정에서의 역할과 기여도를 파악하고자 합니다.\n\nCore Competencies:\n- 문제 해결 능력\n- 기술적 전문성 (서비스 성능 관련)\n- 분석적 사고력\n- 책임감 및 주도성\n- 협업 및 커뮤니케이션 능력\n\nQuestion Type:\nBehavioral\n\nSTAR Recommended:\nYes",
+    "latency_s": 1.585,
+    "requests": 1
+  },
+  "TC-03": {
+    "raw": "Question Intent:\n지원자가 해당 회사에 대해 얼마나 깊이 이해하고 있으며, 회사의 가치와 비전에 얼마나 공감하는지를 평가하고자 함. 또한 지원자의 동기와 장기적인 커리어 목표가 회사와 얼마나 부합하는지 파악하려는 의도.\n\nCore Competencies:\n- 회사 및 산업에 대한 이해도\n- 동기 부여 및 열정\n- 자기 인식 및 목표 설정 능력\n- 조직 적합성 및 문화 적응력\n\nQuestion Type:\nHR\n\nSTAR Recommended:\nNo",
+    "latency_s": 1.702,
+    "requests": 1
+  },
+  "TC-04": {
+    "raw": "Question Intent:\n면접관은 지원자가 새로운 기술을 빠르게 습득하는 능력과 그 과정에서의 문제 해결 능력, 적응력, 그리고 학습 태도를 평가하고자 한다. 또한, 변화하는 환경에 얼마나 유연하게 대응할 수 있는지, 자기 주도적으로 학습할 수 있는지 확인하려는 의도가 있다.\n\nCore Competencies:\n- 학습 능력 및 자기 주도성\n- 문제 해결 능력\n- 적응력 및 유연성\n- 시간 관리 및 우선순위 설정 능력\n\nQuestion Type:\nBehavioral\n\nSTAR Recommended:\nYes",
+    "latency_s": 1.62,
+    "requests": 1
+  },
+  "TC-05": {
+    "raw": "Question Intent:\n이 질문은 지원자가 팀 내에서 어떤 가치를 중요하게 생각하는지 파악하려는 의도로, 협업 능력과 조직 내 조화로운 관계 형성에 대한 태도 및 행동 방식을 평가하고자 한다.\n\nCore Competencies:\n- 팀워크 및 협업 능력\n- 커뮤니케이션 및 대인관계 능력\n- 조직 적응력 및 조화성\n\nQuestion Type:\nBehavioral\n\nSTAR Recommended:\nYes",
+    "latency_s": 1.508,
+    "requests": 1
+  },
+  "TC-06": {
+    "raw": "Question Intent:\n지원자가 자신의 강점을 명확히 인식하고 있으며, 이를 논리적이고 진솔하게 표현할 수 있는지를 평가하려는 의도입니다. 또한, 지원자가 조직 내에서 어떻게 기여할 수 있는지, 팀워크와 업무 수행에 있어 어떤 강점을 발휘할 수 있는지를 파악하고자 합니다.\n\nCore Competencies:\n- 자기인식 및 자기표현 능력\n- 논리적 사고 및 의사소통 능력\n- 팀워크 및 협업 능력\n- 문제해결 능력\n\nQuestion Type:\nHR\n\nSTAR Recommended:\nYes",
+    "latency_s": 1.548,
+    "requests": 1
+  },
+  "TC-07": {
+    "raw": "Question Intent:\n지원자가 과거에 직면했던 기술적 난관을 어떻게 인식하고 분석했는지, 그리고 이를 해결하기 위해 어떤 구체적인 행동을 취했는지 평가하려는 의도입니다. 또한 문제 해결 능력과 기술적 전문성, 그리고 어려운 상황에서도 침착하게 대응하는 태도를 확인하고자 합니다.\n\nCore Competencies:\n- 문제 해결 능력\n- 기술적 전문성\n- 분석적 사고\n- 자기 주도성\n- 책임감\n\nQuestion Type:\nBehavioral\n\nSTAR Recommended:\nYes",
+    "latency_s": 1.563,
+    "requests": 1
+  },
+  "TC-08": {
+    "raw": "Question Intent:\n지원자가 과거에 수행한 캠페인 중에서 성공적으로 평가받은 경험을 통해 그의 업무 수행 능력, 문제 해결력, 기획력 및 실행력을 파악하고자 함. 또한, 팀 내에서의 역할과 협업 능력, 성과를 도출하기 위한 노력과 태도를 확인하려는 의도도 포함됨.\n\nCore Competencies:\n- 문제 해결 능력\n- 기획 및 실행 능력\n- 팀워크 및 협업 능력\n- 성과 지향적 태도\n- 커뮤니케이션 능력\n\nQuestion Type:\nBehavioral\n\nSTAR Recommended:\nYes",
+    "latency_s": 1.671,
+    "requests": 1
+  },
+  "TC-09": {
+    "raw": "Question Intent:\n면접관은 지원자가 고객 불만 상황에서 어떻게 대응했는지 구체적인 경험을 통해 문제 해결 능력과 대인 관계 능력을 평가하고자 합니다. 또한, 지원자가 고객의 요구를 이해하고 적절히 소통하며 팀 내외부와 협력하여 문제를 해결하는 태도를 확인하려는 의도가 있습니다.\n\nCore Competencies:\n- 문제 해결 능력\n- 고객 중심 사고\n- 의사소통 능력\n- 감정 관리 및 스트레스 대처 능력\n- 팀워크 및 협력 능력\n\nQuestion Type:\nBehavioral\n\nSTAR Recommended:\nYes",
+    "latency_s": 1.679,
+    "requests": 1
+  },
+  "TC-10": {
+    "raw": "Question Intent:\n지원자가 주도적으로 문제를 인식하고 개선 방안을 실행한 경험을 통해 자기주도성, 문제해결능력, 그리고 책임감을 평가하려는 의도입니다. 또한, 조직 내에서의 협업과 커뮤니케이션 능력도 간접적으로 확인하고자 합니다.\n\nCore Competencies:\n- 자기주도성\n- 문제해결능력\n- 책임감\n- 협업 및 커뮤니케이션 능력\n\nQuestion Type:\nBehavioral\n\nSTAR Recommended:\nYes",
+    "latency_s": 1.717,
+    "requests": 1
+  },
+  "TC-11": {
+    "raw": "Question Intent:\n지원자가 과거에 겪었던 실패 경험을 통해 문제 해결 능력과 자기 성찰 능력을 평가하고, 실패를 어떻게 극복하며 성장했는지를 파악하려는 의도입니다. 또한, 지원자의 진솔함과 책임감, 그리고 조직 내에서의 협업 태도를 확인하고자 합니다.\n\nCore Competencies:\n- 자기 인식 및 성찰 능력\n- 문제 해결 능력\n- 책임감 및 성실성\n- 학습 및 성장 마인드\n- 협업 및 커뮤니케이션 능력\n\nQuestion Type:\nBehavioral\n\nSTAR Recommended:\nYes",
+    "latency_s": 1.45,
+    "requests": 1
+  },
+  "TC-12": {
+    "raw": "Question Intent:\n지원자가 협업 도구와 코드 리뷰 문화를 얼마나 잘 이해하고 경험했는지 평가하여, 팀 내에서 원활한 협업과 품질 관리를 수행할 수 있는지를 확인하려는 의도입니다. 또한, 지원자의 커뮤니케이션 능력과 팀워크 적합성을 파악하고자 합니다.\n\nCore Competencies:\n- 협업 능력\n- 커뮤니케이션 스킬\n- 품질 관리 및 코드 리뷰 경험\n- 팀워크 및 조직 적응력\n\nQuestion Type:\nBehavioral\n\nSTAR Recommended:\nYes",
+    "latency_s": 1.543,
+    "requests": 1
+  },
+  "TC-13": {
+    "raw": "Question Intent:\n지원자가 데이터 파이프라인 구축 및 개선 경험을 통해 기술적 역량과 문제 해결 능력을 보유하고 있는지 평가하려는 의도입니다. 또한, 프로젝트 수행 과정에서의 역할, 협업 능력, 그리고 업무에 대한 책임감을 파악하고자 합니다.\n\nCore Competencies:\n- 데이터 엔지니어링 및 파이프라인 설계 능력\n- 문제 해결 및 개선 역량\n- 프로젝트 관리 및 협업 능력\n- 책임감 및 업무 추진력\n\nQuestion Type:\nBehavioral\n\nSTAR Recommended:\nYes",
+    "latency_s": 1.719,
+    "requests": 1
+  },
+  "TC-14": {
+    "raw": "Question Intent:\n지원자가 과거 프로젝트에서 어떤 역할을 수행했는지, 그리고 그 역할을 통해 조직이나 프로젝트에 어떤 구체적인 기여를 했는지 파악하려는 의도입니다. 이를 통해 지원자의 책임감, 문제 해결 능력, 팀 내 협업 능력 및 업무 수행 역량을 평가하고자 합니다.\n\nCore Competencies:\n- 책임감 및 주도성\n- 문제 해결 능력\n- 팀워크 및 협업 능력\n- 의사소통 능력\n- 업무 전문성 및 실행력\n\nQuestion Type:\nBehavioral\n\nSTAR Recommended:\nYes",
+    "latency_s": 1.392,
+    "requests": 1
+  },
+  "TC-15": {
+    "raw": "Question Intent:\n지원자가 과거에 리더십을 어떻게 발휘했는지 구체적인 경험을 통해 평가하고자 한다. 이를 통해 지원자의 문제 해결 능력, 팀 관리 능력, 의사소통 능력 및 책임감을 파악하려는 의도가 있다.\n\nCore Competencies:\n- 리더십\n- 문제 해결 능력\n- 의사소통 능력\n- 팀워크 및 협업 능력\n- 책임감\n\nQuestion Type:\nBehavioral\n\nSTAR Recommended:\nYes",
+    "latency_s": 1.42,
+    "requests": 1
+  },
+  "TC-16": {
+    "raw": "Question Intent:\n지원자가 목표 설정과 달성을 위해 어떤 노력을 기울였는지 구체적으로 파악하고, 문제 해결 능력과 자기 주도성을 평가하려는 의도입니다. 또한, 지원자가 조직 내에서 목표를 달성하기 위해 어떻게 협력하고 책임감을 발휘하는지 확인하고자 합니다.\n\nCore Competencies:\n- 목표 설정 및 달성 능력\n- 문제 해결 능력\n- 자기 주도성 및 책임감\n- 협업 및 팀워크 능력\n- 성실성과 꾸준함\n\nQuestion Type:\nBehavioral\n\nSTAR Recommended:\nYes",
+    "latency_s": 1.829,
+    "requests": 1
+  },
+  "TC-17": {
+    "raw": "Question Intent:\n지원자가 과거에 사용자 경험을 어떻게 개선했는지 구체적인 사례를 통해 확인하고, 문제 해결 능력과 고객 중심 사고를 평가하려는 의도입니다. 또한, 지원자의 실무 경험과 결과 도출 능력, 그리고 팀 내 협업 과정을 파악하고자 합니다.\n\nCore Competencies:\n- 문제 해결 능력\n- 고객 중심 사고\n- 실무 경험 및 결과 도출 능력\n- 협업 및 커뮤니케이션 능력\n\nQuestion Type:\nBehavioral\n\nSTAR Recommended:\nYes",
+    "latency_s": 1.514,
+    "requests": 1
+  }
+}

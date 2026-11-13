@@ -1,0 +1,8 @@
+﻿stage,model,invocations,api_requests,prompt_tokens,completion_tokens,prompt_tokens_mean,completion_tokens_mean,latency_mean_s,latency_median_s,est_cost_usd_total,est_cost_usd_per_invocation
+analyzer,gpt-4.1-mini,34,34,8608,4066,253,120,1.654,1.598,0.0099,0.00029
+coach,gpt-4.1-mini,68,68,77642,44698,1142,657,4.32,4.316,0.098,0.00144
+evaluator,gpt-4.1-mini,51,51,37488,25283,735,496,3.183,3.159,0.0554,0.00109
+full_crew,gpt-4.1-mini,4,16,12460,7187,3115,1797,13.63,13.433,0.0165,0.00412
+judge,gpt-4.1-mini,204,204,248453,40708,1218,200,1.738,1.655,0.1645,0.00081
+judge,gpt-4o-mini,204,204,248453,29732,1218,146,1.716,1.511,0.0546,0.00027
+reviewer,gpt-4.1-mini,138,138,105684,56000,766,406,3.155,3.026,0.1319,0.00096

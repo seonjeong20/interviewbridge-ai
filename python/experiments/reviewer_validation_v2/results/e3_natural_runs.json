@@ -1,0 +1,1824 @@
+[
+  {
+    "case_id": "TC-01",
+    "sample": 1,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.656,
+      "est_cost_usd": 0.00075,
+      "prompt_tokens": 1855,
+      "completion_tokens": 5,
+      "validator_ms": 0.237,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.054,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 56,\n  \"summary\": \"지원자는 팀 프로젝트에서 의견 충돌 상황을 인지하고 중재 역할을 수행한 점은 긍정적이나, 구체적인 상황 설명과 본인의 구체적인 행동, 결과에 대한 상세한 설명이 부족하여 답변이 다소 추상적이고 일반적임. 한국의 면접 문화에서 요구하는 논리적이고 구체적인 사례 제시와 STAR 구조가 미흡하며, 직무 적합성 측면에서도 갈등 해결 능력에 대한 깊이 있는 설명이 부족함.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 60,\n      \"feedback\": \"충돌 상황에서 중간에서 조율하려 했다는 논리는 이해되나, 구체적인 문제 해결 과정이나 논리 전개가 부족함.\"\n    },\n    \"specificity\": {\n      \"score\": 40,\n      \"feedback\": \"어떤 의견 충돌이었는지, 구체적으로 어떤 행동을 했는지, 결과가 어떻게 되었는지에 대한 구체적인 내용이 부족함.\"\n    },\n    \"communication\": {\n      \"score\": 65,\n      \"feedback\": \"간결하고 명확하게 전달하려는 의도는 있으나, 다소 단편적이고 깊이가 부족해 설득력이 약함.\"\n    },\n    \"jobFit\": {\n      \"score\": 55,\n      \"feedback\": \"팀워크와 소통의 중요성을 인지한 점은 긍정적이나, 실제 갈등 해결 능력과 리더십을 보여주는 구체적 사례가 부족함.\"\n    },\n    \"starStructure\": {\n      \"score\": 60,\n      \"feedback\": \"상황과 역할은 언급되었으나, 구체적인 행동과 결과에 대한 설명이 부족해 STAR 구조가 완전하지 않음.\"\n    }\n  },\n  \"strengths\": [\n    \"팀 내 의견 충돌 상황을 인지하고 중재하려는 태도\",\n    \"소통의 중요성을 인식하고 있다는 점\",\n    \"간결하고 명확한 의사 전달 시도\"\n  ],\n  \"weaknesses\": [\n    \"구체적인 상황과 행동, 결과에 대한 설명 부족\",\n    \"논리적 전개와 문제 해결 과정 미흡\",\n    \"STAR 구조 미완성으로 답변이 다소 추상적임\",\n    \"직무 관련 갈등 해결 능력과 리더십을 보여주지 못함\"\n  ]\n}",
+      "total_latency_s": 0.665
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-01",
+    "sample": 2,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.687,
+      "est_cost_usd": 0.0007476000000000001,
+      "prompt_tokens": 1849,
+      "completion_tokens": 5,
+      "validator_ms": 0.41,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.068,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 56,\n  \"summary\": \"지원자는 팀 프로젝트에서 의견 충돌 상황을 인지하고 중재 역할을 수행한 점을 언급하였으나, 구체적인 상황 설명과 본인의 행동, 결과에 대한 상세한 서술이 부족하여 답변의 깊이가 다소 부족하다. 논리적 사고와 의사소통 측면에서는 기본적인 내용을 전달하였으나, STAR 구조가 명확하지 않아 면접관이 상황과 행동을 명확히 이해하기 어렵다. 한국의 면접 문화에서 요구하는 구체적이고 체계적인 답변에 비해 다소 간략한 점이 아쉽다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 60,\n      \"feedback\": \"의견 충돌 상황에서 중재 역할을 수행한 점은 논리적이지만, 구체적인 문제 해결 과정이나 이유 설명이 부족하다.\"\n    },\n    \"specificity\": {\n      \"score\": 50,\n      \"feedback\": \"구체적인 상황, 본인의 구체적인 행동, 결과에 대한 설명이 부족하여 답변이 다소 추상적이다.\"\n    },\n    \"communication\": {\n      \"score\": 60,\n      \"feedback\": \"간결하고 명확하게 의사 전달은 했으나, 더 구체적이고 체계적인 설명이 필요하다.\"\n    },\n    \"jobFit\": {\n      \"score\": 55,\n      \"feedback\": \"팀워크와 소통의 중요성을 인지하고 있으나, 실제 갈등 해결 능력과 리더십을 보여주는 구체적 사례가 부족하다.\"\n    },\n    \"starStructure\": {\n      \"score\": 55,\n      \"feedback\": \"상황과 역할은 언급되었으나, 행동과 결과 부분이 명확하지 않아 STAR 구조가 완전하지 않다.\"\n    }\n  },\n  \"strengths\": [\n    \"팀 내 의견 충돌 상황을 인지하고 중재 역할을 시도함\",\n    \"소통의 중요성을 인지하고 있음을 표현함\",\n    \"간결하고 명확한 의사 전달\"\n  ],\n  \"weaknesses\": [\n    \"구체적인 상황 설명과 행동, 결과에 대한 상세한 서술 부족\",\n    \"STAR 구조가 명확하지 않아 답변의 체계성 부족\",\n    \"한국 면접 문화에서 요구하는 구체적이고 논리적인 답변에 미흡\"\n  ]\n}",
+      "total_latency_s": 0.689
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-01",
+    "sample": 3,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.638,
+      "est_cost_usd": 0.0007264000000000001,
+      "prompt_tokens": 1796,
+      "completion_tokens": 5,
+      "validator_ms": 0.441,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.075,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 56,\n  \"summary\": \"지원자는 팀 프로젝트에서 의견 충돌을 중재하려고 노력한 점을 언급하며 소통의 중요성을 인지하고 있음을 보여주었으나, 구체적인 상황 설명과 본인의 역할 및 행동에 대한 상세한 내용이 부족하여 답변의 깊이가 다소 약함. 논리적 사고와 커뮤니케이션 측면에서는 기본적인 내용을 전달했으나, STAR 구조가 명확하지 않고 직무 적합성 면에서도 구체적인 역량 연결이 부족함.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 60,\n      \"feedback\": \"의견 충돌 상황에서 중재하려는 논리적 접근을 보였으나, 문제 해결 과정에 대한 구체적 사고 과정이 부족함.\"\n    },\n    \"specificity\": {\n      \"score\": 50,\n      \"feedback\": \"상황과 행동에 대한 구체적인 사례나 세부 내용이 부족하여 답변이 다소 추상적임.\"\n    },\n    \"communication\": {\n      \"score\": 60,\n      \"feedback\": \"간결하고 명확하게 의도를 전달했으나, 좀 더 체계적이고 자세한 설명이 필요함.\"\n    },\n    \"jobFit\": {\n      \"score\": 55,\n      \"feedback\": \"팀워크와 소통의 중요성을 인지하고 있으나, 직무 관련 구체적 역량이나 결과에 대한 연결이 부족함.\"\n    },\n    \"starStructure\": {\n      \"score\": 55,\n      \"feedback\": \"상황과 결과는 언급되었으나, 구체적인 행동과 결과에 대한 설명이 부족하여 STAR 구조가 완전하지 않음.\"\n    }\n  },\n  \"strengths\": [\n    \"팀 내 의견 충돌 상황에서 중재 역할을 시도함\",\n    \"소통의 중요성을 인지하고 있음\",\n    \"간결하고 명확한 의사 전달\"\n  ],\n  \"weaknesses\": [\n    \"구체적인 상황과 행동에 대한 설명 부족\",\n    \"STAR 구조가 명확하지 않음\",\n    \"직무 관련 역량과 결과에 대한 연결 부족\"\n  ]\n}",
+      "total_latency_s": 0.641
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-02",
+    "sample": 1,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.752,
+      "est_cost_usd": 0.000772,
+      "prompt_tokens": 1910,
+      "completion_tokens": 5,
+      "validator_ms": 0.466,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.087,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 88,\n  \"summary\": \"지원자는 서비스 성능 문제를 구체적으로 인지하고, 원인 분석부터 해결책 적용, 그리고 결과 공유까지 체계적으로 수행한 경험을 명확히 제시하였습니다. 논리적 사고와 문제 해결 과정이 잘 드러나며, 기술적 전문성과 협업 의지도 확인됩니다. 다만, 문제 해결 과정에서의 어려움이나 팀 내 역할 분담에 대한 추가 설명이 있으면 더 좋았을 것입니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 90,\n      \"feedback\": \"문제의 원인을 쿼리 로그 분석을 통해 정확히 파악하고, N+1 쿼리 문제를 해결하는 논리적 접근이 명확합니다.\"\n    },\n    \"specificity\": {\n      \"score\": 85,\n      \"feedback\": \"fetch join과 인덱스 추가라는 구체적인 기술적 조치를 제시하였고, 응답 시간 개선 수치도 명확히 언급하였습니다.\"\n    },\n    \"communication\": {\n      \"score\": 90,\n      \"feedback\": \"간결하고 명확한 표현으로 상황과 조치, 결과를 잘 전달하였으며, 팀 위키 공유를 통한 협업 의사소통도 강조하였습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 85,\n      \"feedback\": \"서비스 성능 문제 해결 경험이 해당 직무와 직접적으로 연관되어 있으며, 기술적 역량과 문제 해결 능력이 적합함을 보여줍니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 90,\n      \"feedback\": \"상황(S), 과제(T), 행동(A), 결과(R) 구조가 잘 갖추어져 있어 면접관이 이해하기 쉽습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"문제 원인 분석과 해결책 적용 과정이 논리적이고 체계적임\",\n    \"구체적인 기술적 조치와 개선 결과를 수치로 명확히 제시함\",\n    \"팀 내 지식 공유를 통해 협업과 커뮤니케이션 능력도 보여줌\"\n  ],\n  \"weaknesses\": [\n    \"문제 해결 과정에서 직면한 어려움이나 도전 과제에 대한 언급 부족\",\n    \"팀 내 역할 분담이나 협업 과정에 대한 상세 설명이 다소 부족함\"\n  ]\n}",
+      "total_latency_s": 0.755
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-02",
+    "sample": 2,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.464,
+      "est_cost_usd": 0.000782,
+      "prompt_tokens": 1935,
+      "completion_tokens": 5,
+      "validator_ms": 0.539,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.064,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 88,\n  \"summary\": \"지원자는 서비스 성능 문제를 명확히 인지하고, 쿼리 로그 분석을 통해 문제 원인을 정확하게 파악하였으며, 구체적인 해결책을 적용해 성능을 크게 개선한 경험을 잘 설명했습니다. 또한 해결 과정을 팀 위키에 공유하는 등 협업과 커뮤니케이션 측면도 충실히 수행한 점이 돋보입니다. 다만 상황 설명과 역할에 대한 좀 더 구체적인 서술이 보완된다면 더욱 완성도 높은 답변이 될 것입니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 90,\n      \"feedback\": \"문제 인식부터 원인 분석, 해결책 적용까지 논리적인 흐름이 명확하며, 문제 해결 과정이 체계적으로 전개되었습니다.\"\n    },\n    \"specificity\": {\n      \"score\": 85,\n      \"feedback\": \"N+1 쿼리 문제와 fetch join, 인덱스 추가라는 구체적인 기술적 조치를 명확히 제시했으나, 본인의 역할과 기여도에 대한 상세한 설명이 다소 부족합니다.\"\n    },\n    \"communication\": {\n      \"score\": 90,\n      \"feedback\": \"간결하고 명확한 문장으로 전문성을 유지하며, 팀 내 공유 활동을 언급해 협업 의지를 잘 드러냈습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 90,\n      \"feedback\": \"지원하는 직무와 직접적으로 연관된 서비스 성능 문제 해결 경험을 제시하여 직무 적합도가 높게 평가됩니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 85,\n      \"feedback\": \"상황, 과제, 행동, 결과가 전반적으로 잘 드러나 있으나, 상황과 과제 부분에서 좀 더 구체적인 배경 설명이 보완되면 좋겠습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"문제 해결 과정이 논리적이고 체계적임\",\n    \"구체적인 기술적 조치와 결과 수치를 명확히 제시함\",\n    \"협업과 커뮤니케이션 측면을 강조함\",\n    \"직무와 직접적으로 연관된 경험을 잘 설명함\"\n  ],\n  \"weaknesses\": [\n    \"상황과 과제에 대한 구체적인 배경 설명이 다소 부족함\",\n    \"본인의 역할과 기여도에 대한 상세한 서술이 부족함\"\n  ]\n}",
+      "total_latency_s": 0.466
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-02",
+    "sample": 3,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.481,
+      "est_cost_usd": 0.00078,
+      "prompt_tokens": 1930,
+      "completion_tokens": 5,
+      "validator_ms": 0.726,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.102,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 88,\n  \"summary\": \"지원자는 서비스 성능 문제를 명확히 인지하고, 원인 분석부터 해결책 적용, 그리고 결과 공유까지 체계적으로 수행한 경험을 구체적으로 설명했습니다. 논리적 사고와 문제 해결 능력이 뛰어나며, 기술적 전문성도 잘 드러났습니다. 또한 팀 위키에 정리하여 공유한 점에서 협업과 커뮤니케이션 능력도 긍정적으로 평가됩니다. 다만, 상황과 과제에 대한 배경 설명이 조금 더 구체적이면 이해도가 높아질 수 있겠습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 90,\n      \"feedback\": \"문제 원인을 쿼리 로그 분석을 통해 체계적으로 파악하고, N+1 쿼리 문제를 정확히 진단한 점에서 논리적 사고가 뛰어납니다.\"\n    },\n    \"specificity\": {\n      \"score\": 85,\n      \"feedback\": \"fetch join 적용과 인덱스 추가라는 구체적인 해결책과 응답 시간 개선 수치를 명확히 제시하여 구체성이 높습니다. 다만 상황 설명이 조금 더 상세하면 좋겠습니다.\"\n    },\n    \"communication\": {\n      \"score\": 90,\n      \"feedback\": \"간결하고 명확한 표현으로 문제와 해결 과정을 잘 전달했으며, 팀 위키 공유를 통해 협업 의지도 잘 드러났습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 85,\n      \"feedback\": \"지원 직무와 직접적으로 연관된 서비스 성능 문제 해결 경험으로 직무 적합성이 높습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 90,\n      \"feedback\": \"상황(S), 과제(T), 행동(A), 결과(R) 구조가 잘 갖춰져 있으며, 각 단계가 명확하게 구분되어 이해하기 쉽습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"논리적이고 체계적인 문제 원인 분석 능력\",\n    \"구체적인 기술적 해결책 제시 및 성과 수치 제공\",\n    \"명확하고 간결한 커뮤니케이션\",\n    \"팀 내 지식 공유를 통한 협업 의지 표현\",\n    \"STAR 구조에 충실한 답변 구성\"\n  ],\n  \"weaknesses\": [\n    \"상황과 과제에 대한 배경 설명이 다소 간략하여 맥락 이해에 약간의 보완 필요\"\n  ]\n}",
+      "total_latency_s": 0.484
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-03",
+    "sample": 1,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 1.522,
+      "est_cost_usd": 0.0006884000000000001,
+      "prompt_tokens": 1701,
+      "completion_tokens": 5,
+      "validator_ms": 0.432,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.075,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 40,\n  \"summary\": \"지원 동기가 매우 일반적이고 구체성이 부족하며, 회사에 대한 깊은 이해나 직무 적합성을 드러내지 못함. 의사소통은 간결하나 다소 형식적이고 성의가 부족해 보임. STAR 구조가 적용되지 않아 답변의 체계성이 떨어짐.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 40,\n      \"feedback\": \"지원 동기가 단순히 회사의 유명세와 성장 가능성에만 근거하고 있어 논리적 근거가 약함.\"\n    },\n    \"specificity\": {\n      \"score\": 30,\n      \"feedback\": \"회사에 대해 구체적으로 어떤 점이 매력적인지, 본인의 경험과 어떻게 연결되는지 설명이 부족함.\"\n    },\n    \"communication\": {\n      \"score\": 50,\n      \"feedback\": \"간결하고 정중한 표현이나, 진정성과 열정이 충분히 전달되지 않아 아쉬움.\"\n    },\n    \"jobFit\": {\n      \"score\": 40,\n      \"feedback\": \"직무나 회사 문화와의 적합성에 대한 언급이 없어 직무 적합성 판단이 어려움.\"\n    },\n    \"starStructure\": {\n      \"score\": 40,\n      \"feedback\": \"상황, 과제, 행동, 결과의 구조가 없고 단순한 동기 진술에 그침.\"\n    }\n  },\n  \"strengths\": [\n    \"간결하고 정중한 의사소통\",\n    \"성장 가능성에 대한 긍정적 인식\"\n  ],\n  \"weaknesses\": [\n    \"구체적인 회사 이해 부족\",\n    \"직무 및 회사 문화와의 적합성 미흡\",\n    \"진정성 및 열정 표현 부족\",\n    \"논리적 근거 미흡\",\n    \"답변 구조 미흡\"\n  ]\n}",
+      "total_latency_s": 1.524
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-03",
+    "sample": 2,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.551,
+      "est_cost_usd": 0.0006956,
+      "prompt_tokens": 1719,
+      "completion_tokens": 5,
+      "validator_ms": 0.562,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.103,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 40,\n  \"summary\": \"지원 동기가 매우 일반적이고 구체성이 부족하며, 회사에 대한 깊은 이해나 직무 적합성에 대한 언급이 부족하다. 의사소통은 간결하지만 다소 피상적이고 진정성이나 논리적 근거가 약하다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 40,\n      \"feedback\": \"지원 동기의 논리적 근거가 부족하며, 회사의 성장 가능성 외에 구체적인 이유나 개인적 목표와의 연결이 부족하다.\"\n    },\n    \"specificity\": {\n      \"score\": 30,\n      \"feedback\": \"회사가 유명하고 성장 가능성이 크다는 일반적인 표현만 있을 뿐, 구체적인 회사의 강점이나 직무 관련 내용이 전혀 없다.\"\n    },\n    \"communication\": {\n      \"score\": 50,\n      \"feedback\": \"간결하고 정중한 표현이나, 다소 피상적이고 진정성 있는 자세가 부족해 깊은 인상을 주기 어렵다.\"\n    },\n    \"jobFit\": {\n      \"score\": 40,\n      \"feedback\": \"직무나 회사 문화에 대한 이해 및 본인의 강점과의 연결이 없어 직무 적합성을 판단하기 어렵다.\"\n    },\n    \"starStructure\": {\n      \"score\": 40,\n      \"feedback\": \"STAR 구조에 따른 구체적인 상황, 과제, 행동, 결과에 대한 설명이 없고 단순한 지원 동기 진술에 그쳤다.\"\n    }\n  },\n  \"strengths\": [\n    \"간결하고 정중한 의사소통\",\n    \"지원 의지 표현\"\n  ],\n  \"weaknesses\": [\n    \"구체적인 회사 이해 및 직무 관련 내용 부족\",\n    \"논리적 근거와 진정성 부족\",\n    \"STAR 구조 미적용으로 구체적 사례 부재\",\n    \"직무 적합성 및 장기 목표와의 연결 미흡\"\n  ]\n}",
+      "total_latency_s": 0.554
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-03",
+    "sample": 3,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.461,
+      "est_cost_usd": 0.0007012,
+      "prompt_tokens": 1733,
+      "completion_tokens": 5,
+      "validator_ms": 0.509,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.071,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 40,\n  \"summary\": \"지원 동기가 다소 일반적이고 구체성이 부족하며, 논리적인 설명과 회사에 대한 깊은 이해가 부족합니다. 의사소통은 기본적인 예의를 갖추었으나, 직무 적합성이나 회사 문화와의 연계성이 명확하지 않습니다. STAR 구조가 적용되지 않아 답변의 체계성이 떨어집니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 40,\n      \"feedback\": \"지원 동기가 단순히 회사의 유명세와 성장 가능성에만 근거해 있어 논리적 깊이가 부족합니다.\"\n    },\n    \"specificity\": {\n      \"score\": 30,\n      \"feedback\": \"구체적인 회사의 어떤 점이 성장 가능성이 크다고 생각하는지, 본인의 어떤 역량이 회사에 기여할 수 있는지에 대한 설명이 부족합니다.\"\n    },\n    \"communication\": {\n      \"score\": 50,\n      \"feedback\": \"기본적인 존중과 성실한 태도를 표현하였으나, 좀 더 명확하고 구체적인 의사 전달이 필요합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 40,\n      \"feedback\": \"직무나 회사 문화와의 적합성에 대한 언급이 없어 지원자의 적합성을 판단하기 어렵습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 40,\n      \"feedback\": \"답변에 상황, 과제, 행동, 결과의 구조가 없고, 체계적인 답변 구성이 부족합니다.\"\n    }\n  },\n  \"strengths\": [\n    \"성실한 태도와 열심히 하겠다는 의지를 표현함\",\n    \"기본적인 존중의 표현이 포함됨\"\n  ],\n  \"weaknesses\": [\n    \"지원 동기가 매우 일반적이고 구체성이 부족함\",\n    \"회사에 대한 깊은 이해나 직무 적합성에 대한 설명이 없음\",\n    \"논리적 근거와 체계적인 답변 구성이 부족함\"\n  ]\n}",
+      "total_latency_s": 0.463
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-04",
+    "sample": 1,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.527,
+      "est_cost_usd": 0.0007156,
+      "prompt_tokens": 1769,
+      "completion_tokens": 5,
+      "validator_ms": 0.449,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.099,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 76,\n  \"summary\": \"지원자는 새로운 기술인 TypeScript를 빠르게 학습하고 프로젝트 마감일 내에 성공적으로 적용한 경험을 간결하고 명확하게 전달하였다. 학습 방법과 협업 과정을 언급하여 문제 해결과 자기 주도적 학습 태도를 보여주었으나, 상황과 결과에 대한 구체적인 수치나 영향 설명이 부족하여 다소 아쉬움이 있다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 80,\n      \"feedback\": \"학습 과정과 문제 해결 접근법이 논리적이며 순차적으로 잘 설명되었다.\"\n    },\n    \"specificity\": {\n      \"score\": 70,\n      \"feedback\": \"TypeScript 학습 방법과 협업 내용은 구체적이나, 프로젝트 결과에 대한 구체적인 성과나 수치가 부족하다.\"\n    },\n    \"communication\": {\n      \"score\": 80,\n      \"feedback\": \"명확하고 자신감 있는 표현으로 핵심 내용을 간결하게 전달하였다.\"\n    },\n    \"jobFit\": {\n      \"score\": 75,\n      \"feedback\": \"빠른 학습과 적응력, 협업 능력을 보여주어 미국 IT 직무에 적합한 태도를 나타냈다.\"\n    },\n    \"starStructure\": {\n      \"score\": 75,\n      \"feedback\": \"상황, 과제, 행동은 잘 설명되었으나 결과 부분이 다소 간략하여 STAR 구조가 완전하지 않다.\"\n    }\n  },\n  \"strengths\": [\n    \"빠른 학습 의지와 자기 주도적 학습 태도 명확히 표현\",\n    \"협업을 통한 문제 해결 과정 포함\",\n    \"간결하고 자신감 있는 커뮤니케이션\"\n  ],\n  \"weaknesses\": [\n    \"프로젝트 결과에 대한 구체적 성과나 영향 설명 부족\",\n    \"상황과 과제에 대한 배경 설명이 다소 간략함\",\n    \"STAR 구조 중 결과 부분이 약함\"\n  ]\n}",
+      "total_latency_s": 0.53
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-04",
+    "sample": 2,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.529,
+      "est_cost_usd": 0.0007332,
+      "prompt_tokens": 1813,
+      "completion_tokens": 5,
+      "validator_ms": 0.433,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.073,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 76,\n  \"summary\": \"지원자는 새로운 기술인 TypeScript를 빠르게 학습하여 프로젝트 마감 기한 내에 성공적으로 적용한 경험을 명확하게 전달하였다. 학습 방법과 협업 과정을 구체적으로 언급하며 자기 주도적 학습과 팀워크를 보여주었다. 다만 상황과 결과에 대한 구체적인 수치나 영향력 설명이 부족하여 STAR 구조가 완벽하지 않고, 답변이 다소 간결하여 깊이 있는 설명이 아쉽다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 80,\n      \"feedback\": \"새로운 기술 학습 과정과 문제 해결 방법을 논리적으로 설명하였으나, 결과에 대한 영향력 분석이 부족하다.\"\n    },\n    \"specificity\": {\n      \"score\": 70,\n      \"feedback\": \"TypeScript 학습 방법과 코드 리뷰 과정을 구체적으로 언급했으나, 프로젝트 결과나 성과에 대한 구체적인 수치나 상세 설명이 부족하다.\"\n    },\n    \"communication\": {\n      \"score\": 80,\n      \"feedback\": \"간결하고 명확한 표현으로 자신감 있고 직접적인 커뮤니케이션 스타일을 잘 보여주었다.\"\n    },\n    \"jobFit\": {\n      \"score\": 75,\n      \"feedback\": \"빠른 학습과 적응력, 팀워크를 강조하여 미국 IT 산업에서 요구하는 역량과 잘 부합한다.\"\n    },\n    \"starStructure\": {\n      \"score\": 75,\n      \"feedback\": \"상황, 과제, 행동은 잘 설명했으나 결과에 대한 구체적이고 측정 가능한 설명이 부족해 완전한 STAR 구조는 아니다.\"\n    }\n  },\n  \"strengths\": [\n    \"빠른 학습 능력과 자기 주도적 학습 태도를 잘 보여줌\",\n    \"팀워크를 활용한 문제 해결 과정 명확히 설명\",\n    \"명확하고 자신감 있는 커뮤니케이션\"\n  ],\n  \"weaknesses\": [\n    \"결과에 대한 구체적 수치나 영향력 설명 부족\",\n    \"답변이 다소 간결하여 깊이 있는 설명이 부족\",\n    \"완전한 STAR 구조 미흡\"\n  ]\n}",
+      "total_latency_s": 0.531
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-04",
+    "sample": 3,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.621,
+      "est_cost_usd": 0.0007472000000000001,
+      "prompt_tokens": 1848,
+      "completion_tokens": 5,
+      "validator_ms": 0.358,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.123,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 76,\n  \"summary\": \"지원자는 새로운 기술을 빠르게 학습하고 프로젝트 마감일 내에 성공적으로 적용한 경험을 명확히 제시했다. 학습 과정에서의 자기 주도성과 동료와의 협업을 통한 검토 과정을 언급하여 문제 해결 능력과 팀워크를 보여주었다. 다만, 상황과 과제에 대한 구체적인 설명이 다소 부족하며, 결과에 대한 정량적 성과나 배운 점에 대한 언급이 없어 STAR 구조가 완전하지 않고, 미국 면접 문화에서 기대하는 구체성과 성과 중심의 커뮤니케이션 측면에서 아쉬움이 있다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 80,\n      \"feedback\": \"학습 과정과 문제 해결 방법이 논리적으로 연결되어 있으며, 단계별 접근법이 명확하다.\"\n    },\n    \"specificity\": {\n      \"score\": 70,\n      \"feedback\": \"TypeScript로 전환한 시기와 학습 방법은 언급했으나, 프로젝트의 구체적 내용이나 결과에 대한 수치적 성과가 부족하다.\"\n    },\n    \"communication\": {\n      \"score\": 75,\n      \"feedback\": \"간결하고 자신감 있는 표현으로 의사 전달이 명확하지만, 미국 면접 문화에서 선호하는 성과 중심의 자세한 설명이 다소 부족하다.\"\n    },\n    \"jobFit\": {\n      \"score\": 80,\n      \"feedback\": \"빠른 학습과 적응력, 팀 협업 능력을 보여주어 기술 직무에 적합한 태도를 나타낸다.\"\n    },\n    \"starStructure\": {\n      \"score\": 75,\n      \"feedback\": \"상황과 행동은 잘 설명했으나, 과제와 결과에 대한 구체적 설명과 배운 점이 부족해 완전한 STAR 구조를 충족하지 못한다.\"\n    }\n  },\n  \"strengths\": [\n    \"신속한 자기 주도적 학습 능력\",\n    \"팀원과의 협업을 통한 코드 리뷰\",\n    \"프로젝트 마감일 준수\"\n  ],\n  \"weaknesses\": [\n    \"상황과 과제에 대한 구체적 설명 부족\",\n    \"결과에 대한 정량적 성과 미제시\",\n    \"배운 점이나 개선점에 대한 언급 부재\"\n  ]\n}",
+      "total_latency_s": 0.623
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-09",
+    "sample": 1,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.671,
+      "est_cost_usd": 0.0007324000000000001,
+      "prompt_tokens": 1811,
+      "completion_tokens": 5,
+      "validator_ms": 0.354,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.068,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 50,\n  \"summary\": \"지원자는 고객 불만 상황에 대해 경험을 공유했으나, 구체적인 문제 해결 과정과 행동에 대한 설명이 부족하고, STAR 구조가 명확하지 않아 논리적 사고와 구체성에서 낮은 점수를 받았습니다. 의사소통은 비교적 자연스럽고 진솔하게 표현되었으나, 직무 적합성과 문제 해결 능력 강조가 미흡합니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 50,\n      \"feedback\": \"문제 상황과 원인을 간단히 설명했으나, 문제 해결 과정이나 결과에 대한 논리적 전개가 부족합니다.\"\n    },\n    \"specificity\": {\n      \"score\": 40,\n      \"feedback\": \"상황과 결과에 대한 구체적인 수치나 행동이 부족하며, 어떻게 문제를 해결했는지 구체적이지 않습니다.\"\n    },\n    \"communication\": {\n      \"score\": 60,\n      \"feedback\": \"자연스럽고 진솔한 표현으로 의사소통이 이루어졌으나, 좀 더 전문적이고 체계적인 전달이 필요합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 50,\n      \"feedback\": \"고객 응대 경험은 있으나, 지원 직무와 연관된 전문성이나 고객 서비스 마인드에 대한 강조가 부족합니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 50,\n      \"feedback\": \"상황과 결과는 언급되었으나, 구체적인 행동과 결과에 대한 구조적 설명이 미흡합니다.\"\n    }\n  },\n  \"strengths\": [\n    \"진솔하고 자연스러운 의사소통\",\n    \"고객 불만 상황을 경험한 적 있음\"\n  ],\n  \"weaknesses\": [\n    \"구체적인 문제 해결 행동과 결과 설명 부족\",\n    \"STAR 구조 미흡\",\n    \"직무 관련 역량과 고객 서비스 마인드 강조 부족\"\n  ]\n}",
+      "total_latency_s": 0.674
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-09",
+    "sample": 2,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.486,
+      "est_cost_usd": 0.0007288,
+      "prompt_tokens": 1802,
+      "completion_tokens": 5,
+      "validator_ms": 0.37,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.077,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 50,\n  \"summary\": \"지원자는 고객 불만 상황에 대해 경험을 공유했으나, 구체적인 행동과 결과에 대한 설명이 부족하고, STAR 구조가 명확하지 않아 논리적 사고와 구체성에서 낮은 점수를 받았습니다. 의사소통은 비교적 정중하나 다소 모호하며, 직무 적합성 측면에서는 고객 응대 경험을 보여주었으나 문제 해결 과정이 명확하지 않습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 50,\n      \"feedback\": \"상황 설명은 있으나 문제 해결 과정과 결과에 대한 논리적 연결이 부족합니다.\"\n    },\n    \"specificity\": {\n      \"score\": 40,\n      \"feedback\": \"구체적인 행동이나 대처 방법, 결과에 대한 상세한 설명이 부족합니다.\"\n    },\n    \"communication\": {\n      \"score\": 60,\n      \"feedback\": \"전반적으로 정중하고 진솔하게 답변했으나, 다소 모호하고 명확하지 않은 부분이 있습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 55,\n      \"feedback\": \"고객 응대 경험을 보여주었으나, 문제 해결 능력과 팀워크 부분에서 구체적인 강점이 드러나지 않았습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 45,\n      \"feedback\": \"상황은 제시했으나, 과제(Task), 행동(Action), 결과(Result)가 명확하게 구분되어 있지 않습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"고객 불만 상황에 대해 경험을 공유함\",\n    \"정중하고 진솔한 의사소통 태도\"\n  ],\n  \"weaknesses\": [\n    \"구체적인 행동과 결과에 대한 설명 부족\",\n    \"STAR 구조 미흡\",\n    \"논리적 사고와 문제 해결 과정이 명확하지 않음\"\n  ]\n}",
+      "total_latency_s": 0.488
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-09",
+    "sample": 3,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.42,
+      "est_cost_usd": 0.0003852,
+      "prompt_tokens": 1807,
+      "completion_tokens": 5,
+      "validator_ms": 0.389,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.088,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 50,\n  \"summary\": \"지원자는 고객 불만 상황을 경험한 사례를 제시하였으나, 구체적인 문제 해결 과정과 결과에 대한 설명이 부족하며, STAR 구조가 명확하지 않아 논리적 전개와 구체성이 미흡하다. 의사소통은 비교적 정중하나, 직무 적합성과 문제 해결 능력에 대한 깊이 있는 내용이 부족하다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 50,\n      \"feedback\": \"문제 상황과 원인을 간단히 설명하였으나, 문제 해결 과정과 결과에 대한 논리적 연결이 부족하다.\"\n    },\n    \"specificity\": {\n      \"score\": 40,\n      \"feedback\": \"상황은 제시되었으나 구체적인 행동과 결과에 대한 상세한 설명이 부족하다.\"\n    },\n    \"communication\": {\n      \"score\": 60,\n      \"feedback\": \"정중하고 진솔한 어조로 답변하였으나, 더 명확하고 체계적인 전달이 필요하다.\"\n    },\n    \"jobFit\": {\n      \"score\": 50,\n      \"feedback\": \"고객 응대 경험은 있으나, 지원 직무와 직접적으로 연결되는 역량 표현이 부족하다.\"\n    },\n    \"starStructure\": {\n      \"score\": 50,\n      \"feedback\": \"상황은 제시되었으나, 과제(Task), 행동(Action), 결과(Result) 부분이 명확하지 않아 STAR 구조가 미흡하다.\"\n    }\n  },\n  \"strengths\": [\n    \"고객 불만 상황을 경험한 사례를 제시함\",\n    \"정중하고 진솔한 의사소통 태도\"\n  ],\n  \"weaknesses\": [\n    \"구체적인 문제 해결 과정과 결과 설명 부족\",\n    \"STAR 구조 미흡으로 답변의 논리적 전개 부족\",\n    \"지원 직무와의 연관성 표현 부족\"\n  ]\n}",
+      "total_latency_s": 0.422
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-10",
+    "sample": 1,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.457,
+      "est_cost_usd": 0.0007432000000000001,
+      "prompt_tokens": 1838,
+      "completion_tokens": 5,
+      "validator_ms": 0.503,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.102,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 85,\n  \"summary\": \"지원자는 동아리 서비스 배포 과정에서 발생한 문제를 인식하고, GitHub Actions를 활용해 배포 파이프라인을 구축하여 배포 시간을 대폭 단축하고 실수를 줄인 경험을 구체적으로 설명했습니다. 문제 인식과 해결 방안 제시, 실행까지의 과정이 명확하며, 결과도 수치로 제시해 성과를 잘 나타냈습니다. 다만, 팀 내 협업 과정이나 본인의 역할에 대한 구체적인 설명이 부족해 의사소통 및 협업 능력 부분에서 다소 아쉬움이 있습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 90,\n      \"feedback\": \"문제 인식부터 해결책 제안, 실행, 결과 도출까지 논리적인 흐름이 명확합니다.\"\n    },\n    \"specificity\": {\n      \"score\": 85,\n      \"feedback\": \"배포 시간이 30분에서 5분으로 줄었다는 구체적인 수치와 GitHub Actions 사용 등 구체적인 방법을 제시했습니다.\"\n    },\n    \"communication\": {\n      \"score\": 80,\n      \"feedback\": \"간결하고 명확하게 의사를 전달했으나, 팀원과의 협업이나 의사소통 과정에 대한 언급이 부족합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 85,\n      \"feedback\": \"주도적으로 문제를 해결하고 자동화 도구를 활용한 경험은 IT 직무에 적합합니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 85,\n      \"feedback\": \"상황, 과제, 행동, 결과가 대체로 잘 구성되어 있으나 행동 부분에서 본인의 구체적 역할과 과정이 조금 더 상세했으면 좋겠습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"문제 인식과 해결책 제안이 명확하다.\",\n    \"구체적인 결과 수치를 통해 성과를 잘 표현했다.\",\n    \"주도적으로 개선을 추진한 경험이 드러난다.\"\n  ],\n  \"weaknesses\": [\n    \"팀 내 협업 및 의사소통 과정에 대한 설명이 부족하다.\",\n    \"본인의 구체적인 행동과 역할에 대한 상세한 설명이 아쉽다.\"\n  ]\n}",
+      "total_latency_s": 0.459
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-10",
+    "sample": 2,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.516,
+      "est_cost_usd": 0.0007468,
+      "prompt_tokens": 1847,
+      "completion_tokens": 5,
+      "validator_ms": 0.43,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.061,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 80,\n  \"summary\": \"지원자는 배포 프로세스의 문제를 인식하고 GitHub Actions를 활용해 자동화 배포 파이프라인을 구축하여 배포 시간을 크게 단축하고 실수를 줄인 경험을 구체적으로 설명했다. 문제 해결과 자기 주도성 측면에서 강점을 보였으나, 상황과 역할에 대한 배경 설명이 다소 부족하며, 팀원과의 협업 과정이나 의사소통에 대한 언급이 없어 다소 아쉬움이 있다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 85,\n      \"feedback\": \"문제 인식부터 해결책 제안 및 실행, 결과 도출까지 논리적인 흐름이 명확하다.\"\n    },\n    \"specificity\": {\n      \"score\": 75,\n      \"feedback\": \"배포 시간이 30분에서 5분으로 줄었다는 구체적인 수치와 도구(GitHub Actions)를 명확히 제시했으나, 본인의 역할과 상황에 대한 상세한 설명이 부족하다.\"\n    },\n    \"communication\": {\n      \"score\": 80,\n      \"feedback\": \"간결하고 명확하게 의사를 전달했으며, 전문적인 어조를 유지했다. 다만 팀 내 협업이나 의사소통 과정에 대한 언급이 없어 보완이 필요하다.\"\n    },\n    \"jobFit\": {\n      \"score\": 85,\n      \"feedback\": \"자동화 및 효율화 경험은 IT 및 개발 관련 직무에 적합하며, 문제 해결 능력과 주도성이 잘 드러난다.\"\n    },\n    \"starStructure\": {\n      \"score\": 75,\n      \"feedback\": \"상황(S)과 과제(T), 행동(A), 결과(R)이 모두 포함되어 있으나, 상황과 역할에 대한 배경 설명이 좀 더 구체적이면 좋겠다.\"\n    }\n  },\n  \"strengths\": [\n    \"문제 해결을 위한 주도적 행동\",\n    \"구체적인 결과 수치 제시\",\n    \"논리적이고 명확한 설명\"\n  ],\n  \"weaknesses\": [\n    \"상황과 역할에 대한 상세한 배경 설명 부족\",\n    \"팀원과의 협업 및 의사소통 과정 미언급\",\n    \"STAR 구조 중 상황 설명이 다소 간략함\"\n  ]\n}",
+      "total_latency_s": 0.519
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-10",
+    "sample": 3,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.525,
+      "est_cost_usd": 0.000758,
+      "prompt_tokens": 1875,
+      "completion_tokens": 5,
+      "validator_ms": 0.428,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.086,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 80,\n  \"summary\": \"지원자는 동아리 서비스 배포 과정의 문제를 인식하고, GitHub Actions를 활용하여 배포 파이프라인을 구축함으로써 배포 시간을 크게 단축하고 실수를 줄인 경험을 구체적으로 설명하였다. 주도적으로 문제를 해결한 점과 결과를 명확히 제시한 점이 긍정적이다. 다만 상황과 역할에 대한 구체적인 설명이 부족하여 STAR 구조가 완전하지 않고, 협업 과정이나 의사소통에 대한 언급이 없어 다소 아쉬움이 있다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 85,\n      \"feedback\": \"문제를 인식하고 해결책을 제안 및 실행하는 과정이 논리적으로 잘 연결되어 있다.\"\n    },\n    \"specificity\": {\n      \"score\": 75,\n      \"feedback\": \"배포 시간이 30분에서 5분으로 줄었다는 구체적인 수치와 도구(GitHub Actions)를 명확히 제시했으나, 상황과 본인의 역할에 대한 상세한 설명이 부족하다.\"\n    },\n    \"communication\": {\n      \"score\": 80,\n      \"feedback\": \"간결하고 명확하게 의사를 전달했으며, 전문적이고 진지한 태도가 느껴진다. 다만 협업과정에 대한 언급이 없어 소통능력에 대한 평가가 제한적이다.\"\n    },\n    \"jobFit\": {\n      \"score\": 80,\n      \"feedback\": \"주도적으로 문제를 해결하고 자동화 도구를 활용한 경험은 IT 및 개발 관련 직무에 적합하다.\"\n    },\n    \"starStructure\": {\n      \"score\": 80,\n      \"feedback\": \"상황과 과제는 간략히 제시되었으나, 역할과 행동, 결과는 명확히 드러나 있으나 상황 설명이 좀 더 구체적이면 좋겠다.\"\n    }\n  },\n  \"strengths\": [\n    \"주도적으로 문제를 인식하고 해결책을 제안 및 실행한 점\",\n    \"구체적인 결과 수치(배포 시간 단축) 제시\",\n    \"간결하고 명확한 의사 전달\"\n  ],\n  \"weaknesses\": [\n    \"상황과 본인의 역할에 대한 구체적 설명 부족\",\n    \"협업 및 의사소통 과정에 대한 언급 부재\",\n    \"STAR 구조 중 상황 설명이 다소 부족\"\n  ]\n}",
+      "total_latency_s": 0.528
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-05",
+    "sample": 1,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.547,
+      "est_cost_usd": 0.0007824,
+      "prompt_tokens": 1936,
+      "completion_tokens": 5,
+      "validator_ms": 0.669,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.044,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 72,\n  \"summary\": \"지원자는 팀워크에서 중요한 요소로 보고된 '보고·연락·상담'을 강조하며, 이전 프로젝트에서 이를 실천한 경험을 언급하여 기본적인 팀 커뮤니케이션의 중요성을 잘 이해하고 있음을 보여준다. 그러나 답변이 구체적인 상황 설명이나 결과에 대한 명확한 언급이 부족하여 STAR 구조가 미흡하고, 더 구체적인 사례와 성과가 포함되면 좋을 것이다. 일본 비즈니스 문화에 맞는 겸손하고 팀 중심적인 태도는 잘 표현되었으나, 답변이 다소 간결하여 깊이 있는 논리 전개가 아쉽다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 70,\n      \"feedback\": \"팀 내 소통의 중요성을 논리적으로 제시했으나, 구체적인 문제 해결 과정이나 결과에 대한 설명이 부족해 논리 전개의 깊이가 다소 약하다.\"\n    },\n    \"specificity\": {\n      \"score\": 65,\n      \"feedback\": \"이전 프로젝트에서 진행 상황을 자주 공유했다는 점을 언급했으나, 구체적인 상황, 역할, 결과에 대한 상세한 설명이 부족하다.\"\n    },\n    \"communication\": {\n      \"score\": 80,\n      \"feedback\": \"일본 비즈니스 문화에 맞게 겸손하고 존중하는 어조로 답변했으며, 팀워크에 대한 긍정적인 태도를 잘 전달하였다.\"\n    },\n    \"jobFit\": {\n      \"score\": 75,\n      \"feedback\": \"팀 내 협력과 소통을 중시하는 점이 일본 기업 문화와 잘 부합하나, 직무 특성에 따른 구체적 연계는 다소 부족하다.\"\n    },\n    \"starStructure\": {\n      \"score\": 70,\n      \"feedback\": \"상황과 행동은 간략히 언급되었으나, 구체적인 과제와 결과에 대한 설명이 부족하여 STAR 구조가 완전하지 않다.\"\n    }\n  },\n  \"strengths\": [\n    \"팀워크에서 보고·연락·상담의 중요성을 명확히 인식하고 있음\",\n    \"일본 비즈니스 문화에 적합한 겸손하고 팀 중심적인 커뮤니케이션 스타일\",\n    \"이전 프로젝트 경험을 통해 실제 행동을 언급함\"\n  ],\n  \"weaknesses\": [\n    \"구체적인 사례와 결과에 대한 설명이 부족하여 답변이 다소 추상적임\",\n    \"STAR 구조가 완전하지 않아 상황, 과제, 행동, 결과가 명확히 구분되지 않음\",\n    \"직무와의 직접적인 연계성이나 문제 해결 능력에 대한 언급이 부족함\"\n  ]\n}",
+      "total_latency_s": 0.55
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-05",
+    "sample": 2,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.615,
+      "est_cost_usd": 0.0007484000000000001,
+      "prompt_tokens": 1851,
+      "completion_tokens": 5,
+      "validator_ms": 0.469,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.037,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 70,\n  \"summary\": \"지원자는 팀워크에서 중요한 요소로 보고된 '보고・연락・상담'을 강조하며, 이전 프로젝트에서 이를 실천하여 팀 분위기 개선에 기여했다고 언급하였다. 답변은 일본 비즈니스 문화에 부합하는 겸손하고 팀 지향적인 커뮤니케이션을 보여주지만, 구체적인 상황과 결과에 대한 설명이 부족하여 STAR 구조가 미흡하다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 75,\n      \"feedback\": \"팀워크에서 중요한 커뮤니케이션 요소를 논리적으로 제시하였으나, 구체적인 문제 해결 과정이나 이유에 대한 설명이 부족하다.\"\n    },\n    \"specificity\": {\n      \"score\": 60,\n      \"feedback\": \"이전 프로젝트에서 진행 상황을 공유했다고만 언급했으며, 구체적인 사례나 수치, 결과에 대한 상세한 설명이 부족하다.\"\n    },\n    \"communication\": {\n      \"score\": 80,\n      \"feedback\": \"겸손하고 존중하는 태도로 일본 비즈니스 문화에 적합한 표현을 사용하였으며, 명확하고 간결하게 의사를 전달하였다.\"\n    },\n    \"jobFit\": {\n      \"score\": 70,\n      \"feedback\": \"팀워크와 커뮤니케이션을 중시하는 직무에 적합한 가치관을 제시하였으나, 직무 특성에 맞는 구체적 역량 연결이 약하다.\"\n    },\n    \"starStructure\": {\n      \"score\": 65,\n      \"feedback\": \"상황과 행동은 언급되었으나, 구체적인 과제와 결과에 대한 설명이 부족하여 STAR 구조가 완전하지 않다.\"\n    }\n  },\n  \"strengths\": [\n    \"팀워크에서 중요한 커뮤니케이션 요소인 보고・연락・상담을 명확히 인식하고 있음\",\n    \"일본 비즈니스 문화에 맞는 겸손하고 존중하는 커뮤니케이션 스타일\",\n    \"팀 분위기 개선에 긍정적인 영향을 미쳤다고 언급\"\n  ],\n  \"weaknesses\": [\n    \"구체적인 사례와 결과에 대한 설명 부족\",\n    \"STAR 구조에서 과제와 결과 부분이 미흡\",\n    \"직무와의 연계성 및 구체적 역량 표현이 부족\"\n  ]\n}",
+      "total_latency_s": 0.618
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-05",
+    "sample": 3,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.543,
+      "est_cost_usd": 0.0007328,
+      "prompt_tokens": 1812,
+      "completion_tokens": 5,
+      "validator_ms": 0.411,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.075,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 70,\n  \"summary\": \"지원자는 팀워크에서 중요한 요소로 보고하는 것, 연락하는 것, 상담하는 것을 강조하며, 이전 프로젝트에서 이를 실천하여 팀 분위기가 좋아졌다고 언급함. 답변은 기본적인 논리성과 커뮤니케이션 예절을 갖추었으나, 구체적인 상황 설명과 STAR 구조가 부족해 깊이 있는 평가에는 다소 미흡함.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 75,\n      \"feedback\": \"팀워크에서 중요한 요소를 명확히 제시하고, 그 이유를 간단히 설명함.\"\n    },\n    \"specificity\": {\n      \"score\": 60,\n      \"feedback\": \"이전 프로젝트에서 진행 상황을 공유했다고 언급했으나 구체적인 상황, 행동, 결과에 대한 상세한 설명이 부족함.\"\n    },\n    \"communication\": {\n      \"score\": 80,\n      \"feedback\": \"일본 비즈니스 문화에 맞는 정중하고 겸손한 표현으로 답변했으며, 팀 중심적인 태도가 잘 드러남.\"\n    },\n    \"jobFit\": {\n      \"score\": 70,\n      \"feedback\": \"팀워크와 커뮤니케이션을 중시하는 일본 기업 문화에 부합하는 답변이나, 더 구체적인 업무 관련 경험이 추가되면 좋음.\"\n    },\n    \"starStructure\": {\n      \"score\": 65,\n      \"feedback\": \"상황과 행동에 대한 간단한 언급은 있으나, 명확한 결과와 구체적 사례가 부족해 STAR 구조가 완성되지 않음.\"\n    }\n  },\n  \"strengths\": [\n    \"팀워크에서 중요한 요소를 명확히 인식하고 있음\",\n    \"정중하고 겸손한 일본식 커뮤니케이션 스타일을 잘 반영함\",\n    \"팀 분위기 개선에 긍정적인 영향을 미쳤다고 언급함\"\n  ],\n  \"weaknesses\": [\n    \"구체적인 사례와 결과에 대한 설명 부족\",\n    \"STAR 구조가 명확하지 않아 답변의 설득력이 다소 떨어짐\",\n    \"업무 관련 구체적 경험이나 역할에 대한 언급이 부족함\"\n  ]\n}",
+      "total_latency_s": 0.545
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-06",
+    "sample": 1,
+    "v1_overall_minus_mean": 4.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.469,
+      "est_cost_usd": 0.0007656000000000001,
+      "prompt_tokens": 1894,
+      "completion_tokens": 5,
+      "validator_ms": 0.554,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [
+          {
+            "check": "overall_score_arithmetic",
+            "field": "overallScore",
+            "before": 80,
+            "after": 76,
+            "reason": "overallScore must equal the mean of the five item scores (rounded half up)"
+          }
+        ],
+        "hints": []
+      },
+      "correction_ms": 0.101,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": true,
+      "needs_review": false,
+      "status": "corrected",
+      "change_log": [
+        {
+          "source": "validator",
+          "field": "overallScore",
+          "issue_type": "overall_score_arithmetic",
+          "before": 80,
+          "after": 76,
+          "reason": "overallScore must equal the mean of the five item scores (rounded half up)"
+        }
+      ],
+      "final_raw": "{\n  \"overallScore\": 76,\n  \"summary\": \"지원자는 문제를 구조화하는 능력을 자신의 강점으로 명확히 제시하였으며, 목표, 제약, 이해관계자 구분과 우선순위 설정 등 논리적인 접근 방식을 설명하여 논리적 사고가 돋보입니다. 다만 구체적인 사례나 결과에 대한 언급이 없어 구체성 및 STAR 구조 측면에서 아쉬움이 있습니다. 의사소통은 명확하고 전문적인 어투를 유지하였으며, 조직 내 체계적 문제 해결에 기여할 수 있음을 암시하여 직무 적합성도 양호합니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 90,\n      \"feedback\": \"문제를 구조화하고 우선순위를 정하는 체계적인 사고방식을 잘 드러내어 논리적 사고가 뛰어납니다.\"\n    },\n    \"specificity\": {\n      \"score\": 65,\n      \"feedback\": \"구체적인 경험이나 사례, 성과에 대한 언급이 없어 다소 추상적입니다.\"\n    },\n    \"communication\": {\n      \"score\": 85,\n      \"feedback\": \"명확하고 전문적인 표현으로 자신의 강점을 간결하게 전달하였으며, 한국의 면접 문화에 부합하는 존중과 진지함이 느껴집니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 80,\n      \"feedback\": \"체계적 문제 해결 능력은 대부분의 직무에서 긍정적으로 평가될 수 있으나, 직무 특성에 따른 구체적 연계는 부족합니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 60,\n      \"feedback\": \"STAR 기법에 따른 상황, 과제, 행동, 결과의 구체적 서술이 부족하여 구조적 답변 완성도가 낮습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"논리적이고 체계적인 문제 해결 접근법\",\n    \"명확하고 전문적인 의사소통\",\n    \"자신의 강점을 간결하게 표현\"\n  ],\n  \"weaknesses\": [\n    \"구체적인 경험이나 사례 부족\",\n    \"STAR 구조 미흡으로 답변의 깊이와 설득력 저하\",\n    \"직무와의 직접적 연계성 부족\"\n  ]\n}",
+      "total_latency_s": 0.472
+    },
+    "byte_identical_to_input": false
+  },
+  {
+    "case_id": "TC-06",
+    "sample": 2,
+    "v1_overall_minus_mean": 2.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 1.945,
+      "est_cost_usd": 0.0010728,
+      "prompt_tokens": 1830,
+      "completion_tokens": 213,
+      "validator_ms": 0.563,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [
+          {
+            "check": "overall_score_arithmetic",
+            "field": "overallScore",
+            "before": 80,
+            "after": 78,
+            "reason": "overallScore must equal the mean of the five item scores (rounded half up)"
+          }
+        ],
+        "hints": []
+      },
+      "correction_ms": 0.173,
+      "findings": [
+        {
+          "issue_type": "score_feedback_contradiction",
+          "target_field": "strengths",
+          "problematic_text": "한국 기업 문화에 부합하는 팀워크 및 조직 적응력 암시",
+          "evidence_in_evaluation": [
+            "summary",
+            "jobFit.score=80",
+            "jobFit.feedback=문제 해결과 체계적 업무 처리 능력은 대부분의 직무에서 긍정적으로 평가될 수 있는 강점입니다."
+          ],
+          "evidence_in_answer": [
+            "제 강점은 문제를 구조화하는 능력입니다. 복잡한 요구사항을 받으면 먼저 목표, 제약, 이해관계자로 나누어 정리하고, 우선순위를 정한 뒤 실행합니다. 이런 방식 덕분에 어떤 일이든 체계적으로 처리할 수 있다고 생각합니다."
+          ],
+          "reason": "ANSWER에서는 팀워크나 조직 적응력에 대한 언급이 전혀 없으므로, 이를 암시했다고 평가한 strengths 항목은 근거가 없다.",
+          "action": "remove_item",
+          "proposed_text": "",
+          "confidence": "high",
+          "applied": false,
+          "gate_result": "G3 evidence_in_evaluation not found in the evaluation"
+        }
+      ],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": true,
+      "needs_review": true,
+      "status": "needs_review",
+      "change_log": [
+        {
+          "source": "validator",
+          "field": "overallScore",
+          "issue_type": "overall_score_arithmetic",
+          "before": 80,
+          "after": 78,
+          "reason": "overallScore must equal the mean of the five item scores (rounded half up)"
+        }
+      ],
+      "final_raw": "{\n  \"overallScore\": 78,\n  \"summary\": \"지원자는 문제를 구조화하는 능력을 명확하게 제시하며, 복잡한 요구사항을 체계적으로 처리하는 방법을 논리적으로 설명하였습니다. 다만 구체적인 사례가 부족하여 구체성 및 STAR 구조 측면에서 다소 아쉬움이 있습니다. 전반적으로 논리적이고 전문적인 태도를 보이며, 한국 기업 문화에 적합한 팀워크 지향적이고 체계적인 강점 표현이 돋보입니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 85,\n      \"feedback\": \"문제를 구조화하는 논리적 접근법을 명확히 설명하여 사고의 체계성을 잘 드러냈습니다.\"\n    },\n    \"specificity\": {\n      \"score\": 70,\n      \"feedback\": \"강점에 대한 구체적인 경험이나 사례가 부족하여 다소 추상적으로 느껴집니다.\"\n    },\n    \"communication\": {\n      \"score\": 85,\n      \"feedback\": \"전문적이고 간결하며 존중하는 어투로 명확하게 의사를 전달하였습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 80,\n      \"feedback\": \"문제 해결과 체계적 업무 처리 능력은 대부분의 직무에서 긍정적으로 평가될 수 있는 강점입니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 70,\n      \"feedback\": \"STAR 구조를 따르지 않았으나, 강점 설명이 일관성 있게 진행되었으나 구체적 상황과 결과가 부족합니다.\"\n    }\n  },\n  \"strengths\": [\n    \"논리적이고 체계적인 문제 해결 능력 강조\",\n    \"명확하고 전문적인 커뮤니케이션\",\n    \"한국 기업 문화에 부합하는 팀워크 및 조직 적응력 암시\"\n  ],\n  \"weaknesses\": [\n    \"구체적인 사례나 경험 부족\",\n    \"STAR 구조 미준수로 인해 답변의 깊이와 설득력 제한\"\n  ]\n}",
+      "total_latency_s": 1.949
+    },
+    "byte_identical_to_input": false
+  },
+  {
+    "case_id": "TC-06",
+    "sample": 3,
+    "v1_overall_minus_mean": 2.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.455,
+      "est_cost_usd": 0.0007332,
+      "prompt_tokens": 1813,
+      "completion_tokens": 5,
+      "validator_ms": 0.264,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [
+          {
+            "check": "overall_score_arithmetic",
+            "field": "overallScore",
+            "before": 80,
+            "after": 78,
+            "reason": "overallScore must equal the mean of the five item scores (rounded half up)"
+          }
+        ],
+        "hints": []
+      },
+      "correction_ms": 0.087,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": true,
+      "needs_review": false,
+      "status": "corrected",
+      "change_log": [
+        {
+          "source": "validator",
+          "field": "overallScore",
+          "issue_type": "overall_score_arithmetic",
+          "before": 80,
+          "after": 78,
+          "reason": "overallScore must equal the mean of the five item scores (rounded half up)"
+        }
+      ],
+      "final_raw": "{\n  \"overallScore\": 78,\n  \"summary\": \"지원자는 문제를 구조화하는 능력을 강점으로 명확히 제시하며, 이를 체계적으로 처리하는 방법을 논리적으로 설명했습니다. 다만 구체적인 사례나 결과에 대한 언급이 없어 구체성 및 STAR 구조 측면에서 다소 아쉬움이 있습니다. 의사소통은 명확하고 전문적이며, 직무 적합성도 문제 해결과 조직 내 업무 처리에 적절한 강점으로 평가됩니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 85,\n      \"feedback\": \"복잡한 요구사항을 목표, 제약, 이해관계자로 나누어 정리하고 우선순위를 정하는 논리적 접근이 잘 드러나 있습니다.\"\n    },\n    \"specificity\": {\n      \"score\": 70,\n      \"feedback\": \"강점에 대한 구체적인 경험이나 사례가 없어 다소 추상적으로 느껴집니다.\"\n    },\n    \"communication\": {\n      \"score\": 85,\n      \"feedback\": \"전문적이고 명확하며 간결한 표현으로 의사 전달이 잘 이루어졌습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 80,\n      \"feedback\": \"문제 구조화 능력은 다양한 직무에서 요구되는 핵심 역량으로 적합성이 높습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 70,\n      \"feedback\": \"상황, 과제, 행동, 결과에 대한 구체적 서술이 부족하여 STAR 구조가 완전하지 않습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"논리적인 문제 해결 접근법 제시\",\n    \"명확하고 전문적인 의사소통\",\n    \"직무에 적합한 강점 선택\"\n  ],\n  \"weaknesses\": [\n    \"구체적인 사례나 결과 미제공\",\n    \"STAR 구조 미흡으로 답변의 깊이 부족\"\n  ]\n}",
+      "total_latency_s": 0.457
+    },
+    "byte_identical_to_input": false
+  },
+  {
+    "case_id": "TC-07",
+    "sample": 1,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.436,
+      "est_cost_usd": 0.000744,
+      "prompt_tokens": 1840,
+      "completion_tokens": 5,
+      "validator_ms": 0.396,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.061,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 48,\n  \"summary\": \"지원자는 서버 다운 문제를 해결하기 위해 Redis 도입과 팀원들과의 협의를 통해 서비스 안정화를 이뤘다고 간단히 설명하였으나, 문제의 구체적인 원인 분석과 해결 과정에 대한 상세한 설명이 부족하여 논리성과 구체성에서 낮은 평가를 받았습니다. 의사소통은 간결하나 다소 단편적이며, STAR 구조가 명확하지 않아 상황과 행동, 결과가 체계적으로 드러나지 않았습니다. 팀워크를 강조한 점은 긍정적이나, 기술적 깊이와 문제 해결 과정의 상세한 설명이 요구되는 한국 기업 문화에 부합하기에는 다소 부족한 답변입니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 50,\n      \"feedback\": \"문제 인식과 해결책 도입은 있으나, 문제의 원인 분석과 해결 과정에 대한 논리적 연결이 부족함.\"\n    },\n    \"specificity\": {\n      \"score\": 40,\n      \"feedback\": \"Redis 도입과 팀 회의 언급 외에 구체적인 기술적 내용이나 과정 설명이 부족함.\"\n    },\n    \"communication\": {\n      \"score\": 55,\n      \"feedback\": \"간결하고 명확한 표현이나, 다소 단편적이고 깊이가 부족해 전달력이 제한적임.\"\n    },\n    \"jobFit\": {\n      \"score\": 50,\n      \"feedback\": \"기술적 문제 해결과 팀워크를 언급했으나, 지원 직무에 필요한 전문성 및 문제 해결 능력에 대한 구체적 증명이 부족함.\"\n    },\n    \"starStructure\": {\n      \"score\": 45,\n      \"feedback\": \"상황과 결과는 언급되었으나, 행동과 구체적 역할이 명확하지 않아 STAR 구조가 완전하지 않음.\"\n    }\n  },\n  \"strengths\": [\n    \"팀원들과의 협의를 통해 문제를 해결하려는 협업 태도\",\n    \"간결하고 명확한 의사소통\"\n  ],\n  \"weaknesses\": [\n    \"문제의 구체적 원인과 해결 과정에 대한 상세한 설명 부족\",\n    \"STAR 구조 미흡으로 상황, 행동, 결과가 명확히 구분되지 않음\",\n    \"기술적 전문성 및 문제 해결 능력에 대한 구체적 증거 부족\"\n  ]\n}",
+      "total_latency_s": 0.439
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-07",
+    "sample": 2,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.661,
+      "est_cost_usd": 0.0007336,
+      "prompt_tokens": 1814,
+      "completion_tokens": 5,
+      "validator_ms": 0.352,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.042,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 48,\n  \"summary\": \"지원자는 서버 다운 문제를 해결하기 위해 Redis 도입과 팀원과의 회의를 통해 서비스 안정화에 성공했다고 답변하였으나, 문제의 원인 분석, 구체적인 해결 과정, 개인의 역할 및 기여도에 대한 설명이 부족하여 논리성과 구체성이 낮게 평가됨. 의사소통은 간결하나 다소 단편적이며, STAR 구조가 명확하지 않아 평가 점수가 낮음.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 50,\n      \"feedback\": \"문제 인식과 해결책 도입은 있으나, 문제의 원인 분석과 해결 과정에 대한 논리적 설명이 부족함.\"\n    },\n    \"specificity\": {\n      \"score\": 40,\n      \"feedback\": \"Redis 도입과 회의 진행이라는 구체적 행동은 있으나, 어떤 문제였는지, 어떻게 도입했는지, 회의에서 어떤 논의가 있었는지 등 세부 내용이 부족함.\"\n    },\n    \"communication\": {\n      \"score\": 55,\n      \"feedback\": \"간결하고 명확한 표현이나, 다소 단편적이고 깊이 있는 설명이 부족하여 전문성과 신뢰감 전달이 미흡함.\"\n    },\n    \"jobFit\": {\n      \"score\": 50,\n      \"feedback\": \"기술적 문제 해결과 팀 협업을 시도한 점은 긍정적이나, 지원 직무와의 직접적 연관성이나 전문성 강조가 부족함.\"\n    },\n    \"starStructure\": {\n      \"score\": 45,\n      \"feedback\": \"상황과 행동, 결과는 있으나, 역할과 구체적 행동, 문제 해결 과정의 단계별 설명이 부족하여 STAR 구조가 명확하지 않음.\"\n    }\n  },\n  \"strengths\": [\n    \"팀원과의 협업을 통한 문제 해결 시도\",\n    \"간결하고 명확한 의사소통\",\n    \"문제 해결 의지와 결과 도출\"\n  ],\n  \"weaknesses\": [\n    \"문제의 원인과 구체적 해결 과정 설명 부족\",\n    \"개인의 역할과 기여도 미흡\",\n    \"STAR 구조 미비로 논리적 흐름과 구체성 부족\"\n  ]\n}",
+      "total_latency_s": 0.664
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-07",
+    "sample": 3,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.626,
+      "est_cost_usd": 0.0007424,
+      "prompt_tokens": 1836,
+      "completion_tokens": 5,
+      "validator_ms": 0.421,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.061,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 48,\n  \"summary\": \"지원자는 서버 다운 문제를 해결하기 위해 Redis 도입과 팀 회의를 진행한 점을 언급했으나, 문제의 원인 분석, 구체적인 해결 과정, 개인의 역할과 기여도, 그리고 결과에 대한 구체적인 수치나 사례가 부족하여 답변이 다소 단편적이고 구체성이 떨어집니다. 또한 STAR 구조가 명확하지 않아 논리적 흐름과 상황 설명이 부족합니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 50,\n      \"feedback\": \"문제 해결을 위해 Redis 도입과 팀 협업을 시도한 점은 논리적이지만, 문제의 원인 분석과 해결 과정에 대한 구체적인 사고 과정이 부족합니다.\"\n    },\n    \"specificity\": {\n      \"score\": 40,\n      \"feedback\": \"서버 다운 문제와 Redis 도입만 언급되어 구체적인 기술적 내용이나 본인의 역할, 문제 해결 과정이 상세하지 않습니다.\"\n    },\n    \"communication\": {\n      \"score\": 50,\n      \"feedback\": \"간결하고 명확한 표현을 사용했으나, 답변이 다소 단편적이고 깊이가 부족해 전문적이고 논리적인 커뮤니케이션이 아쉽습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 50,\n      \"feedback\": \"기술적 문제 해결 경험을 언급했으나, 지원 직무와의 직접적인 연관성이나 전문성이 명확하게 드러나지 않습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 50,\n      \"feedback\": \"상황과 행동은 간략히 언급했으나, 구체적인 과제, 본인의 역할, 결과에 대한 설명이 부족하여 STAR 구조가 완성되지 않았습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"팀원들과 협업하여 문제를 해결하려는 태도를 보임\",\n    \"문제 해결을 위해 새로운 기술(Redis)을 도입한 점\"\n  ],\n  \"weaknesses\": [\n    \"문제의 원인과 해결 과정에 대한 구체적인 설명 부족\",\n    \"본인의 역할과 기여도가 명확하지 않음\",\n    \"결과에 대한 구체적인 성과나 수치 미제공\",\n    \"STAR 구조가 명확하지 않아 답변의 논리적 흐름이 부족\"\n  ]\n}",
+      "total_latency_s": 0.628
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-08",
+    "sample": 1,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.505,
+      "est_cost_usd": 0.0007224000000000001,
+      "prompt_tokens": 1786,
+      "completion_tokens": 5,
+      "validator_ms": 0.56,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.08,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 40,\n  \"summary\": \"지원자는 SNS 캠페인 경험을 언급하며 팀 협력과 긍정적 결과를 강조했으나, 구체적인 상황 설명과 성과 수치, 역할 및 행동에 대한 상세한 서술이 부족하여 평가가 제한적임.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 50,\n      \"feedback\": \"캠페인 진행과 팀 협력에 대한 기본적인 논리 전개는 있으나, 구체적인 문제 해결 과정이나 전략적 사고가 드러나지 않음.\"\n    },\n    \"specificity\": {\n      \"score\": 30,\n      \"feedback\": \"콘텐츠 제작 및 반응이 좋았다는 점만 언급되어 구체적인 성과 지표, 역할, 기간, 도전 과제 등이 부족함.\"\n    },\n    \"communication\": {\n      \"score\": 50,\n      \"feedback\": \"간결하고 명확한 표현을 사용했으나, 더 전문적이고 체계적인 설명이 요구됨.\"\n    },\n    \"jobFit\": {\n      \"score\": 40,\n      \"feedback\": \"마케팅 관련 경험을 언급하여 직무 연관성은 있으나, 지원 직무에 맞는 구체적 역량과 성과가 명확하지 않음.\"\n    },\n    \"starStructure\": {\n      \"score\": 30,\n      \"feedback\": \"상황, 과제, 행동, 결과 중 상황과 결과만 간략히 언급되고, 과제와 행동에 대한 구체적 설명이 부족함.\"\n    }\n  },\n  \"strengths\": [\n    \"팀원들과 협력하여 좋은 결과를 얻었다는 점을 강조함\",\n    \"마케팅에 대한 자신감을 얻었다고 표현하여 긍정적 태도를 보임\"\n  ],\n  \"weaknesses\": [\n    \"구체적인 캠페인 내용과 성과 지표가 부족함\",\n    \"지원자의 구체적 역할과 행동에 대한 설명이 미흡함\",\n    \"STAR 구조가 명확하지 않아 답변이 체계적이지 못함\",\n    \"논리적 전개와 전문성 부족으로 깊이 있는 평가 어려움\"\n  ]\n}",
+      "total_latency_s": 0.507
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-08",
+    "sample": 2,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.474,
+      "est_cost_usd": 0.0007132000000000001,
+      "prompt_tokens": 1763,
+      "completion_tokens": 5,
+      "validator_ms": 0.368,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.076,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 40,\n  \"summary\": \"지원자는 SNS 캠페인 경험을 언급하며 팀 협력과 긍정적 결과를 강조하였으나, 구체적인 상황 설명과 성과 수치, 본인의 역할 및 문제 해결 과정에 대한 상세한 설명이 부족하여 평가 기준을 충분히 충족하지 못함.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 50,\n      \"feedback\": \"캠페인 진행과 팀 협력의 결과를 간략히 언급하였으나, 구체적인 문제 해결 과정이나 논리적 전개가 부족함.\"\n    },\n    \"specificity\": {\n      \"score\": 30,\n      \"feedback\": \"콘텐츠 종류, 캠페인 목표, 성과 지표 등 구체적인 정보가 부족하여 답변이 매우 일반적임.\"\n    },\n    \"communication\": {\n      \"score\": 50,\n      \"feedback\": \"간결하고 정중한 표현을 사용하였으나, 좀 더 체계적이고 명확한 전달이 필요함.\"\n    },\n    \"jobFit\": {\n      \"score\": 40,\n      \"feedback\": \"마케팅 관련 경험을 언급하였으나, 지원 직무와의 직접적인 연관성이나 전문성 표현이 부족함.\"\n    },\n    \"starStructure\": {\n      \"score\": 30,\n      \"feedback\": \"상황(Situation)과 결과(Result)는 일부 언급되었으나, 과제(Task)와 행동(Action)에 대한 구체적 설명이 부족하여 STAR 구조가 미흡함.\"\n    }\n  },\n  \"strengths\": [\n    \"팀원들과 협력하여 좋은 결과를 얻었다고 언급함\",\n    \"마케팅에 대한 자신감을 얻었다는 긍정적 태도 표현\"\n  ],\n  \"weaknesses\": [\n    \"캠페인 구체적 내용과 성과 지표 미제공\",\n    \"본인의 역할과 행동에 대한 상세 설명 부족\",\n    \"STAR 구조 미흡으로 답변의 논리적 흐름과 설득력 부족\"\n  ]\n}",
+      "total_latency_s": 0.477
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-08",
+    "sample": 3,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.738,
+      "est_cost_usd": 0.0007144000000000001,
+      "prompt_tokens": 1766,
+      "completion_tokens": 5,
+      "validator_ms": 0.449,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.093,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 40,\n  \"summary\": \"지원자는 SNS 캠페인 경험을 간단히 언급하며 긍정적인 결과와 팀 협력을 강조했으나, 구체적인 상황, 과제, 행동, 결과에 대한 설명이 부족하여 평가 기준을 충분히 충족하지 못함.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 40,\n      \"feedback\": \"캠페인 진행과 팀 협력에 대한 기본적인 논리적 흐름은 있으나, 구체적인 문제 해결 과정이나 전략적 사고가 드러나지 않음.\"\n    },\n    \"specificity\": {\n      \"score\": 30,\n      \"feedback\": \"캠페인 내용, 구체적인 역할, 성과 수치 등 구체적인 정보가 부족하여 답변이 매우 추상적임.\"\n    },\n    \"communication\": {\n      \"score\": 50,\n      \"feedback\": \"간결하고 명확하게 의사 전달은 되었으나, 더 체계적이고 상세한 설명이 필요함.\"\n    },\n    \"jobFit\": {\n      \"score\": 40,\n      \"feedback\": \"마케팅 업무 관련 경험을 언급하였으나, 직무 역량을 충분히 드러내지 못함.\"\n    },\n    \"starStructure\": {\n      \"score\": 40,\n      \"feedback\": \"상황(S), 과제(T), 행동(A), 결과(R) 구조가 명확하지 않고, 각 요소가 구체적으로 설명되지 않음.\"\n    }\n  },\n  \"strengths\": [\n    \"팀원들과 협력하여 좋은 결과를 얻었다는 점을 언급함\",\n    \"마케팅에 대한 자신감을 얻었다고 표현하여 긍정적인 태도를 보여줌\"\n  ],\n  \"weaknesses\": [\n    \"캠페인의 구체적인 내용과 본인의 역할, 성과를 명확히 설명하지 않음\",\n    \"STAR 구조에 따른 체계적인 답변이 부족함\",\n    \"성과 지표나 구체적인 결과가 제시되지 않아 신뢰도와 설득력이 낮음\"\n  ]\n}",
+      "total_latency_s": 0.74
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-11",
+    "sample": 1,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.438,
+      "est_cost_usd": 0.0007024,
+      "prompt_tokens": 1736,
+      "completion_tokens": 5,
+      "validator_ms": 0.479,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.039,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 30,\n  \"summary\": \"지원자는 실패 경험을 간단히 언급하고 그로부터 배운 점을 짧게 표현했으나, 구체적인 상황 설명과 행동, 결과에 대한 서술이 부족하여 논리적 사고와 STAR 구조가 미흡하다. 의사소통은 기본적인 의사 전달은 되었으나 성실함과 팀워크 측면에서 깊이가 부족하며, 직무 적합성 평가도 어려운 수준이다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 30,\n      \"feedback\": \"실패 원인을 준비 부족으로 간단히 언급했으나, 구체적인 분석이나 문제 해결 과정이 부족하다.\"\n    },\n    \"specificity\": {\n      \"score\": 20,\n      \"feedback\": \"공모전 탈락이라는 경험만 언급하고, 구체적인 상황, 행동, 결과에 대한 설명이 매우 부족하다.\"\n    },\n    \"communication\": {\n      \"score\": 40,\n      \"feedback\": \"간결하고 명확한 표현이나, 깊이 있는 설명과 진정성이 다소 부족하다.\"\n    },\n    \"jobFit\": {\n      \"score\": 30,\n      \"feedback\": \"직무와 연관된 역량이나 교훈이 명확히 드러나지 않아 직무 적합성 평가가 어렵다.\"\n    },\n    \"starStructure\": {\n      \"score\": 30,\n      \"feedback\": \"상황과 결과는 언급했으나, 행동과 구체적 조치가 빠져 STAR 구조가 미흡하다.\"\n    }\n  },\n  \"strengths\": [\n    \"간결하고 명확한 의사 전달\",\n    \"실패 경험을 솔직하게 언급함\"\n  ],\n  \"weaknesses\": [\n    \"구체적인 상황 설명 부족\",\n    \"실패 원인과 대처 방안에 대한 깊이 있는 분석 부재\",\n    \"STAR 구조 미준수\",\n    \"직무와 연관된 교훈이나 성장 의지 표현 부족\"\n  ]\n}",
+      "total_latency_s": 0.44
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-11",
+    "sample": 2,
+    "v1_overall_minus_mean": 2.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.698,
+      "est_cost_usd": 0.000734,
+      "prompt_tokens": 1815,
+      "completion_tokens": 5,
+      "validator_ms": 0.463,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [
+          {
+            "check": "overall_score_arithmetic",
+            "field": "overallScore",
+            "before": 30,
+            "after": 28,
+            "reason": "overallScore must equal the mean of the five item scores (rounded half up)"
+          }
+        ],
+        "hints": []
+      },
+      "correction_ms": 0.044,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": true,
+      "needs_review": false,
+      "status": "corrected",
+      "change_log": [
+        {
+          "source": "validator",
+          "field": "overallScore",
+          "issue_type": "overall_score_arithmetic",
+          "before": 30,
+          "after": 28,
+          "reason": "overallScore must equal the mean of the five item scores (rounded half up)"
+        }
+      ],
+      "final_raw": "{\n  \"overallScore\": 28,\n  \"summary\": \"지원자의 답변은 실패 경험을 간단히 언급하였으나, 구체적인 상황 설명이나 행동, 결과에 대한 내용이 부족하여 논리적 사고와 STAR 구조가 미흡합니다. 또한, 배운 점이 매우 단순하게 표현되어 있어 깊이 있는 자기 반성과 성장 의지가 충분히 드러나지 않습니다. 의사소통은 간결하나 다소 단조롭고, 직무 적합성 측면에서도 구체적인 연결 고리가 부족합니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 30,\n      \"feedback\": \"실패 원인을 준비 부족으로 간단히 언급하였으나, 구체적인 분석이나 문제 해결 과정이 부족합니다.\"\n    },\n    \"specificity\": {\n      \"score\": 20,\n      \"feedback\": \"공모전 탈락이라는 경험만 제시하고, 구체적인 상황, 행동, 결과에 대한 설명이 전혀 없습니다.\"\n    },\n    \"communication\": {\n      \"score\": 40,\n      \"feedback\": \"간결하고 명확한 표현이나, 깊이 있는 설명과 진정성이 다소 부족합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 30,\n      \"feedback\": \"직무와의 연관성이나 실패 경험이 직무 역량 강화에 어떻게 기여했는지에 대한 연결 고리가 부족합니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 20,\n      \"feedback\": \"상황, 과제, 행동, 결과의 구조가 전혀 갖춰져 있지 않아 답변이 단편적입니다.\"\n    }\n  },\n  \"strengths\": [\n    \"간결하고 명확한 의사소통\",\n    \"실패 경험을 솔직하게 언급함\"\n  ],\n  \"weaknesses\": [\n    \"구체적인 상황 설명 부족\",\n    \"문제 해결 과정과 결과 미흡\",\n    \"자기 반성 및 배운 점이 단순하고 깊이 부족\",\n    \"STAR 구조 미준수\",\n    \"직무와의 연계성 부족\"\n  ]\n}",
+      "total_latency_s": 0.7
+    },
+    "byte_identical_to_input": false
+  },
+  {
+    "case_id": "TC-11",
+    "sample": 3,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.815,
+      "est_cost_usd": 0.0007044000000000001,
+      "prompt_tokens": 1741,
+      "completion_tokens": 5,
+      "validator_ms": 0.333,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.063,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 30,\n  \"summary\": \"지원자가 실패 경험을 간단히 언급하였으나, 구체적인 상황 설명과 행동, 결과, 배운 점에 대한 깊이 있는 서술이 부족하여 평가 기준에 미치지 못함. 논리적 사고와 STAR 구조 활용이 미흡하며, 커뮤니케이션도 단편적임.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 30,\n      \"feedback\": \"실패 원인을 준비 부족으로 간단히 언급했으나, 구체적인 문제 분석이나 해결 방안에 대한 논리적 전개가 부족함.\"\n    },\n    \"specificity\": {\n      \"score\": 20,\n      \"feedback\": \"공모전 탈락이라는 경험만 언급하고 구체적인 상황, 본인의 역할, 구체적인 행동, 결과에 대한 설명이 부족함.\"\n    },\n    \"communication\": {\n      \"score\": 40,\n      \"feedback\": \"간결하고 명확하나, 깊이 있는 설명이나 성찰이 부족하여 진정성과 전문성이 낮게 느껴짐.\"\n    },\n    \"jobFit\": {\n      \"score\": 30,\n      \"feedback\": \"실패 경험을 통해 배운 점이 단순히 '더 잘 준비해야겠다'는 다짐에 그쳐 직무 관련 역량이나 성장 의지와 연결되지 않음.\"\n    },\n    \"starStructure\": {\n      \"score\": 30,\n      \"feedback\": \"상황(Situation)과 결과(Result)가 거의 없고, 행동(Action)과 과제(Task)도 구체적으로 드러나지 않아 STAR 구조 활용이 미흡함.\"\n    }\n  },\n  \"strengths\": [\n    \"간결하고 명확한 의사 전달\",\n    \"실패 경험을 솔직하게 언급함\"\n  ],\n  \"weaknesses\": [\n    \"구체적인 상황과 행동 설명 부족\",\n    \"논리적 사고와 문제 해결 과정 미흡\",\n    \"STAR 구조 미적용\",\n    \"직무 관련 성장 의지 표현 부족\"\n  ]\n}",
+      "total_latency_s": 0.817
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-12",
+    "sample": 1,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.451,
+      "est_cost_usd": 0.0007376,
+      "prompt_tokens": 1824,
+      "completion_tokens": 5,
+      "validator_ms": 0.653,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.09,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 80,\n  \"summary\": \"지원자는 GitHub Pull Request를 활용한 코드 리뷰 경험과 이를 개선하기 위해 리뷰 체크리스트를 제안한 사례를 구체적으로 제시하였으며, 그 결과로 버그 감소라는 긍정적 변화를 언급하여 협업과 품질 관리에 대한 책임감을 잘 보여주고 있습니다. 다만, 상황과 과제에 대한 설명이 다소 간략하고, 행동과 결과 부분이 조금 더 구체적으로 서술되면 좋겠습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 85,\n      \"feedback\": \"문제 인식과 해결 방안을 논리적으로 제시하였으며, 결과까지 연결하여 설명하였습니다.\"\n    },\n    \"specificity\": {\n      \"score\": 75,\n      \"feedback\": \"리뷰 체크리스트 제안과 버그 감소라는 구체적 사례는 있으나, 상황과 과제에 대한 배경 설명이 다소 부족합니다.\"\n    },\n    \"communication\": {\n      \"score\": 80,\n      \"feedback\": \"간결하고 명확한 표현으로 협업 경험을 전달하였으며, 전문적이고 성실한 태도가 드러납니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 80,\n      \"feedback\": \"코드 리뷰 문화 개선과 협업 도구 활용 경험이 개발 직무에 적합하며, 팀워크와 품질 관리 역량을 잘 보여줍니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 80,\n      \"feedback\": \"상황, 행동, 결과는 포함되어 있으나, 상황과 과제 부분이 좀 더 구체적이면 STAR 구조가 더 명확해질 것입니다.\"\n    }\n  },\n  \"strengths\": [\n    \"코드 리뷰 개선을 위한 적극적인 제안과 실행 경험\",\n    \"협업 도구(GitHub Pull Request) 활용 능력\",\n    \"버그 감소라는 구체적 성과 제시\",\n    \"명확하고 간결한 의사소통\"\n  ],\n  \"weaknesses\": [\n    \"상황과 과제에 대한 구체적 설명 부족\",\n    \"행동과 결과 부분에서 더 상세한 내용이 필요\",\n    \"STAR 구조가 완전하게 드러나지 않음\"\n  ]\n}",
+      "total_latency_s": 0.454
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-12",
+    "sample": 2,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.673,
+      "est_cost_usd": 0.0007372,
+      "prompt_tokens": 1823,
+      "completion_tokens": 5,
+      "validator_ms": 0.458,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.062,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 80,\n  \"summary\": \"지원자는 GitHub Pull Request를 활용한 코드 리뷰 경험을 구체적으로 언급하며, 리뷰 프로세스 개선을 위해 체크리스트를 제안한 사례를 통해 문제 인식과 해결 노력을 보여주고 있습니다. 또한, 개선 결과로 버그 감소를 체감한 점을 언급하여 성과를 명확히 전달하였습니다. 다만, 상황과 역할에 대한 설명이 다소 간략하고, 커뮤니케이션 방식에 대한 구체적인 언급이 부족하여 완전한 STAR 구조를 갖추지 못한 점이 아쉽습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 85,\n      \"feedback\": \"문제 인식부터 해결책 제안, 결과 도출까지 논리적인 흐름이 잘 드러나 있습니다.\"\n    },\n    \"specificity\": {\n      \"score\": 75,\n      \"feedback\": \"GitHub Pull Request와 체크리스트 제안, 버그 감소라는 구체적인 사례를 제시했으나 상황과 역할에 대한 상세 설명이 부족합니다.\"\n    },\n    \"communication\": {\n      \"score\": 80,\n      \"feedback\": \"명확하고 간결하게 의사 전달이 이루어졌으며, 협업과 팀 내 소통을 중시하는 태도가 드러납니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 80,\n      \"feedback\": \"코드 리뷰 문화 개선 경험은 개발 직무에 적합하며, 팀워크와 품질 관리에 대한 책임감을 보여줍니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 80,\n      \"feedback\": \"상황, 과제, 행동, 결과가 포함되어 있으나 상황과 역할 설명이 좀 더 구체적이면 좋겠습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"코드 리뷰 프로세스 개선을 위한 주도적 행동\",\n    \"구체적인 도구(GitHub Pull Request) 활용 경험\",\n    \"성과(버그 감소) 명확히 제시\"\n  ],\n  \"weaknesses\": [\n    \"상황과 자신의 역할에 대한 구체적 설명 부족\",\n    \"커뮤니케이션 과정에 대한 상세한 언급 미흡\",\n    \"STAR 구조가 다소 간략함\"\n  ]\n}",
+      "total_latency_s": 0.676
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-12",
+    "sample": 3,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.506,
+      "est_cost_usd": 0.0007292,
+      "prompt_tokens": 1803,
+      "completion_tokens": 5,
+      "validator_ms": 0.386,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.044,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 78,\n  \"summary\": \"지원자는 GitHub Pull Request를 활용한 코드 리뷰 경험과 그 과정에서의 문제 인식 및 개선 활동을 구체적으로 언급하였으며, 이를 통해 팀 내 코드 품질 향상에 기여한 점을 잘 설명하였습니다. 다만 상황과 과제에 대한 설명이 다소 간략하고, 행동과 결과 부분도 조금 더 구체적이면 좋았을 것으로 보입니다. 전반적으로 논리적이며 협업과 품질 관리에 적합한 태도를 보여주고 있습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 80,\n      \"feedback\": \"코드 리뷰 과정에서 문제를 인식하고 체크리스트를 만들어 개선한 점이 논리적으로 잘 연결되어 있음.\"\n    },\n    \"specificity\": {\n      \"score\": 70,\n      \"feedback\": \"GitHub Pull Request와 체크리스트 작성, 버그 감소라는 구체적 사례는 있으나 상황과 과제에 대한 설명이 다소 부족함.\"\n    },\n    \"communication\": {\n      \"score\": 80,\n      \"feedback\": \"간결하고 명확하게 자신의 경험을 전달하였으며, 팀에 제안하는 과정에서 협력적인 태도가 드러남.\"\n    },\n    \"jobFit\": {\n      \"score\": 80,\n      \"feedback\": \"협업 도구 사용과 코드 리뷰 문화 개선 경험이 개발 직무에 적합하며, 품질 관리에 대한 책임감이 느껴짐.\"\n    },\n    \"starStructure\": {\n      \"score\": 80,\n      \"feedback\": \"상황, 행동, 결과는 포함되어 있으나 상황과 과제 부분이 다소 간략하여 STAR 구조가 완벽하지는 않음.\"\n    }\n  },\n  \"strengths\": [\n    \"코드 리뷰 과정에서 문제를 발견하고 개선책을 제안한 점\",\n    \"팀 내 협업과 품질 향상에 기여한 경험\",\n    \"명확하고 간결한 의사소통\"\n  ],\n  \"weaknesses\": [\n    \"상황과 과제에 대한 구체적 설명 부족\",\n    \"행동과 결과에 대한 더 상세한 서술 필요\"\n  ]\n}",
+      "total_latency_s": 0.508
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-13",
+    "sample": 1,
+    "v1_overall_minus_mean": 1.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.562,
+      "est_cost_usd": 0.0007624000000000001,
+      "prompt_tokens": 1886,
+      "completion_tokens": 5,
+      "validator_ms": 0.334,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [
+          {
+            "check": "overall_score_arithmetic",
+            "field": "overallScore",
+            "before": 68,
+            "after": 67,
+            "reason": "overallScore must equal the mean of the five item scores (rounded half up)"
+          }
+        ],
+        "hints": []
+      },
+      "correction_ms": 0.075,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": true,
+      "needs_review": false,
+      "status": "corrected",
+      "change_log": [
+        {
+          "source": "validator",
+          "field": "overallScore",
+          "issue_type": "overall_score_arithmetic",
+          "before": 68,
+          "after": 67,
+          "reason": "overallScore must equal the mean of the five item scores (rounded half up)"
+        }
+      ],
+      "final_raw": "{\n  \"overallScore\": 67,\n  \"summary\": \"지원자는 학교 프로젝트에서 데이터 파이프라인을 구축한 경험을 간결하게 설명하였으며, 중복 데이터 문제를 인식하고 해결한 점에서 논리적 사고와 문제 해결 능력을 보여주었다. 다만, 구체적인 역할 분담, 사용한 기술 스택의 상세 내용, 프로젝트 결과 및 협업 과정에 대한 설명이 부족하여 전반적인 이해와 직무 적합성 평가에 한계가 있다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 75,\n      \"feedback\": \"중복 데이터 문제를 인지하고 이를 해결하기 위한 중복 제거 단계를 추가한 점에서 문제 해결 능력이 드러났다.\"\n    },\n    \"specificity\": {\n      \"score\": 60,\n      \"feedback\": \"Python과 MySQL 사용은 언급되었으나, 데이터 파이프라인의 구체적인 구조, 데이터 규모, 프로젝트 결과에 대한 구체적 수치나 성과가 부족하다.\"\n    },\n    \"communication\": {\n      \"score\": 70,\n      \"feedback\": \"간결하고 명확한 표현으로 의사 전달은 원활하나, 보다 상세한 설명과 협업 관련 언급이 추가되면 더 좋을 것이다.\"\n    },\n    \"jobFit\": {\n      \"score\": 65,\n      \"feedback\": \"데이터 파이프라인 구축 경험은 직무와 연관성이 있으나, 실제 업무 환경에서 요구하는 복잡한 파이프라인 설계 및 협업 경험에 대한 언급이 부족하다.\"\n    },\n    \"starStructure\": {\n      \"score\": 65,\n      \"feedback\": \"상황과 과제, 행동은 일부 설명되었으나 결과에 대한 구체적 언급이 없어 STAR 구조가 완전하지 않다.\"\n    }\n  },\n  \"strengths\": [\n    \"문제 해결을 위해 중복 제거 단계를 추가한 점에서 논리적 사고가 돋보임\",\n    \"간결하고 명확한 의사 전달\"\n  ],\n  \"weaknesses\": [\n    \"프로젝트 결과 및 성과에 대한 구체적 설명 부족\",\n    \"협업 과정 및 역할 분담에 대한 언급 미흡\",\n    \"STAR 구조 중 결과 부분이 부족하여 경험의 완성도가 낮음\"\n  ]\n}",
+      "total_latency_s": 0.564
+    },
+    "byte_identical_to_input": false
+  },
+  {
+    "case_id": "TC-13",
+    "sample": 2,
+    "v1_overall_minus_mean": 1.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.443,
+      "est_cost_usd": 0.0007468,
+      "prompt_tokens": 1847,
+      "completion_tokens": 5,
+      "validator_ms": 0.433,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [
+          {
+            "check": "overall_score_arithmetic",
+            "field": "overallScore",
+            "before": 68,
+            "after": 67,
+            "reason": "overallScore must equal the mean of the five item scores (rounded half up)"
+          }
+        ],
+        "hints": []
+      },
+      "correction_ms": 0.098,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": true,
+      "needs_review": false,
+      "status": "corrected",
+      "change_log": [
+        {
+          "source": "validator",
+          "field": "overallScore",
+          "issue_type": "overall_score_arithmetic",
+          "before": 68,
+          "after": 67,
+          "reason": "overallScore must equal the mean of the five item scores (rounded half up)"
+        }
+      ],
+      "final_raw": "{\n  \"overallScore\": 67,\n  \"summary\": \"지원자는 학교 프로젝트에서 데이터 파이프라인을 구축하고 중복 데이터 문제를 해결한 경험을 간략히 설명하였습니다. 문제 인식과 개선 조치를 언급하였으나, 구체적인 역할, 사용 기술의 상세 내용, 협업 과정, 결과 및 영향에 대한 설명이 부족하여 다소 아쉬운 답변입니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 70,\n      \"feedback\": \"문제 발생과 해결 과정을 논리적으로 설명하였으나, 문제 해결의 구체적 방법이나 판단 근거가 부족합니다.\"\n    },\n    \"specificity\": {\n      \"score\": 60,\n      \"feedback\": \"Python과 MySQL 사용, 중복 제거 단계 추가 등 일부 구체적 내용이 있으나, 프로젝트 규모, 데이터 종류, 처리량, 성과 등 상세 정보가 부족합니다.\"\n    },\n    \"communication\": {\n      \"score\": 70,\n      \"feedback\": \"간결하고 명확하게 전달하였으며, 전문적인 어투를 유지하였으나, 좀 더 체계적인 설명과 연결이 필요합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 70,\n      \"feedback\": \"데이터 파이프라인 구축 경험이 있어 직무 관련성이 있으나, 실무 수준의 깊이와 협업 경험에 대한 언급이 부족합니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 65,\n      \"feedback\": \"상황과 과제, 행동은 간략히 제시되었으나 결과에 대한 언급이 없어 STAR 구조가 완전하지 않습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"문제 인식과 개선 조치를 명확히 제시함\",\n    \"기본적인 데이터 파이프라인 구축 경험 보유\",\n    \"간결하고 전문적인 커뮤니케이션\"\n  ],\n  \"weaknesses\": [\n    \"프로젝트의 구체적 상황과 역할 설명 부족\",\n    \"성과 및 결과에 대한 언급 부재\",\n    \"협업 및 팀 내 역할에 대한 설명 미흡\"\n  ]\n}",
+      "total_latency_s": 0.445
+    },
+    "byte_identical_to_input": false
+  },
+  {
+    "case_id": "TC-13",
+    "sample": 3,
+    "v1_overall_minus_mean": 2.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.638,
+      "est_cost_usd": 0.000802,
+      "prompt_tokens": 1985,
+      "completion_tokens": 5,
+      "validator_ms": 0.791,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [
+          {
+            "check": "overall_score_arithmetic",
+            "field": "overallScore",
+            "before": 68,
+            "after": 66,
+            "reason": "overallScore must equal the mean of the five item scores (rounded half up)"
+          }
+        ],
+        "hints": []
+      },
+      "correction_ms": 0.068,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": true,
+      "needs_review": false,
+      "status": "corrected",
+      "change_log": [
+        {
+          "source": "validator",
+          "field": "overallScore",
+          "issue_type": "overall_score_arithmetic",
+          "before": 68,
+          "after": 66,
+          "reason": "overallScore must equal the mean of the five item scores (rounded half up)"
+        }
+      ],
+      "final_raw": "{\n  \"overallScore\": 66,\n  \"summary\": \"지원자는 학교 프로젝트에서 데이터 파이프라인을 구축하고 중복 데이터 문제를 해결한 경험을 간략하게 설명하였으며, 기본적인 문제 해결 능력과 기술적 이해를 보여주었다. 다만, 구체적인 역할 분담, 사용한 기술 스택의 상세 내용, 프로젝트 결과 및 협업 과정에 대한 언급이 부족하여 완전한 STAR 구조를 이루지 못했고, 직무 적합성 및 커뮤니케이션 측면에서 아쉬움이 있다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 70,\n      \"feedback\": \"중복 데이터 문제를 인지하고 이를 해결하기 위한 단계를 추가한 점에서 논리적인 문제 해결 과정을 보여주었으나, 문제 발생 원인 분석이나 대안 검토 과정이 구체적으로 언급되지 않아 다소 단순하게 느껴진다.\"\n    },\n    \"specificity\": {\n      \"score\": 60,\n      \"feedback\": \"Python 스크립트와 MySQL 사용, 중복 제거 단계 추가 등 일부 구체적인 기술적 내용이 있으나, 프로젝트 규모, 데이터 종류, 처리량, 성과 등 구체적인 수치나 상세 내용이 부족하다.\"\n    },\n    \"communication\": {\n      \"score\": 70,\n      \"feedback\": \"간결하고 명확하게 답변하였으며, 전문적인 어투를 유지하였으나, 협업 과정이나 의사소통 방식에 대한 언급이 없어 팀워크 측면에서 아쉬움이 있다.\"\n    },\n    \"jobFit\": {\n      \"score\": 65,\n      \"feedback\": \"데이터 파이프라인 구축 경험이 있으나, 직무에서 요구하는 복잡한 문제 해결 능력이나 대규모 데이터 처리 경험에 대한 언급이 부족해 직무 적합성 평가에 한계가 있다.\"\n    },\n    \"starStructure\": {\n      \"score\": 65,\n      \"feedback\": \"상황과 작업(Task), 행동(Action)은 간략히 언급되었으나 결과(Result)에 대한 설명이 없어 STAR 구조가 완전하지 않다.\"\n    }\n  },\n  \"strengths\": [\n    \"문제 발생 후 중복 제거 단계 추가로 개선한 점에서 문제 해결 능력 확인\",\n    \"기본적인 데이터 파이프라인 구축 경험 보유\",\n    \"명확하고 간결한 의사 전달\"\n  ],\n  \"weaknesses\": [\n    \"프로젝트 결과 및 성과에 대한 구체적인 설명 부족\",\n    \"협업 과정 및 역할 분담에 대한 언급 미흡\",\n    \"STAR 구조 중 결과 부분이 빠져 있어 답변 완성도 저하\",\n    \"직무 관련 심화 경험이나 기술 스택에 대한 상세 설명 부족\"\n  ]\n}",
+      "total_latency_s": 0.641
+    },
+    "byte_identical_to_input": false
+  },
+  {
+    "case_id": "TC-14",
+    "sample": 1,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.685,
+      "est_cost_usd": 0.0007032000000000001,
+      "prompt_tokens": 1738,
+      "completion_tokens": 5,
+      "validator_ms": 0.333,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.08,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 40,\n  \"summary\": \"지원자는 프로젝트에서 맡은 역할과 기여를 간략히 언급했으나, 구체적인 상황 설명과 문제 해결 과정, 결과에 대한 상세한 설명이 부족하여 평가 기준을 충분히 충족하지 못함. 의사소통은 기본적인 전달은 되었으나, 논리적 전개와 팀 내 협업에 대한 언급이 미흡함.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 40,\n      \"feedback\": \"역할과 결과를 간단히 언급했으나, 과정과 문제 해결에 대한 논리적 설명이 부족함.\"\n    },\n    \"specificity\": {\n      \"score\": 30,\n      \"feedback\": \"회원 기능과 주문 기능 개발을 맡았다고만 했으며, 구체적인 기여 내용이나 기술적 세부사항이 부족함.\"\n    },\n    \"communication\": {\n      \"score\": 50,\n      \"feedback\": \"간결하고 명확한 표현이지만, 좀 더 체계적이고 상세한 설명이 필요함.\"\n    },\n    \"jobFit\": {\n      \"score\": 50,\n      \"feedback\": \"백엔드 개발 역할에 부합하는 업무를 수행했으나, 전문성과 책임감에 대한 구체적 언급이 부족함.\"\n    },\n    \"starStructure\": {\n      \"score\": 30,\n      \"feedback\": \"상황(S)과 역할(T)은 언급했으나, 행동(A)과 결과(R)에 대한 구체적 설명이 부족하여 STAR 구조가 미흡함.\"\n    }\n  },\n  \"strengths\": [\n    \"프로젝트에서 맡은 역할을 명확히 제시함\",\n    \"간결하고 명확한 의사소통\"\n  ],\n  \"weaknesses\": [\n    \"구체적인 업무 내용과 기여도가 부족함\",\n    \"문제 해결 과정 및 팀 내 협업에 대한 언급 부족\",\n    \"STAR 구조에 맞춘 체계적인 답변 미흡\"\n  ]\n}",
+      "total_latency_s": 0.687
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-14",
+    "sample": 2,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.544,
+      "est_cost_usd": 0.0007076000000000001,
+      "prompt_tokens": 1749,
+      "completion_tokens": 5,
+      "validator_ms": 0.634,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.059,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 40,\n  \"summary\": \"지원자는 프로젝트에서 맡은 역할과 기여를 간단히 언급했으나, 구체적인 상황 설명과 문제 해결 과정, 결과에 대한 상세한 설명이 부족하여 평가 기준을 충분히 충족하지 못함.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 40,\n      \"feedback\": \"역할과 기여를 간단히 나열했으나, 논리적인 흐름이나 문제 해결 과정에 대한 설명이 부족함.\"\n    },\n    \"specificity\": {\n      \"score\": 30,\n      \"feedback\": \"회원 기능과 주문 기능 개발을 언급했으나, 구체적으로 어떤 기술을 사용했는지, 어떤 어려움을 겪었는지에 대한 내용이 없음.\"\n    },\n    \"communication\": {\n      \"score\": 50,\n      \"feedback\": \"간결하고 명확하게 의사 전달은 되었으나, 좀 더 성실하고 협업적인 태도가 드러나는 표현이 부족함.\"\n    },\n    \"jobFit\": {\n      \"score\": 40,\n      \"feedback\": \"백엔드 역할 수행을 언급했으나, 지원 직무와의 연관성이나 전문성이 드러나지 않아 직무 적합성 평가가 제한적임.\"\n    },\n    \"starStructure\": {\n      \"score\": 40,\n      \"feedback\": \"상황(S)과 역할(T)은 언급했으나, 구체적인 행동(A)과 결과(R)에 대한 설명이 매우 부족함.\"\n    }\n  },\n  \"strengths\": [\n    \"프로젝트에서 맡은 역할을 명확히 언급함\",\n    \"간결하고 명확한 의사 전달\"\n  ],\n  \"weaknesses\": [\n    \"구체적인 업무 내용과 기술적 기여에 대한 설명 부족\",\n    \"프로젝트 진행 중 문제 해결 과정이나 팀 내 협업에 대한 언급 부족\",\n    \"STAR 구조 중 행동과 결과 부분이 미흡함\",\n    \"지원 직무와의 연관성 및 전문성 표현 부족\"\n  ]\n}",
+      "total_latency_s": 0.546
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-14",
+    "sample": 3,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.449,
+      "est_cost_usd": 0.00074,
+      "prompt_tokens": 1830,
+      "completion_tokens": 5,
+      "validator_ms": 0.509,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.092,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 40,\n  \"summary\": \"지원자는 프로젝트에서 맡은 역할과 기여를 간단히 언급하였으나, 구체적인 상황 설명이나 문제 해결 과정, 팀 내 협업 내용이 부족하여 평가 기준을 충분히 충족하지 못함. 답변이 매우 간결하고 구체성이 떨어지며, STAR 구조가 미흡하여 논리적 사고와 커뮤니케이션 측면에서도 아쉬움이 있음.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 40,\n      \"feedback\": \"역할과 결과를 간단히 언급했으나, 문제 해결 과정이나 의사결정 과정에 대한 설명이 없어 논리적 사고를 충분히 보여주지 못함.\"\n    },\n    \"specificity\": {\n      \"score\": 30,\n      \"feedback\": \"회원 기능과 주문 기능 개발이라는 역할만 언급했으며, 구체적인 기여 내용이나 프로젝트 규모, 사용 기술 등에 대한 상세한 설명이 부족함.\"\n    },\n    \"communication\": {\n      \"score\": 50,\n      \"feedback\": \"간결하고 명확한 표현을 사용하였으나, 좀 더 자세하고 체계적인 설명이 필요하며, 팀 내 협업이나 소통에 관한 내용이 포함되지 않아 아쉬움.\"\n    },\n    \"jobFit\": {\n      \"score\": 40,\n      \"feedback\": \"백엔드 역할을 수행한 점은 직무와 연관성이 있으나, 기여도와 책임감, 문제 해결 능력에 대한 구체적 근거가 부족하여 직무 적합성을 충분히 입증하지 못함.\"\n    },\n    \"starStructure\": {\n      \"score\": 40,\n      \"feedback\": \"상황(Situation)과 역할(Task)은 간략히 언급하였으나, 구체적인 행동(Action)과 결과(Result)에 대한 설명이 부족하여 STAR 구조가 미흡함.\"\n    }\n  },\n  \"strengths\": [\n    \"프로젝트에서 백엔드 역할을 수행한 점을 명확히 언급함\",\n    \"간결하고 명확한 의사 전달\"\n  ],\n  \"weaknesses\": [\n    \"구체적인 상황과 행동에 대한 설명 부족\",\n    \"팀워크 및 협업 관련 내용 미흡\",\n    \"문제 해결 과정과 기여도에 대한 상세한 언급 부족\",\n    \"STAR 구조 미흡으로 논리적이고 체계적인 답변 아쉬움\"\n  ]\n}",
+      "total_latency_s": 0.452
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-15",
+    "sample": 1,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.453,
+      "est_cost_usd": 0.0006992000000000001,
+      "prompt_tokens": 1728,
+      "completion_tokens": 5,
+      "validator_ms": 0.343,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.09,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 40,\n  \"summary\": \"지원자는 동아리 회장으로서 축제 부스를 운영한 경험을 간단히 언급했으나, 리더십 발휘 과정에 대한 구체적인 설명이나 문제 해결, 의사소통 방식 등이 부족하여 평가 기준에 미흡함.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 50,\n      \"feedback\": \"경험의 흐름은 이해되나 리더십 발휘 과정에서의 논리적 사고나 문제 해결 과정이 부족함.\"\n    },\n    \"specificity\": {\n      \"score\": 30,\n      \"feedback\": \"구체적인 상황, 역할, 행동, 결과에 대한 설명이 매우 부족하여 경험의 깊이를 알기 어려움.\"\n    },\n    \"communication\": {\n      \"score\": 40,\n      \"feedback\": \"간결하고 명료하나, 전문적이고 진솔한 어조가 부족하며, 팀워크 강조는 긍정적임.\"\n    },\n    \"jobFit\": {\n      \"score\": 40,\n      \"feedback\": \"리더십 경험을 언급했으나 지원 직무와의 연관성이나 리더십 역량을 보여주는 구체적 사례가 부족함.\"\n    },\n    \"starStructure\": {\n      \"score\": 40,\n      \"feedback\": \"상황과 결과는 언급되었으나, 과제, 행동 부분이 부족하여 STAR 구조가 완성되지 않음.\"\n    }\n  },\n  \"strengths\": [\n    \"팀워크를 강조하며 긍정적인 결과를 도출한 경험을 언급함\",\n    \"간결하고 명확하게 답변함\"\n  ],\n  \"weaknesses\": [\n    \"리더십 발휘 과정에 대한 구체적이고 상세한 설명 부족\",\n    \"문제 해결이나 의사소통 방식에 대한 언급이 없음\",\n    \"STAR 구조가 미흡하여 답변의 완성도가 낮음\"\n  ]\n}",
+      "total_latency_s": 0.455
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-15",
+    "sample": 2,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.48,
+      "est_cost_usd": 0.0007524000000000001,
+      "prompt_tokens": 1861,
+      "completion_tokens": 5,
+      "validator_ms": 0.535,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.068,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 40,\n  \"summary\": \"지원자는 동아리 회장으로서 축제 부스 운영 경험을 통해 리더십을 발휘했다고 답변하였으나, 구체적인 상황 설명과 본인의 역할, 문제 해결 과정, 결과에 대한 상세한 설명이 부족하여 리더십 역량을 충분히 평가하기 어렵습니다. 답변은 간결하고 긍정적이지만, STAR 구조가 미흡하며 논리적 사고와 구체성, 직무 적합성 측면에서 아쉬움이 있습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 50,\n      \"feedback\": \"팀워크가 좋아서 부스가 성공했다는 점을 언급했으나, 구체적인 리더십 행동이나 문제 해결 과정이 부족해 논리적 전개가 미흡합니다.\"\n    },\n    \"specificity\": {\n      \"score\": 30,\n      \"feedback\": \"동아리 회장이라는 역할과 축제 부스 운영 경험만 언급했을 뿐, 구체적인 상황, 본인의 구체적 행동, 도전 과제, 성과 수치 등이 부족합니다.\"\n    },\n    \"communication\": {\n      \"score\": 50,\n      \"feedback\": \"간결하고 명확하게 전달하였으나, 좀 더 진솔하고 자세한 설명이 필요하며, 한국 면접 문화에서 기대하는 존중과 협업 강조는 있으나 깊이가 부족합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 40,\n      \"feedback\": \"리더십 경험을 언급했으나, 지원 직무와의 연계성이나 직무 관련 역량 발휘에 대한 설명이 없어 직무 적합성 평가가 어렵습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 30,\n      \"feedback\": \"상황(S)과 결과(R)는 간략히 언급되었으나, 과제(T)와 행동(A)에 대한 구체적 설명이 없어 STAR 구조가 미흡합니다.\"\n    }\n  },\n  \"strengths\": [\n    \"간결하고 명확한 의사 전달\",\n    \"팀워크와 협업을 강조함\",\n    \"리더십 경험(동아리 회장) 보유\"\n  ],\n  \"weaknesses\": [\n    \"구체적인 리더십 행동과 문제 해결 과정 미흡\",\n    \"STAR 구조에 맞는 상세한 설명 부족\",\n    \"지원 직무와의 연계성 및 직무 적합성 설명 부족\",\n    \"결과에 대한 구체적 성과 지표 부재\"\n  ]\n}",
+      "total_latency_s": 0.483
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-15",
+    "sample": 3,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.504,
+      "est_cost_usd": 0.0007296000000000001,
+      "prompt_tokens": 1804,
+      "completion_tokens": 5,
+      "validator_ms": 0.511,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.09,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 40,\n  \"summary\": \"지원자는 동아리 회장으로서 축제 부스를 운영한 경험을 간단히 언급했으나, 구체적인 상황 설명과 본인의 리더십 행동, 문제 해결 과정, 결과에 대한 상세한 설명이 부족합니다. 의사소통과 팀워크에 대한 긍정적인 언급은 있으나, 답변이 매우 간결하여 깊이 있는 평가가 어렵습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 50,\n      \"feedback\": \"경험의 흐름은 이해 가능하나, 리더십을 발휘한 구체적인 논리적 과정이나 판단 근거가 부족합니다.\"\n    },\n    \"specificity\": {\n      \"score\": 30,\n      \"feedback\": \"동아리 회장 역할과 축제 부스 운영이라는 경험은 제시했으나, 구체적인 행동, 도전 과제, 본인의 기여도 등이 매우 부족합니다.\"\n    },\n    \"communication\": {\n      \"score\": 50,\n      \"feedback\": \"간결하고 명확한 표현이나, 좀 더 상세하고 체계적인 설명이 필요합니다. 존중하는 태도는 보이나 깊이가 부족합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 40,\n      \"feedback\": \"리더십 경험을 언급했으나, 지원 직무와의 연계성이나 직무 관련 역량과의 연결 고리가 명확하지 않습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 30,\n      \"feedback\": \"상황(Situation)과 결과(Result)만 간략히 언급되어 있으며, 과제(Task)와 행동(Action)에 대한 설명이 부족하여 STAR 구조가 미흡합니다.\"\n    }\n  },\n  \"strengths\": [\n    \"간결하고 명확한 의사소통\",\n    \"팀워크와 협력에 대한 긍정적인 언급\",\n    \"리더십 경험을 직접적으로 언급함\"\n  ],\n  \"weaknesses\": [\n    \"구체적인 상황과 행동에 대한 설명 부족\",\n    \"문제 해결 과정과 본인의 역할에 대한 상세한 언급 미흡\",\n    \"STAR 구조 미준수로 답변의 체계성 부족\",\n    \"지원 직무와의 연계성 부족\"\n  ]\n}",
+      "total_latency_s": 0.507
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-16",
+    "sample": 1,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.51,
+      "est_cost_usd": 0.0007588000000000001,
+      "prompt_tokens": 1877,
+      "completion_tokens": 5,
+      "validator_ms": 0.713,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.073,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 60,\n  \"summary\": \"지원자는 휴대폰 매장에서 판매 목표를 달성하기 위해 고객에게 맞춤 요금제를 추천하는 노력을 했다고 답변하였으며, 목표 달성 및 상사의 칭찬을 받은 점을 언급했습니다. 그러나 답변이 다소 단순하고 구체적인 상황 설명이나 어려움 극복 과정, 협업 요소가 부족하여 깊이 있는 평가에는 한계가 있습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 65,\n      \"feedback\": \"목표 달성을 위해 고객에게 적극적으로 다가가 맞춤형 제안을 한 점은 논리적인 접근으로 보이나, 구체적인 계획 수립이나 문제 해결 과정에 대한 설명이 부족합니다.\"\n    },\n    \"specificity\": {\n      \"score\": 55,\n      \"feedback\": \"판매 목표 달성 경험을 간단히 언급했으나, 목표 수치, 기간, 구체적인 행동과 결과에 대한 상세한 설명이 부족합니다.\"\n    },\n    \"communication\": {\n      \"score\": 65,\n      \"feedback\": \"간결하고 명확하게 의사 전달을 하였으며, 존중하는 어투를 사용하였으나, 좀 더 체계적이고 자세한 설명이 아쉽습니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 60,\n      \"feedback\": \"판매 및 고객 응대 업무에 적합한 태도를 보이나, 협업 경험이나 문제 해결 능력에 대한 언급이 부족해 직무 적합성 평가가 제한적입니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 55,\n      \"feedback\": \"상황과 행동, 결과는 간략히 제시되었으나, 과제(목표) 설정과 구체적인 행동 과정, 어려움 극복 부분이 명확하지 않아 STAR 구조가 완전하지 않습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"목표 달성을 위해 고객에게 적극적으로 다가가는 태도\",\n    \"간결하고 명확한 의사 전달\",\n    \"목표 달성 후 상사의 칭찬을 받았다는 긍정적 결과 언급\"\n  ],\n  \"weaknesses\": [\n    \"구체적인 목표 수치나 기간, 행동 과정에 대한 상세 설명 부족\",\n    \"문제 해결 과정이나 어려움 극복 경험 미흡\",\n    \"협업 경험이나 팀워크 관련 내용 부재\",\n    \"STAR 구조가 완전하지 않아 답변의 깊이와 설득력 부족\"\n  ]\n}",
+      "total_latency_s": 0.512
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-16",
+    "sample": 2,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.469,
+      "est_cost_usd": 0.0007336,
+      "prompt_tokens": 1814,
+      "completion_tokens": 5,
+      "validator_ms": 0.424,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.101,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 60,\n  \"summary\": \"지원자는 휴대폰 매장에서 판매 목표를 달성하기 위해 고객에게 맞춤 요금제를 추천하는 노력을 통해 목표를 달성한 경험을 간단히 설명했습니다. 다만, 구체적인 상황 설명과 행동, 결과에 대한 상세한 내용이 부족하고, STAR 구조가 명확하지 않아 평가가 제한적입니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 65,\n      \"feedback\": \"목표 달성을 위해 고객에게 먼저 다가가 맞춤형 제안을 하는 논리적 접근을 보였으나, 구체적인 계획이나 문제 해결 과정이 부족합니다.\"\n    },\n    \"specificity\": {\n      \"score\": 55,\n      \"feedback\": \"월 판매 목표 달성이라는 구체적인 목표는 있으나, 목표 수치, 기간, 구체적 행동과 결과에 대한 수치적 데이터가 부족합니다.\"\n    },\n    \"communication\": {\n      \"score\": 65,\n      \"feedback\": \"간결하고 명확하게 의사 전달을 하였으며, 존중하는 어투를 사용했으나, 더 체계적인 설명이 필요합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 60,\n      \"feedback\": \"판매직무와 관련된 경험을 제시하여 직무 적합성이 있으나, 팀워크나 협업 측면에 대한 언급이 없어 아쉬움이 있습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 55,\n      \"feedback\": \"상황과 행동, 결과는 언급되었으나, 구체적 상황 설명과 행동의 세부 과정, 결과의 구체적 영향이 부족해 STAR 구조가 완전하지 않습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"목표 달성을 위한 적극적인 고객 접근과 맞춤형 제안 시도\",\n    \"간결하고 명확한 의사소통\",\n    \"판매 경험을 통해 직무 관련성을 보여줌\"\n  ],\n  \"weaknesses\": [\n    \"구체적인 수치와 상황 설명 부족\",\n    \"STAR 구조가 명확하지 않아 면접관이 이해하기 어려움\",\n    \"팀워크나 협업 경험에 대한 언급 부재\"\n  ]\n}",
+      "total_latency_s": 0.472
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-16",
+    "sample": 3,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.603,
+      "est_cost_usd": 0.000748,
+      "prompt_tokens": 1850,
+      "completion_tokens": 5,
+      "validator_ms": 0.603,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.082,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 60,\n  \"summary\": \"지원자는 휴대폰 매장에서 월 판매 목표를 달성하기 위해 고객에게 맞춤 요금제를 추천하는 방식으로 노력한 경험을 간단히 설명했습니다. 목표 달성 결과와 상사의 칭찬을 언급하여 긍정적인 결과를 보여주었으나, 구체적인 상황 설명과 과정, 어려움 극복 방법 등 상세한 내용이 부족하여 면접관이 지원자의 문제 해결 능력과 자기 주도성을 충분히 파악하기 어렵습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 65,\n      \"feedback\": \"목표 달성을 위해 고객에게 맞춤형 서비스를 제공한 점은 논리적이나, 구체적인 계획 수립이나 문제 해결 과정에 대한 설명이 부족합니다.\"\n    },\n    \"specificity\": {\n      \"score\": 55,\n      \"feedback\": \"판매 목표 달성 경험을 언급했으나, 목표 수치, 기간, 구체적인 행동 단계, 어려움 등 구체적인 정보가 부족합니다.\"\n    },\n    \"communication\": {\n      \"score\": 65,\n      \"feedback\": \"간결하고 명확하게 의사 전달은 되었으나, 좀 더 체계적이고 상세한 설명이 필요합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 60,\n      \"feedback\": \"판매직무와 연관된 경험을 제시했으나, 지원 직무에 대한 직접적인 연계성이나 팀 내 협업 경험이 언급되지 않아 아쉬움이 있습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 55,\n      \"feedback\": \"상황과 행동, 결과는 간단히 제시되었으나, 과제(목표)와 구체적인 행동 과정이 부족해 STAR 구조가 완전하지 않습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"목표 달성을 위해 고객 맞춤형 서비스를 제공한 점\",\n    \"긍정적인 결과(목표 달성 및 상사 칭찬) 언급\"\n  ],\n  \"weaknesses\": [\n    \"구체적인 목표 수치 및 기간 미제시\",\n    \"노력 과정과 문제 해결 방법에 대한 상세 설명 부족\",\n    \"팀워크나 협업 경험 미포함\",\n    \"STAR 구조가 완전하지 않아 면접관이 지원자의 역량을 충분히 파악하기 어려움\"\n  ]\n}",
+      "total_latency_s": 0.606
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-17",
+    "sample": 1,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.724,
+      "est_cost_usd": 0.0007164000000000001,
+      "prompt_tokens": 1771,
+      "completion_tokens": 5,
+      "validator_ms": 0.485,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.092,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 60,\n  \"summary\": \"지원자는 사용자 경험 개선 사례를 간단히 언급하며 문제 인식과 해결 방안을 제시하였으나, 구체적인 상황 설명과 본인의 역할, 결과에 대한 명확한 수치나 평가가 부족하여 아쉬움이 있다. 답변은 논리적이나 구체성 및 STAR 구조가 미흡하며, 커뮤니케이션은 간결하지만 다소 단편적이다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 70,\n      \"feedback\": \"문제 인식과 해결책 제시는 논리적이나, 개선 과정에 대한 상세한 사고 과정이나 이유 설명이 부족하다.\"\n    },\n    \"specificity\": {\n      \"score\": 50,\n      \"feedback\": \"프로젝트와 해결책은 언급되었으나, 구체적인 수치, 본인의 역할, 사용한 기술적 방법 등에 대한 상세한 설명이 부족하다.\"\n    },\n    \"communication\": {\n      \"score\": 60,\n      \"feedback\": \"간결하고 명확하게 전달하였으나, 더 풍부한 설명과 맥락 제공이 필요하다.\"\n    },\n    \"jobFit\": {\n      \"score\": 60,\n      \"feedback\": \"사용자 경험 개선이라는 직무 관련 주제에 부합하나, 협업 과정이나 고객 중심 사고에 대한 언급이 부족하다.\"\n    },\n    \"starStructure\": {\n      \"score\": 60,\n      \"feedback\": \"상황과 행동은 간략히 언급되었으나, 구체적인 과제, 역할, 결과에 대한 체계적 설명이 미흡하다.\"\n    }\n  },\n  \"strengths\": [\n    \"문제 인식과 해결책 제시가 논리적임\",\n    \"간결하고 명확한 의사 전달\"\n  ],\n  \"weaknesses\": [\n    \"구체적인 상황 설명과 본인의 역할 부재\",\n    \"결과에 대한 수치나 명확한 평가 부족\",\n    \"STAR 구조가 체계적이지 않음\",\n    \"협업 및 고객 중심 사고에 대한 언급 부족\"\n  ]\n}",
+      "total_latency_s": 0.727
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-17",
+    "sample": 2,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.441,
+      "est_cost_usd": 0.0007228000000000001,
+      "prompt_tokens": 1787,
+      "completion_tokens": 5,
+      "validator_ms": 0.63,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.071,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 60,\n  \"summary\": \"지원자는 사용자 경험 개선 사례를 간단히 설명했으나, 구체적인 상황 설명과 자신의 역할, 행동, 결과에 대한 상세한 서술이 부족하여 평가가 제한적입니다. 논리적 사고와 문제 해결 의지는 보이나, STAR 구조가 명확하지 않고 커뮤니케이션 측면에서도 다소 간결하여 아쉬움이 있습니다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 70,\n      \"feedback\": \"문제 인식과 해결책 제시가 논리적으로 연결되어 있으나, 더 깊은 분석이나 배경 설명이 부족합니다.\"\n    },\n    \"specificity\": {\n      \"score\": 50,\n      \"feedback\": \"구체적인 수치나 자신의 구체적 역할, 프로젝트 규모 등이 언급되지 않아 구체성이 부족합니다.\"\n    },\n    \"communication\": {\n      \"score\": 60,\n      \"feedback\": \"간결하고 명료하게 전달했으나, 좀 더 상세하고 체계적인 설명이 필요합니다.\"\n    },\n    \"jobFit\": {\n      \"score\": 60,\n      \"feedback\": \"사용자 경험 개선 관련 업무와 연관성이 있으나, 지원 직무와의 직접적 연결고리가 명확하지 않습니다.\"\n    },\n    \"starStructure\": {\n      \"score\": 60,\n      \"feedback\": \"상황과 행동, 결과가 간략하게 제시되었으나, 역할과 구체적인 행동에 대한 설명이 부족해 STAR 구조가 완전하지 않습니다.\"\n    }\n  },\n  \"strengths\": [\n    \"문제 인식과 해결책 제시에 논리성이 있음\",\n    \"사용자 경험 개선을 위한 구체적 조치(이미지 용량 축소, 지연 로딩 적용)를 언급함\"\n  ],\n  \"weaknesses\": [\n    \"구체적인 상황 설명과 자신의 역할 및 행동에 대한 상세한 서술 부족\",\n    \"결과에 대한 정량적 데이터나 구체적 피드백 미제공\",\n    \"STAR 구조가 명확하지 않아 답변의 완성도가 낮음\",\n    \"지원 직무와의 연관성 및 팀 내 협업 내용 미흡\"\n  ]\n}",
+      "total_latency_s": 0.444
+    },
+    "byte_identical_to_input": true
+  },
+  {
+    "case_id": "TC-17",
+    "sample": 3,
+    "v1_overall_minus_mean": 0.0,
+    "pipeline": {
+      "llm_calls": 1,
+      "llm_latency_s": 0.48,
+      "est_cost_usd": 0.0007364000000000001,
+      "prompt_tokens": 1821,
+      "completion_tokens": 5,
+      "validator_ms": 0.472,
+      "validator_report": {
+        "valid": true,
+        "errors": [],
+        "fixes": [],
+        "hints": []
+      },
+      "correction_ms": 0.091,
+      "findings": [],
+      "post_check": {
+        "ran": false,
+        "residual_findings": [],
+        "validator_report": null
+      },
+      "changed": false,
+      "needs_review": false,
+      "status": "clean",
+      "change_log": [],
+      "final_raw": "{\n  \"overallScore\": 60,\n  \"summary\": \"지원자는 사용자 경험 개선 사례를 간단히 설명했으나, 상황과 행동에 대한 구체성이 부족하고 결과에 대한 정량적 데이터가 없어 아쉬움이 있다. 논리적 사고와 문제 해결 의지는 보이나, STAR 구조가 명확하지 않고 커뮤니케이션 측면에서 다소 단편적이다. 업무 적합성은 기본적인 개선 작업 경험을 보여주나, 더 깊은 분석과 협업 과정이 드러나지 않아 보완이 필요하다.\",\n  \"evaluationScores\": {\n    \"logicalThinking\": {\n      \"score\": 65,\n      \"feedback\": \"문제가 무엇인지 파악하고 해결책을 제시한 점은 긍정적이나, 해결 과정의 논리적 흐름과 구체적 판단 근거가 부족하다.\"\n    },\n    \"specificity\": {\n      \"score\": 50,\n      \"feedback\": \"이미지 용량 축소와 지연 로딩 적용이라는 구체적 조치는 있으나, 프로젝트 규모, 역할, 개선 전후 성과 수치 등이 부족하다.\"\n    },\n    \"communication\": {\n      \"score\": 60,\n      \"feedback\": \"간결하고 명료하게 답변했으나, 더 자세한 설명과 협업 과정에 대한 언급이 없어 다소 단편적으로 느껴진다.\"\n    },\n    \"jobFit\": {\n      \"score\": 65,\n      \"feedback\": \"사용자 경험 개선 관련 기본적인 업무 수행 능력을 보여주나, 더 복잡한 문제 해결이나 팀 내 역할에 대한 언급이 없어 직무 적합성 평가에 한계가 있다.\"\n    },\n    \"starStructure\": {\n      \"score\": 60,\n      \"feedback\": \"상황과 행동은 일부 드러나나, 과제와 결과에 대한 구체적 설명이 부족해 STAR 구조가 완전하지 않다.\"\n    }\n  },\n  \"strengths\": [\n    \"문제 인식과 개선 의지 명확\",\n    \"간결하고 명료한 답변\",\n    \"기본적인 사용자 경험 개선 작업 경험 보유\"\n  ],\n  \"weaknesses\": [\n    \"상황과 결과에 대한 구체적 설명 부족\",\n    \"정량적 성과 데이터 미제공\",\n    \"협업 과정 및 역할에 대한 언급 부재\",\n    \"STAR 구조 미흡\"\n  ]\n}",
+      "total_latency_s": 0.483
+    },
+    "byte_identical_to_input": true
+  }
+]

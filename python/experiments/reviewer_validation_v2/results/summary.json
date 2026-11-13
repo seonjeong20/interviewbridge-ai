@@ -1,0 +1,701 @@
+{
+  "reviewer_stage_main_17_cases": {
+    "production_reviewer": {
+      "runs": 85,
+      "defect_runs": 45,
+      "resolved": "19/45",
+      "partial": "5/45",
+      "not_resolved": "21/45",
+      "resolved_by_case": {
+        "TC-07": "0/5",
+        "TC-08": "5/5",
+        "TC-09": "5/5",
+        "TC-10": "1/5",
+        "TC-11": "0/5",
+        "TC-14": "4/5",
+        "TC-15": "4/5",
+        "TC-16": "0/5",
+        "TC-17": "0/5"
+      },
+      "resolved_rule_check": "28/45",
+      "rule_vs_adjudication_agreement": "36/45",
+      "normal_runs": 30,
+      "normal_preserved": "30/30",
+      "normal_byte_identical": "0/30",
+      "runs_with_item_score_change": "5/85",
+      "runs_with_overall_score_change": "0/85",
+      "final_outputs_with_arithmetic_gap_over_1": "10/85",
+      "llm_calls_mean": 1.0,
+      "latency_mean_s": 2.784,
+      "latency_median_s": 2.798,
+      "latency_mean_normal_s": 2.976,
+      "est_cost_mean_usd": 0.00085,
+      "resolved_gpt-4.1-mini": "38/45",
+      "gpt-4.1-mini_vs_adjudication_agreement": "26/45",
+      "resolved_gpt-4o-mini": "22/45",
+      "gpt-4o-mini_vs_adjudication_agreement": "16/45"
+    },
+    "improved_v20": {
+      "runs": 85,
+      "defect_runs": 45,
+      "resolved": "14/45",
+      "partial": "4/45",
+      "not_resolved": "27/45",
+      "resolved_by_case": {
+        "TC-07": "1/5",
+        "TC-08": "0/5",
+        "TC-09": "1/5",
+        "TC-10": "0/5",
+        "TC-11": "1/5",
+        "TC-14": "2/5",
+        "TC-15": "4/5",
+        "TC-16": "0/5",
+        "TC-17": "5/5"
+      },
+      "resolved_rule_check": "14/45",
+      "rule_vs_adjudication_agreement": "45/45",
+      "normal_runs": 30,
+      "normal_preserved": "28/30",
+      "normal_byte_identical": "28/30",
+      "runs_with_item_score_change": "0/85",
+      "runs_with_overall_score_change": "5/85",
+      "final_outputs_with_arithmetic_gap_over_1": "0/85",
+      "llm_calls_mean": 1.224,
+      "latency_mean_s": 2.18,
+      "latency_median_s": 1.558,
+      "latency_mean_normal_s": 0.935,
+      "est_cost_mean_usd": 0.00083,
+      "resolved_gpt-4.1-mini": "15/45",
+      "gpt-4.1-mini_vs_adjudication_agreement": "44/45",
+      "resolved_gpt-4o-mini": "9/45",
+      "gpt-4o-mini_vs_adjudication_agreement": "40/45",
+      "detected": "50/55",
+      "detected_by_case": {
+        "TC-07": "5/5",
+        "TC-08": "5/5",
+        "TC-09": "5/5",
+        "TC-10": "5/5",
+        "TC-11": "5/5",
+        "TC-12": "5/5",
+        "TC-13": "5/5",
+        "TC-14": "5/5",
+        "TC-15": "5/5",
+        "TC-16": "0/5",
+        "TC-17": "5/5"
+      },
+      "status": {
+        "clean": 30,
+        "corrected": 12,
+        "needs_review": 43
+      },
+      "normal_status": {
+        "clean": 25,
+        "corrected": 1,
+        "needs_review": 4
+      },
+      "normal_flagged_needs_review": "4/30"
+    },
+    "improved_v21": {
+      "runs": 85,
+      "defect_runs": 45,
+      "resolved": "27/45",
+      "partial": "9/45",
+      "not_resolved": "9/45",
+      "resolved_by_case": {
+        "TC-07": "4/5",
+        "TC-08": "0/5",
+        "TC-09": "0/5",
+        "TC-10": "2/5",
+        "TC-11": "5/5",
+        "TC-14": "5/5",
+        "TC-15": "4/5",
+        "TC-16": "2/5",
+        "TC-17": "5/5"
+      },
+      "resolved_rule_check": "35/45",
+      "rule_vs_adjudication_agreement": "37/45",
+      "normal_runs": 30,
+      "normal_preserved": "20/30",
+      "normal_byte_identical": "20/30",
+      "runs_with_item_score_change": "0/85",
+      "runs_with_overall_score_change": "5/85",
+      "final_outputs_with_arithmetic_gap_over_1": "0/85",
+      "llm_calls_mean": 1.553,
+      "latency_mean_s": 4.192,
+      "latency_median_s": 4.309,
+      "latency_mean_normal_s": 3.18,
+      "est_cost_mean_usd": 0.00152,
+      "resolved_gpt-4.1-mini": "34/45",
+      "gpt-4.1-mini_vs_adjudication_agreement": "36/45",
+      "resolved_gpt-4o-mini": "15/45",
+      "gpt-4o-mini_vs_adjudication_agreement": "31/45",
+      "detected": "47/55",
+      "detected_by_case": {
+        "TC-07": "4/5",
+        "TC-08": "5/5",
+        "TC-09": "5/5",
+        "TC-10": "3/5",
+        "TC-11": "5/5",
+        "TC-12": "0/5",
+        "TC-13": "5/5",
+        "TC-14": "5/5",
+        "TC-15": "5/5",
+        "TC-16": "5/5",
+        "TC-17": "5/5"
+      },
+      "status": {
+        "corrected": 34,
+        "needs_review": 29,
+        "clean": 22
+      },
+      "normal_status": {
+        "corrected": 10,
+        "needs_review": 5,
+        "clean": 15
+      },
+      "normal_flagged_needs_review": "5/30"
+    }
+  },
+  "tc13_unsupported_facts_remaining": {
+    "production_reviewer": "5/5",
+    "improved_v20": "4/5",
+    "improved_v21": "0/5"
+  },
+  "tc13_adjudication": {
+    "production_reviewer": {
+      "not_detected": 5
+    },
+    "improved_v20": {
+      "not_resolved": 2,
+      "resolved": 1,
+      "partial": 2
+    },
+    "improved_v21": {
+      "resolved": 5
+    }
+  },
+  "focus_cases": {
+    "TC-07": {
+      "production_reviewer": {
+        "not_resolved": 5
+      },
+      "improved_v20": {
+        "resolved": 1,
+        "not_resolved": 4
+      },
+      "improved_v21": {
+        "resolved": 4,
+        "not_resolved": 1
+      }
+    },
+    "TC-10": {
+      "production_reviewer": {
+        "partial": 3,
+        "not_resolved": 1,
+        "resolved": 1
+      },
+      "improved_v20": {
+        "not_resolved": 5
+      },
+      "improved_v21": {
+        "not_resolved": 3,
+        "resolved": 2
+      }
+    },
+    "TC-11": {
+      "production_reviewer": {
+        "not_resolved": 5
+      },
+      "improved_v20": {
+        "not_resolved": 4,
+        "resolved": 1
+      },
+      "improved_v21": {
+        "resolved": 5
+      }
+    },
+    "TC-13": {
+      "production_reviewer": {
+        "not_detected": 5
+      },
+      "improved_v20": {
+        "not_resolved": 2,
+        "resolved": 1,
+        "partial": 2
+      },
+      "improved_v21": {
+        "resolved": 5
+      }
+    },
+    "TC-16": {
+      "production_reviewer": {
+        "not_resolved": 5
+      },
+      "improved_v20": {
+        "not_resolved": 5
+      },
+      "improved_v21": {
+        "resolved": 2,
+        "partial": 3
+      }
+    },
+    "TC-17": {
+      "production_reviewer": {
+        "not_resolved": 5
+      },
+      "improved_v20": {
+        "resolved": 5
+      },
+      "improved_v21": {
+        "resolved": 5
+      }
+    }
+  },
+  "gate_outcomes_main": {
+    "v20": {
+      "applied": 43,
+      "G1 action flag_score is never auto-applied": 25,
+      "G3 evidence_in_evaluation not found in the evaluation": 11,
+      "G1 action flag_only is never auto-applied": 9,
+      "G1 remove_item is only valid for strengths/weaknesses": 1
+    },
+    "v21": {
+      "S1 dismissed": 100,
+      "applied": 39,
+      "G1 score flag": 15,
+      "G1 confidence is medium": 4,
+      "G2 target_id is not a text piece": 1
+    }
+  },
+  "reviewer_stage_heldout_8_cases": {
+    "production_reviewer": {
+      "runs": 24,
+      "defect_runs": 15,
+      "resolved": "5/15",
+      "partial": "1/15",
+      "not_resolved": "9/15",
+      "resolved_by_case": {
+        "HO-03": "0/3",
+        "HO-04": "0/3",
+        "HO-06": "3/3",
+        "HO-07": "0/3",
+        "HO-08": "2/3"
+      },
+      "resolved_rule_check": "9/15",
+      "rule_vs_adjudication_agreement": "11/15",
+      "normal_runs": 6,
+      "normal_preserved": "6/6",
+      "normal_byte_identical": "0/6",
+      "runs_with_item_score_change": "0/24",
+      "runs_with_overall_score_change": "0/24",
+      "final_outputs_with_arithmetic_gap_over_1": "3/24",
+      "llm_calls_mean": 1.0,
+      "latency_mean_s": 2.895,
+      "latency_median_s": 2.744,
+      "latency_mean_normal_s": 3.732,
+      "est_cost_mean_usd": 0.00082,
+      "resolved_gpt-4.1-mini": "9/15",
+      "gpt-4.1-mini_vs_adjudication_agreement": "11/15",
+      "resolved_gpt-4o-mini": "8/15",
+      "gpt-4o-mini_vs_adjudication_agreement": "8/15"
+    },
+    "improved_v20": {
+      "runs": 24,
+      "defect_runs": 15,
+      "resolved": "10/15",
+      "partial": "1/15",
+      "not_resolved": "4/15",
+      "resolved_by_case": {
+        "HO-03": "2/3",
+        "HO-04": "0/3",
+        "HO-06": "3/3",
+        "HO-07": "3/3",
+        "HO-08": "2/3"
+      },
+      "resolved_rule_check": "11/15",
+      "rule_vs_adjudication_agreement": "14/15",
+      "normal_runs": 6,
+      "normal_preserved": "6/6",
+      "normal_byte_identical": "6/6",
+      "runs_with_item_score_change": "0/24",
+      "runs_with_overall_score_change": "3/24",
+      "final_outputs_with_arithmetic_gap_over_1": "0/24",
+      "llm_calls_mean": 1.458,
+      "latency_mean_s": 2.497,
+      "latency_median_s": 1.857,
+      "latency_mean_normal_s": 0.607,
+      "est_cost_mean_usd": 0.00105,
+      "resolved_gpt-4.1-mini": "11/15",
+      "gpt-4.1-mini_vs_adjudication_agreement": "14/15",
+      "resolved_gpt-4o-mini": "11/15",
+      "gpt-4o-mini_vs_adjudication_agreement": "14/15",
+      "detected": "18/18",
+      "detected_by_case": {
+        "HO-03": "3/3",
+        "HO-04": "3/3",
+        "HO-05": "3/3",
+        "HO-06": "3/3",
+        "HO-07": "3/3",
+        "HO-08": "3/3"
+      },
+      "status": {
+        "clean": 6,
+        "corrected": 10,
+        "needs_review": 8
+      },
+      "normal_status": {
+        "clean": 6
+      },
+      "normal_flagged_needs_review": "0/6"
+    },
+    "improved_v21": {
+      "runs": 24,
+      "defect_runs": 15,
+      "resolved": "12/15",
+      "partial": "0/15",
+      "not_resolved": "3/15",
+      "resolved_by_case": {
+        "HO-03": "3/3",
+        "HO-04": "0/3",
+        "HO-06": "3/3",
+        "HO-07": "3/3",
+        "HO-08": "3/3"
+      },
+      "resolved_rule_check": "12/15",
+      "rule_vs_adjudication_agreement": "15/15",
+      "normal_runs": 6,
+      "normal_preserved": "6/6",
+      "normal_byte_identical": "6/6",
+      "runs_with_item_score_change": "0/24",
+      "runs_with_overall_score_change": "3/24",
+      "final_outputs_with_arithmetic_gap_over_1": "0/24",
+      "llm_calls_mean": 1.5,
+      "latency_mean_s": 3.804,
+      "latency_median_s": 3.728,
+      "latency_mean_normal_s": 2.089,
+      "est_cost_mean_usd": 0.0015,
+      "resolved_gpt-4.1-mini": "12/15",
+      "gpt-4.1-mini_vs_adjudication_agreement": "15/15",
+      "resolved_gpt-4o-mini": "8/15",
+      "gpt-4o-mini_vs_adjudication_agreement": "11/15",
+      "detected": "18/18",
+      "detected_by_case": {
+        "HO-03": "3/3",
+        "HO-04": "3/3",
+        "HO-05": "3/3",
+        "HO-06": "3/3",
+        "HO-07": "3/3",
+        "HO-08": "3/3"
+      },
+      "status": {
+        "clean": 6,
+        "needs_review": 6,
+        "corrected": 12
+      },
+      "normal_status": {
+        "clean": 6
+      },
+      "normal_flagged_needs_review": "0/6"
+    }
+  },
+  "ho05_adjudication": {
+    "production_reviewer": {
+      "not_resolved": 3
+    },
+    "improved_v20": {
+      "partial": 3
+    },
+    "improved_v21": {
+      "resolved": 2,
+      "partial": 1
+    }
+  },
+  "real_evaluator_outputs_51": {
+    "v20": {
+      "runs": 51,
+      "status": {
+        "clean": 44,
+        "corrected": 6,
+        "needs_review": 1
+      },
+      "byte_identical": "44/51",
+      "overall_score_fixed_by_validator": "7/51",
+      "runs_with_reviewer_edits": "0/51",
+      "reviewer_edits_total": 0,
+      "reviewer_edit_types": {},
+      "runs_with_score_flags": "0/51",
+      "score_flags_total": 0,
+      "score_flags_code_derived": 0,
+      "llm_calls_mean": 1.0,
+      "latency_mean_s": 0.602,
+      "latency_median_s": 0.53,
+      "est_cost_mean_usd": 0.00074
+    },
+    "v21": {
+      "runs": 51,
+      "status": {
+        "corrected": 15,
+        "clean": 16,
+        "needs_review": 20
+      },
+      "byte_identical": "27/51",
+      "overall_score_fixed_by_validator": "7/51",
+      "runs_with_reviewer_edits": "18/51",
+      "reviewer_edits_total": 27,
+      "reviewer_edit_types": {
+        "duplicate": 18
+      },
+      "runs_with_score_flags": "17/51",
+      "score_flags_total": 22,
+      "score_flags_code_derived": 19,
+      "llm_calls_mean": 1.353,
+      "latency_mean_s": 3.622,
+      "latency_median_s": 3.545,
+      "est_cost_mean_usd": 0.00184
+    },
+    "production_reviewer_v1_data": {
+      "runs": 51,
+      "byte_identical": "6/51",
+      "text_identical": "6/51",
+      "evaluator_outputs_with_gap_over_1": "5/51",
+      "evaluator_outputs_with_any_gap": "7/51",
+      "reviewer_outputs_with_gap_over_1": "5/51",
+      "latency_mean_s": 3.767
+    }
+  },
+  "coach_comparison": {
+    "A_no_reviewer": {
+      "runs": 51,
+      "format_ok": "51/51",
+      "carries_planted_error_adjudicated": "8/21",
+      "carries_by_case": {
+        "TC-07": "3/3",
+        "TC-08": "0/3",
+        "TC-09": "0/3",
+        "TC-10": "0/3",
+        "TC-11": "1/3",
+        "TC-13": "3/3",
+        "TC-16": "1/3"
+      },
+      "runs_with_invented_numbers_rule": "22/51",
+      "coach_latency_mean_s": 4.442,
+      "post_evaluator_latency_mean_s": 4.442,
+      "post_evaluator_calls_mean": 1.0,
+      "gpt-4.1-mini_contradicts": "9/51",
+      "gpt-4.1-mini_coverage_mean": 1.0,
+      "gpt-4.1-mini_ungrounded_tips_mean": 0.51,
+      "gpt-4.1-mini_specificity_mean": 3.902,
+      "gpt-4.1-mini_vs_adjudication_on_planted_error": "18/21",
+      "gpt-4o-mini_contradicts": "15/51",
+      "gpt-4o-mini_coverage_mean": 0.941,
+      "gpt-4o-mini_ungrounded_tips_mean": 0.569,
+      "gpt-4o-mini_specificity_mean": 3.843,
+      "gpt-4o-mini_vs_adjudication_on_planted_error": "10/21"
+    },
+    "B_production_reviewer": {
+      "runs": 51,
+      "format_ok": "51/51",
+      "carries_planted_error_adjudicated": "4/21",
+      "carries_by_case": {
+        "TC-07": "1/3",
+        "TC-08": "0/3",
+        "TC-09": "0/3",
+        "TC-10": "0/3",
+        "TC-11": "0/3",
+        "TC-13": "3/3",
+        "TC-16": "0/3"
+      },
+      "runs_with_invented_numbers_rule": "17/51",
+      "coach_latency_mean_s": 4.455,
+      "post_evaluator_latency_mean_s": 7.298,
+      "post_evaluator_calls_mean": 2.0,
+      "gpt-4.1-mini_contradicts": "5/51",
+      "gpt-4.1-mini_coverage_mean": 1.0,
+      "gpt-4.1-mini_ungrounded_tips_mean": 0.49,
+      "gpt-4.1-mini_specificity_mean": 3.882,
+      "gpt-4.1-mini_vs_adjudication_on_planted_error": "19/21",
+      "gpt-4o-mini_contradicts": "16/51",
+      "gpt-4o-mini_coverage_mean": 0.912,
+      "gpt-4o-mini_ungrounded_tips_mean": 0.569,
+      "gpt-4o-mini_specificity_mean": 3.824,
+      "gpt-4o-mini_vs_adjudication_on_planted_error": "6/21"
+    },
+    "C_improved": {
+      "runs": 51,
+      "format_ok": "51/51",
+      "carries_planted_error_adjudicated": "3/21",
+      "carries_by_case": {
+        "TC-07": "0/3",
+        "TC-08": "0/3",
+        "TC-09": "0/3",
+        "TC-10": "0/3",
+        "TC-11": "0/3",
+        "TC-13": "3/3",
+        "TC-16": "0/3"
+      },
+      "runs_with_invented_numbers_rule": "19/51",
+      "coach_latency_mean_s": 4.407,
+      "post_evaluator_latency_mean_s": 6.741,
+      "post_evaluator_calls_mean": 2.294,
+      "gpt-4.1-mini_contradicts": "8/51",
+      "gpt-4.1-mini_coverage_mean": 1.0,
+      "gpt-4.1-mini_ungrounded_tips_mean": 0.549,
+      "gpt-4.1-mini_specificity_mean": 3.902,
+      "gpt-4.1-mini_vs_adjudication_on_planted_error": "18/21",
+      "gpt-4o-mini_contradicts": "16/51",
+      "gpt-4o-mini_coverage_mean": 0.951,
+      "gpt-4o-mini_ungrounded_tips_mean": 0.569,
+      "gpt-4o-mini_specificity_mean": 3.882,
+      "gpt-4o-mini_vs_adjudication_on_planted_error": "4/21"
+    },
+    "D_improved_v21": {
+      "runs": 51,
+      "format_ok": "51/51",
+      "carries_planted_error_adjudicated": "0/21",
+      "carries_by_case": {
+        "TC-07": "0/3",
+        "TC-08": "0/3",
+        "TC-09": "0/3",
+        "TC-10": "0/3",
+        "TC-11": "0/3",
+        "TC-13": "0/3",
+        "TC-16": "0/3"
+      },
+      "runs_with_invented_numbers_rule": "15/51",
+      "coach_latency_mean_s": 4.447,
+      "post_evaluator_latency_mean_s": 8.522,
+      "post_evaluator_calls_mean": 2.588,
+      "gpt-4.1-mini_contradicts": "4/51",
+      "gpt-4.1-mini_coverage_mean": 1.0,
+      "gpt-4.1-mini_ungrounded_tips_mean": 0.373,
+      "gpt-4.1-mini_specificity_mean": 3.941,
+      "gpt-4.1-mini_vs_adjudication_on_planted_error": "21/21",
+      "gpt-4o-mini_contradicts": "15/51",
+      "gpt-4o-mini_coverage_mean": 0.941,
+      "gpt-4o-mini_ungrounded_tips_mean": 0.49,
+      "gpt-4o-mini_specificity_mean": 3.882,
+      "gpt-4o-mini_vs_adjudication_on_planted_error": "2/21"
+    }
+  },
+  "coach_input_run1_adjudication": {
+    "TC-07": {
+      "production_reviewer": "not_resolved",
+      "improved_v20": "resolved",
+      "improved_v21": "resolved"
+    },
+    "TC-08": {
+      "production_reviewer": "resolved",
+      "improved_v20": "not_resolved",
+      "improved_v21": "not_resolved"
+    },
+    "TC-09": {
+      "production_reviewer": "resolved",
+      "improved_v20": "resolved",
+      "improved_v21": "partial"
+    },
+    "TC-10": {
+      "production_reviewer": "partial",
+      "improved_v20": "not_resolved",
+      "improved_v21": "not_resolved"
+    },
+    "TC-11": {
+      "production_reviewer": "not_resolved",
+      "improved_v20": "not_resolved",
+      "improved_v21": "resolved"
+    },
+    "TC-13": {
+      "production_reviewer": "not_detected",
+      "improved_v20": "not_resolved",
+      "improved_v21": "resolved"
+    },
+    "TC-16": {
+      "production_reviewer": "not_resolved",
+      "improved_v20": "not_resolved",
+      "improved_v21": "resolved"
+    }
+  },
+  "cost": {
+    "total_invocations": 1559,
+    "total_est_cost_usd": 1.1396,
+    "judge_est_cost_usd": 0.4344,
+    "by_stage": {
+      "coach (gpt-4.1-mini)": {
+        "stage": "coach",
+        "model": "gpt-4.1-mini",
+        "invocations": 204,
+        "prompt_tokens_mean": 1134,
+        "completion_tokens_mean": 657,
+        "latency_mean_s": 4.438,
+        "latency_median_s": 4.407,
+        "est_cost_usd_total": 0.2807,
+        "est_cost_usd_per_invocation": 0.00138
+      },
+      "context_reviewer (gpt-4.1-mini)": {
+        "stage": "context_reviewer",
+        "model": "gpt-4.1-mini",
+        "invocations": 329,
+        "prompt_tokens_mean": 1856,
+        "completion_tokens_mean": 258,
+        "latency_mean_s": 2.149,
+        "latency_median_s": 2.143,
+        "est_cost_usd_total": 0.3017,
+        "est_cost_usd_per_invocation": 0.00092
+      },
+      "judge (gpt-4.1-mini)": {
+        "stage": "judge",
+        "model": "gpt-4.1-mini",
+        "invocations": 446,
+        "prompt_tokens_mean": 1166,
+        "completion_tokens_mean": 196,
+        "latency_mean_s": 1.762,
+        "latency_median_s": 1.734,
+        "est_cost_usd_total": 0.3236,
+        "est_cost_usd_per_invocation": 0.00073
+      },
+      "judge (gpt-4o-mini)": {
+        "stage": "judge",
+        "model": "gpt-4o-mini",
+        "invocations": 446,
+        "prompt_tokens_mean": 1166,
+        "completion_tokens_mean": 157,
+        "latency_mean_s": 2.016,
+        "latency_median_s": 1.893,
+        "est_cost_usd_total": 0.1108,
+        "est_cost_usd_per_invocation": 0.00025
+      },
+      "post_check (gpt-4.1-mini)": {
+        "stage": "post_check",
+        "model": "gpt-4.1-mini",
+        "invocations": 31,
+        "prompt_tokens_mean": 1609,
+        "completion_tokens_mean": 112,
+        "latency_mean_s": 1.243,
+        "latency_median_s": 0.663,
+        "est_cost_usd_total": 0.0217,
+        "est_cost_usd_per_invocation": 0.0007
+      },
+      "reviewer (gpt-4.1-mini)": {
+        "stage": "reviewer",
+        "model": "gpt-4.1-mini",
+        "invocations": 24,
+        "prompt_tokens_mean": 684,
+        "completion_tokens_mean": 343,
+        "latency_mean_s": 2.895,
+        "latency_median_s": 2.744,
+        "est_cost_usd_total": 0.0197,
+        "est_cost_usd_per_invocation": 0.00082
+      },
+      "second_pass (gpt-4.1-mini)": {
+        "stage": "second_pass",
+        "model": "gpt-4.1-mini",
+        "invocations": 79,
+        "prompt_tokens_mean": 1961,
+        "completion_tokens_mean": 318,
+        "latency_mean_s": 2.454,
+        "latency_median_s": 2.144,
+        "est_cost_usd_total": 0.0814,
+        "est_cost_usd_per_invocation": 0.00103
+      }
+    }
+  }
+}

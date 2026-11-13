@@ -1,0 +1,965 @@
+{
+  "_meta": {
+    "description": "Synthetic test cases for the Reviewer validation experiment. No real user data. Questions, answers and evaluator outputs were all hand-written for this experiment.",
+    "score_scale": "0-100 (matches frontend Result.jsx, which renders '{score} / 100')",
+    "expect_values": {
+      "preserve": "Defect-free evaluation. The Reviewer should not change scores or meaning.",
+      "resolve": "A contradiction was injected. The Reviewer should remove it.",
+      "dedupe": "Duplicated feedback was injected. The Reviewer should merge it.",
+      "fix_overall": "overallScore does not equal the average of the five scores. The Reviewer should correct it.",
+      "undetectable_by_design": "The defect can only be seen by comparing the evaluation with the candidate's answer, which the production Reviewer task never receives. Detection is NOT expected; the check is whether the Reviewer fabricates content."
+    },
+    "rule_fields": {
+      "contradiction_markers": "Phrases that carry the injected error. Rule check: the error 'remains' while any marker is still present in the reviewed evaluation text.",
+      "resolve_rule": "markers_absent: resolved when no marker remains. score_at_most: resolved when the named score was lowered to the threshold or below.",
+      "dedupe_rule": "Resolved when the strengths/weaknesses lists were merged down to at most this many items.",
+      "key_weaknesses": "Weaknesses the coaching is expected to address (used for the coverage criterion).",
+      "intended_reading": "The defect-free reading of the evaluation, checked against the answer. Used as the reference when judging coaching."
+    }
+  },
+  "cases": [
+    {
+      "id": "TC-01",
+      "type": "A",
+      "type_label": "정상 평가 (중하위 점수)",
+      "job": "Backend Developer",
+      "country": "Korea",
+      "native_language": "Korean",
+      "question": "팀 프로젝트에서 의견 충돌이 있었을 때 어떻게 해결했는지 말씀해 주세요.",
+      "answer": "대학교 캡스톤 프로젝트에서 팀원들과 의견 충돌이 있었습니다. 저는 중간에서 양쪽 이야기를 잘 들어주고 조율하려고 노력했습니다. 결국 잘 마무리되었고, 소통이 중요하다는 것을 배웠습니다.",
+      "evaluator_output": {
+        "overallScore": 51,
+        "summary": "갈등 상황에서 조율 역할을 맡았다는 점은 드러나지만, 어떤 의견 충돌이었고 어떤 행동으로 해결했는지가 구체적으로 설명되지 않아 설득력이 부족합니다.",
+        "evaluationScores": {
+          "logicalThinking": {
+            "score": 60,
+            "feedback": "상황, 행동, 결과의 흐름은 있으나 각 단계가 어떻게 이어지는지 인과 관계가 설명되지 않습니다."
+          },
+          "specificity": {
+            "score": 40,
+            "feedback": "충돌의 내용, 본인이 한 행동, 결과가 모두 추상적으로만 언급됩니다."
+          },
+          "communication": {
+            "score": 65,
+            "feedback": "문장은 간결하고 이해하기 쉽지만 전달하려는 핵심 메시지가 약합니다."
+          },
+          "jobFit": {
+            "score": 50,
+            "feedback": "협업 태도는 보이지만 백엔드 개발 직무와 연결되는 내용이 없습니다."
+          },
+          "starStructure": {
+            "score": 40,
+            "feedback": "상황과 결과는 짧게 언급되지만 과제와 행동이 거의 드러나지 않습니다."
+          }
+        },
+        "strengths": [
+          "갈등 상황에서 조율자 역할을 맡으려는 협업 태도",
+          "간결하고 이해하기 쉬운 문장"
+        ],
+        "weaknesses": [
+          "의견 충돌의 구체적인 내용과 본인의 행동이 설명되지 않음",
+          "결과가 '잘 마무리되었다' 수준으로만 제시됨",
+          "직무와의 연결성이 부족함"
+        ]
+      },
+      "injected_error": null,
+      "expect": "preserve",
+      "expected_reviewer_behavior": "점수와 의미를 유지한다. 문장 다듬기 수준의 변경만 허용.",
+      "intended_reading": "구체성(40)과 STAR 구조(40)가 가장 약하다. 갈등 내용, 본인 행동, 결과가 추상적이다.",
+      "key_weaknesses": [
+        "갈등의 구체적 내용과 본인 행동이 추상적임",
+        "결과가 구체적으로 제시되지 않음",
+        "직무와의 연결성 부족"
+      ],
+      "contradiction_markers": []
+    },
+    {
+      "id": "TC-02",
+      "type": "A",
+      "type_label": "정상 평가 (고득점)",
+      "job": "Backend Developer",
+      "country": "Korea",
+      "native_language": "Korean",
+      "question": "서비스 성능 문제를 해결한 경험이 있다면 말씀해 주세요.",
+      "answer": "인턴으로 근무하던 쇼핑몰 서비스에서 주문 내역 조회 API의 응답 시간이 평균 3초까지 느려지는 문제가 있었습니다. 저는 원인 파악을 맡아 쿼리 로그를 분석했고, 주문과 상품을 조회할 때 N+1 쿼리가 발생한다는 것을 확인했습니다. fetch join으로 쿼리를 합치고 주문 일자 컬럼에 인덱스를 추가한 결과 평균 응답 시간이 0.4초로 줄었습니다. 이후 팀 위키에 원인과 해결 과정을 정리해 공유했습니다.",
+      "evaluator_output": {
+        "overallScore": 85,
+        "summary": "문제 상황, 원인 분석, 해결 방법, 정량적 결과가 모두 포함된 완성도 높은 답변입니다. 해결 방법을 선택한 판단 근거가 조금 더 설명되면 더 좋겠습니다.",
+        "evaluationScores": {
+          "logicalThinking": {
+            "score": 85,
+            "feedback": "문제, 원인, 해결, 결과가 인과 관계에 따라 명확하게 전개됩니다."
+          },
+          "specificity": {
+            "score": 90,
+            "feedback": "응답 시간 3초에서 0.4초라는 수치와 N+1 쿼리, fetch join, 인덱스 등 구체적인 기술 내용이 제시됩니다."
+          },
+          "communication": {
+            "score": 80,
+            "feedback": "전달은 명확하지만 여러 대안 중 왜 이 방법을 선택했는지에 대한 설명은 빠져 있습니다."
+          },
+          "jobFit": {
+            "score": 85,
+            "feedback": "쿼리 분석과 성능 개선 경험이 백엔드 직무와 직접적으로 연결됩니다."
+          },
+          "starStructure": {
+            "score": 85,
+            "feedback": "상황, 과제, 행동, 결과가 모두 드러나며 결과가 수치로 제시됩니다."
+          }
+        },
+        "strengths": [
+          "응답 시간을 3초에서 0.4초로 줄인 정량적 성과",
+          "로그 분석을 통한 원인 파악 과정",
+          "해결 과정을 팀에 공유한 점"
+        ],
+        "weaknesses": [
+          "여러 대안 중 해당 해결 방법을 선택한 판단 근거가 설명되지 않음"
+        ]
+      },
+      "injected_error": null,
+      "expect": "preserve",
+      "expected_reviewer_behavior": "점수와 의미를 유지한다.",
+      "intended_reading": "전반적으로 우수하다. 유일한 약점은 해결 방법을 선택한 판단 근거가 설명되지 않은 점이다.",
+      "key_weaknesses": [
+        "해결 방법을 선택한 판단 근거 설명 부족"
+      ],
+      "contradiction_markers": []
+    },
+    {
+      "id": "TC-03",
+      "type": "A",
+      "type_label": "정상 평가 (저득점)",
+      "job": "Data Analyst",
+      "country": "Korea",
+      "native_language": "Korean",
+      "question": "우리 회사에 지원한 이유는 무엇인가요?",
+      "answer": "회사가 유명하고 성장 가능성이 크다고 생각해서 지원했습니다. 입사하면 무엇이든 열심히 하겠습니다.",
+      "evaluator_output": {
+        "overallScore": 32,
+        "summary": "지원 동기가 회사의 인지도와 성장 가능성이라는 일반적인 이유에 머물러 있고, 본인의 경험이나 데이터 분석 직무와의 연결이 전혀 드러나지 않습니다.",
+        "evaluationScores": {
+          "logicalThinking": {
+            "score": 40,
+            "feedback": "지원 이유와 입사 후 각오가 나열될 뿐 서로 연결되지 않습니다."
+          },
+          "specificity": {
+            "score": 20,
+            "feedback": "회사의 어떤 점에 끌렸는지, 본인이 무엇을 할 수 있는지가 전혀 구체적이지 않습니다."
+          },
+          "communication": {
+            "score": 50,
+            "feedback": "문장은 이해하기 쉽지만 내용이 너무 짧아 전달되는 정보가 거의 없습니다."
+          },
+          "jobFit": {
+            "score": 30,
+            "feedback": "데이터 분석 직무와 관련된 역량이나 관심이 언급되지 않습니다."
+          },
+          "starStructure": {
+            "score": 20,
+            "feedback": "본인의 경험이 제시되지 않아 구조화된 답변으로 보기 어렵습니다."
+          }
+        },
+        "strengths": [
+          "지원 의지를 솔직하게 표현함"
+        ],
+        "weaknesses": [
+          "지원 동기가 어느 회사에나 해당하는 일반적인 내용임",
+          "데이터 분석 직무와의 연결성이 없음",
+          "본인의 경험이나 역량이 제시되지 않음"
+        ]
+      },
+      "injected_error": null,
+      "expect": "preserve",
+      "expected_reviewer_behavior": "점수와 의미를 유지한다.",
+      "intended_reading": "전 항목이 낮다. 지원 동기가 일반적이고 직무 연결성과 본인 경험이 없다.",
+      "key_weaknesses": [
+        "지원 동기가 일반적임",
+        "직무 연결성 없음",
+        "본인의 경험과 역량이 제시되지 않음"
+      ],
+      "contradiction_markers": []
+    },
+    {
+      "id": "TC-04",
+      "type": "A",
+      "type_label": "정상 평가 (영어 면접, 중상위 점수)",
+      "job": "Frontend Developer",
+      "country": "USA",
+      "native_language": "Korean",
+      "question": "Tell me about a time you had to learn a new technology quickly.",
+      "answer": "In my last project, our team decided to move from JavaScript to TypeScript two weeks before the deadline. I had never used TypeScript, so I studied the official handbook at night and converted small components first. I asked a senior teammate to review my code. In the end I converted the main pages on time.",
+      "evaluator_output": {
+        "overallScore": 69,
+        "summary": "짧은 기간 안에 새로운 기술을 익힌 과정이 순서대로 잘 설명되었습니다. 다만 결과가 '기한 내 완료' 수준에 그쳐 본인의 성과를 강조하는 미국 면접 문화에서는 임팩트가 약합니다.",
+        "evaluationScores": {
+          "logicalThinking": {
+            "score": 75,
+            "feedback": "상황, 학습 방법, 결과가 시간 순서대로 논리적으로 전개됩니다."
+          },
+          "specificity": {
+            "score": 60,
+            "feedback": "2주라는 기간과 학습 방법은 구체적이지만 전환한 규모나 성과에 대한 수치가 없습니다."
+          },
+          "communication": {
+            "score": 70,
+            "feedback": "문장이 명확하고 간결하지만 본인의 성과를 자신 있게 강조하는 표현이 부족합니다."
+          },
+          "jobFit": {
+            "score": 75,
+            "feedback": "TypeScript 전환 경험은 프론트엔드 직무와 직접적으로 관련됩니다."
+          },
+          "starStructure": {
+            "score": 65,
+            "feedback": "상황과 행동은 분명하지만 결과가 한 문장으로만 제시됩니다."
+          }
+        },
+        "strengths": [
+          "짧은 기간에 새로운 기술을 학습한 실행력",
+          "작은 컴포넌트부터 전환하는 단계적 접근",
+          "선배에게 코드 리뷰를 요청한 적극성"
+        ],
+        "weaknesses": [
+          "결과와 성과가 정량적으로 제시되지 않음",
+          "본인의 기여를 강조하는 표현이 부족함"
+        ]
+      },
+      "injected_error": null,
+      "expect": "preserve",
+      "expected_reviewer_behavior": "점수와 의미를 유지한다.",
+      "intended_reading": "전반적으로 양호하다. 약점은 결과가 정량적으로 제시되지 않은 점과 본인 성과를 강조하는 표현이 부족한 점이다.",
+      "key_weaknesses": [
+        "결과와 성과가 정량적으로 제시되지 않음",
+        "본인의 기여를 강조하는 표현 부족"
+      ],
+      "contradiction_markers": []
+    },
+    {
+      "id": "TC-05",
+      "type": "A",
+      "type_label": "정상 평가 (일본어 면접)",
+      "job": "Backend Developer",
+      "country": "Japan",
+      "native_language": "Korean",
+      "question": "チームで働く上で大切にしていることは何ですか。",
+      "answer": "私はチームで働く上で、報告・連絡・相談を大切にしています。以前のプロジェクトでも、こまめに進捗を共有するようにしていました。そのおかげでチームの雰囲気が良くなったと思います。",
+      "evaluator_output": {
+        "overallScore": 59,
+        "summary": "보고, 연락, 상담을 중시한다는 가치관은 일본 기업 문화에 잘 맞지만, 이를 뒷받침하는 구체적인 사례가 부족해 설득력이 약합니다.",
+        "evaluationScores": {
+          "logicalThinking": {
+            "score": 70,
+            "feedback": "가치관, 실천, 결과의 순서로 전개되어 흐름이 자연스럽습니다."
+          },
+          "specificity": {
+            "score": 45,
+            "feedback": "어떤 프로젝트에서 어떻게 진행 상황을 공유했는지 구체적인 내용이 없습니다."
+          },
+          "communication": {
+            "score": 75,
+            "feedback": "정중하고 겸손한 표현을 사용해 일본 면접에 적합한 전달 방식입니다."
+          },
+          "jobFit": {
+            "score": 65,
+            "feedback": "팀 협업 태도는 긍정적이지만 개발 업무와 연결된 사례가 없습니다."
+          },
+          "starStructure": {
+            "score": 40,
+            "feedback": "구체적인 상황과 과제가 제시되지 않았고 결과도 '분위기가 좋아졌다'는 주관적 표현에 그칩니다."
+          }
+        },
+        "strengths": [
+          "보고, 연락, 상담을 중시하는 일본 기업 문화에 맞는 가치관",
+          "정중하고 겸손한 표현"
+        ],
+        "weaknesses": [
+          "가치관을 뒷받침하는 구체적인 사례가 없음",
+          "결과가 주관적인 표현으로만 제시됨"
+        ]
+      },
+      "injected_error": null,
+      "expect": "preserve",
+      "expected_reviewer_behavior": "점수와 의미를 유지한다.",
+      "intended_reading": "가치관과 전달 방식은 좋다. 약점은 구체적 사례 부족(구체성 45)과 STAR 구조 부족(40)이다.",
+      "key_weaknesses": [
+        "가치관을 뒷받침하는 구체적 사례 부족",
+        "결과가 주관적 표현에 그침"
+      ],
+      "contradiction_markers": []
+    },
+    {
+      "id": "TC-06",
+      "type": "A",
+      "type_label": "정상 평가 (항목 간 점수 편차가 크지만 모순은 없음, 과잉 수정 유도 케이스)",
+      "job": "Product Manager",
+      "country": "Korea",
+      "native_language": "Korean",
+      "question": "본인의 가장 큰 강점은 무엇인가요?",
+      "answer": "제 강점은 문제를 구조화하는 능력입니다. 복잡한 요구사항을 받으면 먼저 목표, 제약, 이해관계자로 나누어 정리하고, 우선순위를 정한 뒤 실행합니다. 이런 방식 덕분에 어떤 일이든 체계적으로 처리할 수 있다고 생각합니다.",
+      "evaluator_output": {
+        "overallScore": 60,
+        "summary": "강점을 설명하는 논리 전개와 전달력은 우수하지만, 그 강점을 실제로 발휘한 경험이 전혀 제시되지 않아 주장에 대한 증거가 없습니다.",
+        "evaluationScores": {
+          "logicalThinking": {
+            "score": 85,
+            "feedback": "강점을 정의하고 적용 방식을 단계별로 설명해 논리 전개가 명확합니다."
+          },
+          "specificity": {
+            "score": 35,
+            "feedback": "문제 구조화 방식은 설명하지만 이를 적용한 실제 프로젝트나 결과가 없습니다."
+          },
+          "communication": {
+            "score": 85,
+            "feedback": "두괄식으로 핵심을 먼저 말하고 간결하게 전달합니다."
+          },
+          "jobFit": {
+            "score": 70,
+            "feedback": "요구사항 정리와 우선순위 설정은 PM 직무와 잘 맞는 역량입니다."
+          },
+          "starStructure": {
+            "score": 25,
+            "feedback": "실제 경험이 없어 상황, 과제, 행동, 결과 중 어느 요소도 제시되지 않았습니다."
+          }
+        },
+        "strengths": [
+          "강점을 단계별로 설명하는 명확한 논리 전개",
+          "두괄식의 간결한 전달",
+          "PM 직무와 맞는 역량 선택"
+        ],
+        "weaknesses": [
+          "강점을 발휘한 실제 경험이 제시되지 않음",
+          "결과나 성과에 대한 증거가 없음"
+        ]
+      },
+      "injected_error": null,
+      "expect": "preserve",
+      "expected_reviewer_behavior": "논리성 85와 STAR 25의 편차는 모순이 아니다. 점수를 평준화하지 않고 유지해야 한다.",
+      "intended_reading": "논리성과 전달력은 높고, 구체성(35)과 STAR 구조(25)는 매우 낮다. 실제 경험과 성과 증거가 없는 것이 핵심 약점이다.",
+      "key_weaknesses": [
+        "강점을 발휘한 실제 경험이 없음",
+        "결과와 성과 증거가 없음"
+      ],
+      "contradiction_markers": []
+    },
+    {
+      "id": "TC-07",
+      "type": "B",
+      "type_label": "점수와 종합 의견의 모순",
+      "job": "Backend Developer",
+      "country": "Korea",
+      "native_language": "Korean",
+      "question": "기술적으로 가장 어려웠던 문제와 해결 과정을 설명해 주세요.",
+      "answer": "프로젝트에서 서버가 자주 다운되는 문제가 있었습니다. 저는 Redis를 도입했습니다. 그리고 팀원들과 회의를 많이 했습니다. 결과적으로 서비스가 안정화되었고 저는 많은 것을 배웠습니다.",
+      "evaluator_output": {
+        "overallScore": 47,
+        "summary": "논리적 구성이 매우 뛰어나며 문제 해결 과정을 설득력 있게 전달한 답변입니다. 다만 일부 세부 내용은 보완이 필요합니다.",
+        "evaluationScores": {
+          "logicalThinking": {
+            "score": 35,
+            "feedback": "서버 다운이라는 문제와 Redis 도입이라는 해결책 사이의 연결이 설명되지 않아 주장과 근거의 연결이 부족합니다."
+          },
+          "specificity": {
+            "score": 40,
+            "feedback": "서버가 다운된 원인, Redis를 어디에 적용했는지, 안정화의 정도가 제시되지 않습니다."
+          },
+          "communication": {
+            "score": 60,
+            "feedback": "문장은 짧고 명확하지만 문장 사이의 연결이 끊겨 있습니다."
+          },
+          "jobFit": {
+            "score": 55,
+            "feedback": "Redis 사용 경험은 직무와 관련 있으나 기술적 이해도를 확인하기 어렵습니다."
+          },
+          "starStructure": {
+            "score": 45,
+            "feedback": "상황과 결과는 있으나 과제와 행동의 설명이 부족합니다."
+          }
+        },
+        "strengths": [
+          "Redis 등 실제 기술을 활용한 문제 해결 경험"
+        ],
+        "weaknesses": [
+          "문제 원인과 해결책 사이의 인과 관계 설명 부족",
+          "결과가 정량적으로 제시되지 않음"
+        ]
+      },
+      "injected_error": "논리성 점수는 35점이고 피드백도 '주장과 근거의 연결이 부족'이라고 하는데, summary는 '논리적 구성이 매우 뛰어나며 설득력 있게 전달'이라고 서술한다.",
+      "expect": "resolve",
+      "expected_reviewer_behavior": "summary의 긍정 서술을 점수와 피드백에 맞게 수정한다. 점수는 바꾸지 않는다.",
+      "intended_reading": "논리성(35)이 가장 약하다. 문제 원인과 해결책 사이의 인과 관계가 설명되지 않았다. summary의 '논리적 구성이 매우 뛰어나다'는 서술은 잘못 삽입된 오류다.",
+      "key_weaknesses": [
+        "문제 원인과 해결책 사이의 인과 관계 설명 부족",
+        "결과가 정량적으로 제시되지 않음"
+      ],
+      "contradiction_markers": [
+        "논리적 구성이 매우 뛰어",
+        "설득력 있게 전달"
+      ],
+      "resolve_rule": {
+        "markers_absent": true
+      }
+    },
+    {
+      "id": "TC-08",
+      "type": "B",
+      "type_label": "높은 점수와 부정적 피드백의 모순",
+      "job": "Marketing Specialist",
+      "country": "Korea",
+      "native_language": "Korean",
+      "question": "가장 성공적이었던 캠페인 경험을 말씀해 주세요.",
+      "answer": "SNS 캠페인을 진행한 적이 있습니다. 여러 가지 콘텐츠를 만들어 올렸고 반응이 꽤 좋았습니다. 팀원들과 협력해서 좋은 결과를 얻었고 마케팅에 대한 자신감을 얻었습니다.",
+      "evaluator_output": {
+        "overallScore": 60,
+        "summary": "SNS 캠페인 경험을 언급했지만 무엇을 했고 어떤 성과가 있었는지가 드러나지 않아 성공 사례로서의 설득력이 부족합니다.",
+        "evaluationScores": {
+          "logicalThinking": {
+            "score": 55,
+            "feedback": "경험을 순서대로 말하지만 '반응이 좋았다'는 결론의 근거가 없습니다."
+          },
+          "specificity": {
+            "score": 90,
+            "feedback": "어떤 콘텐츠를 만들었는지, 반응이 어느 정도였는지에 대한 수치나 사례가 전혀 제시되지 않아 내용이 추상적입니다."
+          },
+          "communication": {
+            "score": 60,
+            "feedback": "문장은 이해하기 쉽지만 '여러 가지', '꽤 좋았다' 같은 모호한 표현이 많습니다."
+          },
+          "jobFit": {
+            "score": 55,
+            "feedback": "SNS 캠페인 경험은 직무와 관련 있으나 본인의 역할이 드러나지 않습니다."
+          },
+          "starStructure": {
+            "score": 40,
+            "feedback": "상황과 과제가 생략되어 있고 행동과 결과도 추상적입니다."
+          }
+        },
+        "strengths": [
+          "직무와 관련된 SNS 캠페인 경험 보유",
+          "팀원과의 협업 경험"
+        ],
+        "weaknesses": [
+          "구체적인 수치와 사례 부족",
+          "캠페인에서 본인이 맡은 역할이 드러나지 않음"
+        ]
+      },
+      "injected_error": "구체성 점수가 90점인데 해당 항목 피드백과 weaknesses는 '수치나 사례가 전혀 없어 추상적'이라고 서술한다.",
+      "expect": "resolve",
+      "expected_reviewer_behavior": "구체성 점수와 피드백의 불일치를 해소한다. 답변 원문 기준으로는 점수가 틀린 쪽이지만 Reviewer는 답변을 볼 수 없으므로 어느 쪽을 고치는지를 기록한다.",
+      "intended_reading": "실제 답변은 추상적이므로 구체성이 약하다는 피드백이 맞고 90점이 잘못 삽입된 오류다. 구체적인 수치와 사례 부족, 본인 역할 불명확이 핵심 약점이다.",
+      "key_weaknesses": [
+        "구체적인 수치와 사례 부족",
+        "본인이 맡은 역할이 드러나지 않음"
+      ],
+      "contradiction_markers": [],
+      "resolve_rule": {
+        "score_at_most": {
+          "specificity": 60
+        }
+      }
+    },
+    {
+      "id": "TC-09",
+      "type": "B",
+      "type_label": "낮은 점수와 strengths의 모순",
+      "job": "Customer Success Manager",
+      "country": "Korea",
+      "native_language": "Korean",
+      "question": "고객의 불만을 처리한 경험을 말씀해 주세요.",
+      "answer": "음, 제가 카페에서 아르바이트를 할 때였는데, 그때가 아마 여름이었던 것 같고 손님이 굉장히 많았던 날이었는데, 어떤 손님이 음료가 늦게 나온다고 화를 내셨고, 사실 그날은 직원이 한 명 결근을 해서 그랬던 건데, 아무튼 저는 죄송하다고 말씀드렸고, 그 뒤에도 여러 가지 일이 있었지만 결국에는 손님이 이해해 주셨던 것 같습니다.",
+      "evaluator_output": {
+        "overallScore": 47,
+        "summary": "고객 불만 상황과 사과한 사실은 전달되지만, 문장이 길고 부연이 많아 본인이 어떻게 문제를 해결했는지가 분명하지 않습니다.",
+        "evaluationScores": {
+          "logicalThinking": {
+            "score": 50,
+            "feedback": "사건이 시간 순서로 나열되지만 사과 이후 어떤 조치로 고객이 이해하게 되었는지가 빠져 있습니다."
+          },
+          "specificity": {
+            "score": 55,
+            "feedback": "상황 묘사는 구체적이나 본인의 대응 행동은 '죄송하다고 말씀드렸다'가 전부입니다."
+          },
+          "communication": {
+            "score": 30,
+            "feedback": "한 문장이 지나치게 길고 부연 설명이 많아 핵심이 무엇인지 파악하기 어렵습니다."
+          },
+          "jobFit": {
+            "score": 55,
+            "feedback": "고객 응대 경험은 직무와 관련 있으나 문제 해결 역량이 드러나지 않습니다."
+          },
+          "starStructure": {
+            "score": 45,
+            "feedback": "상황은 길게 설명되지만 행동과 결과가 불분명합니다."
+          }
+        },
+        "strengths": [
+          "간결하고 명확한 전달력",
+          "고객에게 먼저 사과하는 책임감 있는 태도"
+        ],
+        "weaknesses": [
+          "사과 이후의 구체적인 해결 행동이 없음",
+          "결과가 '이해해 주셨던 것 같다'는 추측으로 끝남"
+        ]
+      },
+      "injected_error": "전달력 점수는 30점이고 피드백은 '문장이 지나치게 길고 핵심 파악이 어렵다'인데, strengths에 '간결하고 명확한 전달력'이 들어 있다.",
+      "expect": "resolve",
+      "expected_reviewer_behavior": "strengths에서 '간결하고 명확한 전달력'을 제거하거나 수정한다. 점수는 바꾸지 않는다.",
+      "intended_reading": "전달력(30)이 가장 약하다. 문장이 장황하고 핵심이 불분명하다. strengths의 '간결하고 명확한 전달력'은 잘못 삽입된 오류다. 사과 이후의 해결 행동과 결과도 불분명하다.",
+      "key_weaknesses": [
+        "문장이 장황해 핵심이 불분명함",
+        "사과 이후의 구체적 해결 행동이 없음",
+        "결과가 추측으로 끝남"
+      ],
+      "contradiction_markers": [
+        "간결하고 명확한 전달력"
+      ],
+      "resolve_rule": {
+        "markers_absent": true
+      }
+    },
+    {
+      "id": "TC-10",
+      "type": "C",
+      "type_label": "평가 항목 간 사실 서술의 모순 (수치 있음 vs 수치 없음)",
+      "job": "Backend Developer",
+      "country": "Korea",
+      "native_language": "Korean",
+      "question": "본인이 주도적으로 개선한 경험을 말씀해 주세요.",
+      "answer": "동아리 서비스의 배포가 수동으로 이루어져 한 번에 30분 이상 걸렸습니다. 저는 GitHub Actions로 배포 파이프라인을 만들자고 제안하고 직접 구축했습니다. 그 결과 배포 시간이 30분에서 5분으로 줄었고 배포 실수도 사라졌습니다.",
+      "evaluator_output": {
+        "overallScore": 75,
+        "summary": "수동 배포의 문제를 발견하고 직접 자동화를 제안, 구축해 성과를 낸 과정이 명확하게 전달된 답변입니다.",
+        "evaluationScores": {
+          "logicalThinking": {
+            "score": 80,
+            "feedback": "문제, 제안, 실행, 결과가 인과 관계에 따라 전개됩니다."
+          },
+          "specificity": {
+            "score": 85,
+            "feedback": "배포 시간이 30분에서 5분으로 줄었다는 구체적인 수치를 제시해 설득력이 높습니다."
+          },
+          "communication": {
+            "score": 80,
+            "feedback": "간결한 문장으로 핵심을 명확하게 전달합니다."
+          },
+          "jobFit": {
+            "score": 50,
+            "feedback": "성과를 뒷받침하는 수치가 전혀 없어 직무 역량을 판단하기 어렵습니다."
+          },
+          "starStructure": {
+            "score": 80,
+            "feedback": "상황, 과제, 행동, 결과가 모두 포함되어 있습니다."
+          }
+        },
+        "strengths": [
+          "배포 시간을 30분에서 5분으로 줄인 정량적 성과",
+          "문제를 먼저 발견하고 개선을 제안한 주도성"
+        ],
+        "weaknesses": [
+          "파이프라인 구축 과정에서 겪은 어려움이나 기술적 선택에 대한 설명이 없음"
+        ]
+      },
+      "injected_error": "구체성 항목은 '30분에서 5분이라는 구체적인 수치를 제시'했다고 하는데, 직무 적합성 항목은 '성과를 뒷받침하는 수치가 전혀 없다'고 서술한다.",
+      "expect": "resolve",
+      "expected_reviewer_behavior": "직무 적합성 피드백의 '수치가 전혀 없다'는 서술을 다른 항목과 일치하도록 수정한다.",
+      "intended_reading": "답변에는 30분에서 5분이라는 수치가 실제로 있다. 직무 적합성 피드백의 '수치가 전혀 없다'는 서술이 잘못 삽입된 오류다. 실제 약점은 구축 과정의 어려움이나 기술적 선택에 대한 설명이 없는 점이다.",
+      "key_weaknesses": [
+        "구축 과정의 어려움이나 기술적 선택에 대한 설명이 없음"
+      ],
+      "contradiction_markers": [
+        "수치가 전혀 없"
+      ],
+      "resolve_rule": {
+        "markers_absent": true
+      }
+    },
+    {
+      "id": "TC-11",
+      "type": "C",
+      "type_label": "평가 항목 간 사실 서술의 모순 (장황함 vs 너무 짧음)",
+      "job": "UX Designer",
+      "country": "Korea",
+      "native_language": "Korean",
+      "question": "실패했던 경험과 그로부터 배운 점을 말씀해 주세요.",
+      "answer": "공모전에서 탈락한 적이 있습니다. 준비가 부족했던 것 같습니다. 다음에는 더 잘 준비해야겠다고 생각했습니다.",
+      "evaluator_output": {
+        "overallScore": 39,
+        "summary": "실패 경험을 솔직하게 언급했지만 무엇이 부족했고 이후 무엇을 바꾸었는지가 설명되지 않아 배운 점이 드러나지 않습니다.",
+        "evaluationScores": {
+          "logicalThinking": {
+            "score": 50,
+            "feedback": "실패, 원인, 다짐의 순서는 있으나 원인 분석이 '준비 부족'이라는 한마디에 그칩니다."
+          },
+          "specificity": {
+            "score": 30,
+            "feedback": "어떤 공모전이었는지, 무엇을 준비하지 못했는지 구체적인 내용이 없습니다."
+          },
+          "communication": {
+            "score": 45,
+            "feedback": "답변이 지나치게 길고 장황하여 핵심을 파악하기 어렵습니다."
+          },
+          "jobFit": {
+            "score": 40,
+            "feedback": "UX 디자인 직무와 관련된 내용이 언급되지 않습니다."
+          },
+          "starStructure": {
+            "score": 30,
+            "feedback": "답변이 세 문장으로 매우 짧아 상황, 과제, 행동, 결과를 담지 못했습니다."
+          }
+        },
+        "strengths": [
+          "실패를 솔직하게 인정하는 태도"
+        ],
+        "weaknesses": [
+          "실패 원인에 대한 구체적인 분석이 없음",
+          "실패 이후 실제로 바꾼 행동이 제시되지 않음",
+          "직무와의 연결성이 없음"
+        ]
+      },
+      "injected_error": "전달력 항목은 '답변이 지나치게 길고 장황하다'고 하는데, STAR 항목은 '답변이 세 문장으로 매우 짧다'고 서술한다.",
+      "expect": "resolve",
+      "expected_reviewer_behavior": "두 서술 중 하나를 수정해 답변 길이에 대한 서술을 일치시킨다.",
+      "intended_reading": "답변은 실제로 세 문장으로 매우 짧다. 전달력 피드백의 '지나치게 길고 장황하다'는 서술이 잘못 삽입된 오류다. 실패 원인 분석, 이후 바꾼 행동, 직무 연결성이 없는 것이 핵심 약점이다.",
+      "key_weaknesses": [
+        "실패 원인에 대한 구체적 분석이 없음",
+        "실패 이후 바꾼 행동이 없음",
+        "직무 연결성 없음"
+      ],
+      "contradiction_markers": [
+        "지나치게 길고 장황"
+      ],
+      "resolve_rule": {
+        "markers_absent": true
+      }
+    },
+    {
+      "id": "TC-12",
+      "type": "D",
+      "type_label": "근거가 부족한 평가 (답변 내용과 연결되지 않은 일반론)",
+      "job": "Backend Developer",
+      "country": "Korea",
+      "native_language": "Korean",
+      "question": "협업 도구나 코드 리뷰 문화에 대한 경험을 말씀해 주세요.",
+      "answer": "이전 프로젝트에서 GitHub Pull Request로 코드 리뷰를 했습니다. 처음에는 리뷰가 형식적이어서 제가 리뷰 체크리스트를 만들어 팀에 제안했습니다. 이후 리뷰 코멘트가 늘었고 배포 후 버그가 줄어든 것을 체감했습니다.",
+      "evaluator_output": {
+        "overallScore": 59,
+        "summary": "전반적으로 무난한 답변입니다. 조금 더 노력하면 좋은 답변이 될 것입니다.",
+        "evaluationScores": {
+          "logicalThinking": {
+            "score": 60,
+            "feedback": "논리성은 보통 수준입니다."
+          },
+          "specificity": {
+            "score": 55,
+            "feedback": "구체성이 다소 아쉽습니다."
+          },
+          "communication": {
+            "score": 65,
+            "feedback": "전달력은 양호합니다."
+          },
+          "jobFit": {
+            "score": 60,
+            "feedback": "직무 적합성은 보통입니다."
+          },
+          "starStructure": {
+            "score": 55,
+            "feedback": "구조를 보완하면 좋겠습니다."
+          }
+        },
+        "strengths": [
+          "성실한 태도"
+        ],
+        "weaknesses": [
+          "전반적인 보완이 필요함"
+        ]
+      },
+      "injected_error": "모든 피드백이 답변의 어떤 내용에도 연결되지 않는 일반론이다. 체크리스트 제안, 버그 감소 등 답변의 실제 내용이 평가에 전혀 인용되지 않는다.",
+      "expect": "undetectable_by_design",
+      "expected_reviewer_behavior": "Reviewer 태스크는 답변 원문을 입력으로 받지 않으므로 근거를 보완할 수 없다. 탐지를 기대하지 않으며, 답변에 없는 구체 내용을 지어내지 않는지를 확인한다.",
+      "intended_reading": "평가가 일반론뿐이어서 무엇을 고쳐야 하는지 알 수 없다. 실제 답변에는 PR 리뷰, 체크리스트 제안, 버그 감소 체감이 언급되어 있다.",
+      "key_weaknesses": [
+        "평가에 구체적 약점이 제시되지 않음"
+      ],
+      "contradiction_markers": []
+    },
+    {
+      "id": "TC-13",
+      "type": "D",
+      "type_label": "근거가 부족한 평가 (답변에 없는 사실을 근거로 인용)",
+      "job": "Data Engineer",
+      "country": "Korea",
+      "native_language": "Korean",
+      "question": "데이터 파이프라인을 구축하거나 개선한 경험을 말씀해 주세요.",
+      "answer": "학교 프로젝트에서 공공 데이터를 수집해 분석하는 파이프라인을 만들었습니다. Python 스크립트로 매일 데이터를 내려받아 MySQL에 저장했고, 중복 데이터가 쌓이는 문제가 있어서 저장 전에 중복을 제거하는 단계를 추가했습니다.",
+      "evaluator_output": {
+        "overallScore": 78,
+        "summary": "데이터 파이프라인을 직접 구축하고 개선한 경험을 구체적인 기술과 성과로 설명한 답변입니다.",
+        "evaluationScores": {
+          "logicalThinking": {
+            "score": 75,
+            "feedback": "구축 과정과 문제 해결이 순서대로 설명됩니다."
+          },
+          "specificity": {
+            "score": 85,
+            "feedback": "Kafka 기반 스트리밍 도입과 인프라 비용 30% 절감이라는 정량적 성과를 제시해 구체성이 높습니다."
+          },
+          "communication": {
+            "score": 75,
+            "feedback": "기술 용어를 적절히 사용해 명확하게 전달합니다."
+          },
+          "jobFit": {
+            "score": 85,
+            "feedback": "Kafka와 Airflow 운영 경험이 데이터 엔지니어 직무와 직접적으로 연결됩니다."
+          },
+          "starStructure": {
+            "score": 70,
+            "feedback": "상황과 행동은 분명하지만 과제 정의가 다소 약합니다."
+          }
+        },
+        "strengths": [
+          "Kafka 도입으로 비용 30%를 절감한 정량적 성과",
+          "파이프라인을 직접 구축한 경험"
+        ],
+        "weaknesses": [
+          "과제와 목표에 대한 설명이 부족함"
+        ]
+      },
+      "injected_error": "답변에는 Kafka, Airflow, 비용 30% 절감이 전혀 없는데 평가가 이를 근거로 높은 점수를 주었다.",
+      "expect": "undetectable_by_design",
+      "expected_reviewer_behavior": "Reviewer 태스크는 답변 원문을 입력으로 받지 않으므로 이 오류를 발견할 수 없다. 탐지를 기대하지 않는다.",
+      "intended_reading": "실제 답변에는 Python 스크립트, MySQL, 중복 제거만 있다. Kafka, Airflow, 비용 30% 절감은 답변에 없는 내용이다. 실제 약점은 성과가 정량적으로 제시되지 않은 점과 과제 정의가 약한 점이다.",
+      "key_weaknesses": [
+        "과제와 목표에 대한 설명 부족"
+      ],
+      "contradiction_markers": [
+        "Kafka",
+        "30%"
+      ]
+    },
+    {
+      "id": "TC-14",
+      "type": "E",
+      "type_label": "중복된 평가 (같은 지적이 모든 항목과 weaknesses에 반복)",
+      "job": "Backend Developer",
+      "country": "Korea",
+      "native_language": "Korean",
+      "question": "프로젝트에서 맡았던 역할과 기여를 설명해 주세요.",
+      "answer": "쇼핑몰 프로젝트에서 백엔드를 맡았습니다. 회원 기능과 주문 기능을 개발했습니다. 열심히 해서 프로젝트를 잘 끝냈고 좋은 평가를 받았습니다.",
+      "evaluator_output": {
+        "overallScore": 48,
+        "summary": "맡은 역할은 언급했지만 구체적인 수치가 없어 기여도를 판단하기 어렵습니다.",
+        "evaluationScores": {
+          "logicalThinking": {
+            "score": 55,
+            "feedback": "역할과 결과를 순서대로 말하지만 구체적인 수치가 없어 설득력이 떨어집니다."
+          },
+          "specificity": {
+            "score": 35,
+            "feedback": "구체적인 수치가 없습니다."
+          },
+          "communication": {
+            "score": 60,
+            "feedback": "문장은 명확하지만 구체적인 수치가 없어 전달력이 약합니다."
+          },
+          "jobFit": {
+            "score": 50,
+            "feedback": "구체적인 수치가 없어 직무 역량을 확인하기 어렵습니다."
+          },
+          "starStructure": {
+            "score": 40,
+            "feedback": "결과에 구체적인 수치가 없습니다."
+          }
+        },
+        "strengths": [
+          "회원, 주문 기능 등 맡은 역할을 명확히 언급함"
+        ],
+        "weaknesses": [
+          "구체적인 수치가 부족함",
+          "성과를 보여주는 구체적인 수치가 없음",
+          "정량적인 수치가 제시되지 않음",
+          "결과에 대한 구체적인 수치가 부족함"
+        ]
+      },
+      "injected_error": "'구체적인 수치가 없다'는 동일한 지적이 summary, 다섯 개 항목 피드백 전부, weaknesses 4개에 반복된다.",
+      "expect": "dedupe",
+      "expected_reviewer_behavior": "weaknesses의 중복 항목을 하나로 합친다. 점수는 바꾸지 않는다.",
+      "intended_reading": "핵심 약점은 하나다. 기여와 성과가 정량적으로 제시되지 않았다.",
+      "key_weaknesses": [
+        "기여와 성과가 정량적으로 제시되지 않음"
+      ],
+      "contradiction_markers": [],
+      "dedupe_rule": {
+        "weaknesses_max": 1
+      }
+    },
+    {
+      "id": "TC-15",
+      "type": "E",
+      "type_label": "중복된 평가 (strengths와 weaknesses 내부 반복)",
+      "job": "HR Coordinator",
+      "country": "Korea",
+      "native_language": "Korean",
+      "question": "리더십을 발휘한 경험을 말씀해 주세요.",
+      "answer": "동아리 회장을 맡아 팀원들과 함께 축제 부스를 운영했습니다. 팀워크가 좋아서 다들 열심히 참여했고 부스는 성공적으로 끝났습니다.",
+      "evaluator_output": {
+        "overallScore": 49,
+        "summary": "동아리 회장으로서 부스를 운영한 경험은 있으나 리더로서 무엇을 했는지가 드러나지 않습니다.",
+        "evaluationScores": {
+          "logicalThinking": {
+            "score": 55,
+            "feedback": "경험과 결과는 이어지지만 성공의 원인이 '팀워크가 좋아서'라는 설명에 그칩니다."
+          },
+          "specificity": {
+            "score": 40,
+            "feedback": "부스 운영에서 본인이 내린 결정이나 행동이 제시되지 않습니다."
+          },
+          "communication": {
+            "score": 65,
+            "feedback": "문장이 짧고 이해하기 쉽습니다."
+          },
+          "jobFit": {
+            "score": 50,
+            "feedback": "조직 운영 경험은 관련성이 있으나 구성원을 조율한 사례가 없습니다."
+          },
+          "starStructure": {
+            "score": 35,
+            "feedback": "상황과 결과만 있고 과제와 행동이 빠져 있습니다."
+          }
+        },
+        "strengths": [
+          "팀워크를 중시하는 태도",
+          "팀워크를 강조한 점",
+          "팀원들과의 팀워크를 중요하게 생각함"
+        ],
+        "weaknesses": [
+          "STAR 구조가 부족함",
+          "STAR 구조에 맞춘 구성이 미흡함",
+          "상황, 과제, 행동, 결과의 STAR 구조가 드러나지 않음",
+          "리더로서 본인이 한 구체적인 행동이 없음"
+        ]
+      },
+      "injected_error": "strengths 3개가 모두 '팀워크'를 반복하고, weaknesses 4개 중 3개가 'STAR 구조 부족'을 반복한다.",
+      "expect": "dedupe",
+      "expected_reviewer_behavior": "strengths와 weaknesses의 중복 항목을 각각 합친다. 점수는 바꾸지 않는다.",
+      "intended_reading": "핵심 약점은 두 가지다. STAR 구조(특히 과제와 행동)가 빠져 있고, 리더로서 본인이 한 구체적 행동이 없다.",
+      "key_weaknesses": [
+        "STAR 구조에서 과제와 행동이 빠져 있음",
+        "리더로서 본인이 한 구체적 행동이 없음"
+      ],
+      "contradiction_markers": [],
+      "dedupe_rule": {
+        "strengths_max": 1,
+        "weaknesses_max": 2
+      }
+    },
+    {
+      "id": "TC-16",
+      "type": "F",
+      "type_label": "미묘한 모순 (정상처럼 보이지만 summary의 한 구절이 weaknesses와 상충)",
+      "job": "Sales Representative",
+      "country": "Korea",
+      "native_language": "Korean",
+      "question": "목표를 달성하기 위해 노력한 경험을 말씀해 주세요.",
+      "answer": "휴대폰 매장에서 판매 아르바이트를 하면서 월 판매 목표를 달성하기 위해 노력했습니다. 손님에게 먼저 다가가 필요한 요금제를 물어보고 맞춤으로 추천했습니다. 그 결과 목표를 달성했고 점장님께 칭찬을 받았습니다.",
+      "evaluator_output": {
+        "overallScore": 67,
+        "summary": "목표 달성을 위해 주도적으로 행동한 과정을 자연스럽게 전달했으며, 결과를 수치로 제시한 점이 설득력을 높였습니다. 과제와 행동을 조금 더 구분해 설명하면 좋겠습니다.",
+        "evaluationScores": {
+          "logicalThinking": {
+            "score": 70,
+            "feedback": "목표, 행동, 결과가 순서대로 연결됩니다."
+          },
+          "specificity": {
+            "score": 55,
+            "feedback": "고객에게 먼저 다가가 맞춤 추천을 했다는 행동은 구체적이지만 목표와 실적의 크기는 알 수 없습니다."
+          },
+          "communication": {
+            "score": 75,
+            "feedback": "간결하고 자연스럽게 전달합니다."
+          },
+          "jobFit": {
+            "score": 70,
+            "feedback": "고객 니즈를 파악해 제안하는 방식은 영업 직무와 잘 맞습니다."
+          },
+          "starStructure": {
+            "score": 65,
+            "feedback": "상황, 행동, 결과는 있으나 과제의 범위가 분명하지 않습니다."
+          }
+        },
+        "strengths": [
+          "고객에게 먼저 다가가는 적극성",
+          "고객 니즈에 맞춘 제안 방식"
+        ],
+        "weaknesses": [
+          "판매 목표와 달성 결과가 정량적으로 제시되지 않음",
+          "과제와 행동의 구분이 불분명함"
+        ]
+      },
+      "injected_error": "summary는 '결과를 수치로 제시한 점이 설득력을 높였다'고 하는데, weaknesses와 구체성 피드백은 목표와 실적이 정량적으로 제시되지 않았다고 서술한다.",
+      "expect": "resolve",
+      "expected_reviewer_behavior": "summary의 '결과를 수치로 제시한 점'이라는 구절을 제거하거나 수정한다. 점수는 바꾸지 않는다.",
+      "intended_reading": "답변에는 수치가 없다. summary의 '결과를 수치로 제시한 점이 설득력을 높였다'는 구절이 잘못 삽입된 오류다. 핵심 약점은 목표와 달성 결과가 정량적으로 제시되지 않은 점과 과제와 행동의 구분이 불분명한 점이다.",
+      "key_weaknesses": [
+        "판매 목표와 달성 결과가 정량적으로 제시되지 않음",
+        "과제와 행동의 구분이 불분명함"
+      ],
+      "contradiction_markers": [
+        "결과를 수치로 제시한 점"
+      ],
+      "resolve_rule": {
+        "markers_absent": true
+      }
+    },
+    {
+      "id": "TC-17",
+      "type": "F",
+      "type_label": "미묘한 모순 (서술은 정상이나 overallScore가 다섯 항목 평균과 불일치)",
+      "job": "Frontend Developer",
+      "country": "Korea",
+      "native_language": "Korean",
+      "question": "사용자 경험을 개선한 사례를 말씀해 주세요.",
+      "answer": "쇼핑몰 프로젝트에서 로딩이 느리다는 피드백을 받았습니다. 이미지 용량을 줄이고 지연 로딩을 적용했습니다. 이후 페이지가 더 빨라졌다는 반응을 들었습니다.",
+      "evaluator_output": {
+        "overallScore": 78,
+        "summary": "사용자 피드백을 계기로 로딩 속도를 개선한 경험을 간결하게 설명했지만, 개선 효과가 측정되지 않았고 본인의 판단 과정이 드러나지 않습니다.",
+        "evaluationScores": {
+          "logicalThinking": {
+            "score": 65,
+            "feedback": "문제, 조치, 결과의 흐름은 있으나 왜 이미지가 원인이라고 판단했는지가 빠져 있습니다."
+          },
+          "specificity": {
+            "score": 50,
+            "feedback": "적용한 기법은 언급되지만 로딩 시간이 얼마나 줄었는지에 대한 수치가 없습니다."
+          },
+          "communication": {
+            "score": 70,
+            "feedback": "짧고 명확한 문장으로 전달합니다."
+          },
+          "jobFit": {
+            "score": 60,
+            "feedback": "이미지 최적화와 지연 로딩은 프론트엔드 직무와 관련 있으나 깊이를 확인하기 어렵습니다."
+          },
+          "starStructure": {
+            "score": 45,
+            "feedback": "상황과 행동은 있으나 과제 정의가 없고 결과가 주관적인 반응에 그칩니다."
+          }
+        },
+        "strengths": [
+          "사용자 피드백을 개선으로 연결한 점",
+          "이미지 최적화, 지연 로딩 등 실제 기법 적용"
+        ],
+        "weaknesses": [
+          "개선 효과가 수치로 측정되지 않음",
+          "원인을 판단한 과정이 설명되지 않음"
+        ]
+      },
+      "injected_error": "다섯 항목 점수의 평균은 58인데 overallScore가 78로 기록되어 있다. (Evaluator 프롬프트는 overallScore를 다섯 항목의 평균으로 계산하라고 지시한다.)",
+      "expect": "fix_overall",
+      "expected_reviewer_behavior": "overallScore를 58로 수정한다. 단, 평균 규칙은 Evaluator 태스크 프롬프트에만 있고 Reviewer 태스크 프롬프트에는 없다.",
+      "intended_reading": "항목 점수 기준 종합 수준은 58점 정도의 중간 수준이다. 핵심 약점은 개선 효과가 수치로 측정되지 않은 점과 원인 판단 과정이 설명되지 않은 점이다.",
+      "key_weaknesses": [
+        "개선 효과가 수치로 측정되지 않음",
+        "원인을 판단한 과정이 설명되지 않음"
+      ],
+      "contradiction_markers": []
+    }
+  ]
+}

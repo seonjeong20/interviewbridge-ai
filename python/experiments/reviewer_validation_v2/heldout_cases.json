@@ -1,0 +1,209 @@
+{
+  "_meta": {
+    "description": "Supplementary held-out cases. Written AFTER the v2 reviewer prompt and correction gates were frozen, and run without any further change to them. Synthetic; no real user data. Same field conventions as ../reviewer_validation/test_cases.json. The main comparison uses the original 17 cases; these 8 only test whether the result carries over to cases the prompt author had not written yet."
+  },
+  "cases": [
+    {
+      "id": "HO-01", "type": "A", "type_label": "정상 평가 (중간 점수)",
+      "job": "QA Engineer", "country": "Korea", "native_language": "Korean",
+      "question": "꼼꼼함이 필요했던 업무 경험을 말씀해 주세요.",
+      "answer": "졸업 프로젝트에서 테스트를 담당했습니다. 기능마다 테스트 케이스를 엑셀로 정리했고, 출시 전에 전부 한 번씩 실행했습니다. 그 과정에서 로그인 오류를 찾아 개발 담당 팀원에게 전달했습니다.",
+      "evaluator_output": {
+        "overallScore": 62,
+        "summary": "테스트 케이스를 정리하고 실행해 오류를 찾아낸 과정이 드러나지만, 테스트 규모와 오류의 영향이 설명되지 않아 꼼꼼함의 수준을 가늠하기 어렵습니다.",
+        "evaluationScores": {
+          "logicalThinking": {"score": 70, "feedback": "역할, 수행 방법, 발견한 문제가 순서대로 이어집니다."},
+          "specificity": {"score": 55, "feedback": "엑셀 정리와 로그인 오류는 구체적이지만 테스트 케이스 수나 오류의 심각도는 알 수 없습니다."},
+          "communication": {"score": 70, "feedback": "문장이 짧고 이해하기 쉽습니다."},
+          "jobFit": {"score": 65, "feedback": "테스트 케이스 작성과 결함 보고는 QA 직무와 직접 관련됩니다."},
+          "starStructure": {"score": 50, "feedback": "행동은 분명하지만 과제의 목표와 오류 수정 이후의 결과가 없습니다."}
+        },
+        "strengths": ["테스트 케이스를 문서로 정리한 체계성", "발견한 오류를 담당자에게 전달한 협업"],
+        "weaknesses": ["테스트 규모와 오류의 영향이 제시되지 않음", "오류 전달 이후의 결과가 없음"]
+      },
+      "injected_error": null, "expect": "preserve",
+      "expected_reviewer_behavior": "점수와 의미를 유지한다.",
+      "intended_reading": "전반적으로 중간 수준. 테스트 규모, 오류의 영향, 이후 결과가 없는 것이 약점이다.",
+      "key_weaknesses": ["테스트 규모와 오류의 영향이 제시되지 않음", "오류 전달 이후의 결과가 없음"],
+      "contradiction_markers": []
+    },
+    {
+      "id": "HO-02", "type": "A", "type_label": "정상 평가 (고득점, 영문 기술 용어 포함, 낮은 항목 1개)",
+      "job": "DevOps Engineer", "country": "Korea", "native_language": "Korean",
+      "question": "장애를 처리한 경험을 말씀해 주세요.",
+      "answer": "운영 중이던 동아리 서버가 새벽에 내려간 적이 있습니다. 디스크 사용량이 100%인 것을 확인했고, 원인은 삭제되지 않고 쌓인 로그 파일이었습니다. 우선 오래된 로그를 지워 서비스를 복구했고, 이후 logrotate를 설정해 7일이 지난 로그는 자동으로 지워지게 했습니다. 그 뒤로 같은 장애는 발생하지 않았습니다.",
+      "evaluator_output": {
+        "overallScore": 81,
+        "summary": "장애의 원인 파악, 긴급 복구, 재발 방지까지 단계별로 설명한 완성도 높은 답변입니다. 장애가 서비스에 미친 영향은 언급되지 않았습니다.",
+        "evaluationScores": {
+          "logicalThinking": {"score": 90, "feedback": "증상, 원인, 임시 조치, 재발 방지가 인과 관계에 따라 전개됩니다."},
+          "specificity": {"score": 85, "feedback": "디스크 사용량 100%, logrotate, 7일 보관 등 구체적인 내용이 제시됩니다."},
+          "communication": {"score": 85, "feedback": "간결하고 순서가 분명합니다."},
+          "jobFit": {"score": 90, "feedback": "장애 대응과 재발 방지 자동화는 DevOps 직무와 직접 연결됩니다."},
+          "starStructure": {"score": 55, "feedback": "행동과 결과는 분명하지만 장애의 영향 범위와 본인에게 주어진 과제가 설명되지 않았습니다."}
+        },
+        "strengths": ["원인을 확인한 뒤 조치한 접근", "logrotate 설정으로 재발을 방지한 점", "간결한 설명"],
+        "weaknesses": ["장애가 서비스와 사용자에게 미친 영향이 설명되지 않음"]
+      },
+      "injected_error": null, "expect": "preserve",
+      "expected_reviewer_behavior": "점수와 의미를 유지한다. STAR 55와 다른 항목의 편차는 모순이 아니다.",
+      "intended_reading": "우수한 답변. 유일한 약점은 장애의 영향 범위와 과제 설명이 없는 점이다.",
+      "key_weaknesses": ["장애가 서비스와 사용자에게 미친 영향이 설명되지 않음"],
+      "contradiction_markers": []
+    },
+    {
+      "id": "HO-03", "type": "B", "type_label": "점수와 종합 의견의 모순 (STAR)",
+      "job": "Backend Developer", "country": "Korea", "native_language": "Korean",
+      "question": "협업 중 가장 기억에 남는 경험을 말씀해 주세요.",
+      "answer": "팀 프로젝트에서 API 문서를 맡았습니다. 프론트엔드 팀원이 편하게 쓸 수 있도록 신경 썼습니다. 다들 고맙다고 했습니다.",
+      "evaluator_output": {
+        "overallScore": 46,
+        "summary": "상황, 과제, 행동, 결과가 모두 갖춰진 STAR 구조의 모범적인 답변입니다. 다만 문서를 어떻게 개선했는지에 대한 설명은 부족합니다.",
+        "evaluationScores": {
+          "logicalThinking": {"score": 55, "feedback": "역할과 반응은 이어지지만 그 사이의 과정이 없습니다."},
+          "specificity": {"score": 35, "feedback": "'신경 썼다'가 구체적으로 무엇인지 드러나지 않습니다."},
+          "communication": {"score": 60, "feedback": "문장은 짧고 이해하기 쉽습니다."},
+          "jobFit": {"score": 50, "feedback": "API 문서화는 직무와 관련 있으나 기술적 내용이 없습니다."},
+          "starStructure": {"score": 30, "feedback": "상황과 과제가 없고 행동도 한 문장에 그쳐 구조를 갖추지 못했습니다."}
+        },
+        "strengths": ["다른 팀원의 편의를 고려하는 태도"],
+        "weaknesses": ["문서를 어떻게 작성하고 개선했는지 구체적인 행동이 없음", "결과가 '고맙다고 했다'는 반응에 그침"]
+      },
+      "injected_error": "STAR 구조 점수는 30점이고 피드백은 '구조를 갖추지 못했다'인데, summary는 '상황, 과제, 행동, 결과가 모두 갖춰진 STAR 구조의 모범적인 답변'이라고 서술한다.",
+      "expect": "resolve",
+      "expected_reviewer_behavior": "summary의 STAR 관련 긍정 서술을 수정한다. 점수는 바꾸지 않는다.",
+      "intended_reading": "STAR 구조(30)와 구체성(35)이 약하다. summary의 'STAR 구조의 모범적인 답변'은 잘못 삽입된 오류다.",
+      "key_weaknesses": ["구체적인 행동이 없음", "결과가 반응에 그침"],
+      "contradiction_markers": ["모두 갖춰진", "모범적인 답변"],
+      "resolve_rule": {"markers_absent": true}
+    },
+    {
+      "id": "HO-04", "type": "C", "type_label": "평가 항목 간 사실 서술의 모순 (결론 위치)",
+      "job": "Business Analyst", "country": "Korea", "native_language": "Korean",
+      "question": "데이터를 근거로 의사결정을 한 경험을 말씀해 주세요.",
+      "answer": "결론부터 말씀드리면, 설문 데이터를 근거로 동아리 모임 요일을 금요일에서 수요일로 바꿨습니다. 회원 40명에게 설문을 돌렸고 수요일을 선호한다는 응답이 가장 많았습니다. 요일을 바꾼 뒤 모임 참석 인원이 늘었습니다.",
+      "evaluator_output": {
+        "overallScore": 73,
+        "summary": "설문 데이터를 근거로 결정을 내리고 그 결과까지 설명한 답변입니다. 참석 인원이 얼마나 늘었는지는 제시되지 않았습니다.",
+        "evaluationScores": {
+          "logicalThinking": {"score": 80, "feedback": "결론을 먼저 제시한 뒤 근거와 결과를 차례로 설명해 흐름이 명확합니다."},
+          "specificity": {"score": 70, "feedback": "설문 대상 40명은 구체적이지만 응답 비율과 참석 인원 변화는 수치가 없습니다."},
+          "communication": {"score": 65, "feedback": "결론이 답변 끝까지 제시되지 않아 듣는 사람이 요지를 파악하기 어렵습니다."},
+          "jobFit": {"score": 75, "feedback": "데이터를 수집해 결정에 반영한 경험은 직무와 잘 맞습니다."},
+          "starStructure": {"score": 75, "feedback": "행동과 결과가 분명하고 과제도 추론할 수 있습니다."}
+        },
+        "strengths": ["두괄식 전개", "설문 데이터를 근거로 한 결정"],
+        "weaknesses": ["응답 비율과 참석 인원 변화가 수치로 제시되지 않음"]
+      },
+      "injected_error": "논리성 항목과 strengths는 '결론을 먼저 제시'했다고 하는데, 전달력 항목은 '결론이 답변 끝까지 제시되지 않았다'고 서술한다.",
+      "expect": "resolve",
+      "expected_reviewer_behavior": "전달력 피드백의 '결론이 끝까지 제시되지 않아'라는 서술을 수정한다.",
+      "intended_reading": "답변은 실제로 결론부터 말한다. 전달력 피드백의 서술이 잘못 삽입된 오류다. 실제 약점은 응답 비율과 참석 인원 변화가 수치로 없는 점이다.",
+      "key_weaknesses": ["응답 비율과 참석 인원 변화가 수치로 제시되지 않음"],
+      "contradiction_markers": ["끝까지 제시되지 않"],
+      "resolve_rule": {"markers_absent": true}
+    },
+    {
+      "id": "HO-05", "type": "D", "type_label": "근거가 부족한 평가 (답변에 없는 자격증과 경력을 근거로 인용)",
+      "job": "Cloud Engineer", "country": "Korea", "native_language": "Korean",
+      "question": "클라우드 관련 경험을 말씀해 주세요.",
+      "answer": "수업 과제로 웹 서버를 클라우드에 올려 본 적이 있습니다. 가상 서버를 하나 만들고 거기에 프로젝트를 배포했습니다. 설정이 어려웠지만 검색하면서 해결했습니다.",
+      "evaluator_output": {
+        "overallScore": 76,
+        "summary": "클라우드 환경에 직접 배포한 경험을 자격과 실무 경력으로 뒷받침한 답변입니다.",
+        "evaluationScores": {
+          "logicalThinking": {"score": 70, "feedback": "경험과 어려움, 해결 방식이 순서대로 설명됩니다."},
+          "specificity": {"score": 80, "feedback": "AWS Solutions Architect 자격증과 3년의 운영 경력을 구체적으로 제시했습니다."},
+          "communication": {"score": 70, "feedback": "이해하기 쉬운 문장으로 전달합니다."},
+          "jobFit": {"score": 90, "feedback": "3년간의 AWS 운영 경력은 클라우드 엔지니어 직무에 바로 투입 가능한 수준입니다."},
+          "starStructure": {"score": 70, "feedback": "상황과 행동이 있으나 결과가 간략합니다."}
+        },
+        "strengths": ["AWS 자격증 보유", "가상 서버에 직접 배포한 경험"],
+        "weaknesses": ["결과에 대한 설명이 간략함"]
+      },
+      "injected_error": "답변에는 AWS, 자격증, 3년 경력이 전혀 없는데 평가가 이를 근거로 높은 점수를 주었다.",
+      "expect": "undetectable_by_design",
+      "expected_reviewer_behavior": "기존 Reviewer는 답변을 보지 못해 발견할 수 없다. 답변을 보는 Reviewer라면 지적해야 한다.",
+      "intended_reading": "실제 답변은 수업 과제로 가상 서버 하나에 배포해 본 수준이다. AWS 자격증과 3년 경력은 답변에 없다.",
+      "key_weaknesses": ["결과에 대한 설명이 간략함"],
+      "contradiction_markers": ["AWS", "3년", "자격"]
+    },
+    {
+      "id": "HO-06", "type": "B", "type_label": "낮은 점수와 strengths의 모순 (직무 적합성)",
+      "job": "Data Analyst", "country": "Korea", "native_language": "Korean",
+      "question": "분석 역량을 보여줄 수 있는 경험을 말씀해 주세요.",
+      "answer": "저는 카페에서 2년간 아르바이트를 했습니다. 손님이 많은 시간에도 실수 없이 주문을 받았고 단골 손님도 많았습니다. 성실함은 누구에게도 지지 않습니다.",
+      "evaluator_output": {
+        "overallScore": 43,
+        "summary": "성실함은 전달되지만 질문이 요구한 분석 역량을 보여주는 내용이 없어 질문에 답하지 못했습니다.",
+        "evaluationScores": {
+          "logicalThinking": {"score": 45, "feedback": "경험과 결론은 이어지지만 질문의 요지인 분석 역량과 연결되지 않습니다."},
+          "specificity": {"score": 50, "feedback": "2년이라는 기간은 구체적이나 그 밖의 내용은 일반적입니다."},
+          "communication": {"score": 65, "feedback": "문장이 명확하고 자신감 있게 전달합니다."},
+          "jobFit": {"score": 25, "feedback": "데이터를 다루거나 분석한 경험이 전혀 언급되지 않았습니다."},
+          "starStructure": {"score": 30, "feedback": "과제와 행동이 없고 경험의 나열에 그칩니다."}
+        },
+        "strengths": ["데이터 분석 직무와 직접 연결되는 경험", "성실함과 책임감"],
+        "weaknesses": ["질문이 요구한 분석 역량을 보여주는 경험이 없음", "과제와 행동이 제시되지 않음"]
+      },
+      "injected_error": "직무 적합성은 25점이고 피드백은 '분석한 경험이 전혀 언급되지 않았다'인데, strengths에 '데이터 분석 직무와 직접 연결되는 경험'이 들어 있다.",
+      "expect": "resolve",
+      "expected_reviewer_behavior": "strengths에서 해당 항목을 제거하거나 수정한다. 점수는 바꾸지 않는다.",
+      "intended_reading": "직무 적합성(25)이 가장 약하다. 분석 경험이 없다. strengths의 '데이터 분석 직무와 직접 연결되는 경험'은 잘못 삽입된 오류다.",
+      "key_weaknesses": ["분석 역량을 보여주는 경험이 없음", "과제와 행동이 제시되지 않음"],
+      "contradiction_markers": ["직접 연결되는 경험"],
+      "resolve_rule": {"markers_absent": true}
+    },
+    {
+      "id": "HO-07", "type": "F", "type_label": "미묘한 모순 (overallScore가 다섯 항목 평균보다 낮게 기록)",
+      "job": "Frontend Developer", "country": "Korea", "native_language": "Korean",
+      "question": "새로운 기능을 제안해 본 경험이 있나요?",
+      "answer": "동아리 홈페이지에 다크 모드를 넣자고 제안했습니다. 밤에 접속하는 회원이 많다는 것을 접속 기록에서 확인했기 때문입니다. CSS 변수로 색상을 분리해 2주 만에 적용했습니다.",
+      "evaluator_output": {
+        "overallScore": 45,
+        "summary": "접속 기록을 근거로 기능을 제안하고 직접 구현한 과정이 잘 드러나지만, 적용 이후의 반응이나 효과는 제시되지 않았습니다.",
+        "evaluationScores": {
+          "logicalThinking": {"score": 75, "feedback": "근거, 제안, 구현이 인과 관계에 따라 이어집니다."},
+          "specificity": {"score": 65, "feedback": "CSS 변수와 2주라는 기간은 구체적이지만 밤 접속 비율은 수치가 없습니다."},
+          "communication": {"score": 70, "feedback": "간결하게 전달합니다."},
+          "jobFit": {"score": 70, "feedback": "CSS 변수를 활용한 테마 분리는 프론트엔드 직무와 관련됩니다."},
+          "starStructure": {"score": 50, "feedback": "상황과 행동은 있으나 결과가 없습니다."}
+        },
+        "strengths": ["데이터를 근거로 한 제안", "직접 구현까지 마친 실행력"],
+        "weaknesses": ["적용 이후의 반응이나 효과가 제시되지 않음"]
+      },
+      "injected_error": "다섯 항목 점수의 평균은 66인데 overallScore가 45로 기록되어 있다.",
+      "expect": "fix_overall",
+      "expected_reviewer_behavior": "overallScore를 66으로 수정한다.",
+      "intended_reading": "항목 점수 기준 66점 수준. 약점은 적용 이후의 효과가 없는 점이다.",
+      "key_weaknesses": ["적용 이후의 반응이나 효과가 제시되지 않음"],
+      "contradiction_markers": []
+    },
+    {
+      "id": "HO-08", "type": "F", "type_label": "미묘한 모순 (weaknesses 한 줄이 답변 및 다른 항목과 상충)",
+      "job": "Operations Manager", "country": "Korea", "native_language": "Korean",
+      "question": "업무 효율을 높인 경험을 말씀해 주세요.",
+      "answer": "편의점 아르바이트에서 재고 확인에 매일 40분이 걸렸습니다. 진열대 순서대로 점검표를 다시 만들었고, 그 뒤로는 25분이면 끝났습니다. 점장님이 다른 근무자에게도 그 점검표를 쓰게 했습니다.",
+      "evaluator_output": {
+        "overallScore": 77,
+        "summary": "문제를 발견하고 점검표를 개선해 시간을 줄인 과정이 간결하게 전달된 답변입니다. 점검표를 어떻게 바꿨는지에 대한 설명이 조금 더 있으면 좋겠습니다.",
+        "evaluationScores": {
+          "logicalThinking": {"score": 80, "feedback": "문제, 조치, 결과가 순서대로 이어집니다."},
+          "specificity": {"score": 80, "feedback": "40분에서 25분으로 줄었다는 수치와 다른 근무자에게 확산된 결과가 제시됩니다."},
+          "communication": {"score": 80, "feedback": "간결하고 명확합니다."},
+          "jobFit": {"score": 70, "feedback": "반복 업무를 개선한 경험은 운영 직무와 관련됩니다."},
+          "starStructure": {"score": 75, "feedback": "상황, 행동, 결과가 분명합니다."}
+        },
+        "strengths": ["재고 확인 시간을 40분에서 25분으로 줄인 성과", "개선안이 다른 근무자에게 확산된 점"],
+        "weaknesses": ["개선 결과가 전혀 제시되지 않음", "점검표를 구체적으로 어떻게 바꿨는지 설명이 부족함"]
+      },
+      "injected_error": "구체성 항목과 strengths는 40분에서 25분으로 줄어든 결과를 언급하는데, weaknesses에는 '개선 결과가 전혀 제시되지 않음'이 들어 있다.",
+      "expect": "resolve",
+      "expected_reviewer_behavior": "weaknesses에서 '개선 결과가 전혀 제시되지 않음'을 제거한다. 점수는 바꾸지 않는다.",
+      "intended_reading": "답변에는 40분에서 25분이라는 결과가 있다. weaknesses의 '개선 결과가 전혀 제시되지 않음'은 잘못 삽입된 오류다. 실제 약점은 점검표를 어떻게 바꿨는지 설명이 부족한 점이다.",
+      "key_weaknesses": ["점검표를 구체적으로 어떻게 바꿨는지 설명이 부족함"],
+      "contradiction_markers": ["결과가 전혀 제시되지 않"],
+      "resolve_rule": {"markers_absent": true}
+    }
+  ]
+}

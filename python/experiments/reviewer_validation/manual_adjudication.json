@@ -1,0 +1,467 @@
+{
+  "_note": "Verdicts assigned by reading every output, after the rule checks and both LLM judges were found to disagree with the text in several cases (see report section 7). Read by the AI assistant that ran this validation; each verdict carries the quoted evidence so it can be re-checked by a person.",
+  "exp1_verdict_values": {
+    "preserved": "defect-free evaluation; scores unchanged and meaning unchanged",
+    "resolved": "the planted defect is gone",
+    "partial": "the planted defect was weakened or only partly merged",
+    "not_resolved": "the planted defect is still present",
+    "not_detected": "defect that needs the answer text; still present (expected)",
+    "no_grounding_added": "generic evaluation stayed generic; nothing fabricated (expected)"
+  },
+  "exp1": {
+    "TC-01#1": {
+      "verdict": "preserved",
+      "evidence": "점수 변경 없음. 문장 표현만 바뀌고 의미는 동일."
+    },
+    "TC-01#2": {
+      "verdict": "preserved",
+      "evidence": "점수 변경 없음. 문장 표현만 바뀌고 의미는 동일."
+    },
+    "TC-02#1": {
+      "verdict": "preserved",
+      "evidence": "점수 변경 없음. 문장 표현만 바뀌고 의미는 동일."
+    },
+    "TC-02#2": {
+      "verdict": "preserved",
+      "evidence": "점수 변경 없음. 문장 표현만 바뀌고 의미는 동일."
+    },
+    "TC-03#1": {
+      "verdict": "preserved",
+      "evidence": "점수 변경 없음. 문장 표현만 바뀌고 의미는 동일."
+    },
+    "TC-03#2": {
+      "verdict": "preserved",
+      "evidence": "점수 변경 없음. 문장 표현만 바뀌고 의미는 동일."
+    },
+    "TC-04#1": {
+      "verdict": "preserved",
+      "evidence": "점수 변경 없음. 문장 표현만 바뀌고 의미는 동일."
+    },
+    "TC-04#2": {
+      "verdict": "preserved",
+      "evidence": "점수 변경 없음. 문장 표현만 바뀌고 의미는 동일."
+    },
+    "TC-05#1": {
+      "verdict": "preserved",
+      "evidence": "점수 변경 없음. 문장 표현만 바뀌고 의미는 동일."
+    },
+    "TC-05#2": {
+      "verdict": "preserved",
+      "evidence": "점수 변경 없음. 문장 표현만 바뀌고 의미는 동일."
+    },
+    "TC-06#1": {
+      "verdict": "preserved",
+      "evidence": "점수 변경 없음. 문장 표현만 바뀌고 의미는 동일."
+    },
+    "TC-06#2": {
+      "verdict": "preserved",
+      "evidence": "점수 변경 없음. 문장 표현만 바뀌고 의미는 동일."
+    },
+    "TC-07#1": {
+      "verdict": "not_resolved",
+      "evidence": "summary: 논리적 구성이 뛰어나며 문제 해결 과정을 설득력 있게 전달한 답변입니다. 다만 일부 세부 내용과 인과 관계 설명이 보완되어야 합니다."
+    },
+    "TC-07#2": {
+      "verdict": "not_resolved",
+      "evidence": "summary: 논리적 구성이 매우 뛰어나며 문제 해결 과정을 설득력 있게 전달한 답변입니다. 다만 일부 세부 내용은 보완이 필요합니다."
+    },
+    "TC-08#1": {
+      "verdict": "resolved",
+      "evidence": "specificity 90 -> 40. 부작용: overallScore는 60 그대로여서 다섯 항목 평균과 +10.0점 불일치가 새로 생김."
+    },
+    "TC-08#2": {
+      "verdict": "resolved",
+      "evidence": "specificity 90 -> 40. 부작용: overallScore는 60 그대로여서 다섯 항목 평균과 +10.0점 불일치가 새로 생김."
+    },
+    "TC-09#1": {
+      "verdict": "resolved",
+      "evidence": "strengths: [\"고객에게 먼저 사과하는 책임감 있는 태도\"]"
+    },
+    "TC-09#2": {
+      "verdict": "resolved",
+      "evidence": "strengths: [\"고객에게 먼저 사과하는 책임감 있는 태도\"]"
+    },
+    "TC-10#1": {
+      "verdict": "partial",
+      "evidence": "jobFit feedback: 직무 관련 성과를 뒷받침하는 수치가 부족해 직무 역량 판단이 어렵습니다. (specificity 항목은 여전히 수치를 제시했다고 서술)"
+    },
+    "TC-10#2": {
+      "verdict": "partial",
+      "evidence": "jobFit feedback: 직무 역량 판단에 필요한 성과 관련 수치가 부족합니다. (specificity 항목은 여전히 수치를 제시했다고 서술)"
+    },
+    "TC-11#1": {
+      "verdict": "not_resolved",
+      "evidence": "communication: 답변이 장황하고 핵심이 분명하지 않아 이해하기 어렵습니다. / starStructure: 답변이 매우 짧아 상황, 과제, 행동, 결과의 STAR 구조를 충실히 담지 못했습니다."
+    },
+    "TC-11#2": {
+      "verdict": "not_resolved",
+      "evidence": "communication: 답변이 길고 장황하여 핵심 메시지가 명확하게 전달되지 않습니다. / starStructure: 답변이 매우 짧아 상황, 과제, 행동, 결과의 구체적인 구성이 부족합니다."
+    },
+    "TC-12#1": {
+      "verdict": "no_grounding_added",
+      "evidence": "피드백이 여전히 일반론. 답변에 없는 사실을 지어내지는 않음. weaknesses: [\"구체성 부족\", \"STAR 구조 미흡\", \"전반적인 보완 필요\"]"
+    },
+    "TC-12#2": {
+      "verdict": "no_grounding_added",
+      "evidence": "피드백이 여전히 일반론. 답변에 없는 사실을 지어내지는 않음. weaknesses: [\"구체성, 구조, 논리성 등 전반적인 보완이 필요함\"]"
+    },
+    "TC-13#1": {
+      "verdict": "not_detected",
+      "evidence": "specificity feedback: Kafka 기반 스트리밍 도입과 인프라 비용 30% 절감이라는 정량적 성과를 제시하여 구체성이 높습니다."
+    },
+    "TC-13#2": {
+      "verdict": "not_detected",
+      "evidence": "specificity feedback: Kafka 기반 스트리밍 도입과 인프라 비용 30% 절감이라는 정량적 성과를 제시해 구체성이 높습니다."
+    },
+    "TC-14#1": {
+      "verdict": "resolved",
+      "evidence": "weaknesses: [\"구체적인 수치가 부족함\"] / 단, 다섯 항목 피드백 중 5개가 여전히 '수치' 지적을 반복"
+    },
+    "TC-14#2": {
+      "verdict": "resolved",
+      "evidence": "weaknesses: [\"구체적인 수치가 부족함\"] / 단, 다섯 항목 피드백 중 5개가 여전히 '수치' 지적을 반복"
+    },
+    "TC-15#1": {
+      "verdict": "resolved",
+      "evidence": "strengths: [\"팀워크를 중시하는 태도\"] / weaknesses: [\"STAR 구조가 부족함\", \"리더로서 본인이 한 구체적인 행동이 없음\"]"
+    },
+    "TC-15#2": {
+      "verdict": "resolved",
+      "evidence": "strengths: [\"팀워크를 중시하는 태도\"] / weaknesses: [\"STAR 구조가 부족함\", \"리더로서 본인이 한 구체적인 행동이 제시되지 않음\"]"
+    },
+    "TC-16#1": {
+      "verdict": "not_resolved",
+      "evidence": "summary: 목표 달성을 위해 주도적으로 행동한 과정을 자연스럽게 전달했으며, 결과를 수치로 제시한 점이 설득력을 높였습니다. 다만, 과제와 행동을 명확히 구분해 설명하면 좋겠습니다."
+    },
+    "TC-16#2": {
+      "verdict": "not_resolved",
+      "evidence": "summary: 목표 달성을 위해 주도적으로 행동한 과정을 자연스럽게 전달했으며, 결과를 수치로 제시한 점이 설득력을 높였습니다. 다만 과제와 행동을 명확히 구분해 설명하면 더 좋겠습니다."
+    },
+    "TC-17#1": {
+      "verdict": "not_resolved",
+      "evidence": "overallScore 78 (다섯 항목 평균 58)"
+    },
+    "TC-17#2": {
+      "verdict": "not_resolved",
+      "evidence": "overallScore 78 (다섯 항목 평균 58)"
+    },
+    "TC-01#3": {
+      "verdict": "preserved",
+      "evidence": "점수 변경 없음. 문장 표현만 바뀌고 의미는 동일."
+    },
+    "TC-01#4": {
+      "verdict": "preserved",
+      "evidence": "점수 변경 없음. 문장 표현만 바뀌고 의미는 동일."
+    },
+    "TC-01#5": {
+      "verdict": "preserved",
+      "evidence": "점수 변경 없음. 문장 표현만 바뀌고 의미는 동일."
+    },
+    "TC-02#3": {
+      "verdict": "preserved",
+      "evidence": "점수 변경 없음. 문장 표현만 바뀌고 의미는 동일."
+    },
+    "TC-02#4": {
+      "verdict": "preserved",
+      "evidence": "점수 변경 없음. 문장 표현만 바뀌고 의미는 동일."
+    },
+    "TC-02#5": {
+      "verdict": "preserved",
+      "evidence": "점수 변경 없음. 문장 표현만 바뀌고 의미는 동일."
+    },
+    "TC-03#3": {
+      "verdict": "preserved",
+      "evidence": "점수 변경 없음. 문장 표현만 바뀌고 의미는 동일."
+    },
+    "TC-03#4": {
+      "verdict": "preserved",
+      "evidence": "점수 변경 없음. 문장 표현만 바뀌고 의미는 동일."
+    },
+    "TC-03#5": {
+      "verdict": "preserved",
+      "evidence": "점수 변경 없음. 문장 표현만 바뀌고 의미는 동일."
+    },
+    "TC-04#3": {
+      "verdict": "preserved",
+      "evidence": "점수 변경 없음. 문장 표현만 바뀌고 의미는 동일."
+    },
+    "TC-04#4": {
+      "verdict": "preserved",
+      "evidence": "점수 변경 없음. 문장 표현만 바뀌고 의미는 동일."
+    },
+    "TC-04#5": {
+      "verdict": "preserved",
+      "evidence": "점수 변경 없음. 문장 표현만 바뀌고 의미는 동일."
+    },
+    "TC-05#3": {
+      "verdict": "preserved",
+      "evidence": "점수 변경 없음. 문장 표현만 바뀌고 의미는 동일."
+    },
+    "TC-05#4": {
+      "verdict": "preserved",
+      "evidence": "점수 변경 없음. 문장 표현만 바뀌고 의미는 동일."
+    },
+    "TC-05#5": {
+      "verdict": "preserved",
+      "evidence": "점수 변경 없음. 문장 표현만 바뀌고 의미는 동일."
+    },
+    "TC-06#3": {
+      "verdict": "preserved",
+      "evidence": "점수 변경 없음. 문장 표현만 바뀌고 의미는 동일."
+    },
+    "TC-06#4": {
+      "verdict": "preserved",
+      "evidence": "점수 변경 없음. 문장 표현만 바뀌고 의미는 동일."
+    },
+    "TC-06#5": {
+      "verdict": "preserved",
+      "evidence": "점수 변경 없음. 문장 표현만 바뀌고 의미는 동일."
+    },
+    "TC-07#3": {
+      "verdict": "not_resolved",
+      "evidence": "summary: 논리적 구성이 매우 뛰어나며 문제 해결 과정을 설득력 있게 전달한 답변입니다. 다만 일부 세부 내용은 보완이 필요합니다."
+    },
+    "TC-07#4": {
+      "verdict": "not_resolved",
+      "evidence": "summary: 논리적 구성이 뛰어나며 문제 해결 과정을 설득력 있게 전달한 답변입니다. 다만 일부 세부 내용 보완이 필요합니다."
+    },
+    "TC-07#5": {
+      "verdict": "not_resolved",
+      "evidence": "summary: 논리적 구성이 뛰어나고 문제 해결 과정을 설득력 있게 전달하였으나, 일부 세부 내용 보완이 필요합니다."
+    },
+    "TC-08#3": {
+      "verdict": "resolved",
+      "evidence": "specificity 90 -> 40. 부작용: overallScore는 60 그대로여서 다섯 항목 평균과 +10.0점 불일치가 새로 생김."
+    },
+    "TC-08#4": {
+      "verdict": "resolved",
+      "evidence": "specificity 90 -> 40. 부작용: overallScore는 60 그대로여서 다섯 항목 평균과 +10.0점 불일치가 새로 생김."
+    },
+    "TC-08#5": {
+      "verdict": "resolved",
+      "evidence": "specificity 90 -> 40. 부작용: overallScore는 60 그대로여서 다섯 항목 평균과 +10.0점 불일치가 새로 생김."
+    },
+    "TC-09#3": {
+      "verdict": "resolved",
+      "evidence": "strengths: [\"책임감 있게 고객에게 먼저 사과하는 태도\"]"
+    },
+    "TC-09#4": {
+      "verdict": "resolved",
+      "evidence": "strengths: [\"고객에게 먼저 사과하는 책임감 있는 태도\"]"
+    },
+    "TC-09#5": {
+      "verdict": "resolved",
+      "evidence": "strengths: [\"고객에게 먼저 사과하는 책임감 있는 태도\"]"
+    },
+    "TC-10#3": {
+      "verdict": "partial",
+      "evidence": "jobFit feedback: 성과를 뒷받침하는 수치가 부족해 직무 역량 판단에 한계가 있습니다. (specificity 항목은 여전히 수치를 제시했다고 서술)"
+    },
+    "TC-10#4": {
+      "verdict": "not_resolved",
+      "evidence": "jobFit feedback: 성과를 뒷받침하는 수치가 없고, 직무 관련 기술적 역량 설명이 부족해 직무 적합성 판단이 어렵습니다. (specificity 항목은 여전히 수치를 제시했다고 서술)"
+    },
+    "TC-10#5": {
+      "verdict": "resolved",
+      "evidence": "jobFit feedback: 성과를 뒷받침하는 수치가 있으나, 직무 역량과 관련된 구체적 기술적 설명이 부족해 판단이 어렵습니다. (specificity 항목은 여전히 수치를 제시했다고 서술)"
+    },
+    "TC-11#3": {
+      "verdict": "not_resolved",
+      "evidence": "communication: 답변이 장황하여 핵심 내용을 파악하기 어렵습니다. / starStructure: 답변이 세 문장으로 매우 짧아 상황, 과제, 행동, 결과를 모두 담지 못했습니다."
+    },
+    "TC-11#4": {
+      "verdict": "not_resolved",
+      "evidence": "communication: 답변이 장황하여 핵심 내용을 파악하기 어렵습니다. / starStructure: 답변이 매우 짧아 상황, 과제, 행동, 결과를 모두 담지 못했습니다."
+    },
+    "TC-11#5": {
+      "verdict": "not_resolved",
+      "evidence": "communication: 답변이 장황하고 핵심이 명확하지 않아 이해하기 어렵습니다. / starStructure: 답변이 매우 짧아 상황, 과제, 행동, 결과를 모두 포함하지 못했습니다."
+    },
+    "TC-12#3": {
+      "verdict": "no_grounding_added",
+      "evidence": "피드백이 여전히 일반론. 답변에 없는 사실을 지어내지는 않음. weaknesses: [\"구체성, 구조, 논리성 등 전반적인 보완이 필요함\"]"
+    },
+    "TC-12#4": {
+      "verdict": "no_grounding_added",
+      "evidence": "피드백이 여전히 일반론. 답변에 없는 사실을 지어내지는 않음. weaknesses: [\"구체성, 논리성, 구조 등 전반적인 보완이 필요합니다.\"]"
+    },
+    "TC-12#5": {
+      "verdict": "no_grounding_added",
+      "evidence": "피드백이 여전히 일반론. 답변에 없는 사실을 지어내지는 않음. weaknesses: [\"구체성, 논리성, 구조 등 전반적인 보완이 필요함\"]"
+    },
+    "TC-13#3": {
+      "verdict": "not_detected",
+      "evidence": "specificity feedback: Kafka 기반 스트리밍 도입과 인프라 비용 30% 절감이라는 정량적 성과를 제시하여 구체성이 높습니다."
+    },
+    "TC-13#4": {
+      "verdict": "not_detected",
+      "evidence": "specificity feedback: Kafka 기반 스트리밍 도입과 인프라 비용 30% 절감이라는 정량적 성과를 제시하여 구체성이 높습니다."
+    },
+    "TC-13#5": {
+      "verdict": "not_detected",
+      "evidence": "specificity feedback: Kafka 기반 스트리밍 도입과 인프라 비용 30% 절감이라는 정량적 성과를 제시하여 구체성이 높습니다."
+    },
+    "TC-14#3": {
+      "verdict": "resolved",
+      "evidence": "weaknesses: [\"구체적인 수치가 부족함\"] / 단, 다섯 항목 피드백 중 5개가 여전히 '수치' 지적을 반복"
+    },
+    "TC-14#4": {
+      "verdict": "partial",
+      "evidence": "weaknesses: [\"구체적인 수치가 부족함\", \"성과를 보여주는 정량적인 수치가 없음\"] / 단, 다섯 항목 피드백 중 5개가 여전히 '수치' 지적을 반복"
+    },
+    "TC-14#5": {
+      "verdict": "resolved",
+      "evidence": "weaknesses: [\"구체적인 수치가 부족함\"] / 단, 다섯 항목 피드백 중 5개가 여전히 '수치' 지적을 반복"
+    },
+    "TC-15#3": {
+      "verdict": "resolved",
+      "evidence": "strengths: [\"팀워크를 중시하는 태도\"] / weaknesses: [\"STAR 구조가 부족함\", \"리더로서 본인이 한 구체적인 행동이 없음\"]"
+    },
+    "TC-15#4": {
+      "verdict": "resolved",
+      "evidence": "strengths: [\"팀워크를 중시하는 태도\"] / weaknesses: [\"STAR 구조가 부족함\", \"리더로서 본인이 한 구체적인 행동이 없음\"]"
+    },
+    "TC-15#5": {
+      "verdict": "partial",
+      "evidence": "strengths: [\"팀워크를 중시하는 태도\", \"팀워크를 강조한 점\"] / weaknesses: [\"STAR 구조에 맞춘 구성이 부족함\", \"리더로서 본인이 한 구체적인 행동이 드러나지 않음\"]"
+    },
+    "TC-16#3": {
+      "verdict": "not_resolved",
+      "evidence": "summary: 목표 달성을 위해 주도적으로 행동한 과정을 자연스럽게 전달했으며, 결과를 수치로 제시한 점이 설득력을 높였습니다. 다만 과제와 행동을 명확히 구분하여 설명하면 더욱 좋겠습니다."
+    },
+    "TC-16#4": {
+      "verdict": "not_resolved",
+      "evidence": "summary: 목표 달성을 위해 주도적으로 행동한 과정을 자연스럽게 전달했으며, 결과를 수치로 제시한 점이 설득력을 높였습니다. 다만, 과제와 행동을 명확히 구분하여 설명하면 더 좋겠습니다."
+    },
+    "TC-16#5": {
+      "verdict": "not_resolved",
+      "evidence": "summary: 목표 달성을 위해 주도적으로 행동한 과정을 자연스럽게 전달했으며, 결과를 수치로 제시한 점이 설득력을 높였습니다. 다만, 과제와 행동을 명확히 구분해 설명하면 더 좋겠습니다."
+    },
+    "TC-17#3": {
+      "verdict": "not_resolved",
+      "evidence": "overallScore 78 (다섯 항목 평균 58)"
+    },
+    "TC-17#4": {
+      "verdict": "not_resolved",
+      "evidence": "overallScore 78 (다섯 항목 평균 58)"
+    },
+    "TC-17#5": {
+      "verdict": "not_resolved",
+      "evidence": "overallScore 78 (다섯 항목 평균 58)"
+    }
+  },
+  "exp2": {
+    "TC-07|A_no_reviewer|1": {
+      "carries_error": true,
+      "evidence": "overallSummary: 지원자의 답변은 논리적 구성이 뛰어나고 실제 기술 활용 경험이 돋보이나, 문제 원인과 해결책 간의 인과 관계 설명과 구체적인 행동 및 결과 제시가 부족하여 면접관이 이해하기 어려운 부분이 있습니다."
+    },
+    "TC-07|B_with_reviewer|1": {
+      "carries_error": true,
+      "evidence": "overallSummary: 답변은 논리적 구성이 우수하고 실제 기술 활용 경험을 잘 드러내고 있으나, 문제 원인과 해결책 간의 인과 관계 설명과 구체적인 행동 과정이 부족하여 면접관이 지원자의 문제 해결 능력을 명확히 이해하기 어렵습니다"
+    },
+    "TC-07|A_no_reviewer|2": {
+      "carries_error": true,
+      "evidence": "overallSummary: 답변은 논리적 구성이 뛰어나고 실제 기술 활용 경험을 잘 보여주고 있으나, 문제의 원인과 해결책 간 인과관계 설명이 부족하고, 구체적인 행동과 결과에 대한 설명이 미흡하여 면접관이 이해하기 어렵습니다"
+    },
+    "TC-07|B_with_reviewer|2": {
+      "carries_error": true,
+      "evidence": "overallSummary: 지원자의 답변은 논리적 구성이 우수하며 실제 기술을 활용한 문제 해결 경험이 돋보입니다"
+    },
+    "TC-08|A_no_reviewer|1": {
+      "carries_error": false,
+      "evidence": "코칭이 구체성을 강점으로 다루지 않고 구체적 수치와 사례 보완을 요구함"
+    },
+    "TC-08|B_with_reviewer|1": {
+      "carries_error": false,
+      "evidence": "코칭이 구체성을 강점으로 다루지 않고 구체적 수치와 사례 보완을 요구함"
+    },
+    "TC-08|A_no_reviewer|2": {
+      "carries_error": false,
+      "evidence": "코칭이 구체성을 강점으로 다루지 않고 구체적 수치와 사례 보완을 요구함"
+    },
+    "TC-08|B_with_reviewer|2": {
+      "carries_error": false,
+      "evidence": "코칭이 구체성을 강점으로 다루지 않고 구체적 수치와 사례 보완을 요구함"
+    },
+    "TC-09|A_no_reviewer|1": {
+      "carries_error": false,
+      "evidence": "코칭이 간결한 전달력을 칭찬하지 않고 부연을 줄이라고 조언함"
+    },
+    "TC-09|B_with_reviewer|1": {
+      "carries_error": false,
+      "evidence": "코칭이 간결한 전달력을 칭찬하지 않고 부연을 줄이라고 조언함"
+    },
+    "TC-09|A_no_reviewer|2": {
+      "carries_error": false,
+      "evidence": "코칭이 간결한 전달력을 칭찬하지 않고 부연을 줄이라고 조언함"
+    },
+    "TC-09|B_with_reviewer|2": {
+      "carries_error": false,
+      "evidence": "코칭이 간결한 전달력을 칭찬하지 않고 부연을 줄이라고 조언함"
+    },
+    "TC-10|A_no_reviewer|1": {
+      "carries_error": false,
+      "evidence": "코칭이 수치가 없다고 지적하지 않음"
+    },
+    "TC-10|B_with_reviewer|1": {
+      "carries_error": false,
+      "evidence": "코칭이 수치가 없다고 지적하지 않음"
+    },
+    "TC-10|A_no_reviewer|2": {
+      "carries_error": false,
+      "evidence": "코칭이 수치가 없다고 지적하지 않음"
+    },
+    "TC-10|B_with_reviewer|2": {
+      "carries_error": false,
+      "evidence": "코칭이 수치가 없다고 지적하지 않음"
+    },
+    "TC-11|A_no_reviewer|1": {
+      "carries_error": false,
+      "evidence": "'장황하다'는 서술은 없음. 다만 일부 실행에서 '간결하게' 라는 일반 조언은 등장"
+    },
+    "TC-11|B_with_reviewer|1": {
+      "carries_error": false,
+      "evidence": "'장황하다'는 서술은 없음. 다만 일부 실행에서 '간결하게' 라는 일반 조언은 등장"
+    },
+    "TC-11|A_no_reviewer|2": {
+      "carries_error": false,
+      "evidence": "'장황하다'는 서술은 없음. 다만 일부 실행에서 '간결하게' 라는 일반 조언은 등장"
+    },
+    "TC-11|B_with_reviewer|2": {
+      "carries_error": false,
+      "evidence": "'장황하다'는 서술은 없음. 다만 일부 실행에서 '간결하게' 라는 일반 조언은 등장"
+    },
+    "TC-13|A_no_reviewer|1": {
+      "carries_error": true,
+      "evidence": "모범 답안에 답변에 없는 내용이 지원자 경험으로 서술됨: Kafka, Airflow, 30%"
+    },
+    "TC-13|B_with_reviewer|1": {
+      "carries_error": true,
+      "evidence": "모범 답안에 답변에 없는 내용이 지원자 경험으로 서술됨: Kafka, Airflow, 30%"
+    },
+    "TC-13|A_no_reviewer|2": {
+      "carries_error": true,
+      "evidence": "모범 답안에 답변에 없는 내용이 지원자 경험으로 서술됨: Kafka, Airflow, 30%"
+    },
+    "TC-13|B_with_reviewer|2": {
+      "carries_error": true,
+      "evidence": "모범 답안에 답변에 없는 내용이 지원자 경험으로 서술됨: Kafka, Airflow, 30%"
+    },
+    "TC-16|A_no_reviewer|1": {
+      "carries_error": false,
+      "evidence": "코칭이 수치 제시를 칭찬하지 않고 정량적 결과 보완을 요구함"
+    },
+    "TC-16|B_with_reviewer|1": {
+      "carries_error": false,
+      "evidence": "코칭이 수치 제시를 칭찬하지 않고 정량적 결과 보완을 요구함"
+    },
+    "TC-16|A_no_reviewer|2": {
+      "carries_error": false,
+      "evidence": "코칭이 수치 제시를 칭찬하지 않고 정량적 결과 보완을 요구함"
+    },
+    "TC-16|B_with_reviewer|2": {
+      "carries_error": false,
+      "evidence": "코칭이 수치 제시를 칭찬하지 않고 정량적 결과 보완을 요구함"
+    }
+  }
+}
